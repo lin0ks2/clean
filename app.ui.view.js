@@ -220,7 +220,7 @@
     if (isEndlessDict(key) && allLearned(sub, key)) {
       return Math.floor(Math.random() * sub.length);
     }
-    return App.Trainer.sampleNextIndexWeighted(sub);
+    return (App && App.Trainer && typeof App.Trainer.sampleNextIndexWeighted==="function") ? App.Trainer.sampleNextIndexWeighted(sub) : Math.floor(Math.random()*sub.length);
   }
 
   // ─ render & stats ─
@@ -306,7 +306,7 @@ function renderStars() {
   }
 
   function renderCard(force = false) {
-  try{document.dispatchEvent(new CustomEvent("lexitron:word-shown",{detail:{word:w}}));}catch(_){}
+  try{}catch(_){}
   try{if(App.Trainer&&typeof App.Trainer.rememberShown==="function"){App.Trainer.rememberShown(w.id);}}catch(_){}
 
     if (document.activeElement && document.activeElement.blur) { try { document.activeElement.blur(); } catch (e) {} }
@@ -335,7 +335,7 @@ function renderStars() {
       if (picked >= 0) App.state.index = b.start + picked;
     }
 
-    const w = current();
+    const w = current();\ntry{document.dispatchEvent(new CustomEvent('lexitron:word-shown',{detail:{word:w}}));}catch(_){ }\n
     if (App.state.lastShownWordId !== w.id) {
       App.state.totals.shown += 1;
       App.state.lastShownWordId = w.id;

@@ -1,0 +1,18 @@
+Add these <script> tags in your index.html (after existing core scripts) to enable the medium patch pack:
+
+<!-- Medium Patch Pack v1.6.1 -->
+<script src="trainer.medium.patch.js?v=1.6.1"></script>
+<script src="mistakes.thresholds.patch.js?v=1.6.1"></script>
+<script src="stars.rules.patch.js?v=1.6.1"></script>
+
+Place them AFTER:
+  - app.trainer.js
+  - app.ui.view.js
+  - app.mistakes.js / app.favorites.js
+
+Reason: the patches wrap existing functions and listen to custom events.
+If your app does not emit 'lexitron:*' events, call the exposed helpers from your handlers:
+  - StarsRules.onCorrect(word.id) on correct answer
+  - StarsRules.onIdk(word.id) on "I don't know"
+  - MistakesGate.onFail(word) on wrong answer
+  - MistakesGate.onIdk(word) on "I don't know"

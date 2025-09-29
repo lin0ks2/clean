@@ -226,7 +226,13 @@
   // ─ render & stats ─
 function renderStars() {
   const w = current();
-  if (!w) return;
+  try {
+  document.dispatchEvent(new CustomEvent('lexitron:word-shown', { detail: { word: w } }));
+} catch (_) { }
+try {
+  if (App.Trainer && typeof App.Trainer.rememberShown === 'function') { App.Trainer.rememberShown(w.id); }
+} catch (_) { }
+if (!w) return;
 
   const key = (App.dictRegistry && App.dictRegistry.activeKey) || null;
   const max = (App.Trainer && App.Trainer.starsMax ? App.Trainer.starsMax() : 5);
@@ -306,7 +312,7 @@ function renderStars() {
   }
 
   function renderCard(force = false) {
-  try{}catch(_){}
+  try{document.dispatchEvent(new CustomEvent("lexitron:word-shown",{detail:{word:w}}));}catch(_){}
   try{if(App.Trainer&&typeof App.Trainer.rememberShown==="function"){App.Trainer.rememberShown(w.id);}}catch(_){}
 
     if (document.activeElement && document.activeElement.blur) { try { document.activeElement.blur(); } catch (e) {} }
@@ -335,7 +341,7 @@ function renderStars() {
       if (picked >= 0) App.state.index = b.start + picked;
     }
 
-    const w = current();\ntry{document.dispatchEvent(new CustomEvent('lexitron:word-shown',{detail:{word:w}}));}catch(_){ }\n
+    const w = current();
     if (App.state.lastShownWordId !== w.id) {
       App.state.totals.shown += 1;
       App.state.lastShownWordId = w.id;

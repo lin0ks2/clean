@@ -401,7 +401,7 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* Dicts modal — symmetric spacing around flags + list breathing + footer divider */
 #modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 12px 12px; border-bottom:1px solid var(--border); }
-#modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom: 8px; max-height:214px; overflow-y:auto; }
+#modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom:12px; max-height:216px; overflow-y:auto; }
 #modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px; border-top:1px solid var(--border); }
 
 /* === Info modal: inset dividers to match Dicts modal === */
@@ -434,3 +434,35 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 /* Remove extra 14px from the dialog container and keep 20px on actions */
 #modal .dialog{ padding: 14px 14px 0 !important; }   /* was 14px all around */
 #modal .modalActions{ padding: 14px 16px 20px !important; } /* keep total bottom = 20px */
+
+/* === Setup (first-run) modal — align with other modals === */
+
+/* 1) Center section titles and give consistent vertical rhythm */
+#setupModal .sectionTitle,
+#setupModal h3,
+.firstRunDialog .sectionTitle,
+.firstRunDialog h3,
+.setupDialog .sectionTitle,
+.setupDialog h3{
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+/* 2) Training language flags: add same bottom divider with insets */
+#setupModal .trainFlags,
+#setupModal .langFlags.train,
+#setupModal .train .langFlags,
+.firstRunDialog .trainFlags,
+.firstRunDialog .langFlags.train,
+.setupDialog .trainFlags,
+.setupDialog .langFlags.train{
+  margin: 8px 0;
+  padding: 0 12px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* 3) Ensure the main dialog frame clips dividers to rounded corners (safety) */
+#setupModal .modalFrame,
+.firstRunDialog .modalFrame,
+.setupDialog .modalFrame{ overflow: hidden; }

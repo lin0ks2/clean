@@ -23,6 +23,13 @@
     index:0,lastIndex:-1,favorites:{},stars:{},successes:{},
     lastShownWordId:null, totals:{shown:0,errors:0}, lastSeen:{}
   };
+/* ---- Stars key helper (deck-scoped) ---- */
+App._deckKey = function(){ try{ return (App.dictRegistry && App.dictRegistry.activeKey) || ''; }catch(_){ return ''; } };
+App.starKey = function(wid, dk){
+  dk = dk || App._deckKey();
+  return (dk ? (String(dk)+':') : '') + String(wid);
+};
+
   App.dictRegistry = loadDictRegistrySafe();
 
   // ── миграция под наборы: setSize=50 по умолчанию, map под активные наборы ──
@@ -48,7 +55,12 @@
   App.escapeHtml = (s)=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
   function loadSettings(){ try{ const raw=localStorage.getItem(LS_SETTINGS); if(raw) return Object.assign({lang:'uk',theme:'auto',repeats:6}, JSON.parse(raw)); }catch(e){} return {lang:'uk',theme:'auto',repeats:6}; }
-  App.saveSettings = function(s){ try{ localStorage.setItem(LS_SETTINGS, JSON.stringify(s)); }catch(e){} };
+  App.saveSettings = function(s){
+  try{ localStorage.setItem(LS_SETTINGS, JSON.stringify(s)); }catch(e){}
+  try{
+    if (s && s.lang) localStorage.setItem('lexitron.uiLang', String(s.lang).toLowerCase());
+  }catch(_){}}
+;
 
   function loadState(){ try{ const raw=localStorage.getItem(LS_STATE); if(raw) return JSON.parse(raw);}catch(e){} return null; }
   App.saveState = function(){ try{ localStorage.setItem(LS_STATE, JSON.stringify(App.state)); }catch(e){} };
@@ -191,8 +203,8 @@ App.clearFavoritesAll = function(){
             const m = legacyStarsByDeck[deckKey]||{};
             for (const wid of Object.keys(m)){
               const v = m[wid]|0;
-              App.state.stars[wid] = Math.max(App.state.stars[wid]||0, v|0);
-            }
+              App.state.stars[App.starKey(wid, deckKey)] = Math.max(App.state.stars[App.starKey(wid, deckKey)]||0, v|0);
+}
           }
           App.saveState && App.saveState();
         }
@@ -238,9 +250,9 @@ App.clearFavoritesAll = function(){
       App.state.successes = App.state.successes || {};
       App.state.lastSeen = App.state.lastSeen || {};
       ids.forEach(id=>{
-        App.state.stars[id] = 0;
-        App.state.successes[id] = 0;
-        App.state.lastSeen[id] = 0;
+        App.state.stars[App.starKey(id, key)] = 0;
+        App.state.successes[App.starKey(id, key)] = 0;
+        App.state.lastSeen[App.starKey(id, key)] = 0;
       });
       App.saveState && App.saveState();
     }catch(_){}

@@ -572,3 +572,53 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #infoModal.modal .modal__dialog > .modal__body{
   padding-bottom: 4px !important;
 }
+
+
+/* === Modal unify v1.0 — make Dicts and Info modals visually identical === */
+
+/* Shared frame (size, background, border, radius, shadow, overflow) */
+#modal .modalFrame,
+#infoModal .modalFrame{
+  width: min(680px, 92vw);
+  max-height: 90vh;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  overflow: auto;
+  padding: 0; /* layout via header/body/actions */
+}
+
+/* Headers: same spacing and a bottom divider */
+#modal .modalHeader,
+#infoModal .modalHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Bodies: same inner padding */
+#modal .modalBody,
+#infoModal .modalBody{
+  padding: 14px;
+}
+
+/* Footers: same spacing + top divider */
+#modal .modalActions,
+#infoModal .modalActions{
+  display: flex;
+  justify-content: center;
+  padding: 14px 16px 20px;
+  border-top: 1px solid var(--border);
+}
+
+/* Dict list: a little breathing room above footer */
+#modal .dictList{
+  margin-top: 8px;
+  padding-top: 4px;
+  padding-bottom: 12px;
+}
+#modal .dictList > *:last-child{ margin-bottom: 4px; }

@@ -14,7 +14,17 @@
   var LS_KEY = 'progress.v2'; // structure: { stars:{dictKey:{setIndex:{id:value}}}, successes:{...}, lastSeen:{...} }
 
   // ---- storage helpers ----
-  function load(){
+  
+  function earlyDeckKey(){
+    try{
+      var k = (App.dictRegistry && App.dictRegistry.activeKey) || null;
+      if (!k){
+        k = localStorage.getItem('lexitron.deckKey') || localStorage.getItem('lexitron.activeKey') || null;
+      }
+      return k || 'default';
+    }catch(_){ return 'default'; }
+  }
+function load(){
     try{
       var raw = localStorage.getItem(LS_KEY);
       var st = raw ? JSON.parse(raw) : {};
@@ -30,7 +40,7 @@
 
   // current scope = { dictKey, setIndex }
   function scope(){
-    var key = (App.dictRegistry && App.dictRegistry.activeKey) || 'default';
+    var key = earlyDeckKey();
     var setIndex = 0;
     try{
       if (App.Sets && typeof App.Sets.getActiveSetIndex === 'function'){
@@ -60,7 +70,7 @@
 
   // ---- one-time in-memory migration (handles early writes before this file loads) ----
   try {
-    var earlyKey = (App.dictRegistry && App.dictRegistry.activeKey) || 'default';
+    var earlyKey = earlyDeckKey();
     var earlySet = 0;
     try {
       if (App.Sets && typeof App.Sets.getActiveSetIndex === 'function'){
@@ -97,7 +107,32 @@
     try { save({ stars: stEarly.stars || stEarly['stars'], successes: stEarly.successes || stEarly['successes'], lastSeen: stEarly.lastSeen || stEarly['lastSeen'] }); } catch(_){}
   } catch(_){}
 
-  // ---- proxies (scoped) ----
+  
+  // ---- migrate early 'default' bucket to actual deck key if present ----
+  try{
+    var st0 = load();
+    var dk = earlyDeckKey();
+    if (dk && dk !== 'default'){
+      ['stars','successes','lastSeen'].forEach(function(field){
+        var root = st0[field] = st0[field] || {};
+        var def = root['default'];
+        if (def && typeof def === 'object'){
+          var tgt = root[dk] = root[dk] || {};
+          Object.keys(def).forEach(function(setIndex){
+            var srcB = def[setIndex] || {};
+            var dstB = tgt[setIndex] = tgt[setIndex] || {};
+            Object.keys(srcB).forEach(function(id){
+              var v = srcB[id]|0;
+              if (dstB[id] == null || v > (dstB[id]|0)) dstB[id] = v;
+            });
+          });
+          delete root['default'];
+        }
+      });
+      save(st0);
+    }
+  }catch(_){}
+// ---- proxies (scoped) ----
   function makeProxy(field){
     var st = load();
     var shadow = Object.create(null);
@@ -159,7 +194,7 @@
   App.Progress = App.Progress || {};
   App.Progress.aggregateStars = function(dictKey){
     try{
-      var key = String(dictKey || ((App.dictRegistry && App.dictRegistry.activeKey) || 'default'));
+      var key = String(dictKey || (earlyDeckKey()));
       var agg = Object.create(null);
       var sMax = (App.Trainer && App.Trainer.starsMax && App.Trainer.starsMax()) || 5;
 

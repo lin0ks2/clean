@@ -14,7 +14,7 @@
   function weightForWord(w){
     try{
       const sMax = starsMax();
-      const s = Math.max(0, Math.min(sMax, (App.state && App.state.stars && App.state.stars[w.id]) || 0));
+      const s = Math.max(0, Math.min(sMax, (App.state && App.state.stars && App.state.stars[App.starKey(w.id)]) || 0));
       const deficit = (sMax - s); // чем меньше выучено, тем выше вес
       const last = (App.state && App.state.lastSeen && App.state.lastSeen[w.id]) || 0;
       const elapsedMin = Math.max(0, (Date.now() - last)/60000);

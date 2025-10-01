@@ -75,7 +75,7 @@
         const stars = (App.state && App.state.stars) || {};
         for (let i=b.start;i<b.end;i++){
           const w = deck[i]; if(!w) continue;
-          if ((stars[w.id]||0) >= sMax) learned++;
+          if ((stars[App.starKey(w.id)]||0) >= sMax) learned++;
         }
       }
 
@@ -111,7 +111,7 @@
   }
 
   function decideModeForWord(w) {
-    const succ = App.state.successes[w.id] || 0;
+    const succ = App.state.successes[App.starKey(w.id)] || 0;
     let reverse = (succ >= App.Trainer.unlockThreshold()) ? (Math.random() < 0.5) : false;
     try {
       if (App.Penalties) {
@@ -211,7 +211,7 @@
       return true;
     }
     const stars = (App.state && App.state.stars) || {};
-    for (let i=0;i<sub.length;i++){ const w=sub[i]; if ((stars[w.id]||0) < max) return false; }
+    for (let i=0;i<sub.length;i++){ const w=sub[i]; if ((stars[App.starKey(w.id)]||0) < max) return false; }
     return true;
   }
 
@@ -242,7 +242,7 @@ if (!w) return;
     const sk = w._mistakeSourceKey || (App.Mistakes.sourceKeyFor && App.Mistakes.sourceKeyFor(w.id));
     score = App.Mistakes.getStars(sk, w.id) || 0;
   } else {
-    score = (App.state && App.state.stars && App.state.stars[w.id]) || 0;
+    score = (App.state && App.state.stars && App.state.stars[App.starKey(w.id)]) || 0;
   }
 
   // базовый слой целых звёзд
@@ -345,7 +345,7 @@ if (!w) return;
     if (App.state.lastShownWordId !== w.id) {
       App.state.totals.shown += 1;
       App.state.lastShownWordId = w.id;
-      App.state.lastSeen[w.id] = Date.now();
+      App.state.lastSeen[App.starKey(w.id)] = Date.now();
       App.saveState();
       if (!isEndlessDict(key)) {
         try{ if(App.Sets && App.Sets.checkCompletionAndAdvance) App.Sets.checkCompletionAndAdvance(); }catch(e){};
@@ -435,9 +435,9 @@ if (!w) return;
         const cur = App.Mistakes.getStars(sk, w.id) || 0;
         App.Mistakes.setStars(sk, w.id, Math.max(0, Math.min(max, cur+0.5)));
       } else {
-        const cur = Math.max(0, Math.min(max, App.state.stars[w.id] || 0));
-        App.state.stars[w.id] = Math.max(0, Math.min(max, cur+0.5));
-        App.state.successes[w.id] = (App.state.successes[w.id] || 0)  + 0.5;
+        const cur = Math.max(0, Math.min(max, App.state.stars[App.starKey(w.id)] || 0));
+        App.state.stars[App.starKey(w.id)] = Math.max(0, Math.min(max, cur+0.5));
+        App.state.successes[App.starKey(w.id)] = (App.state.successes[App.starKey(w.id)] || 0)  + 0.5;
       }
 
       App.saveState();
@@ -462,8 +462,8 @@ if (!w) return;
       const cur = App.Mistakes.getStars(sk, w.id) || 0;
       App.Mistakes.setStars(sk, w.id, Math.max(0, Math.min(max, cur - 0.5)));
     } else {
-      const cur = Math.max(0, Math.min(max, App.state.stars[w.id] || 0));
-      App.state.stars[w.id] = Math.max(0, Math.min(max, cur - 0.5));
+      const cur = Math.max(0, Math.min(max, App.state.stars[App.starKey(w.id)] || 0));
+      App.state.stars[App.starKey(w.id)] = Math.max(0, Math.min(max, cur - 0.5));
     }
 
     App.state.totals.errors += 1;
@@ -672,6 +672,8 @@ if (!w) return;
           }
         } catch(_) {}
         if (defKey) App.dictRegistry.activeKey = defKey;
+        try{ localStorage.setItem('lexitron.deckKey', String(defKey)); localStorage.setItem('lexitron.activeKey', String(defKey)); }catch(_){}
+
 
         App.saveDictRegistry && App.saveDictRegistry();
         renderDictList(); App.renderSetsBar(); renderCard(true); updateStats();
@@ -686,6 +688,8 @@ if (!w) return;
     row.addEventListener('click', () => {
       if (row.classList.contains('disabled')) return;
       App.dictRegistry.activeKey = key;
+        try{ localStorage.setItem('lexitron.deckKey', String(key)); localStorage.setItem('lexitron.activeKey', String(key)); }catch(_){}
+
       App.saveDictRegistry();
 
       App.state.index = 0;
@@ -749,6 +753,8 @@ if (!w) return;
         }
       } catch(_) {}
       if (defKey) App.dictRegistry.activeKey = defKey;
+        try{ localStorage.setItem('lexitron.deckKey', String(defKey)); localStorage.setItem('lexitron.activeKey', String(defKey)); }catch(_){}
+
       App.saveDictRegistry && App.saveDictRegistry();
     }
 
@@ -945,5 +951,57 @@ function showMotivation(type = "praise") {
   else render(0);
 
   W.HalfStars={render};
+
+
+/* ===== merged from lang-flag.fix.js ===== */
+/*!
+ * lang-flag.fix.js — keeps header language flag in sync
+ * Version: 1.6.1
+ */
+(function(){
+  'use strict';
+
+  function currentLang(){
+    try{
+      if (window.App && App.settings && App.settings.lang)
+        return String(App.settings.lang).toLowerCase();
+      var ls = localStorage.getItem('lexitron.uiLang');
+      if (ls) return String(ls).toLowerCase();
+    }catch(_){}
+    return 'ru';
+  }
+
+  function flagFor(lang){
+    lang = (lang||'ru').toLowerCase();
+    return (lang.indexOf('uk')===0)
+      ? {flag:'🇺🇦', title:'Українська мова'}
+      : {flag:'🇷🇺', title:'Русский язык'};
+  }
+
+  function applyFlag(){
+    try{
+      var el = document.getElementById('langToggleBtn');
+      if (!el) return;
+      var meta = flagFor(currentLang());
+      el.textContent = meta.flag;
+      el.setAttribute('title', meta.title);
+      el.setAttribute('aria-label', meta.title);
+    }catch(_){}
+  }
+
+  if (document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',applyFlag,{once:true});
+  }else{
+    applyFlag();
+  }
+
+  document.addEventListener('i18n:lang-changed',applyFlag);
+  document.addEventListener('lexitron:setup:done',applyFlag);
+  document.addEventListener('visibilitychange',function(){
+    if(!document.hidden) applyFlag();
+  });
+
+})();
+
 })();
 

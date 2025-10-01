@@ -23,7 +23,15 @@
   }
   window.UIState = {
     get activeDict(){ return key(); },
-    set activeDict(v){ if (!A().dictRegistry) A().dictRegistry = {}; A().dictRegistry.activeKey = v; if (A().saveDictRegistry) A().saveDictRegistry(); },
+    set activeDict(v){
+  if (!A().dictRegistry) A().dictRegistry = {};
+  A().dictRegistry.activeKey = v;
+  if (A().saveDictRegistry) A().saveDictRegistry();
+  try{
+    localStorage.setItem('lexitron.deckKey', v);
+    localStorage.setItem('lexitron.activeKey', v);
+  }catch(_){}
+},
     get activeSetIndex(){ return idx(); },
     setActiveSetIndex: function(i){ A().Sets && A().Sets.setActiveSetIndex && A().Sets.setActiveSetIndex(i); },
     syncTrainer: sync

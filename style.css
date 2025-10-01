@@ -522,3 +522,37 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #setupModal #langFlags::after{
   content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--divider);
 }
+
+/* === Setup modal: make all dividers like the flags one (inset, visible in light/dark) === */
+/* Header divider under the title */
+#setupModal .dialog h2{
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#setupModal .dialog h2::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -8px; /* sits just below the title's margin-bottom */
+  height: 1px;
+  background: var(--divider, var(--border));
+}
+
+/* Footer divider above the OK button */
+#setupModal .modalActions{
+  position: relative;
+  border-top: none !important;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#setupModal .modalActions::before{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 0;
+  height: 1px;
+  background: var(--divider, var(--border));
+}

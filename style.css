@@ -382,34 +382,58 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 /* Info modal */
 #infoModal.modal{ display:flex; align-items:center; justify-content:center; }
 #infoModal.hidden{ display:none; }
-
-
+#infoModal .modalFrame{
+  width:min(680px, 92vw); background:var(--card); color:var(--text);
+  border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); border:1px solid var(--border);
+}
+#infoModal .modalHeader{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 14px; border-bottom:1px solid var(--border);
+}
 #infoModal .modalBody{ padding:14px; font-size:14px; line-height:1.5; color: var(--text); }
-
+#infoModal .modalActions{
+  display:flex; justify-content:center;
+  padding:14px 16px 20px; border-top:1px solid var(--border);
+}
 #infoModal .iconBtn.small{ width:36px; height:36px; border-radius:10px; }
 .infoContent p{ margin: 0 0 8px; }
 .infoContent ul{ margin: 6px 0 0 18px; }
 
 /* Dicts modal — symmetric spacing around flags + list breathing + footer divider */
-
-
-
+#modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 12px 12px; border-bottom:1px solid var(--border); }
+#modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom:12px; max-height:216px; overflow-y:auto; }
+#modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px; border-top:1px solid var(--border); }
 
 /* === Info modal: inset dividers to match Dicts modal === */
-
-
-
-
-
+#infoModal .modalFrame{ overflow:hidden; }
+#infoModal .modalHeader{ position:relative; border-bottom:none; padding-left:14px; padding-right:14px; }
+#infoModal .modalHeader::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--border);
+}
+#infoModal .modalActions{ position:relative; border-top:none; padding-left:14px; padding-right:14px; }
+#infoModal .modalActions::before{
+  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--border);
+}
 
 /* === Info modal header divider: inset like the bottom one (minimal override) === */
-
-
+#infoModal .modalHeader{
+  position: relative;
+  border-bottom: none !important;
+}
+#infoModal .modalHeader::after{
+  content: "";
+  position: absolute;
+  left: 14px !important;
+  right: 14px !important;
+  bottom: 0;
+  height: 1px;
+  background: var(--border);
+}
 
 /* === Dicts modal bottom spacing: match Info modal === */
 /* Remove extra 14px from the dialog container and keep 20px on actions */
-   /* was 14px all around */
- /* keep total bottom = 20px */
+#modal .dialog{ padding: 14px 14px 0 !important; }   /* was 14px all around */
+#modal .modalActions{ padding: 14px 16px 20px !important; } /* keep total bottom = 20px */
 
 /* === Setup (first-run) modal — align with other modals === */
 
@@ -470,42 +494,3 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* 3) Ensure rounded corners clip the divider nicely */
 #setupModal .dialog{ overflow: hidden; }
-
-
-/* Dicts modal — unified spacing and dividers */
-#modal #langFlags, #modal .flagsRow{
-  margin:8px 0;
-  padding:0 12px 12px;
-  border-bottom:1px solid var(--border);
-}
-#modal .dictList{
-  margin-top:8px;
-  padding-top:4px;
-  padding-bottom:8px;    /* equal to top gap */
-  max-height:216px;
-  overflow-y:auto;
-}
-#modal .dialog{ padding:14px 14px 0; } /* remove extra bottom padding */
-#modal .modalActions{
-  display:flex; justify-content:center;
-  padding:14px 16px 20px;
-  border-top:1px solid var(--border);
-}
-
-
-
-/* Info modal — inset header/footer dividers */
-#infoModal .modalFrame{ overflow:hidden; }
-#infoModal .modalHeader{
-  position:relative; padding:12px 14px; border-bottom:none;
-}
-#infoModal .modalHeader::after{
-  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--border);
-}
-#infoModal .modalActions{
-  position:relative; padding:14px 16px 20px; border-top:none;
-}
-#infoModal .modalActions::before{
-  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--border);
-}
-

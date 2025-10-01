@@ -622,3 +622,11 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
   padding-bottom: 12px;
 }
 #modal .dictList > *:last-child{ margin-bottom: 4px; }
+
+/* === Equal top/bottom spacing around flags row in Dicts modal === */
+#modal #langFlags,
+#modal .flagsRow{
+  margin: 8px 0 !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}

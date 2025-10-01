@@ -429,3 +429,8 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
   height: 1px;
   background: var(--border);
 }
+
+/* === Dicts modal bottom spacing: match Info modal === */
+/* Remove extra 14px from the dialog container and keep 20px on actions */
+#modal .dialog{ padding: 14px 14px 0 !important; }   /* was 14px all around */
+#modal .modalActions{ padding: 14px 16px 20px !important; } /* keep total bottom = 20px */

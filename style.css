@@ -466,3 +466,31 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #setupModal .modalFrame,
 .firstRunDialog .modalFrame,
 .setupDialog .modalFrame{ overflow: hidden; }
+
+/* === Setup (first-run) modal: match visual language of other modals === */
+
+/* 1) Center section labels with consistent rhythm */
+#setupModal .field .label{
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+/* 2) Inset divider under training flags (and whole flags block) */
+#setupModal #langFlags{
+  position: relative;
+  margin: 8px 0;
+  padding: 0 12px 12px;
+}
+#setupModal #langFlags::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 1px;
+  background: var(--border);
+}
+
+/* 3) Ensure rounded corners clip the divider nicely */
+#setupModal .dialog{ overflow: hidden; }

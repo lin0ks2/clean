@@ -403,3 +403,14 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 12px 12px; border-bottom:1px solid var(--border); }
 #modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom:12px; max-height:216px; overflow-y:auto; }
 #modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px; border-top:1px solid var(--border); }
+
+/* === Info modal: inset dividers to match Dicts modal === */
+#infoModal .modalFrame{ overflow:hidden; }
+#infoModal .modalHeader{ position:relative; border-bottom:none; padding-left:14px; padding-right:14px; }
+#infoModal .modalHeader::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--border);
+}
+#infoModal .modalActions{ position:relative; border-top:none; padding-left:14px; padding-right:14px; }
+#infoModal .modalActions::before{
+  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--border);
+}

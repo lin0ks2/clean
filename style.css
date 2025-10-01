@@ -1226,3 +1226,29 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #statsBar{ margin-top: 8px; margin-bottom: 10px; }
 
 #card{ margin-top: 12px; }
+
+/* ── v1.6.2b · Spacing normalize (screenshots 20:50–20:51) ───────────────── */
+
+/* 1) Модалка «Словари»: симметричные и компактные отступы вокруг флагов */
+#modal .flagsRow,
+#modal #langFlags{
+  margin: 6px 0 6px !important;
+  padding: 6px 12px 6px !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+/* 2) Главный экран (верхний блок): выровненный вертикальный ритм */
+.dictActiveTitle{           /* заголовок словаря */
+  margin-top: 12px !important;
+  margin-bottom: 6px !important;
+}
+#setsBar{                   /* плитки наборов */
+  margin-top: 6px !important;
+  margin-bottom: 8px !important;
+}
+#setStats{                  /* строка «Слов в наборе / Выучено» */
+  margin-top: 8px !important;
+  margin-bottom: 12px !important;
+}
+/* карточка сама уже имеет внутренние отступы; внешний верх держим умеренным */
+.card{ margin-top: 0 !important; }

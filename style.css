@@ -388,21 +388,21 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 }
 #infoModal .modalHeader{
   display:flex; align-items:center; justify-content:space-between;
-  padding:12px 14px; border-bottom:1px solid var(--border);
+  padding:12px 14px; 
 }
 #infoModal .modalBody{ padding:14px; font-size:14px; line-height:1.5; color: var(--text); }
 #infoModal .modalActions{
   display:flex; justify-content:center;
-  padding:14px 16px 20px; border-top:1px solid var(--border);
+  padding:14px 16px 20px; 
 }
 #infoModal .iconBtn.small{ width:36px; height:36px; border-radius:10px; }
 .infoContent p{ margin: 0 0 8px; }
 .infoContent ul{ margin: 6px 0 0 18px; }
 
 /* Dicts modal — symmetric spacing around flags + list breathing + footer divider */
-#modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 12px 12px; border-bottom:1px solid var(--border); }
+#modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 12px 12px;  }
 #modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom:12px; max-height:216px; overflow-y:auto; }
-#modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px; border-top:1px solid var(--border); }
+#modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px;  }
 
 /* === Info modal: inset dividers to match Dicts modal === */
 #infoModal .modalFrame{ overflow:hidden; }
@@ -494,3 +494,36 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* 3) Ensure rounded corners clip the divider nicely */
 #setupModal .dialog{ overflow: hidden; }
+
+/* === Modal unify: shared divider token (visible in light/dark) === */
+:root{ --divider: #d1d5db; }                /* a bit darker than --border for light theme */
+[data-theme="dark"]{ --divider: var(--border); }  /* in dark keep border tone */
+
+/* === Dicts modal: inset dividers, consistent spacing === */
+#modal #langFlags,
+#modal .flagsRow{ position:relative; border-bottom:none !important; }
+#modal #langFlags::after,
+#modal .flagsRow::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--divider);
+}
+#modal .modalActions{ position:relative; border-top:none !important; }
+#modal .modalActions::before{
+  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--divider);
+}
+
+/* === Info modal: inset dividers (same length & color) === */
+#infoModal .modalFrame{ overflow:hidden; } /* keep content clipped to rounded corners */
+#infoModal .modalHeader{ position:relative; border-bottom:none !important; padding-left:14px; padding-right:14px; }
+#infoModal .modalHeader::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--divider) !important;
+}
+#infoModal .modalActions{ position:relative; border-top:none !important; padding-left:14px; padding-right:14px; }
+#infoModal .modalActions::before{
+  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--divider) !important;
+}
+
+/* === Setup modal: flags block uses the same inset divider === */
+#setupModal #langFlags{ position:relative; border-bottom:none !important; }
+#setupModal #langFlags::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--divider);
+}

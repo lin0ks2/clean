@@ -382,19 +382,10 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 /* Info modal */
 #infoModal.modal{ display:flex; align-items:center; justify-content:center; }
 #infoModal.hidden{ display:none; }
-#infoModal .modalFrame{
-  width:min(680px, 92vw); background:var(--card); color:var(--text);
-  border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); border:1px solid var(--border);
-}
-#infoModal .modalHeader{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:12px 14px; border-bottom:1px solid var(--border);
-}
+
+
 #infoModal .modalBody{ padding:14px; font-size:14px; line-height:1.5; color: var(--text); }
-#infoModal .modalActions{
-  display:flex; justify-content:center;
-  padding:14px 16px 20px; border-top:1px solid var(--border);
-}
+
 #infoModal .iconBtn.small{ width:36px; height:36px; border-radius:10px; }
 .infoContent p{ margin: 0 0 8px; }
 .infoContent ul{ margin: 6px 0 0 18px; }
@@ -405,12 +396,36 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px; border-top:1px solid var(--border); }
 
 /* === Info modal: inset dividers to match Dicts modal === */
+
+/* === Clean unified Info modal dividers === */
 #infoModal .modalFrame{ overflow:hidden; }
-#infoModal .modalHeader{ position:relative; border-bottom:none; padding-left:14px; padding-right:14px; }
-#infoModal .modalHeader::after{
-  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--border);
+
+#infoModal .modalHeader{
+  position:relative;
+  padding:12px 14px;
+  border-bottom:none;
 }
-#infoModal .modalActions{ position:relative; border-top:none; padding-left:14px; padding-right:14px; }
+#infoModal .modalHeader::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:0;
+  height:1px;
+  background:var(--border);
+}
+
+#infoModal .modalActions{
+  position:relative;
+  padding:14px 16px 20px;
+  border-top:none;
+}
 #infoModal .modalActions::before{
-  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--border);
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  top:0;
+  height:1px;
+  background:var(--border);
 }

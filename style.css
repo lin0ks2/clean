@@ -494,3 +494,23 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* 3) Ensure rounded corners clip the divider nicely */
 #setupModal .dialog{ overflow: hidden; }
+
+/* === Dicts modal: unify bottom line under flags === */
+:root { --divider: #d1d5db; }                    /* slightly darker for visibility in light theme */
+[data-theme="dark"] { --divider: var(--border); } /* use border color in dark theme */
+
+#modal #langFlags{
+  position: relative;
+  border-bottom: none !important;                /* remove full-width border */
+  margin: 8px 0;
+  padding: 0 12px 12px;
+}
+#modal #langFlags::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 1px;
+  background: var(--divider);
+}

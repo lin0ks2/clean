@@ -264,7 +264,7 @@ App.clearFavoritesAll = function(){
 (function(){
   window.App = window.App || {};
   App.Config = App.Config || {
-    setSizeDefault: 4,
+    setSizeDefault: 50,
     reverseThreshold: 2.5,
     starStep: 0.5,
     starMin: 0,

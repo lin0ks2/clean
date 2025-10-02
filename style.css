@@ -482,16 +482,6 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
   margin: 8px 0;
   padding: 0 12px 12px;
 }
-/* === Setup modal: consistent top divider below each section label === */
-#setupModal .field .label{ position: relative; }
-#setupModal .field .label::after{
-  content:"";
-  position:absolute;
-  left:14px; right:14px; bottom:-8px;
-  height:1px; background:var(--border);
-  transform:translateZ(0); -webkit-transform:translateZ(0);
-}
-
 #setupModal #langFlags::after{
   content: "";
   position: absolute;
@@ -504,6 +494,48 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* 3) Ensure rounded corners clip the divider nicely */
 #setupModal .dialog{ overflow: hidden; }
+
+
+/* === Setup modal header: inset divider under the main title (unified with Info/Dicts) === */
+#setupModal .modalHeader{
+  position: relative;
+  border-bottom: none;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#setupModal .modalHeader::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 1px;
+  background: var(--border);
+}
+
+/* Fallback: if Setup modal has no .modalHeader, draw under the first title element */
+#setupModal .dialog > .sectionTitle:first-child,
+#setupModal .modalFrame > .sectionTitle:first-child,
+#setupModal .dialog > h2:first-child,
+#setupModal .modalFrame > h2:first-child{
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#setupModal .dialog > .sectionTitle:first-child::after,
+#setupModal .modalFrame > .sectionTitle:first-child::after,
+#setupModal .dialog > h2:first-child::after,
+#setupModal .modalFrame > h2:first-child::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -8px;
+  height: 1px;
+  background: var(--border);
+}
+
+
 
 
 /* === UNIFIED DIVIDERS: use var(--border) everywhere for modal insets === */

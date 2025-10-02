@@ -401,7 +401,7 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* Dicts modal — symmetric spacing around flags + list breathing + footer divider */
 #modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 14px 14px; border-bottom:1px solid var(--border); }
-#modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom:12px; max-height:216px; overflow-y:auto; }
+#modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom:14px; max-height:230px; overflow-y:auto; }
 #modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px; border-top:1px solid var(--border); }
 
 /* === Info modal: inset dividers to match Dicts modal === */
@@ -499,7 +499,7 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 /* === Setup modal header: inset divider under the main title (unified with Info/Dicts) === */
 #setupModal .modalHeader{
   position: relative;
-  border-bottom: none;
+  border-bottom: none !important;
   padding-left: 14px;
   padding-right: 14px;
 }
@@ -512,6 +512,13 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
   height: 1px;
   background: var(--border);
 }
+
+
+/* --- Setup modal: force single inset divider under header (iOS/Safari fix) --- */
+#setupModal .modalHeader::before{ display:none !important; }
+#setupModal hr{ display:none !important; }
+
+
 
 /* Fallback: if Setup modal has no .modalHeader, draw under the first title element */
 #setupModal .dialog > .sectionTitle:first-child,

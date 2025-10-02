@@ -300,7 +300,7 @@ if (!w) return;
           const starsScoped = (App.state && App.state.stars) || {};
           for (let j = start; j < end; j++) {
             const w = fullDeck[j]; if (!w) continue;
-            if ((starsScoped[w.id] || 0) >= sMax) learned++;
+            if ((starsScoped[App.starKey(w.id)] || 0) >= sMax) learned++;
           }
         }
       }

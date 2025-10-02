@@ -178,7 +178,7 @@
   const S = App.Sets || (App.Sets = {});
 
   const LS_KEY = 'sets.progress.v1';
-  const DEFAULT_SET_SIZE = 50;
+  const DEFAULT_SET_SIZE = 4;
 
   // state
   S.state = S.state || { activeByDeck: {}, completedByDeck: {} };
@@ -287,7 +287,7 @@
       const stars = (App.state && App.state.stars) || {};
       for (let i=b.start; i<b.end; i++){
         const w = deck[i]; if (!w) continue;
-        const sc = Math.max(0, Math.min(sMax, stars[w.id] || 0));
+        const sc = Math.max(0, Math.min(sMax, stars[App.starKey(w.id)] || 0));
         if (sc < sMax) return false;
       }
       return (b.end - b.start) > 0;

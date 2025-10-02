@@ -327,6 +327,20 @@ button.ghost{
 
 .footer a, .donate a, #btnDonate{ text-decoration:none; }
 
+
+/* === FINE‑TUNE: Info & Donate buttons === */
+.extraActions .iconBtn.info-btn {
+  font-size: 1.4rem;          /* чуть меньше Info иконка */
+}
+
+.extraActions .iconBtn.donate-btn {
+  font-size: 1.7rem;          /* чуток уменьшили */
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;    /* для точного центрирования emoji мешка */
+}
+
 /* ─────────────────────────────────────────────────────────────────────────── */
 /* 8) RESPONSIVE                                                              */
 /* ─────────────────────────────────────────────────────────────────────────── */

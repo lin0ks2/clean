@@ -563,7 +563,7 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #modal .modalHeader{ position:relative; padding-left:14px; padding-right:14px; border-bottom:none; }
 #modal .modalHeader .modalTitle{ margin:0; } /* убираем лишние 8px, чтобы линия была ближе к заголовку */
 #modal .modalHeader::after{
-  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--border);
+  content:""; position:absolute; left:12px; right:12px; bottom:0; height:1px; background:var(--border);
   transform:translateZ(0); -webkit-transform:translateZ(0);
 }
 

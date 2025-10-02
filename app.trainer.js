@@ -51,7 +51,7 @@
 
   // ───────── поддержка наборов ─────────
   function getSetSize(/*deckKey*/){
-    try{ return (App.Config && App.Config.setSizeDefault) || 4; }catch(_){ return 4; }
+    try{ return (App.Config && App.Config.setSizeDefault) || 50; }catch(_){ return 50; }
   }
   function activeKey(){
     try { return (App.dictRegistry && App.dictRegistry.activeKey) || null; } catch(_){ return null; }

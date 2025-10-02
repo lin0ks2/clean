@@ -388,7 +388,7 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 }
 #infoModal .modalHeader{
   display:flex; align-items:center; justify-content:space-between;
-  padding:12px 14px; border-bottom:1px solid var(--border);
+  padding:14px 14px; border-bottom:1px solid var(--border);
 }
 #infoModal .modalBody{ padding:14px; font-size:14px; line-height:1.5; color: var(--text); }
 #infoModal .modalActions{
@@ -400,7 +400,7 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 .infoContent ul{ margin: 6px 0 0 18px; }
 
 /* Dicts modal — symmetric spacing around flags + list breathing + footer divider */
-#modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 12px 12px; border-bottom:1px solid var(--border); }
+#modal #langFlags, #modal .flagsRow{ margin:8px 0; padding:0 14px 14px; border-bottom:1px solid var(--border); }
 #modal .dictList{ margin-top:8px; padding-top:4px; padding-bottom:12px; max-height:216px; overflow-y:auto; }
 #modal .modalActions{ display:flex; justify-content:center; padding:14px 16px 20px; border-top:1px solid var(--border); }
 

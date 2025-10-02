@@ -482,6 +482,16 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
   margin: 8px 0;
   padding: 0 12px 12px;
 }
+/* === Setup modal: consistent top divider below each section label === */
+#setupModal .field .label{ position: relative; }
+#setupModal .field .label::after{
+  content:"";
+  position:absolute;
+  left:14px; right:14px; bottom:-8px;
+  height:1px; background:var(--border);
+  transform:translateZ(0); -webkit-transform:translateZ(0);
+}
+
 #setupModal #langFlags::after{
   content: "";
   position: absolute;

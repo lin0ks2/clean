@@ -306,12 +306,12 @@ footer{
 /* Верхняя статистика без белой рамки */
 
 /* ============================== SET STATS BAR =============================== */
-#setStats { text-align: center; background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 8px; margin-bottom: 14px; }
+#setStats { text-align: center; background: transparent !important; border: none !important; box-shadow: none !important; margin-top: 0px; margin-bottom: 0px; }
 
 
 /* Extra actions (info + donate) */
 .extraActions{
-  margin: 16px auto 10px;
+  margin: 14px auto 10px;
   display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap;
 }
 .extraActions .iconBtn{ width:44px; height:44px; border-radius:12px; }

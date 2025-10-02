@@ -494,3 +494,36 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* 3) Ensure rounded corners clip the divider nicely */
 #setupModal .dialog{ overflow: hidden; }
+/* === Titles: divider under modal titles same as under flags (same color & length) === */
+
+/* СЛОВАРИ — линия под заголовком "Словари" */
+#modal .dialog h2{
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#modal .dialog h2::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -8px;        /* ровно под h2 (учитывает margin-bottom: 8px) */
+  height: 1px;
+  background: var(--border);  /* тот же цвет, что и под флагами */
+}
+
+/* МНН — линия под заголовком "Начальная настройка" */
+#setupModal .dialog h2{
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#setupModal .dialog h2::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -8px;
+  height: 1px;
+  background: var(--border);
+}

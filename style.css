@@ -42,18 +42,18 @@ html,body{height:100%}
 
 /* ============================== BODY / GLOBAL =============================== */
 body{
-  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  background:var(--bg); color:var(--text);
-  display:flex; flex-direction:column;
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; /* внешний отступ элемента */
+  background:var(--bg); color:var(--text); /* фон элемента */
+  display:flex; flex-direction:column; /* тип отображения элемента */
 }
 
 /* Header */
 
 /* ============================== HEADER =============================== */
 header{
-  padding:10px 14px;
-  display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:nowrap;
-  background:var(--card); border-bottom:1px solid var(--border);
+  padding:10px 14px; /* внутренний отступ элемента */
+  display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:nowrap; /* тип отображения элемента */
+  background:var(--card); border-bottom:1px solid var(--border); /* фон элемента */
 }
 header .brand{ display:flex; align-items:center; gap:8px; }
 .brand h1{font-size:26px;margin:0;font-weight:800}
@@ -61,10 +61,10 @@ header .brand{ display:flex; align-items:center; gap:8px; }
 .ver{font-size:12px;color:var(--muted);margin-left:6px}
 
 .iconBtn{
-  width:44px;height:44px;padding:0;border-radius:12px;
-  display:flex;align-items:center;justify-content:center;font-size:18px;line-height:1;
-  border:1px solid var(--tool-border);background:var(--tool-bg);color:var(--tool-fg);
-  cursor:pointer;transition:transform .12s ease, background .2s ease, border-color .2s ease, color .2s ease;
+  width:44px;height:44px;padding:0;border-radius:12px; /* ширина элемента */
+  display:flex;align-items:center;justify-content:center;font-size:18px;line-height:1; /* тип отображения элемента */
+  border:1px solid var(--tool-border);background:var(--tool-bg);color:var(--tool-fg); /* граница элемента */
+  cursor:pointer;transition:transform .12s ease, background .2s ease, border-color .2s ease, color .2s ease; /* тип курсора при наведении */
 }
 .iconBtn:hover{ filter:brightness(1.06); }
 .iconBtn:active{ transform:scale(0.95); }
@@ -72,8 +72,8 @@ header .brand{ display:flex; align-items:center; gap:8px; }
 
 /* Лого */
 header .logo-mark{
-  width:46px;height:46px;border-radius:6px;background:var(--card);border:1px solid var(--border);
-  padding:2px;object-fit:contain;pointer-events:none;
+  width:46px;height:46px;border-radius:6px;background:var(--card);border:1px solid var(--border); /* ширина элемента */
+  padding:2px;object-fit:contain;pointer-events:none; /* внутренний отступ элемента */
 }
 header .title-wrap{ display:flex; flex-direction:column; line-height:1.1; }
 header .title-wrap h1{ margin:0; }
@@ -85,27 +85,27 @@ main{flex:1;display:grid;place-items:center;padding:14px}
 
 /* ============================== CARD / TRAINER CORE =============================== */
 .card{
-  width: 640px; max-width: 94vw;
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:24px;
-  box-shadow:var(--shadow);
-  text-align:center;
+  width: 640px; max-width: 94vw; /* ширина элемента */
+  background:var(--card); /* фон элемента */
+  border:1px solid var(--border); /* граница элемента */
+  border-radius:16px; /* скругление углов */
+  padding:24px; /* внутренний отступ элемента */
+  box-shadow:var(--shadow); /* тень блока */
+  text-align:center; /* выравнивание текста */
 }
 
 .topRow{
-  display:flex; align-items:center; justify-content:space-between;
-  min-height:40px; margin-bottom:4px;
+  display:flex; align-items:center; justify-content:space-between; /* тип отображения элемента */
+  min-height:40px; margin-bottom:4px; /* минимальная высота элемента */
 }
 .stars{display:flex; gap:6px; align-items:center}
 .starIcon{font-size:22px;color:#cbd5e1}
 .starIcon.filled{color:#fbbf24}
 
 .heart{
-  font-size:22px; background:none; border:none; cursor:pointer;
-  transition:transform .2s ease; color:inherit; line-height:1;
-  width:22px; height:22px; display:flex; align-items:center; justify-content:center;
+  font-size:22px; background:none; border:none; cursor:pointer; /* размер шрифта */
+  transition:transform .2s ease; color:inherit; line-height:1; /* анимация изменения свойств */
+  width:22px; height:22px; display:flex; align-items:center; justify-content:center; /* ширина элемента */
 }
 .heart:active{transform:scale(0.9)}
 
@@ -118,23 +118,23 @@ main{flex:1;display:grid;place-items:center;padding:14px}
 
 /* ============================== SETS BAR =============================== */
 #setsBar{
-  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
-  gap:6px 8px; padding:6px 0 2px; margin: 6px 0 8px;
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center; /* тип отображения элемента */
+  gap:6px 8px; padding:6px 0 2px; margin: 6px 0 8px; /* расстояние между flex-элементами */
 }
 #setsBar .setTile{
-  min-width:36px; height:36px; padding:0 8px;
-  border-radius:8px; border:1px solid var(--border);
-  background:var(--card); color:var(--text);
-  font-weight:700; font-size:13px; user-select:none; cursor:pointer;
-  transition: transform .12s ease, background .12s ease, border-color .12s ease, color .12s ease;
+  min-width:36px; height:36px; padding:0 8px; /* минимальная ширина элемента */
+  border-radius:8px; border:1px solid var(--border); /* скругление углов */
+  background:var(--card); color:var(--text); /* фон элемента */
+  font-weight:700; font-size:13px; user-select:none; cursor:pointer; /* толщина шрифта */
+  transition: transform .12s ease, background .12s ease, border-color .12s ease, color .12s ease; /* анимация изменения свойств */
 }
 #setsBar .setTile:hover{ transform: translateY(-1px); }
 #setsBar .setTile:active{ transform:scale(0.97); }
 #setsBar .setTile.active{ border-width:2px; border-color: var(--mint-strong); }
 #setsBar .setTile.done{
-  background: rgba(34,197,94,.18);
+  background: rgba(34,197,94,.18); /* фон элемента */
   border-color: rgba(34,197,94,.7);
-  color: inherit;
+  color: inherit; /* цвет текста */
 }
 @media (max-width:360px){
   #setsBar .setTile{ min-width:32px; height:32px; border-radius:7px; padding:0 6px; font-size:12px; }
@@ -147,19 +147,19 @@ main{flex:1;display:grid;place-items:center;padding:14px}
 
 /* ============================== OPTIONS / ANSWERS =============================== */
 .options{
-  display:grid; grid-template-columns:1fr 1fr;
-  gap:12px; justify-items:stretch; margin:14px 0 12px;
+  display:grid; grid-template-columns:1fr 1fr; /* тип отображения элемента */
+  gap:12px; justify-items:stretch; margin:14px 0 12px; /* расстояние между flex-элементами */
 }
 @media (max-width:420px){ .options{ grid-template-columns:1fr; } }
 
 button{
-  padding:0 14px; border-radius:14px; font-size:17px; cursor:pointer;
-  transition:background .2s, transform .06s ease, filter .2s;
+  padding:0 14px; border-radius:14px; font-size:17px; cursor:pointer; /* внутренний отступ элемента */
+  transition:background .2s, transform .06s ease, filter .2s; /* анимация изменения свойств */
 }
 
 /* ============================== OPTION BUTTON =============================== */
 .optionBtn{
-  height:52px; border:none; color:#073b3a; background:var(--mint); font-weight:600; outline:none;
+  height:52px; border:none; color:#073b3a; background:var(--mint); font-weight:600; outline:none; /* высота элемента */
 }
 .optionBtn:focus{ outline:none; box-shadow:none; }
 .optionBtn:active{ transform:scale(0.98); }
@@ -169,10 +169,10 @@ button{
 /* "Не знаю" — по центру и без мигания фокуса */
 .idkWrapper{ grid-column:1 / -1; display:flex; justify-content:center; margin-top:6px; }
 button.ghost{
-  background:var(--idk-bg); border:1px solid var(--border); color:var(--idk-fg);
+  background:var(--idk-bg); border:1px solid var(--border); color:var(--idk-fg); /* фон элемента */
   margin-top:6px; height:42px; padding:0 16px;
-  border-radius:12px; font-size:15px; font-weight:600;
-  display:flex; align-items:center; justify-content:center; box-shadow:none; will-change: transform, filter;
+  border-radius:12px; font-size:15px; font-weight:600; /* скругление углов */
+  display:flex; align-items:center; justify-content:center; box-shadow:none; will-change: transform, filter; /* тип отображения элемента */
 }
 button.ghost:hover{ filter:brightness(1.06); }
 button.ghost:focus, button.ghost:focus-visible{ outline:none; box-shadow:0 0 0 3px var(--focus-ring); }
@@ -183,8 +183,8 @@ button.ghost:focus, button.ghost:focus-visible{ outline:none; box-shadow:0 0 0 3
 /* ============================== BOTTOM STATS =============================== */
 .statsBar{
   margin-top:8px; font-size:12px; color:var(--muted);
-  border:1px solid var(--border); border-radius:10px; padding:6px 10px;
-  display:inline-block; background:var(--card);
+  border:1px solid var(--border); border-radius:10px; padding:6px 10px; /* граница элемента */
+  display:inline-block; background:var(--card); /* тип отображения элемента */
 }
 
 /* Модалка словарей */
@@ -198,9 +198,9 @@ button.ghost:focus, button.ghost:focus-visible{ outline:none; box-shadow:0 0 0 3
 
 /* ============================== MODAL · DIALOG FRAME =============================== */
 .dialog{
-  position:relative; z-index:10; background:var(--card); border:1px solid var(--border); border-radius:14px;
-  padding:14px; box-shadow:var(--shadow);
-  width:min(860px,94vw); max-height:90vh; overflow:auto;
+  position:relative; z-index:10; background:var(--card); border:1px solid var(--border); border-radius:14px; /* тип позиционирования элемента */
+  padding:14px; box-shadow:var(--shadow); /* внутренний отступ элемента */
+  width:min(860px,94vw); max-height:90vh; overflow:auto; /* ширина элемента */
 }
 .dialog h2{ text-align:center; margin:0 0 8px; font-size:26px; }
 
@@ -209,20 +209,20 @@ button.ghost:focus, button.ghost:focus-visible{ outline:none; box-shadow:0 0 0 3
 /* ============================== DICT LIST =============================== */
 .dictList{ display:flex; flex-direction:column; gap:6px; margin-top:6px; max-height:200px; overflow-y:auto; }
 .dictRow{
-  display:grid; grid-template-columns:22px 1fr 110px;
-  align-items:center; gap:8px; padding:8px 10px;
-  border:1px solid var(--border); border-radius:12px; background:var(--card);
+  display:grid; grid-template-columns:22px 1fr 110px; /* тип отображения элемента */
+  align-items:center; gap:8px; padding:8px 10px; /* выравнивание по оси Y в flex */
+  border:1px solid var(--border); border-radius:12px; background:var(--card); /* граница элемента */
 }
 .dictRow.active{ border-color:var(--mint); background:var(--mint-weak); box-shadow:0 0 0 2px rgba(52,211,153,.12) inset; }
 .dictFlag{ font-size:16px; width:22px; text-align:center; }
 .dictName{
-  font-weight:600; font-size:15px;
-  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; text-align:left; cursor:pointer;
+  font-weight:600; font-size:15px; /* толщина шрифта */
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; text-align:left; cursor:pointer; /* обработка переполнения содержимого */
 }
 .dictActions{ display:flex; gap:6px; justify-content:flex-end; }
 .iconOnly{
-  width:30px; height:30px; border:1px solid var(--border); border-radius:10px; background:var(--card); cursor:pointer;
-  display:flex; align-items:center; justify-content:center; font-size:15px; transition: filter .2s ease, transform .08s ease;
+  width:30px; height:30px; border:1px solid var(--border); border-radius:10px; background:var(--card); cursor:pointer; /* ширина элемента */
+  display:flex; align-items:center; justify-content:center; font-size:15px; transition: filter .2s ease, transform .08s ease; /* тип отображения элемента */
 }
 .iconOnly:hover{ filter:brightness(1.06); }
 .iconOnly:active{ transform:scale(0.96); }
@@ -230,8 +230,8 @@ button.ghost:focus, button.ghost:focus-visible{ outline:none; box-shadow:0 0 0 3
 /* Кнопка OK в модалке */
 .modalActions{ display:flex; justify-content:center; margin-top:10px; }
 .modalActions .primary{
-  padding:9px 20px; font-size:15px; border-radius:10px;
-  background:var(--mint); border:none; color:#073b3a;
+  padding:9px 20px; font-size:15px; border-radius:10px; /* внутренний отступ элемента */
+  background:var(--mint); border:none; color:#073b3a; /* фон элемента */
 }
 .modalActions .primary:hover{ background:var(--mint-strong); color:#fff; }
 
@@ -239,9 +239,9 @@ button.ghost:focus, button.ghost:focus-visible{ outline:none; box-shadow:0 0 0 3
 
 /* ============================== FOOTER =============================== */
 footer{
-  padding:10px 14px; color:var(--muted);
-  border-top:1px solid var(--border);
-  font-size:13px; text-align:center;
+  padding:10px 14px; color:var(--muted); /* внутренний отступ элемента */
+  border-top:1px solid var(--border); /* верхняя граница */
+  font-size:13px; text-align:center; /* размер шрифта */
 }
 .copyright{ color:var(--muted); }
 
@@ -257,8 +257,8 @@ footer{
 
 /* Disabled state for 'Мои ошибки' row (<4 words) */
 .dictRow.disabled{
-  opacity: .55;
-  cursor: not-allowed;
+  opacity: .55; /* прозрачность элемента */
+  cursor: not-allowed; /* тип курсора при наведении */
 }
 .dictRow.disabled .dictName{ color: var(--muted); }
 .dictRow.disabled .iconOnly{ pointer-events:none; opacity:.5; }
@@ -272,17 +272,17 @@ footer{
 
 /* Language flags row (updated to match iconBtn style) */
 .langFlags{
-  display:flex; gap:8px; justify-content:center; align-items:center;
-  margin: 6px 0 8px;
+  display:flex; gap:8px; justify-content:center; align-items:center; /* тип отображения элемента */
+  margin: 6px 0 8px; /* внешний отступ элемента */
   flex-wrap: wrap;
 }
 .langFlags .flagBtn,
 #langFlags .flagBtn{
-  width:40px; height:40px; border-radius:10px;
-  border:1px solid var(--tool-border); background:var(--tool-bg); color:var(--tool-fg);
-  display:flex; align-items:center; justify-content:center;
-  cursor:pointer; user-select:none; font-size:18px; line-height:1;
-  transition:transform .12s ease, background .2s ease, border-color .2s ease, color .2s ease;
+  width:40px; height:40px; border-radius:10px; /* ширина элемента */
+  border:1px solid var(--tool-border); background:var(--tool-bg); color:var(--tool-fg); /* граница элемента */
+  display:flex; align-items:center; justify-content:center; /* тип отображения элемента */
+  cursor:pointer; user-select:none; font-size:18px; line-height:1; /* тип курсора при наведении */
+  transition:transform .12s ease, background .2s ease, border-color .2s ease, color .2s ease; /* анимация изменения свойств */
 }
 :root[data-theme="dark"] .langFlags .flagBtn,
 :root[data-theme="dark"] #langFlags .flagBtn{ background:var(--tool-bg); }
@@ -297,11 +297,11 @@ footer{
 
 /* Active dictionary title above sets */
 .dictActiveTitle{
-  text-align:center;
-  font-weight:700;
-  font-size:16px;
-  margin:14px 0 8px;
-  color:var(--text);
+  text-align:center; /* выравнивание текста */
+  font-weight:700; /* толщина шрифта */
+  font-size:16px; /* размер шрифта */
+  margin:14px 0 8px; /* внешний отступ элемента */
+  color:var(--text); /* цвет текста */
 }
 /* Верхняя статистика без белой рамки */
 
@@ -311,38 +311,38 @@ footer{
 
 /* Extra actions (info + donate) */
 .extraActions{
-  margin: 16px auto 10px;
-  display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap;
+  margin: 16px auto 10px; /* внешний отступ элемента */
+  display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap; /* тип отображения элемента */
 }
 .extraActions .iconBtn{ width:44px; height:44px; border-radius:12px; }
 
 /* Simple modal using existing theme tokens */
 /* Flag before dictionary title */
 .dictActiveTitle .dictFlag{
-  display:inline-block;
+  display:inline-block; /* тип отображения элемента */
   margin-right:6px;
-  line-height:1;
+  line-height:1; /* высота строки */
   vertical-align:-1px;
-  font-size:18px;
+  font-size:18px; /* размер шрифта */
 }
 
 /* Активный флаг — базово (светлая тема) */
 .langFlags .flagBtn.active {
   background: rgba(16, 185, 129, .16);   /* мягкая зелёная заливка */
   border-color: #10b981;                 /* тот же акцент */
-  box-shadow: inset 0 0 0 2px rgba(16,185,129,.28);
-  color: var(--tool-fg);
-  font-weight: 700;
-  transition: background .15s ease, box-shadow .15s ease, border-color .15s ease;
+  box-shadow: inset 0 0 0 2px rgba(16,185,129,.28); /* тень блока */
+  color: var(--tool-fg); /* цвет текста */
+  font-weight: 700; /* толщина шрифта */
+  transition: background .15s ease, box-shadow .15s ease, border-color .15s ease; /* анимация изменения свойств */
 }
 
 /* Активный флаг — тёмная тема (немного плотнее, чтобы не «проваливался») */
 [data-theme="dark"] .langFlags .flagBtn.active,
 .theme-dark .langFlags .flagBtn.active,
 .dark .langFlags .flagBtn.active {
-  background: rgba(16, 185, 129, .28);
+  background: rgba(16, 185, 129, .28); /* фон элемента */
   border-color: #10b981;
-  box-shadow: inset 0 0 0 2px rgba(16,185,129,.4);
+  box-shadow: inset 0 0 0 2px rgba(16,185,129,.4); /* тень блока */
 }
 
 /* Небольшой апгрейд для изображения флага внутри активного чипа */
@@ -366,13 +366,13 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* Motivation line — single source of truth */
 #motivationBox{
-  text-align:center;
-  font-size:13px;
-  font-weight:500;
-  opacity:.65;
-  margin:4px 0 8px;
-  pointer-events:none;
-  transition: opacity .14s ease;
+  text-align:center; /* выравнивание текста */
+  font-size:13px; /* размер шрифта */
+  font-weight:500; /* толщина шрифта */
+  opacity:.65; /* прозрачность элемента */
+  margin:4px 0 8px; /* внешний отступ элемента */
+  pointer-events:none; /* обработка событий мыши */
+  transition: opacity .14s ease; /* анимация изменения свойств */
 }
 .motivation-fade{ animation:none !important; }
 @keyframes motFade{ from{opacity:0;} to{opacity:1;} }
@@ -383,17 +383,17 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #infoModal.modal{ display:flex; align-items:center; justify-content:center; }
 #infoModal.hidden{ display:none; }
 #infoModal .modalFrame{
-  width:min(680px, 92vw); background:var(--card); color:var(--text);
-  border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); border:1px solid var(--border);
+  width:min(680px, 92vw); background:var(--card); color:var(--text); /* ширина элемента */
+  border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); border:1px solid var(--border); /* скругление углов */
 }
 #infoModal .modalHeader{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:12px 14px; border-bottom:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between; /* тип отображения элемента */
+  padding:12px 14px; border-bottom:1px solid var(--border); /* внутренний отступ элемента */
 }
 #infoModal .modalBody{ padding:14px; font-size:14px; line-height:1.5; color: var(--text); }
 #infoModal .modalActions{
-  display:flex; justify-content:center;
-  padding:14px 16px 20px; border-top:1px solid var(--border);
+  display:flex; justify-content:center; /* тип отображения элемента */
+  padding:14px 16px 20px; border-top:1px solid var(--border); /* внутренний отступ элемента */
 }
 #infoModal .iconBtn.small{ width:36px; height:36px; border-radius:10px; }
 .infoContent p{ margin: 0 0 8px; }
@@ -408,26 +408,26 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 #infoModal .modalFrame{ overflow:hidden; }
 #infoModal .modalHeader{ position:relative; border-bottom:none; padding-left:14px; padding-right:14px; }
 #infoModal .modalHeader::after{
-  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--border);
+  content:""; position:absolute; left:14px; right:14px; bottom:0; height:1px; background:var(--border); /* содержимое псевдоэлемента */
 }
 #infoModal .modalActions{ position:relative; border-top:none; padding-left:14px; padding-right:14px; }
 #infoModal .modalActions::before{
-  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--border);
+  content:""; position:absolute; left:14px; right:14px; top:0; height:1px; background:var(--border); /* содержимое псевдоэлемента */
 }
 
 /* === Info modal header divider: inset like the bottom one (minimal override) === */
 #infoModal .modalHeader{
-  position: relative;
-  border-bottom: none !important;
+  position: relative; /* тип позиционирования элемента */
+  border-bottom: none !important; /* нижняя граница */
 }
 #infoModal .modalHeader::after{
-  content: "";
-  position: absolute;
-  left: 14px !important;
-  right: 14px !important;
-  bottom: 0;
-  height: 1px;
-  background: var(--border);
+  content: ""; /* содержимое псевдоэлемента */
+  position: absolute; /* тип позиционирования элемента */
+  left: 14px !important; /* позиция слева */
+  right: 14px !important; /* позиция справа */
+  bottom: 0; /* позиция снизу */
+  height: 1px; /* высота элемента */
+  background: var(--border); /* фон элемента */
 }
 
 /* === Dicts modal bottom spacing: match Info modal === */
@@ -444,7 +444,7 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 .firstRunDialog h3,
 .setupDialog .sectionTitle,
 .setupDialog h3{
-  text-align: center;
+  text-align: center; /* выравнивание текста */
   margin-top: 14px;
   margin-bottom: 8px;
 }
@@ -457,9 +457,9 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 .firstRunDialog .langFlags.train,
 .setupDialog .trainFlags,
 .setupDialog .langFlags.train{
-  margin: 8px 0;
-  padding: 0 12px 12px;
-  border-bottom: 1px solid var(--border);
+  margin: 8px 0; /* внешний отступ элемента */
+  padding: 0 12px 12px; /* внутренний отступ элемента */
+  border-bottom: 1px solid var(--border); /* нижняя граница */
 }
 
 /* 3) Ensure the main dialog frame clips dividers to rounded corners (safety) */
@@ -471,59 +471,33 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 
 /* 1) Center section labels with consistent rhythm */
 #setupModal .field .label{
-  text-align: center;
+  text-align: center; /* выравнивание текста */
   margin-top: 14px;
   margin-bottom: 8px;
 }
 
 /* 2) Inset divider under training flags (and whole flags block) */
 #setupModal #langFlags{
-  position: relative;
-  margin: 8px 0;
-  padding: 0 12px 12px;
+  position: relative; /* тип позиционирования элемента */
+  margin: 8px 0; /* внешний отступ элемента */
+  padding: 0 12px 12px; /* внутренний отступ элемента */
 }
 #setupModal #langFlags::after{
-  content: "";
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: 0;
-  height: 1px;
-  background: var(--border);
+  content: ""; /* содержимое псевдоэлемента */
+  position: absolute; /* тип позиционирования элемента */
+  left: 14px; /* позиция слева */
+  right: 14px; /* позиция справа */
+  bottom: 0; /* позиция снизу */
+  height: 1px; /* высота элемента */
+  background: var(--border); /* фон элемента */
 }
 
 /* 3) Ensure rounded corners clip the divider nicely */
 #setupModal .dialog{ overflow: hidden; }
 
-/* === Visible title dividers in light theme (match flags lines) === */
-/* Dicts modal ("Словари") — underline the H2 like flags divider */
-#modal .dialog h2{
-  position: relative;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-#modal .dialog h2::after{
-  content: "";
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: -8px;   /* below h2's margin-bottom */
-  height: 1px;
-  background: var(--border); /* same color as other separators */
-}
-
-/* Setup modal ("Начальная настройка") — same underline */
-#setupModal .dialog h2{
-  position: relative;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-#setupModal .dialog h2::after{
-  content: "";
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: -8px;
-  height: 1px;
-  background: var(--border);
+/* === Unified divider for modal titles === */
+.modal-title {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border); /* нижняя граница */
 }

@@ -495,9 +495,35 @@ a#donate, .donate, .donate a, .donate-btn, .donate-btn a, .icon-donate,
 /* 3) Ensure rounded corners clip the divider nicely */
 #setupModal .dialog{ overflow: hidden; }
 
-/* === Unified divider for modal titles === */
-.modal-title {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
+/* === Visible title dividers in light theme (match flags lines) === */
+/* Dicts modal ("Словари") — underline the H2 like flags divider */
+#modal .dialog h2{
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#modal .dialog h2::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -8px;   /* below h2's margin-bottom */
+  height: 1px;
+  background: var(--border); /* same color as other separators */
+}
+
+/* Setup modal ("Начальная настройка") — same underline */
+#setupModal .dialog h2{
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#setupModal .dialog h2::after{
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -8px;
+  height: 1px;
+  background: var(--border);
 }

@@ -44,7 +44,7 @@
     try{ return JSON.parse(json); }catch(_){ return null; }
   }
 
-  // --------- Локализация ошибок (RU / UK) ---------
+  // --------- Локализация текстов (RU / UK) ---------
   function resolveLangForErrors(){
     var l = 'ru';
     try{
@@ -78,10 +78,14 @@
     return dict[lang] || dict.ru;
   }
 
-  function showBackupErrorToast(keyOrMessage){
-    var dict = getErrorTexts();
-    var msg = dict[keyOrMessage] || keyOrMessage;
+  /**
+   * Общий показ тоста для бэкапа.
+   * Сначала пробуем MoyaUpdates / App.UI.toast, потом App.notify, в самом конце — alert.
+   */
+  function showBackupToast(message, type){
+    var msg = message;
     var shown = false;
+
     try{
       if (window.MoyaUpdates && typeof MoyaUpdates.setToast === 'function'){
         MoyaUpdates.setToast(msg, 3000);
@@ -91,14 +95,20 @@
         shown = true;
       }
     }catch(_){}
-    // Крайний фоллбек — если фирменные тосты недоступны
+
     if (!shown){
       if (window.App && App.notify){
-        App.notify({ type: 'error', message: msg });
+        App.notify({ type: type || 'info', message: msg });
       } else {
         try{ alert(msg); }catch(_){}
       }
     }
+  }
+
+  function showBackupErrorToast(keyOrMessage){
+    var dict = getErrorTexts();
+    var msg = dict[keyOrMessage] || keyOrMessage;
+    showBackupToast(msg, 'error');
   }
 
   // Подсчёт количества "выученных" слов по карте звёзд
@@ -177,8 +187,18 @@
       var json     = JSON.stringify(payload, null, 2);
       var filename = buildFilename();
       downloadString(filename, json);
+
+      // (опционально) тост об успешном экспорте
+      try{
+        var lang = resolveLangForErrors();
+        var msg = (lang === 'uk')
+          ? 'Резервну копію збережено як файл ' + filename
+          : 'Резервная копия сохранена как файл ' + filename;
+        showBackupToast(msg, 'info');
+      }catch(_){}
     }catch(e){
       console.error('Backup export failed:', e);
+      showBackupErrorToast('error');
     }
   };
 
@@ -187,7 +207,6 @@
       const input = document.createElement('input');
       input.type = 'file';
       input.accept = 'application/json,.json';
-      // iOS-safe скрытие
       input.style.position = 'fixed';
       input.style.left = '-9999px';
       input.style.top = '0';
@@ -246,16 +265,13 @@
               if (App.saveState) App.saveState();
               if (App.saveDictRegistry) App.saveDictRegistry();
 
+              // Уведомление об успешном восстановлении — тоже через тост
               try{
                 var lang = resolveLangForErrors();
                 var okMsg = (lang === 'uk')
                   ? 'Дані успішно відновлено з резервної копії. Сторінка буде перезавантажена.'
                   : 'Данные успешно восстановлены из резервной копии. Страница будет перезагружена.';
-                if (window.App && App.notify){
-                  App.notify({ type: 'info', message: okMsg });
-                } else {
-                  alert(okMsg);
-                }
+                showBackupToast(okMsg, 'info');
               }catch(_){}
 
               setTimeout(function(){

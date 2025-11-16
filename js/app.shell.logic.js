@@ -16,62 +16,35 @@
   const burger  = document.getElementById('btnMenu');
   const ocRoot  = document.querySelector('.oc-root');
   const ocPanel = document.querySelector('.oc-panel');
-  const overlay = document.querySelector('.app-overlay');
+  const overlay = document.querySelector('.oc-overlay');
 
-  function openMenu() {
-    if (!ocRoot) return;
+  function openMenu(){
     document.body.classList.add('menu-open');
-    ocRoot.setAttribute('aria-hidden', 'false');
-    try {
-      ocRoot.querySelector('[data-oc-focus]')?.focus();
-    } catch (_) {}
+    if (ocRoot) ocRoot.setAttribute('aria-hidden','false');
+    updateHFVars();
   }
-
-  function closeMenu() {
-    if (!ocRoot) return;
+  function closeMenu(){
     document.body.classList.remove('menu-open');
-    ocRoot.setAttribute('aria-hidden', 'true');
+    if (ocRoot) ocRoot.setAttribute('aria-hidden','true');
   }
 
-  if (burger) {
-    burger.addEventListener('click', function () {
-      if (document.body.classList.contains('menu-open')) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
-    });
+  // Клик по бургеру
+  if (burger){
+    burger.addEventListener('click', (e) => {
+      e.preventDefault(); e.stopPropagation();
+      document.body.classList.contains('menu-open') ? closeMenu() : openMenu();
+    }, { passive:false });
   }
 
-  // Закрытие по ESC
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' || e.key === 'Esc') {
-      if (document.body.classList.contains('menu-open')) {
-        e.preventDefault();
-        closeMenu();
-      }
+  // Закрытие меню по кнопкам с data-close
+  document.addEventListener('click', (e) => {
+    const t = e.target;
+    const closeAttr = t.getAttribute && t.getAttribute('data-close');
+    if (closeAttr){
+      e.preventDefault();
+      closeMenu();
     }
   });
-
-  // Клик по overlay — закрыть меню
-  if (overlay) {
-    overlay.addEventListener('click', function () {
-      if (document.body.classList.contains('menu-open')) {
-        closeMenu();
-      }
-    });
-  }
-
-  // Клик внутри offcanvas
-  if (ocRoot) {
-    ocRoot.addEventListener('click', function (e) {
-      const closeAttr = e.target && e.target.getAttribute && e.target.getAttribute('data-oc-close');
-      if (closeAttr){
-        e.preventDefault();
-        closeMenu();
-      }
-    });
-  }
   if (overlay) overlay.addEventListener('click', closeMenu);
 
   // Свайп вправо — закрыть меню
@@ -100,38 +73,31 @@
     document.addEventListener('touchend', (e)=>{
       if (!startedAtEdge) return;
       const endX = (e.changedTouches[0]||{}).clientX || 0;
-      if (startX != null && (startX - endX) < -30){
-        openMenu();
-      }
-      startX = null;
+      if (startX - endX > 30) openMenu();
       startedAtEdge = false;
+      startX = null;
     }, {passive:true});
   })();
 
-  // Навигация из меню
-  (function(){
-    const nav = document.querySelector('.oc-nav');
-    if (!nav) return;
-    nav.addEventListener('click', function(e){
-      const link = e.target.closest('a[data-route]');
-      if (!link) return;
-      const route = link.getAttribute('data-route');
-      if (!route) return;
+  // Навигация футера — SPA-роутинг через App.Router
+  document.querySelectorAll('.app-footer .nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const act = btn.getAttribute('data-action');
 
-      e.preventDefault();
-      closeMenu();
+      // Переключаем активную кнопку
+      document.querySelectorAll('.app-footer .nav-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
 
       try {
-        if (window.Router && typeof Router.routeTo === 'function') {
-          Router.routeTo(route);
-        } else {
-          if (route === 'home')      location.hash = '';
-          else if (route === 'stats')     location.hash = '#stats';
-          else if (route === 'favorites') location.hash = '#favorites';
-          else if (route === 'mistakes')  location.hash = '#mistakes';
-          else if (route === 'donate')    location.hash = '#donate';
-          else if (route === 'guide')     location.hash = '#guide';
-          else if (route === 'legal')     location.hash = '#legal';
+        if (window.App && App.Router && typeof App.Router.routeTo === 'function') {
+          App.Router.routeTo(act);
+        } else if (act === 'home') {
+          // Запасной вариант, если роутер ещё не инициализирован
+          if (window.App && App.Home && typeof App.Home.mount === 'function') {
+            App.Home.mount();
+          } else {
+            location.assign('./');
+          }
         }
       } catch(e){
         console.warn('nav error', e);
@@ -147,9 +113,19 @@
     const mqLandscape = window.matchMedia('(orientation: landscape)');
     function applyOrientation(){
       const isLandscape = mqLandscape.matches;
-      document.body.classList.toggle('is-landscape', !!isLandscape);
+      document.body.classList.toggle('landscape', isLandscape);
+      const app = document.getElementById('app');
+      if (app) app.setAttribute('aria-hidden', isLandscape ? 'true' : 'false');
+      try {
+        if (window.App && App.applyI18nTitles) {
+          App.applyI18nTitles(document.querySelector('.rotate-lock'));
+        }
+      } catch (_) {}
     }
-    window.addEventListener('resize', function(){
+    try { mqLandscape.addEventListener('change', applyOrientation); }
+    catch(_) { mqLandscape.addListener && mqLandscape.addListener(applyOrientation); }
+    window.addEventListener('resize', setVhUnit);
+    window.addEventListener('orientationchange', function(){
       setVhUnit();
       applyOrientation();
     });
@@ -157,152 +133,128 @@
     applyOrientation();
   })();
 
-  // Тема (тумблер в футере)
-  (function(){
-    const btn = document.querySelector('[data-action="toggle-theme-footer"]');
-    if (!btn) return;
-
-    function getTheme(){
-      try{
-        return (window.App && App.settings && App.settings.theme) || 'auto';
-      }catch(_){}
-      return 'auto';
-    }
-
-    function setTheme(t){
-      try{
-        if (!window.App) return;
-        if (!App.settings) App.settings = {};
-        App.settings.theme = t;
-        if (App.saveSettings) App.saveSettings();
-        if (App.setTheme) App.setTheme(t);
-      }catch(_){}
-    }
-
-    function refreshLabel(){
-      const t = getTheme();
-      btn.setAttribute('data-theme', t);
-    }
-
-    btn.addEventListener('click', function(){
-      const curr = getTheme();
-      const next = curr === 'auto' ? 'light' : (curr === 'light' ? 'dark' : 'auto');
-      setTheme(next);
-      refreshLabel();
+  // Тема / язык / сложность (локальные data-* для CSS)
+  const themeToggle = document.getElementById('themeToggle');
+  if(themeToggle){
+    themeToggle.addEventListener('change', e=>{
+      document.documentElement.dataset.theme = e.target.checked ? 'dark' : 'light';
     });
+  }
+  const langToggle = document.getElementById('langToggle');
+  if(langToggle){
+    langToggle.addEventListener('change', e=>{
+      document.documentElement.dataset.lang = e.target.checked ? 'ru' : 'uk';
+    });
+  }
+  const levelToggle = document.getElementById('levelToggle');
+  if(levelToggle){
+    levelToggle.addEventListener('change', e=>{
+      document.documentElement.dataset.level = e.target.checked ? 'hard' : 'normal';
+    });
+  }
 
-    refreshLabel();
-  })();
-
-  // Shell-экшены
+  // Версия приложения (app.core.js → App.APP_VER)
   (function(){
-    const root = document.body;
-    if (!root) return;
-
-    const actions = {
-      donate() {
-        try {
-          if (window.Donate && typeof window.Donate.open === 'function') {
-            window.Donate.open();
-          } else {
-            window.Donate.open();
-          }
-        } catch (e) {
-          console.warn('donate open error', e);
-        }
-      },
-
-      guide() {
-        try {
-          if (window.Guide && typeof window.Guide.open === 'function') {
-            window.Guide.open();
-          } else {
-            location.hash = '#guide';
-          }
-        } catch (e) {
-          console.warn('guide open error', e);
-        }
-      },
-
-      share() {
-        const payload = { title: 'MOYAMOVA', url: location.href };
-        // 1) Нативный share, если доступен
-        if (navigator.share) {
-          navigator.share(payload).catch(() => {});
-          return;
-        }
-        // 2) Копирование ссылки в буфер обмена
-        const url = location.href;
-        const lang = (function(){
-          try {
-            if (document.documentElement && document.documentElement.dataset && document.documentElement.dataset.lang) {
-              var l = String(document.documentElement.dataset.lang || '').toLowerCase();
-              if (l === 'ua') l = 'uk';
-              return (l === 'uk') ? 'uk' : 'ru';
-            }
-            if (window.App && App.settings && (App.settings.uiLang || App.settings.lang)) {
-              var l2 = String(App.settings.uiLang || App.settings.lang || '').toLowerCase();
-              if (l2 === 'ua') l2 = 'uk';
-              return (l2 === 'uk') ? 'uk' : 'ru';
-            }
-          } catch (_) {}
-          return 'ru';
-        })();
-        const isUk = (lang === 'uk');
-        const msgOk = isUk ? 'Посилання скопійовано.' : 'Ссылка скопирована.';
-        const msgFail = isUk
-          ? 'Не вдалося скопіювати автоматично, скористайтеся адресним рядком браузера.'
-          : 'Не удалось скопировать автоматически, используйте адресную строку браузера.';
-
-        function showMsg(msg, type) {
-          try {
-            if (window.App && typeof App.notify === 'function') {
-              App.notify({ type: type || 'info', message: msg });
-              return;
-            }
-          } catch (_) {}
-          try { alert(msg); } catch (_) {}
-        }
-
-        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
-          navigator.clipboard.writeText(url)
-            .then(function(){ showMsg(msgOk, 'info'); })
-            .catch(function(){ showMsg(msgFail, 'error'); });
-        } else {
-          showMsg(msgFail, 'error');
-        }
-      },
-
-      legal() {
-        // js/legal.js уже подключён как module и создаёт window.Legal
-        try {
-          if (window.Legal && typeof window.Legal.open === 'function') {
-            window.Legal.open('terms');
-          } else {
-            console.warn('Legal module not ready');
-          }
-        } catch (e) {
-          console.warn('legal open error', e);
-        }
-      },
-
-      contact() {
-        location.href = 'mailto:support@moyamova.app';
-      }
-    };
-
-    root.addEventListener('click', function(e){
-      const el = e.target.closest('[data-shell-action]');
+    function renderVersion(){
+      var el = document.getElementById('appVersion');
       if (!el) return;
-      const action = el.getAttribute('data-shell-action');
-      if (!action || !actions[action]) return;
-      e.preventDefault();
-      try{
-        actions[action]();
-      }catch(err){
-        console.error('shell action error', err);
-      }
-    });
+      var v = (window.App && App.APP_VER) || null;
+      if (v) el.textContent = v;
+    }
+    if (!(window.App && App.APP_VER)) {
+      var s = document.createElement('script');
+      s.src = './js/app.core.js';
+      s.onload = renderVersion;
+      s.onerror = function(){};
+      document.head.appendChild(s);
+    } else {
+      renderVersion();
+    }
   })();
 
+    // Actions внизу меню (кнопки в бургер-меню)
+  const actionsMap = {
+    guide() {
+      // Экран "Инструкция" реализован в js/view.guide.js (объект Guide)
+      try {
+        if (window.Guide && typeof window.Guide.open === 'function') {
+          window.Guide.open();
+        } else if (window.App && App.Guide && typeof App.Guide.open === 'function') {
+          App.Guide.open();
+        } else {
+          console.warn('Guide module not found');
+        }
+      } catch (e) {
+        console.warn('guide open error', e);
+      }
+      // закрываем меню так же, как для остальных действий
+      try { closeMenu(); } catch (_) {}
+    },
+
+    donate() {
+      if (!window.Donate) {
+        const s = document.createElement('script');
+        s.src = './js/donate.js';
+        s.onload = () =>
+          window.Donate && window.Donate.open && window.Donate.open();
+        document.head.appendChild(s);
+      } else {
+        window.Donate.open();
+      }
+    },
+
+    share() {
+      const data = { title: 'MOYAMOVA', url: location.href };
+      if (navigator.share) {
+        navigator.share(data).catch(() => {});
+      } else {
+        try {
+          navigator.clipboard.writeText(location.href);
+          alert('Ссылка скопирована');
+        } catch {
+          prompt('Скопируйте ссылку:', location.href);
+        }
+      }
+    },
+
+    legal() {
+      // js/legal.js уже подключён как module и создаёт window.Legal
+      try {
+        if (window.Legal && typeof window.Legal.open === 'function') {
+          window.Legal.open('terms');
+        } else {
+          console.warn('Legal module not ready');
+        }
+      } catch (e) {
+        console.warn('legal open error', e);
+      }
+    },
+
+    contact() {
+      location.href = 'mailto:support@moyamova.app';
+    }
+  };
+
+  // навешивание обработчиков на кнопки
+  document
+    .querySelectorAll('.actions-row-bottom .action-btn')
+    .forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const act = btn.dataset.action;
+        (actionsMap[act] || function () {})();
+        // для guide меню мы уже закрыли внутри, остальные закрываем здесь
+        if (act !== 'guide') {
+          try {
+            closeMenu();
+          } catch (_) {}
+        }
+      });
+    });
+
+  // Service worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./sw.js').catch(console.warn);
+    });
+  }
 })();

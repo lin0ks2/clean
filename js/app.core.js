@@ -1,44 +1,42 @@
 /* ==========================================================
- * app.core.js
- * Базовая инициализация приложения MOYAMOVA
- * ========================================================== */
+ * Project: MOYAMOVA
+ * File: app.core.js
+ * Purpose: Инициализация и глобальные константы
+ * Version: 1.1
+ * Last modified: 2025-10-19
+*/
 
 (function(){
   const App = window.App = (window.App||{});
 
   /**
    * Унифицированное уведомление пользователя.
-   * Ставит брендированный тост, при его отсутствии — пытается использовать fallback,
-   * в самом крайнем случае показывает alert.
+   * Ставит брендированный тост, при его отсутствии — использует fallback.
    *
-   * Использование:
-   *   App.notify('Сообщение');
-   *   App.notify({ type: 'error', message: 'Ошибка импорта' });
+   * App.notify('Сообщение');
+   * App.notify({ type: 'error', message: 'Ошибка импорта' });
    */
-  App.notify = function notify(options) {
-    const root = (typeof window !== 'undefined' ? window : globalThis);
-    const msg = (typeof options === 'string')
+  App.notify = function notify(options){
+    var root = (typeof window !== 'undefined' ? window : globalThis);
+    var msg = (typeof options === 'string')
       ? options
       : options && options.message;
-
-    const type = (options && options.type) || 'info';
+    var type = (options && options.type) || 'info';
 
     if (!msg) return;
 
-    try {
-      if (App.toast && typeof App.toast.show === 'function') {
-        App.toast.show({ type, message: msg });
+    try{
+      if (App.toast && typeof App.toast.show === 'function'){
+        App.toast.show({ type:type, message:msg });
         return;
       }
-
-      if (root.Toast && typeof root.Toast.show === 'function') {
-        root.Toast.show({ type, message: msg });
+      if (root.Toast && typeof root.Toast.show === 'function'){
+        root.Toast.show({ type:type, message:msg });
         return;
       }
-
-      try { alert(msg); } catch (_) {}
-    } catch (_) {
-      try { alert(msg); } catch (__) {}
+      try{ alert(msg); }catch(_){}
+    }catch(_){
+      try{ alert(msg); }catch(__){}
     }
   };
 
@@ -245,18 +243,26 @@ App.starKey = function(wid, dk){
   }catch(_){}
 
   if (App.updateJustApplied){
-    try{
-      var __L=(window.App&&App.settings&&(App.settings.uiLang||App.settings.lang))||'ru';
-      __L=String(__L).toLowerCase();
-      var msg=(__L==='uk')
-        ? 'MOYAMOVA щойно оновлена до нової версії.'
-        : 'MOYAMOVA только что обновилась до новой версии.';
-      if (App.toast && typeof App.toast.show === 'function'){
-        App.toast.show({type:'info',message:msg});
-      } else {
-        try{ alert(msg); }catch(_){}
+    /* [UPDATE-MSG] Show confirmation after update */
+    try {
+      var mark = Number(localStorage.getItem('updateJustApplied') || 0);
+      if (mark && Date.now() - mark < 120000) {
+        try{
+          var __L=(window.App&&App.settings&&(App.settings.uiLang||App.settings.lang))||'ru';
+          __L=String(__L).toLowerCase();
+          var __B=(window.I18N&&I18N[__L])||(window.I18N&&I18N.ru)||{};
+          var msg=__B['app.updated']||((__L==='uk')?'MOYAMOVA щойно оновлена до нової версії.':'MOYAMOVA только что обновилась до новой версии.');
+          if (App.toast && typeof App.toast.show === 'function'){
+            App.toast.show({type:'info',message:msg});
+          } else {
+            App.notify('Обновление успешно установлено!');
+          }
+        }catch(_){
+          App.notify('Обновление успешно установлено!');
+        }
+        localStorage.removeItem('updateJustApplied');
       }
-    }catch(_){}
+    } catch (_) {}
   }
 
   window.App = App;

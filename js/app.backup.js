@@ -15,13 +15,24 @@
       const url  = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = filename || 'moyamova-backup.json';
+      a.download = filename;
+      // iOS / PWA fallback — открываем JSON во вкладке, если download не сработает
+      a.target = '_blank';
+      a.rel = 'noopener';
       document.body.appendChild(a);
       a.click();
-      document.body.removeChild(a);
-      setTimeout(function(){ URL.revokeObjectURL(url); }, 2000);
+      setTimeout(function(){
+        URL.revokeObjectURL(url);
+        a.remove();
+      }, 1500);
+      return true;
     }catch(e){
-      console.error('downloadString error', e);
+      console.error('Backup download failed:', e);
+      try {
+        // последняя надежда — открыть JSON во вкладке
+        window.open('data:application/json;charset=utf-8,' + encodeURIComponent(text), '_blank');
+      }catch(_){}
+      return false;
     }
   }
 
@@ -44,7 +55,7 @@
     try{ return JSON.parse(json); }catch(_){ return null; }
   }
 
-  // --------- Локализация текстов (RU / UK) ---------
+  // --------- Локализация ошибок (RU / UK) ---------
   function resolveLangForErrors(){
     var l = 'ru';
     try{
@@ -63,29 +74,23 @@
     var lang = resolveLangForErrors();
     var dict = {
       ru: {
-        badFile: 'Файл не похож на резервную копию MOYAMOVA.',
-        readError: 'Ошибка чтения файла резервной копии.',
-        tooOld: 'В файле резервной копии меньше выученных слов, чем у вас сейчас. Импорт отменён, чтобы не потерять прогресс.',
+        badFile: 'Файл повреждён или имеет неверный формат.',
+        tooSmall: 'В этом резервном файле меньше выученных слов, чем у вас сейчас. Импорт отменён, чтобы не потерять прогресс.',
         error: 'Ошибка импорта данных'
       },
       uk: {
-        badFile: 'Файл не схожий на резервну копію MOYAMOVA.',
-        readError: 'Помилка читання файлу резервної копії.',
-        tooOld: 'У файлі резервної копії менше вивчених слів, ніж у вас зараз. Імпорт скасовано, щоб не втратити прогрес.',
+        badFile: 'Файл пошкоджено або він має некоректний формат.',
+        tooSmall: 'У цій резервній копії менше вивчених слів, ніж у вас зараз. Імпорт скасовано, щоб не втратити прогрес.',
         error: 'Помилка імпорту даних'
       }
     };
     return dict[lang] || dict.ru;
   }
 
-  /**
-   * Общий показ тоста для бэкапа.
-   * Сначала пробуем MoyaUpdates / App.UI.toast, потом App.notify, в самом конце — alert.
-   */
-  function showBackupToast(message, type){
-    var msg = message;
+  function showBackupErrorToast(keyOrMessage){
+    var dict = getErrorTexts();
+    var msg = dict[keyOrMessage] || keyOrMessage;
     var shown = false;
-
     try{
       if (window.MoyaUpdates && typeof MoyaUpdates.setToast === 'function'){
         MoyaUpdates.setToast(msg, 3000);
@@ -95,35 +100,26 @@
         shown = true;
       }
     }catch(_){}
-
+    // Крайний фоллбек — системный alert, если тосты по какой-то причине недоступны
     if (!shown){
-      if (window.App && App.notify){
-        App.notify({ type: type || 'info', message: msg });
-      } else {
-        try{ alert(msg); }catch(_){}
-      }
+      try{ alert(msg); }catch(_){}
     }
-  }
-
-  function showBackupErrorToast(keyOrMessage){
-    var dict = getErrorTexts();
-    var msg = dict[keyOrMessage] || keyOrMessage;
-    showBackupToast(msg, 'error');
   }
 
   // Подсчёт количества "выученных" слов по карте звёзд
   function countLearned(stars){
     if (!stars || typeof stars !== 'object') return 0;
-    var count = 0;
-    var MAX_STAR = 4;
+    var total = 0;
+    var maxStars = 5;
     try{
-      for (var k in stars){
-        if (!Object.prototype.hasOwnProperty.call(stars, k)) continue;
-        var v = stars[k];
-        if (v >= MAX_STAR) count++;
-      }
+      Object.keys(stars).forEach(function(key){
+        var v = stars[key];
+        if (typeof v === 'number' && v >= maxStars){
+          total++;
+        }
+      });
     }catch(_){}
-    return count;
+    return total;
   }
 
   // ====================== Экспорт ======================
@@ -142,17 +138,17 @@
   function buildPayload(){
     var App = window.App || {};
     var payload = {
-      version: '1.1',
-      createdAt: Date.now(),
+      meta: {
+        app: 'MOYAMOVA',
+        version: App.version || App.APP_VER || '1.0',
+        time: new Date().toISOString()
+      },
       settings: App.settings || {},
       state: App.state || {},
-      dictRegistry: App.dictRegistry || {},
-      favorites: null,
-      mistakes: null,
-      stats: null,
-      sets: null
+      dicts: App.dictRegistry || {}
     };
 
+    // --- дополнительно: виртуальные словари и статистика ---
     try{
       if (App.Favorites && typeof App.Favorites.export === 'function'){
         payload.favorites = App.Favorites.export();
@@ -169,7 +165,8 @@
       }
     }catch(_){}
     try{
-      if (App.Sets && typeof App.Sets.exportState === 'function'){
+      if (App.Sets && App.Sets.state){
+        // сохраняем "сырое" состояние сетов
         payload.sets = JSON.parse(JSON.stringify(App.Sets.state));
       }
     }catch(_){}
@@ -187,18 +184,8 @@
       var json     = JSON.stringify(payload, null, 2);
       var filename = buildFilename();
       downloadString(filename, json);
-
-      // (опционально) тост об успешном экспорте
-      try{
-        var lang = resolveLangForErrors();
-        var msg = (lang === 'uk')
-          ? 'Резервну копію збережено як файл ' + filename
-          : 'Резервная копия сохранена как файл ' + filename;
-        showBackupToast(msg, 'info');
-      }catch(_){}
     }catch(e){
       console.error('Backup export failed:', e);
-      showBackupErrorToast('error');
     }
   };
 
@@ -207,6 +194,7 @@
       const input = document.createElement('input');
       input.type = 'file';
       input.accept = 'application/json,.json';
+      // iOS-safe скрытие
       input.style.position = 'fixed';
       input.style.left = '-9999px';
       input.style.top = '0';
@@ -222,73 +210,151 @@
           readFileAsText(f, function(err, txt){
             if (err){
               console.error(err);
-              showBackupErrorToast('readError');
+              showBackupErrorToast('error');
               return;
             }
-            var data = safeParse(txt);
-            if (!data || typeof data !== 'object'){
+            const raw = safeParse(txt);
+            if (!raw || typeof raw !== 'object'){
               showBackupErrorToast('badFile');
               return;
             }
 
-            try{
-              var App = window.App || {};
-              var currentState = App.state || {};
-              var backupState  = data.state || {};
+            // лёгкая валидация структуры бэкапа
+            if (!raw.meta || raw.meta.app !== 'MOYAMOVA' ||
+                !raw.state || typeof raw.state !== 'object'){
+              showBackupErrorToast('badFile');
+              return;
+            }
 
-              var currLearned   = countLearned(currentState.stars || {});
-              var backupLearned = countLearned(backupState.stars || {});
+            const data = raw;
 
-              if (backupLearned < currLearned){
-                showBackupErrorToast('tooOld');
-                return;
+            // =====================================================
+            // === ROLLBACK-GUARD BLOCK — ЗАЩИТА ОТ ОТКАТА ПРОГРЕССА
+            // === Тут можно менять поведение тостов/перезагрузки,
+            // === не трогая остальной код импорта.
+            // =====================================================
+            (function rollbackGuard(){
+              const currentStars  = (App.state && App.state.stars) || {};
+              const incomingStars = (data.state && data.state.stars) || {};
+              const curLearned = countLearned(currentStars);
+              const newLearned = countLearned(incomingStars);
+
+              if (newLearned < curLearned){
+                // показываем сообщение о том, что в бэкапе меньше выученных слов
+                showBackupErrorToast('tooSmall');
+
+                // 3) Мягкая перезагрузка, как после успешного бэкапа/обновлений
+                try { sessionStorage.setItem('moya_upgrading', '1'); } catch(_){}
+                setTimeout(function(){
+                  try { location.reload(); } catch(_){}
+                }, 1200);
+
+                // Обрезаем импорт — состояние не трогаем
+                throw new Error('Backup blocked: fewer learned words than current state');
               }
+            })();
+            // ==================== END ROLLBACK-GUARD BLOCK ====================
 
-              App.settings     = data.settings || App.settings || {};
-              App.state        = data.state    || App.state    || {};
-              App.dictRegistry = data.dictRegistry || App.dictRegistry || {};
+            // === Восстановление в память (если защита не сработала) ===
+            if (data.settings) window.App.settings = data.settings;
+            if (data.state)    window.App.state    = data.state;
+            if (data.dicts)    window.App.dictRegistry = data.dicts;
 
+            // Виртуальные словари и статистика
+            try{
               if (data.favorites && App.Favorites && typeof App.Favorites.import === 'function'){
                 App.Favorites.import(data.favorites);
               }
+            }catch(_){}
+            try{
               if (data.mistakes && App.Mistakes && typeof App.Mistakes.import === 'function'){
                 App.Mistakes.import(data.mistakes);
               }
+            }catch(_){}
+            try{
               if (data.stats && App.Stats && typeof App.Stats.import === 'function'){
                 App.Stats.import(data.stats);
               }
-              if (data.sets && App.Sets && typeof App.Sets.importState === 'function'){
-                App.Sets.importState(data.sets);
+            }catch(_){}
+            try{
+              if (data.sets && App.Sets && typeof App.Sets._restore === 'function'){
+                App.Sets._restore(data.sets);
+              } else if (data.sets && App.Sets && App.Sets.state){
+                App.Sets.state = data.sets;
               }
+            }catch(_){}
 
+            // Сохраняем всё в localStorage
+            try{
               if (App.saveSettings) App.saveSettings();
+            }catch(_){}
+            try{
               if (App.saveState) App.saveState();
+            }catch(_){}
+            try{
               if (App.saveDictRegistry) App.saveDictRegistry();
+            }catch(_){}
+            try{
+              if (App.Sets && typeof App.Sets._save === 'function') App.Sets._save();
+            }catch(_){}
 
-              // Уведомление об успешном восстановлении — тоже через тост
+            // Локализация текстов прогресса восстановления
+            (function(){
+              function resolveLang(){
+                var l='ru';
+                try{
+                  if (document.documentElement && document.documentElement.dataset && document.documentElement.dataset.lang){
+                    l = String(document.documentElement.dataset.lang || '').toLowerCase();
+                  } else if (window.App && App.settings && (App.settings.lang || App.settings.uiLang)){
+                    l = String(App.settings.lang || App.settings.uiLang).toLowerCase();
+                  }
+                  if (l==='ua') l='uk';
+                  if (l!=='ru' && l!=='uk') l='ru';
+                  return l;
+                }catch(_){}
+                return 'ru';
+              }
+              function T(lang){
+                var D={
+                  ru:{restoring:'Восстанавливаю данные…', done:'Готово', reloading:'Перезапускаю…',  error:'Ошибка импорта данных'},
+                  uk:{restoring:'Відновлюю дані…',       done:'Готово', reloading:'Перезапускаю…',  error:'Помилка імпорту даних'}
+                }; return D[lang]||D.ru;
+              }
+              var dict = T(resolveLang());
               try{
-                var lang = resolveLangForErrors();
-                var okMsg = (lang === 'uk')
-                  ? 'Дані успішно відновлено з резервної копії. Сторінка буде перезавантажена.'
-                  : 'Данные успешно восстановлены из резервной копии. Страница будет перезагружена.';
-                showBackupToast(okMsg, 'info');
+                if (window.MoyaUpdates && typeof MoyaUpdates.setToast==='function') {
+                  MoyaUpdates.setToast(dict.restoring);
+                  if (typeof MoyaUpdates.showOverlay==='function') MoyaUpdates.showOverlay(true);
+                } else if (window.App && App.UI && typeof App.UI.toast==='function'){
+                  App.UI.toast(dict.restoring);
+                }
               }catch(_){}
-
+              try{ sessionStorage.setItem('moya_upgrading','1'); }catch(_){}
               setTimeout(function(){
-                try{ location.reload(); }catch(_){}
-              }, 800);
-            }catch(e){
-              console.error('Backup import failed:', e);
-              showBackupErrorToast('error');
-            }
+                try{
+                  if (window.MoyaUpdates && typeof MoyaUpdates.setToast==='function') MoyaUpdates.setToast(dict.done);
+                  else if (window.App && App.UI && typeof App.UI.toast==='function') App.UI.toast(dict.done);
+                }catch(_){}
+                setTimeout(function(){
+                  try{
+                    if (window.MoyaUpdates && typeof MoyaUpdates.setToast==='function') MoyaUpdates.setToast(dict.reloading);
+                    else if (window.App && App.UI && typeof App.UI.toast==='function') App.UI.toast(dict.reloading);
+                  }catch(_){}
+                  setTimeout(function(){
+                    try{ location.reload(); }catch(_){}
+                  }, 600);
+                }, 60);
+              }, 600);
+            })();
+
           });
         }
-        document.body.removeChild(input);
-      }, { once:true });
+        setTimeout(function(){ input.remove(); }, 0);
+      });
 
       input.click();
     }catch(e){
-      console.error('Backup import start failed:', e);
+      console.error('Backup import failed:', e);
       showBackupErrorToast('error');
     }
   };
@@ -305,4 +371,4 @@
     else bind();
   })();
 
-})();
+})()

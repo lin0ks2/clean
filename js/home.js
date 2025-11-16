@@ -37,7 +37,7 @@
   function getUILang(){
     try{
       if (document.documentElement && document.documentElement.dataset && document.documentElement.dataset.lang){
-        const v = String(document.documentElement.dataset.lang || 'ru').toLowerCase();
+        const v = String(document.documentElement.getAttribute('lang') || document.documentElement.dataset.lang || 'ru').toLowerCase();
         return v === 'uk' ? 'uk' : 'ru';
       }
       if (A.settings && (A.settings.uiLang || A.settings.lang)){

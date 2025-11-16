@@ -203,17 +203,60 @@
       }
     },
 
-    share() {
-      const data = { title: 'MOYAMOVA', url: location.href };
+        share() {
+      const payload = { title: 'MOYAMOVA', url: location.href };
+
+      // 1) Нативный share, если доступен
       if (navigator.share) {
-        navigator.share(data).catch(() => {});
-      } else {
+        navigator.share(payload).catch(() => {});
+        return;
+      }
+
+      // 2) Копирование ссылки в буфер обмена
+      const url = location.href;
+
+      // Определяем язык для текста уведомлений
+      const lang = (function () {
         try {
-          navigator.clipboard.writeText(location.href);
-          alert('Ссылка скопирована');
-        } catch {
-          prompt('Скопируйте ссылку:', location.href);
-        }
+          if (document.documentElement &&
+              document.documentElement.dataset &&
+              document.documentElement.dataset.lang) {
+            let l = String(document.documentElement.dataset.lang || '').toLowerCase();
+            if (l === 'ua') l = 'uk';
+            return (l === 'uk') ? 'uk' : 'ru';
+          }
+          if (window.App && App.settings && (App.settings.uiLang || App.settings.lang)) {
+            let l2 = String(App.settings.uiLang || App.settings.lang || '').toLowerCase();
+            if (l2 === 'ua') l2 = 'uk';
+            return (l2 === 'uk') ? 'uk' : 'ru';
+          }
+        } catch (_) {}
+        return 'ru';
+      })();
+
+      const isUk = (lang === 'uk');
+      const msgOk = isUk ? 'Посилання скопійовано.' : 'Ссылка скопирована.';
+      const msgFail = isUk
+        ? 'Не вдалося скопіювати автоматично, скористайтеся адресним рядком браузера.'
+        : 'Не удалось скопировать автоматически, используйте адресную строку браузера.';
+
+      function showMsg(msg, type) {
+        try {
+          if (window.App && typeof App.notify === 'function') {
+            App.notify({ type: type || 'info', message: msg });
+            return;
+          }
+        } catch (_) {}
+        // самый глубокий фоллбек — alert
+        try { alert(msg); } catch (_) {}
+      }
+
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        navigator.clipboard.writeText(url)
+          .then(function () { showMsg(msgOk, 'info'); })
+          .catch(function () { showMsg(msgFail, 'error'); });
+      } else {
+        showMsg(msgFail, 'error');
       }
     },
 

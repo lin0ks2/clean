@@ -15,248 +15,345 @@
 
   /* ========================= Helpers ========================= */
 
-  function safe(fn) { try { return fn(); } catch (_) { /* noop */ } }
-  function onReady(fn) {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', fn, { once: true });
-    } else {
-      fn();
+  function safe(fn) {
+    try {
+      fn && fn();
+    } catch (e) {
+      console.error('[ui.lifecycle] safe error:', e);
     }
   }
 
-  function safeHook(globalName, after) {
-    var w = window;
-    if (typeof w[globalName] !== 'function') return;
-    var orig = w[globalName];
-    w[globalName] = function () {
-      var r = orig.apply(this, arguments);
-      safe(after);
-      return r;
-    };
+  function onReady(cb) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        safe(cb);
+      });
+    } else {
+      safe(cb);
+    }
   }
 
-  /* ===================== Answer / Set hooks ==================== */
+  function getUILang() {
+    try {
+      if (document.documentElement && document.documentElement.dataset && document.documentElement.dataset.lang) {
+        return String(document.documentElement.dataset.lang || 'ru').toLowerCase();
+      }
+    } catch (_) { }
+    try {
+      if (window.App && App.settings && (App.settings.uiLang || App.settings.lang)) {
+        return String(App.settings.uiLang || App.settings.lang || 'ru').toLowerCase();
+      }
+    } catch (_) { }
+    return 'ru';
+  }
 
-  function afterAnswer() {
+  function isUkrainian() {
+    var l = getUILang();
+    if (l === 'ua') l = 'uk';
+    return l === 'uk';
+  }
+
+  /* ===================== Initial screen select ===================== */
+
+  function resolveInitialScreen() {
+    var hash = '';
+    try {
+      hash = (window.location && window.location.hash) || '';
+    } catch (_) { }
+    if (hash === '#stats') return 'stats';
+    if (hash === '#favorites') return 'favorites';
+    if (hash === '#mistakes') return 'mistakes';
+    if (hash === '#donate') return 'donate';
+    if (hash === '#guide') return 'guide';
+    if (hash === '#legal') return 'legal';
+    return 'home';
+  }
+
+  function ensureBodyClass(cls) {
+    try {
+      document.body.classList.add(cls);
+    } catch (_) { }
+  }
+
+  function removeBodyClass(cls) {
+    try {
+      document.body.classList.remove(cls);
+    } catch (_) { }
+  }
+
+  function setInitialRoute(screen) {
     safe(function () {
-      if (window.App && App.Sets && typeof App.Sets.checkCompletionAndAdvance === 'function') {
-        App.Sets.checkCompletionAndAdvance();
+      if (!window.Router || typeof Router.routeTo !== 'function') return;
+      Router.routeTo(screen || 'home');
+    });
+  }
+
+  function initThemeSync() {
+    safe(function () {
+      if (!window.App || !App.settings) return;
+      var theme = App.settings.theme || 'auto';
+      document.documentElement.dataset.theme = theme;
+    });
+  }
+
+  /* ===================== Training bootstrap ===================== */
+
+  function resolveStartupDeck() {
+    var out = {
+      deckKey: '',
+      studyLang: null
+    };
+
+    try {
+      if (!window.App) return out;
+      var dictReg = App.dictRegistry || {};
+      var activeKey = dictReg.activeKey || '';
+      if (!activeKey && dictReg.items) {
+        for (var k in dictReg.items) {
+          if (!Object.prototype.hasOwnProperty.call(dictReg.items, k)) continue;
+          activeKey = k;
+          break;
+        }
+      }
+      out.deckKey = activeKey || '';
+
+      if (App.settings && App.settings.dictsLangFilter) {
+        out.studyLang = App.settings.dictsLangFilter;
+      } else if (App.settings && App.settings.lang) {
+        out.studyLang = App.settings.lang;
+      } else {
+        out.studyLang = null;
+      }
+    } catch (e) {
+      console.error('[ui.lifecycle] resolveStartupDeck error:', e);
+    }
+
+    return out;
+  }
+
+  function applyFilters(state) {
+    safe(function () { if (window.App && App.settings) App.settings.dictsLangFilter = state.studyLang || null; });
+    safe(function () { if (window.App && App.dictRegistry) App.dictRegistry.activeKey = state.deckKey; });
+  }
+
+  function boot(state) {
+    if (!state.deckKey) {
+      // Нет доступных словарей для старта — показываем аккуратное уведомление
+      var msg;
+      try {
+        var lang = 'ru';
+        if (document.documentElement &&
+            document.documentElement.dataset &&
+            document.documentElement.dataset.lang) {
+          lang = String(document.documentElement.dataset.lang || '').toLowerCase();
+        } else if (window.App && App.settings && (App.settings.lang || App.settings.uiLang)) {
+          lang = String(App.settings.lang || App.settings.uiLang).toLowerCase();
+        }
+        if (lang === 'ua') lang = 'uk';
+        if (lang === 'uk') {
+          msg = 'Немає доступних словників для старту.';
+        } else {
+          msg = 'Нет доступных словарей для старта.';
+        }
+      } catch (_) {
+        msg = 'Нет доступных словарей для старту.';
+      }
+
+      if (window.App && App.notify) {
+        App.notify({ type: 'error', message: msg });
+      } else {
+        try { alert(msg); } catch (_) {}
+      }
+      return;
+    }
+
+    safe(function () {
+      if (window.App && typeof App.bootstrap === 'function') {
+        App.bootstrap();
       }
     });
-    safe(function () { if (window.App && App.Stats && App.Stats.recomputeAndRender) App.Stats.recomputeAndRender(); });
-    safe(function () { if (typeof renderSetStats === 'function') renderSetStats(); });
-    safe(function () { if (typeof window.updateSpoilerHeader === 'function') window.updateSpoilerHeader(); });
   }
 
-  function afterSetChange() {
-    safe(function () { if (window.App && App.Stats && App.Stats.recomputeAndRender) App.Stats.recomputeAndRender(); });
-    safe(function () { if (typeof renderSetStats === 'function') renderSetStats(); });
-    safe(function () { if (typeof window.updateSpoilerHeader === 'function') window.updateSpoilerHeader(); });
+  /* ===================== Splash / first screen ===================== */
+
+  function hideSplash() {
+    safe(function () {
+      var el = document.querySelector('.app-splash');
+      if (!el) return;
+      el.classList.add('app-splash--hidden');
+      setTimeout(function () {
+        try {
+          if (el && el.parentNode) el.parentNode.removeChild(el);
+        } catch (_) { }
+      }, 400);
+    });
   }
 
-  // Подвешиваемся к глобальным хэндлерам выбора ответа
-  safe(function () {
-    safeHook('onChoice',      afterAnswer);
-    safeHook('onIDontKnow',   afterAnswer);
-    safeHook('nextWord',      afterAnswer);
+  function showAppRoot() {
+    safe(function () {
+      var root = document.querySelector('.app-root');
+      if (!root) return;
+      root.classList.add('app-root--visible');
+    });
+  }
 
-    if (window.App && App.Sets && typeof App.Sets.setActiveSetIndex === 'function') {
-      var _set = App.Sets.setActiveSetIndex;
-      App.Sets.setActiveSetIndex = function (i) {
-        var r = _set.apply(this, arguments);
-        safe(afterSetChange);
-        return r;
-      };
-    }
-  });
+  function initTopbarLangSwitch() {
+    safe(function () {
+      var btnRu = document.querySelector('[data-lang-switch="ru"]');
+      var btnUk = document.querySelector('[data-lang-switch="uk"]');
 
-  /* ===================== Startup Manager ===================== */
-
-  (function () {
-    var LS = {
-      uiLang:        'lexitron.uiLang',
-      studyLang:     'lexitron.studyLang',
-      deckKey:       'lexitron.deckKey',
-      setupDone:     'lexitron.setupDone',
-      legacyActiveKey: 'lexitron.activeKey'
-    };
-
-    function lsGet(k, d) { try { var v = localStorage.getItem(k); return v === null ? d : v; } catch (_) { return d; } }
-    function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (_) { /* noop */ } }
-
-    function builtinKeys() {
-      return safe(function () {
-        if (window.App && App.Decks && typeof App.Decks.builtinKeys === 'function') return App.Decks.builtinKeys();
-        return Object.keys(window.decks || {});
-      }) || [];
-    }
-
-    function firstLang() {
-      var keys = builtinKeys();
-      if (!keys.length) return null;
-      return String(keys[0]).split('_')[0] || null;
-    }
-
-    function deckExists(key) {
-      if (!key) return false;
-      if (key === 'fav' || key === 'favorites' || key === 'mistakes') return true;
-      return !!safe(function () {
-        if (window.App && App.Decks && typeof App.Decks.resolveDeckByKey === 'function') {
-          var arr = App.Decks.resolveDeckByKey(key);
-          return Array.isArray(arr); // существование достаточно
-        }
-        return key && window.decks && Array.isArray(window.decks[key]);
-      });
-    }
-
-    function deckNonEmpty(key) {
-      if (!key) return false;
-      return !!safe(function () {
-        if (window.App && App.Decks && typeof App.Decks.resolveDeckByKey === 'function') {
-          var arr = App.Decks.resolveDeckByKey(key);
-          return Array.isArray(arr) && arr.length > 0;
-        }
-        return key && window.decks && Array.isArray(window.decks[key]) && window.decks[key].length > 0;
-      });
-    }
-
-    function firstForLang(lang) {
-      var pref = (lang || '').toLowerCase() + '_';
-      var keys = builtinKeys().filter(function (k) { return k.startsWith(pref); });
-      var preferred = pref + 'verbs';
-      if (keys.indexOf(preferred) !== -1) return preferred;
-      return keys[0] || null;
-    }
-
-    function firstNonEmptyForLang(lang) {
-      var pref = (lang || '').toLowerCase() + '_';
-      var keys = builtinKeys().filter(function (k) { return k.startsWith(pref); });
-      for (var i = 0; i < keys.length; i++) {
-        if (deckNonEmpty(keys[i])) return keys[i];
+      function setCurrent(active) {
+        if (btnRu) btnRu.classList.toggle('is-active', active === 'ru');
+        if (btnUk) btnUk.classList.toggle('is-active', active === 'uk');
       }
-      return null;
-    }
 
-    function readSettings() {
-      // Единый дефолт для UI-языка
-      var uiLang   = lsGet(LS.uiLang) || (window.App && App.settings && App.settings.lang) || 'ru';
-      var studyLang = lsGet(LS.studyLang) || null;
-      var deckKey   = lsGet(LS.deckKey) || lsGet(LS.legacyActiveKey) || null;
-      var setupDone = lsGet(LS.setupDone) === 'true';
-      return {
-        uiLang: (uiLang || 'ru').toLowerCase(),
-        studyLang: studyLang,
-        deckKey: deckKey,
-        setupDone: setupDone
-      };
-    }
+      var current = getUILang();
+      setCurrent(current === 'uk' ? 'uk' : 'ru');
 
-    function shouldShowSetup(initial) {
-      // query-переключатель
-      try { if (/(?:\?|&)setup=1(?:&|$)/.test(location.search)) return true; } catch (_) {}
-      if (!initial.setupDone) return true;
-      try {
-        var k = initial.deckKey;
-        if (k === 'fav' || k === 'favorites' || k === 'mistakes') return false;
-      } catch (_) {}
-      if (!deckExists(initial.deckKey)) return true;
-      return false;
-    }
+      function changeLang(target) {
+        safe(function () {
+          if (!window.App) return;
+          if (!App.settings) App.settings = {};
+          App.settings.uiLang = target;
+          if (!App.settings.lang) App.settings.lang = target;
+          if (App.saveSettings) App.saveSettings();
+          document.documentElement.dataset.lang = target;
+          try {
+            document.dispatchEvent(new CustomEvent('lexitron:ui-lang-changed', { detail: { lang: target } }));
+          } catch (_) { }
+          setCurrent(target);
+        });
+      }
 
-    function validateAndFix(initial) {
-      var uiLang    = initial.uiLang;
-      var studyLang = initial.studyLang;
-      var deckKey   = initial.deckKey;
+      if (btnRu) {
+        btnRu.addEventListener('click', function () { changeLang('ru'); });
+      }
+      if (btnUk) {
+        btnUk.addEventListener('click', function () { changeLang('uk'); });
+      }
+    });
+  }
 
-      // синхронизируем App.settings и localStorage
+  function initTopbarThemeSwitch() {
+    safe(function () {
+      if (!window.App || !App.settings) return;
+      var btn = document.querySelector('[data-action="toggle-theme"]');
+      if (!btn) return;
+
+      function applyState() {
+        var theme = App.settings.theme || 'auto';
+        btn.setAttribute('data-theme', theme);
+      }
+
+      btn.addEventListener('click', function () {
+        var t = App.settings.theme || 'auto';
+        var next = (t === 'auto') ? 'light' : (t === 'light' ? 'dark' : 'auto');
+        App.setTheme(next);
+        applyState();
+      });
+
+      applyState();
+    });
+  }
+
+  /* ===================== Startup Manager integration ===================== */
+
+  function registerStartupHooks() {
+    safe(function () {
+      if (!window.StartupManager) return;
+      if (typeof StartupManager.registerStep !== 'function') return;
+
+      StartupManager.registerStep('resolve-deck', function (next) {
+        var st = resolveStartupDeck();
+        applyFilters(st);
+        safe(function () {
+          if (!window.App) window.App = {};
+          App._startupState = st;
+        });
+        next && next();
+      });
+
+      StartupManager.registerStep('boot-core', function (next) {
+        safe(function () {
+          var st = (window.App && App._startupState) || resolveStartupDeck();
+          boot(st);
+        });
+        next && next();
+      });
+
+      StartupManager.registerStep('route-initial', function (next) {
+        safe(function () {
+          var screen = resolveInitialScreen();
+          setInitialRoute(screen);
+        });
+        next && next();
+      });
+
+      StartupManager.registerStep('ui-ready', function (next) {
+        hideSplash();
+        showAppRoot();
+        initTopbarLangSwitch();
+        initTopbarThemeSwitch();
+        next && next();
+      });
+    });
+  }
+
+  /* =================== External hooks (after training) =================== */
+
+  function onAfterFirstTrainingSession(cb) {
+    if (!cb) return;
+    try {
+      document.addEventListener('moyamova:session-finished', function (e) {
+        safe(function () { cb(e && e.detail || {}); });
+      });
+    } catch (_) { }
+  }
+
+  function onAfterAnyAnswer(cb) {
+    if (!cb) return;
+    try {
+      document.addEventListener('moyamova:answer', function (e) {
+        safe(function () { cb(e && e.detail || {}); });
+      });
+    } catch (_) { }
+  }
+
+  function onAfterSetChange(cb) {
+    if (!cb) return;
+    try {
+      document.addEventListener('moyamova:set-changed', function (e) {
+        safe(function () { cb(e && e.detail || {}); });
+      });
+    } catch (_) { }
+  }
+
+  window.UILifecycle = {
+    resolveInitialScreen: resolveInitialScreen,
+    resolveStartupDeck: resolveStartupDeck,
+    applyFilters: applyFilters,
+    boot: boot,
+    onAfterFirstTrainingSession: onAfterFirstTrainingSession,
+    onAfterAnyAnswer: onAfterAnyAnswer,
+    onAfterSetChange: onAfterSetChange
+  };
+
+  registerStartupHooks();
+
+  (function registerAnswerHook() {
+    function afterAnswer() {
       safe(function () {
-        if (window.App && App.settings) App.settings.lang = uiLang;
-        lsSet(LS.uiLang, uiLang);
-      });
-
-      if (deckNonEmpty(deckKey)) {
-        if (!studyLang) safe(function () { studyLang = String(deckKey).split('_')[0] || studyLang; });
-        return { uiLang: uiLang, studyLang: studyLang, deckKey: deckKey };
-      }
-
-      if (studyLang) {
-        var first = firstForLang(studyLang);
-        if (first) return { uiLang: uiLang, studyLang: studyLang, deckKey: first };
-      }
-
-      var lang = firstLang();
-      var firstAny = lang && firstForLang(lang);
-      if (firstAny) return { uiLang: uiLang, studyLang: lang, deckKey: firstAny };
-
-      return { uiLang: uiLang, studyLang: null, deckKey: null };
-    }
-
-    function persist(state) {
-      if (state.uiLang)   lsSet(LS.uiLang, state.uiLang);
-      if (state.studyLang) lsSet(LS.studyLang, state.studyLang);
-      if (state.deckKey)  { lsSet(LS.deckKey, state.deckKey); lsSet(LS.legacyActiveKey, state.deckKey); }
-    }
-
-    function applyFilters(state) {
-      safe(function () { if (window.App && App.settings) App.settings.dictsLangFilter = state.studyLang || null; });
-      safe(function () { if (window.App && App.dictRegistry) App.dictRegistry.activeKey = state.deckKey; });
-    }
-
-    function boot(state) {
-      if (!state.deckKey) {
-        // Минимальная обратная связь; в проде лучше заменить на in-app нотификацию/модалку
-        alert('Нет доступных словарей для старта.');
-        return;
-      }
-      safe(function () {
-        if (window.App && typeof App.bootstrap === 'function') {
-          App.bootstrap();
-        }
+        if (window.updateSpoilerHeader && typeof window.updateSpoilerHeader === 'function') window.updateSpoilerHeader();
       });
     }
 
-    function gate() {
-      var initial = readSettings();
+    try {
+      document.addEventListener('moyamova:answer', afterAnswer);
+    } catch (_) { }
 
-      // Если настроек нет/нужно выбрать — показываем SetupModal
-      if (shouldShowSetup(initial) && window.SetupModal && typeof SetupModal.build === 'function') {
-        document.addEventListener('lexitron:setup:done', function () {
-          var after = readSettings();
-          var fixed = validateAndFix(after);
-          persist(fixed);
-          applyFilters(fixed);
-          lsSet(LS.setupDone, 'true');
-          boot(fixed);
-        }, { once: true });
-        SetupModal.build();
-        return;
-      }
-
-      // Обычный путь
-      var fixed = validateAndFix(initial);
-      persist(fixed);
-      applyFilters(fixed);
-      boot(fixed);
-    }
-
-    // Публичный API
-    window.StartupManager = {
-      gate: gate,
-      readSettings: readSettings,
-      validateAndFix: validateAndFix,
-      persist: persist,
-      applyFilters: applyFilters,
-      boot: boot,
-      // экспорт вспомогательных (пригодится в тестах/отладке)
-      _util: {
-        builtinKeys: builtinKeys,
-        firstLang: firstLang,
-        deckExists: deckExists,
-        deckNonEmpty: deckNonEmpty,
-        firstForLang: firstForLang,
-        firstNonEmptyForLang: firstNonEmptyForLang
-      }
-    };
+    try {
+      document.addEventListener('moyamova:set-changed', afterAnswer);
+    } catch (_) { }
   })();
 
   /* =================== DOMContentLoaded bootstrap =================== */

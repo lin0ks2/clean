@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>MOYAMOVA — офлайн-тренажёр языков на карточках</title>
+  <meta name="description" content="Изучайте языки с карточками слов: работает офлайн без интернета, без рекламы и подписок. Немецкий, английский, французский, сербский. Прогресс, статистика, экспорт.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/theme.light.css">
+  <link rel="stylesheet" href="./css/theme.dark.css">
+  <link rel="stylesheet" href="./css/view.stats.css">
+  
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Иконки -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./img/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="./img/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="76x76" href="./img/apple-touch-icon-76x76.png">
+  <link rel="icon" href="./img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="128x128" href="./img/logo_128.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./img/logo_512.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="./img/logo_64.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="./img/logo_128.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="./img/logo_512.png">
+
+  <!-- SEO / соцсети -->
+  <link rel="canonical" href="https://moyamova.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MOYAMOVA">
+  <meta property="og:title" content="MOYAMOVA — офлайн-тренажёр языков на карточках">
+  <meta property="og:description" content="Изучайте языки с карточками слов: работает офлайн без интернета, без рекламы и подписок. Немецкий, английский, французский, сербский. Прогресс, статистика, экспорт.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://moyamova.online/">
+  <meta property="og:image" content="https://moyamova.online/img/android-chrome-512x512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MOYAMOVA — офлайн-тренажёр языков на карточках">
+  <meta name="twitter:description" content="Изучайте языки с карточками слов: работает офлайн без интернета, без рекламы и подписок. Немецкий, английский, французский, сербский. Прогресс, статистика, экспорт.">
+  <meta name="twitter:image" content="https://moyamova.online/img/android-chrome-512x512.png">
+
+  <meta name="apple-mobile-web-app-title" content="MOYAMOVA">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MOYAMOVA",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CHF"
+    },
+    "url": "https://moyamova.online/",
+    "inLanguage": ["ru", "uk", "de", "en", "fr", "sr"],
+    "description": "Изучайте языки с карточками слов: работает офлайн без интернета, без рекламы и подписок. Немецкий, английский, французский, сербский. Прогресс, статистика, экспорт.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MOYAMOVA"
+    }
+  }
+  </script>
+
+  <!-- Smooth reload helper: prevents white flash during SW upgrade -->
+  <script>
+  (function(){
+    try {
+      if (sessionStorage.getItem('moya_upgrading') === '1') {
+        var dark = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+        var bg = dark ? '#0c1016' : '#ffffff';
+        var st = document.createElement('style');
+        st.textContent = 'body{background:'+bg+'} body{opacity:0;transition:opacity .18s ease}';
+        document.head.appendChild(st);
+        window.addEventListener('load', function(){
+          sessionStorage.removeItem('moya_upgrading');
+          requestAnimationFrame(function(){ document.body.style.opacity='1'; });
+        });
+      }
+    } catch(e){}
+  })();
+  </script>
+</head>
+<body>
+
+  <!-- Минимальный корневой контейнер. Весь shell рисуем из JS -->
+  <div id="moya-shell-root"></div>
+
+  <!-- === SHELL (верстка + логика) === -->
+  <script src="./js/app.shell.view.js" defer></script>
+  <script src="./js/app.shell.logic.js" defer></script>
+
+  <!-- === CORE + I18N === -->
+  <script src="./js/app.core.js" defer></script>
+  <script src="./js/i18n.js" defer></script>
+
+  <!-- === РЕЕСТР СЛОВАРЕЙ (ДОЛЖЕН БЫТЬ ДО deck.*.js) === -->
+  <script src="./js/dicts.js" defer></script>
+
+  <!-- === ДАННЫЕ СЛОВАРЕЙ === -->
+  <script src="./js/deck.de.js" defer></script>
+  <script src="./js/deck.en.js" defer></script>
+  <script src="./js/deck.fr.js" defer></script>
+  <script src="./js/deck.sr.js" defer></script>
+  <script src="./js/deck.es.js" defer></script>
+
+  <!-- === ЛОГИКА (ядро) === -->
+  <script src="./js/app.decks.js" defer></script>
+  <script src="./js/app.trainer.js" defer></script>
+  <script src="./js/app.favorites.js" defer></script>
+  <script src="./js/app.mistakes.js" defer></script>
+
+  <!-- === Мост виртуальных словарей (ошибки / избранное) === -->
+  <script src="./js/app.decks.bridge.js" defer></script>
+
+  <!-- === UI надстройки === -->
+  <script src="./js/ui.bus.js" defer></script>
+  <script src="./js/ui.stats.core.js" defer></script>
+  <script src="./js/ui.lifecycle.js" defer></script>
+  <script src="./js/ui.options.safe.js" defer></script>
+  <script src="./js/ui.sets.done.js" defer></script>
+  <script src="./js/ui.progress.scope.js" defer></script>
+  <script src="./js/ui.state.js" defer></script>
+
+  <!-- === Экраны === -->
+  <script src="./js/view.dicts.js" defer></script>
+  <script src="./js/view.mistakes.js" defer></script>
+  <script src="./js/view.favorites.js" defer></script>
+  <script src="./js/view.stats.js" defer></script>
+  <script src="./js/view.guide.js" defer></script>
+
+  <!-- === ГЛАВНАЯ / роутер === -->
+  <script src="./js/app.backup.js" defer></script>
+  <script src="./js/home.js" defer></script>
+
+  <!-- свайпы между экранами -->
+  <script src="./js/ui.swipe.js" defer></script>
+
+  <!-- === МОДУЛИ === -->
+  <script type="module" src="./js/legal.js"></script>
+
+  <script src="./js/theme.js" defer></script>
+  <script src="./js/updates.js" defer></script>
+  <script src="./js/ga.consent.js" defer></script>
+</body>
+</html>

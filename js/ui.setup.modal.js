@@ -3,7 +3,7 @@
  * File: ui.setup.modal.js
  * Purpose: Initial setup wizard (UI + TOS + GA consent)
  * Integrated with StartupManager (SetupModal.build + lexitron:setup:done)
- * Version: 2.2
+ * Version: 2.3
  * ========================================================== */
 
 (function (root) {
@@ -11,16 +11,16 @@
 
   var doc = root.document;
 
-  // Ключи StartupManager (если у тебя другие — поправь тут)
+  // Ключи StartupManager
   var LS_UI_LANG       = 'lexitron.uiLang';
   var LS_STUDY_LANG    = 'lexitron.studyLang';
   var LS_DECK_KEY      = 'lexitron.deckKey';
-  var LS_LEGACY_ACTIVE = 'lexitron.activeKey'; // для совместимости с legacyActiveKey
+  var LS_LEGACY_ACTIVE = 'lexitron.activeKey';
   var LS_SETUP_DONE    = 'lexitron.setupDone';
 
-  // Наши вспомогательные ключи
+  // Вспомогательные ключи
   var LS_TOS_ACCEPTED = 'mm.tosAccepted';
-  var LS_GA_CHOICE    = 'mm.gaChoice'; // 'granted' / 'denied' — дублируется в GAConsent
+  var LS_GA_CHOICE    = 'mm.gaChoice'; // 'granted' / 'denied'
 
   /* ---------------------------------------
    * LocalStorage helpers
@@ -64,7 +64,6 @@
   };
 
   function initStateFromStorage() {
-    // Инициализируемся из тех же ключей, что читает StartupManager
     var ui = lsGet(LS_UI_LANG, 'ru');
     if (ui !== 'ru' && ui !== 'uk') ui = 'ru';
     state.uiLang = ui;
@@ -74,7 +73,6 @@
     if (allowedStudy.indexOf(study) === -1) study = 'de';
     state.studyLang = study;
 
-    // уровень сложности пока живёт только у мастера / в App.settings
     state.level = 'normal';
 
     state.tosAccepted = lsGet(LS_TOS_ACCEPTED, '') === '1';
@@ -90,7 +88,7 @@
 
     if (ru) {
       return {
-        title: 'Начальная настройка',
+        title: 'Начальная настройка MOYAMOVA',
         subtitle: 'Пара шагов — и можно учить слова.',
         intro:
           'MOYAMOVA — это офлайн-тренажёр слов на карточках: выбираете язык, тренируете слова, собираете статистику и возвращаетесь к ошибкам.',
@@ -111,7 +109,7 @@
     }
 
     return {
-      title: 'Початкове налаштування',
+      title: 'Початкова настройка MOYAMOVA',
       subtitle: 'Кілька кроків — і можна вчити слова.',
       intro:
         'MOYAMOVA — це офлайн-тренажер слів на картках: обираєте мову, тренуєте слова, збираєте статистику й повертаєтеся до помилок.',
@@ -223,7 +221,6 @@
         if (state.uiLang === lang.code) return;
         state.uiLang = lang.code;
         lsSet(LS_UI_LANG, state.uiLang);
-        // переотрисовываем тексты и контролы под новый язык
         renderAll();
       });
 
@@ -331,37 +328,36 @@
     });
   }
 
+  // Открытие условий: в новой вкладке
   function openTerms() {
-  try {
     var url = null;
 
-    // Если есть Legal.legalUrl('terms') — используем его
-    if (root.Legal && typeof root.Legal.legalUrl === 'function') {
-      url = root.Legal.legalUrl('terms');
+    // 1) Пытаемся взять URL из Legal.legalUrl('terms')
+    try {
+      if (root.Legal && typeof root.Legal.legalUrl === 'function') {
+        url = root.Legal.legalUrl('terms');
+      }
+    } catch (e) {
+      // ignore
     }
 
-    // Фолбэк — старая локальная страница
+    // 2) Фолбэк — локальная страница
     if (!url) {
       url = './legal/terms.ru.html';
     }
 
-    // ВАЖНО: открываем в НОВОЙ вкладке, а не меняем текущую
-    var w = window.open(url, '_blank', 'noopener,noreferrer');
-    if (!w) {
-      // если браузер заблокировал window.open — хотя бы обычный переход
+    // 3) Пытаемся открыть в новой вкладке.
+    var win = null;
+    try {
+      win = root.open(url, '_blank', 'noopener,noreferrer');
+    } catch (e) {
+      win = null;
+    }
+
+    // 4) Если браузер запретил window.open — хотя бы обычный переход
+    if (!win) {
       root.location.href = url;
     }
-  } catch (e) {
-    // на всякий случай — прямой фолбэк
-    try {
-      root.open('./legal/terms.ru.html', '_blank');
-    } catch (_) {
-      root.location.href = './legal/terms.ru.html';
-    }
-  }
-}
-    // fallback
-    root.location.href = './legal/terms.ru.html';
   }
 
   function renderConsents(rootEl) {
@@ -419,8 +415,6 @@
 
     attachCheckboxHandlers(gaWrapper, gaInput, function (checked) {
       state.gaAccepted = checked;
-      // решение по GA применяем только при onStart,
-      // здесь просто обновляем флаг
     });
 
     var tosLink = rootEl.querySelector('[data-setup-tos-link]');
@@ -439,7 +433,6 @@
   function applyGaChoice(granted) {
     lsSet(LS_GA_CHOICE, granted ? 'granted' : 'denied');
 
-    // Если есть GAConsent из ga.consent.js — используем его
     if (root.GAConsent && typeof root.GAConsent.applyChoice === 'function') {
       try {
         root.GAConsent.applyChoice(granted);
@@ -449,7 +442,6 @@
       }
     }
 
-    // fallback — прямой вызов gtag
     try {
       if (root.gtag && typeof root.gtag === 'function') {
         root.gtag('consent', 'update', {
@@ -469,7 +461,6 @@
     var lang = state.studyLang;
     if (!lang) return null;
 
-    // Используем утилиты StartupManager, если доступны
     try {
       if (root.StartupManager && StartupManager._util) {
         var util = StartupManager._util;
@@ -486,7 +477,6 @@
       // ignore
     }
 
-    // Fallback: ничего не нашли / утилит нет
     return null;
   }
 
@@ -580,32 +570,25 @@
 
   function onStart() {
     if (!state.tosAccepted) {
-      // защитный барьер, хотя кнопка disabled
       return;
     }
 
-    // 1) сохраняем выбор языка интерфейса и языка обучения
     lsSet(LS_UI_LANG,    state.uiLang);
     lsSet(LS_STUDY_LANG, state.studyLang);
 
-    // 2) подбираем стартовую деку под язык обучения
     var deckKey = resolveDeckForStudyLang();
     if (deckKey) {
       lsSet(LS_DECK_KEY,      deckKey);
-      lsSet(LS_LEGACY_ACTIVE, deckKey); // для legacyActiveKey в StartupManager
+      lsSet(LS_LEGACY_ACTIVE, deckKey);
     }
 
-    // 3) TOS и GA
     lsSet(LS_TOS_ACCEPTED, '1');
     applyGaChoice(state.gaAccepted);
 
-    // 4) internal App.settings (для runtime, если нужно)
     applyToAppSettings();
 
-    // 5) помечаем, что мастер пройден
     lsSet(LS_SETUP_DONE, 'true');
 
-    // 6) уведомляем слушателей в текущем рантайме (если кто-то подписан)
     try {
       doc.dispatchEvent(
         new CustomEvent('lexitron:setup:done', {
@@ -623,11 +606,8 @@
       // ignore
     }
 
-    // 7) закрываем мастер визуально
     closeModal();
 
-    // 8) КЛЮЧЕВОЕ: один раз полностью перезагружаем страницу,
-    //    чтобы приложение стартовало в "чистом" цикле с новыми настройками.
     try {
       root.location.reload();
     } catch (e) {
@@ -636,30 +616,16 @@
   }
 
   /* ---------------------------------------
-   * Public API — то, что будет дергать StartupManager
+   * Public API
    * ------------------------------------ */
 
   var SetupModal = {
-    /**
-     * Основной вход: StartupManager.gate() ожидает window.SetupModal.build()
-     * Тут мы только строим и показываем модалку — НИЧЕГО не бутстрапим сами.
-     */
     build: function () {
       openModal();
     },
-
-    /**
-     * alias на build, чтобы можно было открывать мастер вручную.
-     */
     open: function () {
       openModal();
     },
-
-    /**
-     * Сброс выбора и повторный запуск мастера.
-     * На архитектуру старта не влияет — StartupManager всё равно решает,
-     * показывать мастер при следующем запуске или нет.
-     */
     reset: function () {
       lsRemove(LS_TOS_ACCEPTED);
       lsRemove(LS_GA_CHOICE);
@@ -669,8 +635,5 @@
   };
 
   root.SetupModal = SetupModal;
-
-  // ВАЖНО: не вешаемся на DOMContentLoaded
-  // Мастер всегда запускается ТОЛЬКО через StartupManager.gate()
 
 })(window);

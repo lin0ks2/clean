@@ -409,15 +409,18 @@ body[data-theme="dark"] .setup-checkbox__box {
   display: flex;
 }
 
+/* фон полностью гасит мастер под ним */
 .setup-terms-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* затемнение фона */
+  background: rgba(5, 10, 25, 0.78); /* можно подогнать под твой blur */
 }
 
+/* сама «карточка» по размерам как мастер */
 .setup-terms-modal {
   position: relative;
   z-index: 1;
+
   max-width: 640px;
   width: calc(100% - 32px);
   max-height: calc(100vh - 80px);
@@ -425,11 +428,11 @@ body[data-theme="dark"] .setup-checkbox__box {
   background: var(--mm-surface, #ffffff);
   color: var(--mm-text, #111827);
 
-  border-radius: 24px;
-  padding: 20px 24px;
-  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.35);
+  border-radius: 28px;           /* подгони под .setup-modal__inner */
+  padding: 24px 24px 20px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.40);
 
-  overflow: auto;                /* если текста много — скролл внутри */
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
   font-size: 14px;
   line-height: 1.5;
@@ -445,13 +448,6 @@ body[data-theme="dark"] .setup-checkbox__box {
 .setup-terms-content p {
   margin: 0 0 10px;
 }
-
-.setup-terms-content a {
-  color: #0b99ff;
-  text-decoration: underline;
-}
-
-/* Кнопка закрытия (крестик) */
 
 .setup-terms-close {
   position: absolute;

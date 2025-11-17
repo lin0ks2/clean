@@ -5,7 +5,7 @@
  * Версия: 1.0
  * Обновлено: 2025-11-17
  * ========================================================== */
-// updates.js — Live update with SINGLE toast, no overlap, dynamic i18n, debounced binding
+
 (function(){
   // ---- Language detection (dynamic) ----
   function resolveLang(){

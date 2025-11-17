@@ -3,7 +3,7 @@
  * File: ui.setup.modal.js
  * Purpose: Initial setup wizard (UI + TOS + GA consent)
  * Integrated with StartupManager (SetupModal.build + lexitron:setup:done)
- * Version: 2.1
+ * Version: 2.2
  * ========================================================== */
 
 (function (root) {
@@ -16,6 +16,7 @@
   var LS_STUDY_LANG    = 'lexitron.studyLang';
   var LS_DECK_KEY      = 'lexitron.deckKey';
   var LS_LEGACY_ACTIVE = 'lexitron.activeKey'; // для совместимости с legacyActiveKey
+  var LS_SETUP_DONE    = 'lexitron.setupDone';
 
   // Наши вспомогательные ключи
   var LS_TOS_ACCEPTED = 'mm.tosAccepted';
@@ -586,24 +587,34 @@
     // 4) internal App.settings (для runtime, если нужно)
     applyToAppSettings();
 
-    // 5) закрываем мастер
-    closeModal();
+    // 5) помечаем, что мастер пройден
+    lsSet(LS_SETUP_DONE, 'true');
 
-    // 6) уведомляем StartupManager, что можно продолжать gate():
-    //    он перечитает настройки через readSettings(), validateAndFix и сделает boot()
+    // 6) уведомляем слушателей в текущем рантайме (если кто-то подписан)
     try {
       doc.dispatchEvent(
         new CustomEvent('lexitron:setup:done', {
           detail: {
-            uiLang:     state.uiLang,
-            studyLang:  state.studyLang,
-            level:      state.level,
+            uiLang:      state.uiLang,
+            studyLang:   state.studyLang,
+            level:       state.level,
             tosAccepted: state.tosAccepted,
             gaAccepted:  state.gaAccepted,
             deckKey:     deckKey || null
           }
         })
       );
+    } catch (e) {
+      // ignore
+    }
+
+    // 7) закрываем мастер визуально
+    closeModal();
+
+    // 8) КЛЮЧЕВОЕ: один раз полностью перезагружаем страницу,
+    //    чтобы приложение стартовало в "чистом" цикле с новыми настройками.
+    try {
+      root.location.reload();
     } catch (e) {
       // ignore
     }
@@ -637,6 +648,7 @@
     reset: function () {
       lsRemove(LS_TOS_ACCEPTED);
       lsRemove(LS_GA_CHOICE);
+      lsRemove(LS_SETUP_DONE);
       openModal();
     }
   };

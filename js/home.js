@@ -190,27 +190,49 @@
   // starKey (единственное определение)
   const starKey = (typeof A.starKey === 'function') ? A.starKey : (id, key) => `${key}:${id}`;
 
-  // ЧИСТАЯ версия: не изменяет состояние, только выбирает лучший ключ
-  function activeDeckKey() {
-    try {
-      // 1) Trainer держит валидный ключ?
-      const kTrainer = (A.Trainer && typeof A.Trainer.getDeckKey === 'function') ? A.Trainer.getDeckKey() : null;
-      if (isValidDeckKey(kTrainer)) return kTrainer;
+  // ЧИСТАЯ версия: не изменяет состояние, только выбирает лучший // Было что-то вроде:
+// function activeDeckKey() { ... }
+// Заменяем на это:
 
-      // 2) предпочитаемый возврат (после виртуальных колод)
-      const prefer = (A.settings && A.settings.preferredReturnKey) || null;
-      if (isValidDeckKey(prefer)) return prefer;
+function activeDeckKey() {
+  var A = window.App || {};
 
-      // 3) lastDeckKey, если валиден
-      const last = (A.settings && A.settings.lastDeckKey) || null;
-      if (isValidDeckKey(last)) return last;
-
-      // 4) «как в референсе»
-      return pickDefaultKeyLikeRef();
-    } catch (_){
-      return ACTIVE_KEY_FALLBACK;
+  try {
+    // 0) Если есть StartupManager и он уже знает, какой словарь активный —
+    //    уважаем его в первую очередь.
+    if (window.StartupManager && typeof StartupManager.readSettings === 'function') {
+      var s = StartupManager.readSettings && StartupManager.readSettings();
+      if (s && s.deckKey && isValidDeckKey(s.deckKey)) {
+        return s.deckKey;
+      }
     }
+
+    // 1) Trainer держит валидный ключ?
+    var kTrainer = (A.Trainer && typeof A.Trainer.getDeckKey === 'function')
+      ? A.Trainer.getDeckKey()
+      : null;
+    if (isValidDeckKey(kTrainer)) return kTrainer;
+
+    // 2) предпочитаемый возврат (например, после тренировок)
+    var prefer = (A.settings && A.settings.preferredReturnKey) || null;
+    if (isValidDeckKey(prefer)) return prefer;
+
+    // 3) lastDeckKey (последний использованный пользователем словарь)
+    var last = (A.settings && A.settings.lastDeckKey) || null;
+    if (isValidDeckKey(last)) return last;
+
+    // 4) «как в референсе» — твоя существующая логика,
+    //    которая смотрит на App.Decks / window.decks и выбирает первый нормальный словарь
+    var ref = pickDefaultKeyLikeRef && pickDefaultKeyLikeRef();
+    if (isValidDeckKey(ref)) return ref;
+
+    // 5) Самый крайний фаллбек — если вообще всё сломалось / данных нет.
+    return ACTIVE_KEY_FALLBACK;
+  } catch (_) {
+    // Любая ошибка — в самом-самом конце возвращаем аварийный дефолт
+    return ACTIVE_KEY_FALLBACK;
   }
+}
 
   // Идшники слов текущего сета
   function getActiveBatchIndex() {

@@ -1,17 +1,25 @@
 /* ==========================================================
- * ui.setup.modal.css — мастер начальной настройки
- * Стиль приведён к общему стилю приложения MOYAMOVA
+ * Project: MOYAMOVA
+ * File: ui.setup.modal.css
+ * Purpose: Initial setup wizard (layout & theming)
+ * Version: 1.4
  * ========================================================== */
 
-/* ---------------------------------------
+:root {
+  --setup-accent: var(--accent-main, #22c7ff);
+  --setup-accent-soft: rgba(34, 199, 255, 0.12);
+  --setup-border-subtle: rgba(148, 163, 184, 0.45);
+}
+
+/* ---------------------------
  * Overlay
- * ------------------------------------ */
+ * ------------------------ */
 
 .setup-overlay {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  display: none;                 /* показываем только с .is-open */
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 16px;
@@ -28,9 +36,9 @@
   backdrop-filter: blur(8px);
 }
 
-/* ---------------------------------------
- * Modal shell — как .home section.card
- * ------------------------------------ */
+/* ---------------------------
+ * Modal
+ * ------------------------ */
 
 .setup-modal {
   position: relative;
@@ -49,14 +57,12 @@
   color: var(--text, #0f172a);
 }
 
-/* тёмная тема — всё через токены, отдельный стиль не нужен */
-
-/* ---------------------------------------
- * Header
- * ------------------------------------ */
+/* ---------------------------
+ * Header + intro
+ * ------------------------ */
 
 .setup-header {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .setup-title {
@@ -72,9 +78,16 @@
   opacity: 0.78;
 }
 
-/* ---------------------------------------
+.setup-intro {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  opacity: 0.88;
+}
+
+/* ---------------------------
  * Sections
- * ------------------------------------ */
+ * ------------------------ */
 
 .setup-section {
   margin-top: 10px;
@@ -89,9 +102,9 @@
   margin-bottom: 6px;
 }
 
-/* ---------------------------------------
- * Study language flags — как .dict-flag
- * ------------------------------------ */
+/* ---------------------------
+ * Study language flags
+ * ------------------------ */
 
 .setup-flags-row {
   display: flex;
@@ -120,7 +133,6 @@
     opacity 0.12s ease;
 }
 
-/* dark: как у .dict-flag */
 html[data-theme="dark"] .setup-flag-btn,
 body[data-theme="dark"] .setup-flag-btn {
   background: transparent !important;
@@ -130,23 +142,23 @@ body[data-theme="dark"] .setup-flag-btn {
   font-size: 18px;
 }
 
-/* hover — как у .dict-flag:hover */
 .setup-flag-btn:hover {
   transform: translateY(-1px);
 }
 
-/* active — как .dict-flag.active */
 .setup-flag-btn.is-active {
   border-color: var(--burger, var(--brand, #35b6ff));
-  box-shadow: 0 0 0 3px color-mix(in srgb,
-    var(--burger, var(--brand, #35b6ff)) 20%, transparent);
+  box-shadow: 0 0 0 3px color-mix(
+    in srgb,
+    var(--burger, var(--brand, #35b6ff)) 20%,
+    transparent
+  );
   background: #fff;
 }
 
-/* ---------------------------------------
- * Segmented controls (UI-lang + difficulty)
- * В духе кнопок, но более плоские
- * ------------------------------------ */
+/* ---------------------------
+ * Segmented controls
+ * ------------------------ */
 
 .setup-mode-toggle {
   display: inline-flex;
@@ -189,7 +201,6 @@ body[data-theme="dark"] .setup-mode-toggle {
   font-size: 16px;
 }
 
-/* активный сегмент — упрощённая версия btn-primary */
 .setup-mode-btn.is-active {
   background: var(--brand, #35b6ff);
   color: #fff;
@@ -197,31 +208,120 @@ body[data-theme="dark"] .setup-mode-toggle {
   box-shadow: 0 4px 12px rgba(53, 182, 255, 0.28);
 }
 
-/* UI-lang: чуть больше по горизонтали */
+html[data-theme="dark"] .setup-mode-btn.is-active,
+body[data-theme="dark"] .setup-mode-btn.is-active {
+  color: #020617;
+}
+
 .setup-mode-toggle--lang .setup-mode-btn {
   padding-inline: 16px;
 }
 
-/* ---------------------------------------
+/* ---------------------------
+ * Consents (checkboxes)
+ * ------------------------ */
+
+.setup-consent {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: stretch;
+  text-align: left;
+}
+
+.setup-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.setup-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.setup-checkbox__box {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--divider, #e5edf4);
+  background: #ffffff;
+  margin-top: 1px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #ffffff;
+  transition:
+    background 0.12s ease,
+    border-color 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+html[data-theme="dark"] .setup-checkbox__box,
+body[data-theme="dark"] .setup-checkbox__box {
+  background: #020617;
+  border-color: rgba(148, 163, 184, 0.7);
+}
+
+.setup-checkbox__label {
+  flex: 1;
+}
+
+.setup-checkbox__label small {
+  opacity: 0.8;
+}
+
+/* чекбокс отмечен */
+.setup-checkbox--checked .setup-checkbox__box {
+  background: var(--brand, #35b6ff);
+  border-color: var(--brand, #35b6ff);
+  box-shadow: 0 2px 6px rgba(53, 182, 255, 0.32);
+}
+
+.setup-checkbox--checked .setup-checkbox__box::before {
+  content: '✓';
+}
+
+/* ссылка внутри текста */
+.setup-link {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: var(--brand, #35b6ff);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+}
+
+/* ---------------------------
  * Note & footer
- * ------------------------------------ */
+ * ------------------------ */
 
 .setup-note {
-  margin: 8px 0 4px;
+  margin: 6px 0 4px;
   font-size: 11px;
   line-height: 1.4;
   opacity: 0.8;
 }
 
 .setup-footer {
-  margin-top: 8px;
+  margin-top: 6px;
   display: flex;
   justify-content: center;
 }
 
-/* ---------------------------------------
- * Primary button — как .dicts-actions .btn-primary
- * ------------------------------------ */
+/* ---------------------------
+ * Primary button
+ * ------------------------ */
 
 .setup-start-btn {
   display: inline-flex;
@@ -241,23 +341,32 @@ body[data-theme="dark"] .setup-mode-toggle {
   transition:
     transform 0.06s ease,
     filter 0.15s ease,
-    box-shadow 0.15s ease;
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .setup-start-btn:hover {
+  .setup-start-btn:not(:disabled):hover {
     filter: brightness(1.05);
   }
 }
 
-.setup-start-btn:active {
+.setup-start-btn:active:not(:disabled) {
   transform: translateY(1px);
   box-shadow: 0 3px 10px rgba(53, 182, 255, 0.32);
 }
 
-/* ---------------------------------------
+/* disabled */
+.setup-start-btn:disabled {
+  opacity: 0.45;
+  box-shadow: none;
+  cursor: default;
+  transform: none;
+}
+
+/* ---------------------------
  * Small screens
- * ------------------------------------ */
+ * ------------------------ */
 
 @media (max-width: 360px) {
   .setup-modal__inner {
@@ -276,12 +385,8 @@ body[data-theme="dark"] .setup-mode-toggle {
   .setup-start-btn {
     width: 100%;
   }
-}
 
-/* ---------------------------------------
- * Body lock (если используешь)
- * ------------------------------------ */
-
-body.setup-open {
-  overflow: hidden;
+  .setup-consent {
+    font-size: 11px;
+  }
 }

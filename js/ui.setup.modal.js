@@ -2,7 +2,7 @@
  * Project: MOYAMOVA
  * File: ui.setup.modal.js
  * Purpose: Initial setup wizard (logic)
- * Version: 1.1
+ * Version: 1.2
  * Last modified: 2025-11-17
  * ========================================================== */
 
@@ -48,8 +48,8 @@
   };
 
   function initStateFromStorage() {
-    var a = root.App || {};
-    var s = a.settings || {};
+    var A = root.App || {};
+    var s = A.settings || {};
 
     state.uiLang = lsGet(LS_UI_LANG, s.uiLang || 'ru');
     if (state.uiLang !== 'ru' && state.uiLang !== 'uk') {
@@ -101,11 +101,11 @@
   }
 
   var STUDY_LANGS = [
-    { code: 'de', flag: '🇩🇪', label: 'German' },
+    { code: 'de', flag: '🇩🇪', label: 'Deutsch' },
     { code: 'en', flag: '🇬🇧', label: 'English' },
-    { code: 'fr', flag: '🇫🇷', label: 'French' },
-    { code: 'sr', flag: '🌐', label: 'Serbian' },
-    { code: 'es', flag: '🇪🇸', label: 'Spanish' }
+    { code: 'fr', flag: '🇫🇷', label: 'Français' },
+    { code: 'sr', flag: '🇷🇸', label: 'Srpski' }, // правильный флаг
+    { code: 'es', flag: '🇪🇸', label: 'Español' }
   ];
 
   // ---------------------------------------
@@ -151,6 +151,7 @@
     return overlay;
   }
 
+  // UI language — segmented control с флагом и названием языка
   function renderUiLangToggle(rootEl) {
     if (!rootEl) return;
 
@@ -175,19 +176,26 @@
       btn.setAttribute('data-lang', lang.code);
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       btn.setAttribute('aria-label', lang.label);
-      btn.innerHTML = '<span aria-hidden="true">' + lang.flag + '</span>';
+
+      btn.innerHTML =
+        '<span aria-hidden="true">' +
+        lang.flag +
+        '</span><span>' +
+        lang.label +
+        '</span>';
 
       btn.addEventListener('click', function () {
         if (state.uiLang === lang.code) return;
         state.uiLang = lang.code;
         lsSet(LS_UI_LANG, state.uiLang);
-        renderAll(); // перерисуем все подписи и кнопки
+        renderAll(); // обновим тексты и сами кнопки
       });
 
       rootEl.appendChild(btn);
     });
   }
 
+  // Study language — только флаги
   function renderStudyLangFlags(rootEl) {
     if (!rootEl) return;
 
@@ -204,7 +212,6 @@
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       btn.setAttribute('aria-label', item.label);
 
-      // только флаг
       btn.innerHTML =
         '<span class="setup-flag-btn__flag" aria-hidden="true">' +
         item.flag +
@@ -221,6 +228,7 @@
     });
   }
 
+  // Difficulty toggle — утка / молоток+ключ
   function renderLevelToggle(rootEl) {
     if (!rootEl) return;
 
@@ -312,7 +320,6 @@
       // ignore
     }
 
-    // Подписываемся на кнопку "Старт" один раз
     var startBtn = overlay.querySelector('[data-setup-start]');
     if (!startBtn._setupBound) {
       startBtn._setupBound = true;
@@ -345,7 +352,6 @@
   }
 
   function onStart() {
-    // помечаем как пройденный
     lsSet(LS_KEY_DONE, '1');
     lsSet(LS_UI_LANG, state.uiLang);
     lsSet(LS_STUDY_LANG, state.studyLang);
@@ -355,13 +361,15 @@
     closeModal();
 
     try {
-      doc.dispatchEvent(new CustomEvent('lexitron:setup:done', {
-        detail: {
-          uiLang: state.uiLang,
-          studyLang: state.studyLang,
-          level: state.level
-        }
-      }));
+      doc.dispatchEvent(
+        new CustomEvent('lexitron:setup:done', {
+          detail: {
+            uiLang: state.uiLang,
+            studyLang: state.studyLang,
+            level: state.level
+          }
+        })
+      );
     } catch (e) {
       // ignore
     }
@@ -379,7 +387,6 @@
     ensure: function () {
       if (isSetupDone()) return;
 
-      // подождём, пока body готов
       if (!doc.body) {
         doc.addEventListener('DOMContentLoaded', function () {
           if (!isSetupDone()) openModal();
@@ -402,7 +409,7 @@
 
   root.Setup = Setup;
 
-  // Авто-старт на первой загрузке, если никем не переопределено
+  // Авто-старт на первой загрузке
   doc.addEventListener('DOMContentLoaded', function () {
     if (!isSetupDone()) {
       Setup.ensure();

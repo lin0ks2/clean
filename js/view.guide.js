@@ -265,7 +265,7 @@
         z-index:1200;
         display:none;
         flex-direction:column;
-        background:#fff;
+        background:var(--surface-1, #ffffff);
         font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
       }
       .guide-top{
@@ -273,7 +273,7 @@
         align-items:center;
         justify-content:flex-start;
         padding:10px 12px;
-        border-bottom:1px solid #e5e7eb;
+        border-bottom:1px solid var(--border, #e5e7eb);
       }
       .guide-title{
         font-weight:700;
@@ -285,7 +285,7 @@
         overflow:auto;
         -webkit-overflow-scrolling:touch;
         padding:14px 12px 18px;
-        color:#111;
+        color:var(--text, #111111);
       }
       .guide-root{
         max-width:640px;

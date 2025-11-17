@@ -2,7 +2,7 @@
  * Project: MOYAMOVA
  * File: ui.setup.modal.css
  * Purpose: Initial setup wizard (layout & theming)
- * Version: 1.4
+ * Version: 1.5
  * ========================================================== */
 
 :root {
@@ -43,16 +43,16 @@
 .setup-modal {
   position: relative;
   z-index: 1;
-  max-width: 430px;
+  max-width: 500px; /* шире, как большие карточки в приложении */
   width: 100%;
 }
 
 .setup-modal__inner {
-  background: var(--surface-1, #ffffff);
+  background: var(--surface-1, #f8fafc);
   border: 1px solid var(--divider, #e5edf4);
   border-radius: var(--radius-xl, 16px);
-  box-shadow: var(--shadow-1, 0 6px 18px rgba(15, 23, 42, 0.12));
-  padding: 14px 14px 12px;
+  box-shadow: var(--shadow-1, 0 10px 30px rgba(15, 23, 42, 0.10));
+  padding: 20px 20px 18px;
   text-align: center;
   color: var(--text, #0f172a);
 }
@@ -62,27 +62,27 @@
  * ------------------------ */
 
 .setup-header {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .setup-title {
-  margin: 0 0 4px;
-  font-size: 18px;
-  font-weight: 700;
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 800;
   letter-spacing: 0.01em;
 }
 
 .setup-subtitle {
   margin: 0;
-  font-size: 12px;
-  opacity: 0.78;
+  font-size: 13px;
+  opacity: 0.8;
 }
 
 .setup-intro {
-  margin: 4px 0 0;
-  font-size: 13px;
-  line-height: 1.45;
-  opacity: 0.88;
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+  opacity: 0.9;
 }
 
 /* ---------------------------
@@ -90,16 +90,16 @@
  * ------------------------ */
 
 .setup-section {
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 .setup-section__label {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.8;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 /* ---------------------------
@@ -148,11 +148,8 @@ body[data-theme="dark"] .setup-flag-btn {
 
 .setup-flag-btn.is-active {
   border-color: var(--burger, var(--brand, #35b6ff));
-  box-shadow: 0 0 0 3px color-mix(
-    in srgb,
-    var(--burger, var(--brand, #35b6ff)) 20%,
-    transparent
-  );
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--burger, var(--brand, #35b6ff)) 20%, transparent);
   background: #fff;
 }
 
@@ -181,7 +178,7 @@ body[data-theme="dark"] .setup-mode-toggle {
   background: transparent;
   color: inherit;
   font-size: 13px;
-  padding: 6px 12px;
+  padding: 7px 14px;
   border-radius: 999px;
   cursor: pointer;
   opacity: 0.78;
@@ -214,7 +211,7 @@ body[data-theme="dark"] .setup-mode-btn.is-active {
 }
 
 .setup-mode-toggle--lang .setup-mode-btn {
-  padding-inline: 16px;
+  padding-inline: 18px;
 }
 
 /* ---------------------------
@@ -222,11 +219,11 @@ body[data-theme="dark"] .setup-mode-btn.is-active {
  * ------------------------ */
 
 .setup-consent {
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-top: 16px;
+  margin-bottom: 6px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   align-items: stretch;
   text-align: left;
 }
@@ -234,9 +231,9 @@ body[data-theme="dark"] .setup-mode-btn.is-active {
 .setup-checkbox {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  font-size: 12px;
-  line-height: 1.4;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .setup-checkbox input {
@@ -246,9 +243,9 @@ body[data-theme="dark"] .setup-mode-btn.is-active {
 }
 
 .setup-checkbox__box {
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
   border: 1px solid var(--divider, #e5edf4);
   background: #ffffff;
   margin-top: 1px;
@@ -307,9 +304,9 @@ body[data-theme="dark"] .setup-checkbox__box {
  * ------------------------ */
 
 .setup-note {
-  margin: 6px 0 4px;
-  font-size: 11px;
-  line-height: 1.4;
+  margin: 10px 0 6px;
+  font-size: 12px;
+  line-height: 1.45;
   opacity: 0.8;
 }
 
@@ -327,13 +324,14 @@ body[data-theme="dark"] .setup-checkbox__box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 22px;
+  min-width: 220px;
+  padding: 14px 26px;
   border-radius: var(--radius-xl, 16px);
   border: 0;
   background: var(--brand, #35b6ff);
   color: #fff;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1;
   letter-spacing: 0.2px;
   box-shadow: 0 6px 18px rgba(53, 182, 255, 0.28);
@@ -369,24 +367,29 @@ body[data-theme="dark"] .setup-checkbox__box {
  * ------------------------ */
 
 @media (max-width: 360px) {
+  .setup-modal {
+    max-width: 100%;
+  }
+
   .setup-modal__inner {
-    padding: 12px 10px 10px;
+    padding: 14px 10px 10px;
     border-radius: var(--radius-lg, 12px);
   }
 
   .setup-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .setup-section__label {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .setup-start-btn {
     width: 100%;
+    min-width: 0;
   }
 
   .setup-consent {
-    font-size: 11px;
+    font-size: 12px;
   }
 }

@@ -3,7 +3,7 @@
  * File: ui.setup.modal.js
  * Purpose: Initial setup wizard (UI + TOS + GA consent)
  * Integrated with StartupManager (SetupModal.build + lexitron:setup:done)
- * Version: 2.3
+ * Version: 2.4
  * ========================================================== */
 
 (function (root) {
@@ -104,7 +104,9 @@
         tosLabel: 'Я принимаю ',
         tosLink: 'условия использования',
         gaLabel:
-          'Разрешаю анонимную статистику использования (Google Analytics).'
+          'Разрешаю анонимную статистику использования (Google Analytics).',
+        termsTitle: 'Условия использования',
+        termsFullLink: 'Полная версия условий'
       };
     }
 
@@ -125,7 +127,9 @@
       tosLabel: 'Я приймаю ',
       tosLink: 'умови використання',
       gaLabel:
-        'Дозволяю анонімну статистику використання (Google Analytics).'
+        'Дозволяю анонімну статистику використання (Google Analytics).',
+      termsTitle: 'Умови використання',
+      termsFullLink: 'Повна версія умов'
     };
   }
 
@@ -175,6 +179,15 @@
       '    <div class="setup-footer">',
       '      <button type="button" class="setup-start-btn" data-setup-start></button>',
       '    </div>',
+      '  </div>',
+      '</div>',
+      // оверлей для условий использования (термины)
+      '<div class="setup-terms-overlay" data-setup-terms-overlay>',
+      '  <div class="setup-terms-backdrop" data-setup-terms-close></div>',
+      '  <div class="setup-terms-modal">',
+      '    <button type="button" class="setup-terms-close" data-setup-terms-close aria-label="Close">×</button>',
+      '    <h3 class="setup-terms-title" data-setup-terms-title></h3>',
+      '    <div class="setup-terms-content" data-setup-terms-content></div>',
       '  </div>',
       '</div>'
     ].join('');
@@ -310,7 +323,65 @@
     });
   }
 
-  /* Consents */
+  /* ---------------------------------------
+   * Terms modal helpers
+   * ------------------------------------ */
+
+  // Краткий HTML-текст условий (можешь заменить на полный текст из legal/terms.ru.html)
+  var TERMS_SNIPPET_HTML = (
+    '<p>Используя MOYAMOVA, вы соглашаетесь использовать приложение только ' +
+    'для личного обучения и не нарушать законы вашей страны. Разработчик не ' +
+    'несёт ответственности за потерю данных при очистке браузера или сбои ' +
+    'сторонних сервисов.</p>' +
+    '<p>Приложение предоставляется «как есть». Разработчик не гарантирует ' +
+    'непрерывную или безошибочную работу, но будет стараться улучшать ' +
+    'качество и стабильность.</p>' +
+    '<p>Разработчик может обновлять условия использования. Актуальная ' +
+    'версия публикуется в приложении.</p>' +
+    '<p><a href="./legal/terms.ru.html" target="_blank" rel="noopener noreferrer">' +
+    'Полная версия условий</a></p>'
+  );
+  // TODO: если хочешь дословный текст, сюда можно вставить HTML из legal/terms.ru.html
+
+  function showTermsModal() {
+    var overlay = createOverlayIfNeeded();
+    var termsOverlay = overlay.querySelector('[data-setup-terms-overlay]');
+    var titleEl      = overlay.querySelector('[data-setup-terms-title]');
+    var contentEl    = overlay.querySelector('[data-setup-terms-content]');
+    var msgs         = t();
+
+    if (!termsOverlay || !titleEl || !contentEl) return;
+
+    titleEl.textContent = msgs.termsTitle;
+    contentEl.innerHTML = TERMS_SNIPPET_HTML;
+
+    // навешиваем закрытие
+    var closers = termsOverlay.querySelectorAll('[data-setup-terms-close]');
+    for (var i = 0; i < closers.length; i++) {
+      (function (btn) {
+        if (btn._setupBound) return;
+        btn._setupBound = true;
+        btn.addEventListener('click', function (ev) {
+          ev.preventDefault();
+          hideTermsModal();
+        });
+      })(closers[i]);
+    }
+
+    termsOverlay.classList.add('is-open');
+  }
+
+  function hideTermsModal() {
+    var overlay = doc.querySelector('[data-setup-overlay]');
+    if (!overlay) return;
+    var termsOverlay = overlay.querySelector('[data-setup-terms-overlay]');
+    if (!termsOverlay) return;
+    termsOverlay.classList.remove('is-open');
+  }
+
+  /* ---------------------------------------
+   * Consents
+   * ------------------------------------ */
 
   function attachCheckboxHandlers(wrapper, input, onChange) {
     if (!wrapper || !input) return;
@@ -326,38 +397,6 @@
       input.checked = checked;
       if (onChange) onChange(checked);
     });
-  }
-
-  // Открытие условий: в новой вкладке
-  function openTerms() {
-    var url = null;
-
-    // 1) Пытаемся взять URL из Legal.legalUrl('terms')
-    try {
-      if (root.Legal && typeof root.Legal.legalUrl === 'function') {
-        url = root.Legal.legalUrl('terms');
-      }
-    } catch (e) {
-      // ignore
-    }
-
-    // 2) Фолбэк — локальная страница
-    if (!url) {
-      url = './legal/terms.ru.html';
-    }
-
-    // 3) Пытаемся открыть в новой вкладке.
-    var win = null;
-    try {
-      win = root.open(url, '_blank', 'noopener,noreferrer');
-    } catch (e) {
-      win = null;
-    }
-
-    // 4) Если браузер запретил window.open — хотя бы обычный переход
-    if (!win) {
-      root.location.href = url;
-    }
   }
 
   function renderConsents(rootEl) {
@@ -421,7 +460,7 @@
     if (tosLink) {
       tosLink.addEventListener('click', function (ev) {
         ev.stopPropagation();
-        openTerms();
+        showTermsModal();
       });
     }
   }

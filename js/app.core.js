@@ -5,17 +5,10 @@
  * Версия: 1.0
  * Обновлено: 2025-11-17
  * ========================================================== */
-/* ==========================================================
- * Project: MOYAMOVA
- * File: app.core.js
- * Purpose: Инициализация и глобальные константы
- * Version: 1.1
- * Last modified: 2025-10-19
-*/
 
 (function(){
   const App = window.App = (window.App||{});
-  App.APP_VER = '1.1';
+  App.APP_VER = '1.0';
 
   const LS_SETTINGS = 'k_settings_v1_3_1';
   const LS_STATE    = 'k_state_v1_3_1';
@@ -376,10 +369,6 @@ try{
   else document.addEventListener('DOMContentLoaded', function(){ try{ App.applyI18nTitles(); }catch(_){
   } });
 }catch(_){}
-
-/* ====================== End of file =======================
- * File: app.core.js • Version: 1.0 • 2025-10-19
-*/
 
 /* [UPDATE-MSG] Show confirmation after update */
 ;(function(){

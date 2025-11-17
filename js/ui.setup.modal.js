@@ -1,21 +1,24 @@
 /* ==========================================================
  * Project: MOYAMOVA
  * File: ui.setup.modal.js
- * Purpose: Initial setup wizard (logic + TOS + GA consent)
- * Version: 1.4
+ * Purpose: Initial setup wizard (UI + TOS + GA consent)
+ * Integrated with StartupManager (SetupModal.build + lexitron:setup:done)
+ * Version: 2.0
  * ========================================================== */
 
 (function (root) {
   'use strict';
 
-  var LS_KEY_DONE = 'mm.setupDone';
-  var LS_UI_LANG = 'mm.uiLang';
-  var LS_STUDY_LANG = 'mm.studyLang';
-  var LS_LEVEL = 'mm.level';
-  var LS_TOS_ACCEPTED = 'mm.tosAccepted';
-  var LS_GA_CHOICE = 'mm.gaChoice'; // 'granted' / 'denied'
-
   var doc = root.document;
+
+  // Ключи StartupManager (если у тебя другие — поправь тут)
+  var LS_UI_LANG     = 'lexitron.uiLang';
+  var LS_STUDY_LANG  = 'lexitron.studyLang';
+  // setupDone ставит StartupManager сам, после validateAndFix/boot
+
+  // Наши вспомогательные ключи
+  var LS_TOS_ACCEPTED = 'mm.tosAccepted';
+  var LS_GA_CHOICE    = 'mm.gaChoice'; // 'granted' / 'denied' — дублируется в GAConsent
 
   /* ---------------------------------------
    * LocalStorage helpers
@@ -38,6 +41,14 @@
     }
   }
 
+  function lsRemove(key) {
+    try {
+      root.localStorage.removeItem(key);
+    } catch (e) {
+      // ignore
+    }
+  }
+
   /* ---------------------------------------
    * State
    * ------------------------------------ */
@@ -51,23 +62,22 @@
   };
 
   function initStateFromStorage() {
-    var A = root.App || {};
-    var s = A.settings || {};
+    // Инициализируемся из тех же ключей, что читает StartupManager
+    var ui = lsGet(LS_UI_LANG, 'ru');
+    if (ui !== 'ru' && ui !== 'uk') ui = 'ru';
+    state.uiLang = ui;
 
-    state.uiLang = lsGet(LS_UI_LANG, s.uiLang || 'ru');
-    if (state.uiLang !== 'ru' && state.uiLang !== 'uk') {
-      state.uiLang = 'ru';
-    }
-
-    var study = lsGet(LS_STUDY_LANG, s.studyLang || 'de');
+    var study = lsGet(LS_STUDY_LANG, 'de');
     var allowedStudy = ['de', 'en', 'fr', 'sr', 'es'];
-    state.studyLang = allowedStudy.indexOf(study) !== -1 ? study : 'de';
+    if (allowedStudy.indexOf(study) === -1) study = 'de';
+    state.studyLang = study;
 
-    var levelStored = lsGet(LS_LEVEL, s.level || 'normal');
-    state.level = levelStored === 'hard' ? 'hard' : 'normal';
+    // уровень сложности пока живёт только у мастера / в App.settings
+    // по умолчанию обычный
+    state.level = 'normal';
 
     state.tosAccepted = lsGet(LS_TOS_ACCEPTED, '') === '1';
-    state.gaAccepted = lsGet(LS_GA_CHOICE, '') === 'granted';
+    state.gaAccepted  = lsGet(LS_GA_CHOICE, '') === 'granted';
   }
 
   /* ---------------------------------------
@@ -212,6 +222,7 @@
         if (state.uiLang === lang.code) return;
         state.uiLang = lang.code;
         lsSet(LS_UI_LANG, state.uiLang);
+        // переотрисовываем тексты и контролы под новый язык
         renderAll();
       });
 
@@ -294,7 +305,6 @@
       btn.addEventListener('click', function () {
         if (state.level === cfg.code) return;
         state.level = cfg.code;
-        lsSet(LS_LEVEL, state.level);
         renderLevelToggle(rootEl);
       });
 
@@ -356,11 +366,11 @@
     ].join('');
 
     var tosWrapper = rootEl.querySelector('[data-setup-tos-wrapper]');
-    var tosInput = rootEl.querySelector('[data-setup-tos]');
-    var tosLabel = rootEl.querySelector('[data-setup-tos-label]');
-    var gaWrapper = rootEl.querySelector('[data-setup-ga-wrapper]');
-    var gaInput = rootEl.querySelector('[data-setup-ga]');
-    var gaLabel = rootEl.querySelector('[data-setup-ga-label]');
+    var tosInput   = rootEl.querySelector('[data-setup-tos]');
+    var tosLabel   = rootEl.querySelector('[data-setup-tos-label]');
+    var gaWrapper  = rootEl.querySelector('[data-setup-ga-wrapper]');
+    var gaInput    = rootEl.querySelector('[data-setup-ga]');
+    var gaLabel    = rootEl.querySelector('[data-setup-ga-label]');
 
     // TOS label with link
     if (tosLabel) {
@@ -375,14 +385,14 @@
     }
 
     // initial states
-    if (state.tosAccepted) {
+    if (state.tosAccepted && tosWrapper) {
       tosWrapper.classList.add('setup-checkbox--checked');
     }
-    if (state.gaAccepted) {
+    if (state.gaAccepted && gaWrapper) {
       gaWrapper.classList.add('setup-checkbox--checked');
     }
     if (tosInput) tosInput.checked = state.tosAccepted;
-    if (gaInput) gaInput.checked = state.gaAccepted;
+    if (gaInput) gaInput.checked   = state.gaAccepted;
 
     // handlers
     attachCheckboxHandlers(tosWrapper, tosInput, function (checked) {
@@ -393,8 +403,8 @@
 
     attachCheckboxHandlers(gaWrapper, gaInput, function (checked) {
       state.gaAccepted = checked;
-      // не применяем сразу GA, только запоминаем;
-      // applyGaChoice будет вызван при onStart
+      // решение по GA применяем только при onStart,
+      // здесь просто обновляем флаг
     });
 
     var tosLink = rootEl.querySelector('[data-setup-tos-link]');
@@ -407,13 +417,13 @@
   }
 
   /* ---------------------------------------
-   * GA consent integration (мягко)
+   * GA consent integration
    * ------------------------------------ */
 
   function applyGaChoice(granted) {
     lsSet(LS_GA_CHOICE, granted ? 'granted' : 'denied');
 
-    // если есть какой-то централизованный хелпер
+    // Если есть GAConsent из ga.consent.js — используем его
     if (root.GAConsent && typeof root.GAConsent.applyChoice === 'function') {
       try {
         root.GAConsent.applyChoice(granted);
@@ -423,24 +433,13 @@
       }
     }
 
-    // прямой вызов gtag — безопасно, если он уже есть
+    // fallback — прямой вызов gtag
     try {
       if (root.gtag && typeof root.gtag === 'function') {
         root.gtag('consent', 'update', {
           analytics_storage: granted ? 'granted' : 'denied'
         });
       }
-    } catch (e) {
-      // ignore
-    }
-
-    // кастомное событие — на будущее для ga.consent.js (шаг 2)
-    try {
-      doc.dispatchEvent(
-        new CustomEvent('mm:ga-consent', {
-          detail: { granted: granted }
-        })
-      );
     } catch (e) {
       // ignore
     }
@@ -454,17 +453,13 @@
     var overlay = createOverlayIfNeeded();
     var msgs = t();
 
-    overlay.querySelector('[data-setup-title]').textContent = msgs.title;
-    overlay.querySelector('[data-setup-subtitle]').textContent =
-      msgs.subtitle;
-    overlay.querySelector('[data-setup-intro]').textContent = msgs.intro;
-    overlay.querySelector('[data-setup-ui-label]').textContent =
-      msgs.uiLabel;
-    overlay.querySelector('[data-setup-study-label]').textContent =
-      msgs.studyLabel;
-    overlay.querySelector('[data-setup-level-label]').textContent =
-      msgs.levelLabel;
-    overlay.querySelector('[data-setup-note]').textContent = msgs.note;
+    overlay.querySelector('[data-setup-title]').textContent    = msgs.title;
+    overlay.querySelector('[data-setup-subtitle]').textContent = msgs.subtitle;
+    overlay.querySelector('[data-setup-intro]').textContent    = msgs.intro;
+    overlay.querySelector('[data-setup-ui-label]').textContent     = msgs.uiLabel;
+    overlay.querySelector('[data-setup-study-label]').textContent  = msgs.studyLabel;
+    overlay.querySelector('[data-setup-level-label]').textContent  = msgs.levelLabel;
+    overlay.querySelector('[data-setup-note]').textContent         = msgs.note;
 
     var startBtn = overlay.querySelector('[data-setup-start]');
     startBtn.textContent = msgs.start;
@@ -529,9 +524,9 @@
       A.settings = {};
     }
 
-    A.settings.uiLang = state.uiLang;
+    A.settings.uiLang    = state.uiLang;
     A.settings.studyLang = state.studyLang;
-    A.settings.level = state.level === 'hard' ? 'hard' : 'normal';
+    A.settings.level     = state.level === 'hard' ? 'hard' : 'normal';
 
     if (typeof A.saveSettings === 'function') {
       A.saveSettings();
@@ -544,16 +539,22 @@
       return;
     }
 
-    lsSet(LS_KEY_DONE, '1');
-    lsSet(LS_UI_LANG, state.uiLang);
+    // 1) сохраняем выбор в ключи, с которыми работает StartupManager
+    lsSet(LS_UI_LANG,    state.uiLang);
     lsSet(LS_STUDY_LANG, state.studyLang);
-    lsSet(LS_LEVEL, state.level);
+
+    // 2) TOS и GA
     lsSet(LS_TOS_ACCEPTED, '1');
     applyGaChoice(state.gaAccepted);
 
+    // 3) internal App.settings (для runtime, если нужно)
     applyToAppSettings();
+
+    // 4) закрываем мастер
     closeModal();
 
+    // 5) уведомляем StartupManager, что можно продолжать gate():
+    //    он перечитает настройки через readSettings(), validateAndFix и сделает boot()
     try {
       doc.dispatchEvent(
         new CustomEvent('lexitron:setup:done', {
@@ -571,45 +572,43 @@
     }
   }
 
-  function isSetupDone() {
-    return lsGet(LS_KEY_DONE, '') === '1';
-  }
-
   /* ---------------------------------------
-   * Public API
+   * Public API — то, что будет дергать StartupManager
    * ------------------------------------ */
 
-  var Setup = {
-    ensure: function () {
-      if (isSetupDone()) return;
-
-      if (!doc.body) {
-        doc.addEventListener('DOMContentLoaded', function () {
-          if (!isSetupDone()) openModal();
-        });
-        return;
-      }
-
+  var SetupModal = {
+    /**
+     * Основной вход: StartupManager.gate() ожидает window.SetupModal.build()
+     * Тут мы только строим и показываем модалку — НИЧЕГО не бутстрапим сами.
+     */
+    build: function () {
       openModal();
     },
 
+    /**
+     * alias на build, чтобы можно было открывать мастер вручную.
+     */
     open: function () {
       openModal();
     },
 
+    /**
+     * Сброс выбора и повторный запуск мастера.
+     * На архитектуру старта не влияет — StartupManager всё равно решает,
+     * показывать мастер при следующем запуске или нет.
+     */
     reset: function () {
-      lsSet(LS_KEY_DONE, '');
-      lsSet(LS_TOS_ACCEPTED, '');
-      Setup.ensure();
+      lsRemove(LS_TOS_ACCEPTED);
+      lsRemove(LS_GA_CHOICE);
+      // lexitron.setupDone трогает только StartupManager после успешного boot
+      openModal();
     }
   };
 
-  root.Setup = Setup;
+  root.SetupModal = SetupModal;
 
-  /* Авто-старт на первой загрузке */
-  doc.addEventListener('DOMContentLoaded', function () {
-    if (!isSetupDone()) {
-      Setup.ensure();
-    }
-  });
+  // ВАЖНО: не вешаемся на DOMContentLoaded
+  // Мастер всегда запускается ТОЛЬКО через StartupManager.gate()
+  // никакого авто-ensure/ensure/auto-setup здесь нет.
+
 })(window);

@@ -1,8 +1,8 @@
 /* ==========================================================
  * Project: MOYAMOVA
  * File: ui.setup.modal.js
- * Purpose: Initial setup wizard (logic)
- * Version: 1.3
+ * Purpose: Initial setup wizard (logic + TOS + GA consent)
+ * Version: 1.4
  * ========================================================== */
 
 (function (root) {
@@ -12,6 +12,8 @@
   var LS_UI_LANG = 'mm.uiLang';
   var LS_STUDY_LANG = 'mm.studyLang';
   var LS_LEVEL = 'mm.level';
+  var LS_TOS_ACCEPTED = 'mm.tosAccepted';
+  var LS_GA_CHOICE = 'mm.gaChoice'; // 'granted' / 'denied'
 
   var doc = root.document;
 
@@ -43,7 +45,9 @@
   var state = {
     uiLang: 'ru',
     studyLang: 'de',
-    level: 'normal'
+    level: 'normal',
+    tosAccepted: false,
+    gaAccepted: false
   };
 
   function initStateFromStorage() {
@@ -61,6 +65,9 @@
 
     var levelStored = lsGet(LS_LEVEL, s.level || 'normal');
     state.level = levelStored === 'hard' ? 'hard' : 'normal';
+
+    state.tosAccepted = lsGet(LS_TOS_ACCEPTED, '') === '1';
+    state.gaAccepted = lsGet(LS_GA_CHOICE, '') === 'granted';
   }
 
   /* ---------------------------------------
@@ -73,6 +80,9 @@
     if (ru) {
       return {
         title: 'Начальная настройка MOYAMOVA',
+        subtitle: 'Пара шагов — и можно учить слова.',
+        intro:
+          'MOYAMOVA — это офлайн-тренажёр слов на карточках: выбираете язык, тренируете слова, собираете статистику и возвращаетесь к ошибкам.',
         uiLabel: 'Язык интерфейса',
         studyLabel: 'Язык, который вы хотите изучать',
         levelLabel: 'Режим сложности',
@@ -81,12 +91,19 @@
         note: 'Все эти настройки можно изменить позже в меню.',
         start: 'Старт',
         langRu: 'Русский',
-        langUk: 'Украинский'
+        langUk: 'Украинский',
+        tosLabel: 'Я принимаю ',
+        tosLink: 'условия использования',
+        gaLabel:
+          'Разрешаю анонимную статистику использования (Google Analytics).'
       };
     }
 
     return {
       title: 'Початкова настройка MOYAMOVA',
+      subtitle: 'Кілька кроків — і можна вчити слова.',
+      intro:
+        'MOYAMOVA — це офлайн-тренажер слів на картках: обираєте мову, тренуєте слова, збираєте статистику й повертаєтеся до помилок.',
       uiLabel: 'Мова інтерфейсу',
       studyLabel: 'Мова, яку ви хочете вивчати',
       levelLabel: 'Режим складності',
@@ -95,7 +112,11 @@
       note: 'Усі ці налаштування можна змінити пізніше в меню.',
       start: 'Старт',
       langRu: 'Російська',
-      langUk: 'Українська'
+      langUk: 'Українська',
+      tosLabel: 'Я приймаю ',
+      tosLink: 'умови використання',
+      gaLabel:
+        'Дозволяю анонімну статистику використання (Google Analytics).'
     };
   }
 
@@ -125,6 +146,8 @@
       '  <div class="setup-modal__inner">',
       '    <div class="setup-header">',
       '      <h2 class="setup-title" data-setup-title></h2>',
+      '      <p class="setup-subtitle" data-setup-subtitle></p>',
+      '      <p class="setup-intro" data-setup-intro></p>',
       '    </div>',
       '    <div class="setup-section">',
       '      <div class="setup-section__label" data-setup-ui-label></div>',
@@ -138,6 +161,7 @@
       '      <div class="setup-section__label" data-setup-level-label></div>',
       '      <div class="setup-mode-toggle" data-setup-level-toggle></div>',
       '    </div>',
+      '    <div class="setup-consent" data-setup-consent></div>',
       '    <p class="setup-note" data-setup-note></p>',
       '    <div class="setup-footer">',
       '      <button type="button" class="setup-start-btn" data-setup-start></button>',
@@ -150,7 +174,7 @@
     return overlay;
   }
 
-  /* UI language — segmented control с флагом и подписью */
+  /* UI language — segmented control */
 
   function renderUiLangToggle(rootEl) {
     if (!rootEl) return;
@@ -188,7 +212,7 @@
         if (state.uiLang === lang.code) return;
         state.uiLang = lang.code;
         lsSet(LS_UI_LANG, state.uiLang);
-        renderAll(); // обновим тексты и сами кнопки
+        renderAll();
       });
 
       rootEl.appendChild(btn);
@@ -278,11 +302,162 @@
     });
   }
 
+  /* Consents */
+
+  function attachCheckboxHandlers(wrapper, input, onChange) {
+    if (!wrapper || !input) return;
+
+    wrapper.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      var checked = !wrapper.classList.contains('setup-checkbox--checked');
+      if (checked) {
+        wrapper.classList.add('setup-checkbox--checked');
+      } else {
+        wrapper.classList.remove('setup-checkbox--checked');
+      }
+      input.checked = checked;
+      if (onChange) onChange(checked);
+    });
+  }
+
+  function openTerms() {
+    // пытаемся использовать Legal, если он есть
+    try {
+      if (root.Legal && typeof root.Legal.legalUrl === 'function') {
+        var url = root.Legal.legalUrl('terms');
+        if (url) {
+          root.location.href = url;
+          return;
+        }
+      }
+    } catch (e) {
+      // ignore
+    }
+
+    // fallback
+    root.location.href = './legal/terms.ru.html';
+  }
+
+  function renderConsents(rootEl) {
+    if (!rootEl) return;
+    var msgs = t();
+
+    rootEl.innerHTML = [
+      '<label class="setup-checkbox" data-setup-tos-wrapper>',
+      '  <input type="checkbox" data-setup-tos>',
+      '  <span class="setup-checkbox__box"></span>',
+      '  <span class="setup-checkbox__label" data-setup-tos-label></span>',
+      '</label>',
+      '<label class="setup-checkbox" data-setup-ga-wrapper>',
+      '  <input type="checkbox" data-setup-ga>',
+      '  <span class="setup-checkbox__box"></span>',
+      '  <span class="setup-checkbox__label" data-setup-ga-label></span>',
+      '</label>'
+    ].join('');
+
+    var tosWrapper = rootEl.querySelector('[data-setup-tos-wrapper]');
+    var tosInput = rootEl.querySelector('[data-setup-tos]');
+    var tosLabel = rootEl.querySelector('[data-setup-tos-label]');
+    var gaWrapper = rootEl.querySelector('[data-setup-ga-wrapper]');
+    var gaInput = rootEl.querySelector('[data-setup-ga]');
+    var gaLabel = rootEl.querySelector('[data-setup-ga-label]');
+
+    // TOS label with link
+    if (tosLabel) {
+      tosLabel.innerHTML =
+        msgs.tosLabel +
+        '<button type="button" class="setup-link" data-setup-tos-link>' +
+        msgs.tosLink +
+        '</button>';
+    }
+    if (gaLabel) {
+      gaLabel.textContent = msgs.gaLabel;
+    }
+
+    // initial states
+    if (state.tosAccepted) {
+      tosWrapper.classList.add('setup-checkbox--checked');
+    }
+    if (state.gaAccepted) {
+      gaWrapper.classList.add('setup-checkbox--checked');
+    }
+    if (tosInput) tosInput.checked = state.tosAccepted;
+    if (gaInput) gaInput.checked = state.gaAccepted;
+
+    // handlers
+    attachCheckboxHandlers(tosWrapper, tosInput, function (checked) {
+      state.tosAccepted = checked;
+      lsSet(LS_TOS_ACCEPTED, checked ? '1' : '');
+      updateStartDisabled();
+    });
+
+    attachCheckboxHandlers(gaWrapper, gaInput, function (checked) {
+      state.gaAccepted = checked;
+      // не применяем сразу GA, только запоминаем;
+      // applyGaChoice будет вызван при onStart
+    });
+
+    var tosLink = rootEl.querySelector('[data-setup-tos-link]');
+    if (tosLink) {
+      tosLink.addEventListener('click', function (ev) {
+        ev.stopPropagation();
+        openTerms();
+      });
+    }
+  }
+
+  /* ---------------------------------------
+   * GA consent integration (мягко)
+   * ------------------------------------ */
+
+  function applyGaChoice(granted) {
+    lsSet(LS_GA_CHOICE, granted ? 'granted' : 'denied');
+
+    // если есть какой-то централизованный хелпер
+    if (root.GAConsent && typeof root.GAConsent.applyChoice === 'function') {
+      try {
+        root.GAConsent.applyChoice(granted);
+        return;
+      } catch (e) {
+        // ignore
+      }
+    }
+
+    // прямой вызов gtag — безопасно, если он уже есть
+    try {
+      if (root.gtag && typeof root.gtag === 'function') {
+        root.gtag('consent', 'update', {
+          analytics_storage: granted ? 'granted' : 'denied'
+        });
+      }
+    } catch (e) {
+      // ignore
+    }
+
+    // кастомное событие — на будущее для ga.consent.js (шаг 2)
+    try {
+      doc.dispatchEvent(
+        new CustomEvent('mm:ga-consent', {
+          detail: { granted: granted }
+        })
+      );
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  /* ---------------------------------------
+   * Render root
+   * ------------------------------------ */
+
   function renderAll() {
     var overlay = createOverlayIfNeeded();
     var msgs = t();
 
     overlay.querySelector('[data-setup-title]').textContent = msgs.title;
+    overlay.querySelector('[data-setup-subtitle]').textContent =
+      msgs.subtitle;
+    overlay.querySelector('[data-setup-intro]').textContent = msgs.intro;
     overlay.querySelector('[data-setup-ui-label]').textContent =
       msgs.uiLabel;
     overlay.querySelector('[data-setup-study-label]').textContent =
@@ -303,6 +478,16 @@
     renderLevelToggle(
       overlay.querySelector('[data-setup-level-toggle]')
     );
+    renderConsents(overlay.querySelector('[data-setup-consent]'));
+    updateStartDisabled();
+  }
+
+  function updateStartDisabled() {
+    var overlay = doc.querySelector('[data-setup-overlay]');
+    if (!overlay) return;
+    var btn = overlay.querySelector('[data-setup-start]');
+    if (!btn) return;
+    btn.disabled = !state.tosAccepted;
   }
 
   /* ---------------------------------------
@@ -354,10 +539,17 @@
   }
 
   function onStart() {
+    if (!state.tosAccepted) {
+      // защитный барьер, хотя кнопка disabled
+      return;
+    }
+
     lsSet(LS_KEY_DONE, '1');
     lsSet(LS_UI_LANG, state.uiLang);
     lsSet(LS_STUDY_LANG, state.studyLang);
     lsSet(LS_LEVEL, state.level);
+    lsSet(LS_TOS_ACCEPTED, '1');
+    applyGaChoice(state.gaAccepted);
 
     applyToAppSettings();
     closeModal();
@@ -368,7 +560,9 @@
           detail: {
             uiLang: state.uiLang,
             studyLang: state.studyLang,
-            level: state.level
+            level: state.level,
+            tosAccepted: state.tosAccepted,
+            gaAccepted: state.gaAccepted
           }
         })
       );
@@ -405,6 +599,7 @@
 
     reset: function () {
       lsSet(LS_KEY_DONE, '');
+      lsSet(LS_TOS_ACCEPTED, '');
       Setup.ensure();
     }
   };

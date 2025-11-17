@@ -2,8 +2,7 @@
  * Project: MOYAMOVA
  * File: ui.setup.modal.js
  * Purpose: Initial setup wizard (logic)
- * Version: 1.2
- * Last modified: 2025-11-17
+ * Version: 1.3
  * ========================================================== */
 
 (function (root) {
@@ -16,9 +15,9 @@
 
   var doc = root.document;
 
-  // ---------------------------------------
-  // LocalStorage helpers
-  // ---------------------------------------
+  /* ---------------------------------------
+   * LocalStorage helpers
+   * ------------------------------------ */
 
   function lsGet(key, def) {
     try {
@@ -37,9 +36,9 @@
     }
   }
 
-  // ---------------------------------------
-  // State
-  // ---------------------------------------
+  /* ---------------------------------------
+   * State
+   * ------------------------------------ */
 
   var state = {
     uiLang: 'ru',
@@ -64,9 +63,9 @@
     state.level = levelStored === 'hard' ? 'hard' : 'normal';
   }
 
-  // ---------------------------------------
-  // Texts
-  // ---------------------------------------
+  /* ---------------------------------------
+   * Texts
+   * ------------------------------------ */
 
   function t() {
     var ru = state.uiLang !== 'uk';
@@ -104,13 +103,13 @@
     { code: 'de', flag: '🇩🇪', label: 'Deutsch' },
     { code: 'en', flag: '🇬🇧', label: 'English' },
     { code: 'fr', flag: '🇫🇷', label: 'Français' },
-    { code: 'sr', flag: '🇷🇸', label: 'Srpski' }, // правильный флаг
+    { code: 'sr', flag: '🇷🇸', label: 'Srpski' },
     { code: 'es', flag: '🇪🇸', label: 'Español' }
   ];
 
-  // ---------------------------------------
-  // DOM helpers
-  // ---------------------------------------
+  /* ---------------------------------------
+   * DOM helpers
+   * ------------------------------------ */
 
   function createOverlayIfNeeded() {
     var existing = doc.querySelector('[data-setup-overlay]');
@@ -151,7 +150,8 @@
     return overlay;
   }
 
-  // UI language — segmented control с флагом и названием языка
+  /* UI language — segmented control с флагом и подписью */
+
   function renderUiLangToggle(rootEl) {
     if (!rootEl) return;
 
@@ -195,7 +195,8 @@
     });
   }
 
-  // Study language — только флаги
+  /* Study language — только флаги */
+
   function renderStudyLangFlags(rootEl) {
     if (!rootEl) return;
 
@@ -228,7 +229,8 @@
     });
   }
 
-  // Difficulty toggle — утка / молоток+ключ
+  /* Difficulty toggle — 🐣 / 🦅 */
+
   function renderLevelToggle(rootEl) {
     if (!rootEl) return;
 
@@ -303,9 +305,9 @@
     );
   }
 
-  // ---------------------------------------
-  // Show / hide & apply
-  // ---------------------------------------
+  /* ---------------------------------------
+   * Show / hide & apply
+   * ------------------------------------ */
 
   function openModal() {
     initStateFromStorage();
@@ -379,9 +381,9 @@
     return lsGet(LS_KEY_DONE, '') === '1';
   }
 
-  // ---------------------------------------
-  // Public API
-  // ---------------------------------------
+  /* ---------------------------------------
+   * Public API
+   * ------------------------------------ */
 
   var Setup = {
     ensure: function () {
@@ -409,7 +411,7 @@
 
   root.Setup = Setup;
 
-  // Авто-старт на первой загрузке
+  /* Авто-старт на первой загрузке */
   doc.addEventListener('DOMContentLoaded', function () {
     if (!isSetupDone()) {
       Setup.ensure();

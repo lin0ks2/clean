@@ -1,153 +1,170 @@
-/* ==========================================================
- * Project: MOYAMOVA
- * File: ga.consent.js
- * Purpose: GA consent logic without UI (used by setup wizard)
- * Version: 1.0
- * ========================================================== */
-
-(function (root) {
+// ga.consent.js — GA4 + Consent Mode, без UI-баннера
+(function () {
   'use strict';
 
-  var doc = root.document;
+  // Твой реальный GA4 ID из старой версии
+  var GA_ID = (window.GA_ID || 'G-DZL66KME4H');
 
-  // TODO: подставь сюда свой реальный контейнер/ID из старой версии
-  var GTM_ID = 'GTM-XXXXXXX'; // например: 'GTM-ABCD123'
-  // Если используешь не GTM, а gtag с measurement-id:
-  // var GA_MEASUREMENT_ID = 'G-XXXXXXX';
+  var __gaLoaded = false;
+  var LS_KEY_OLD = 'ga_consent';   // yes / no
+  var LS_KEY_NEW = 'mm.gaChoice';  // granted / denied
 
-  var LS_GA_CHOICE = 'mm.gaChoice'; // 'granted' / 'denied'
+  // ----- gtag bootstrap (без загрузки сети) -----
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
 
-  var hasLoadedScript = false;
+  // По умолчанию — полный отказ (EU/CH-friendly)
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    analytics_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    functionality_storage: 'denied',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
 
-  /* ---------------------------------------
-   * LocalStorage
-   * ------------------------------------ */
+  function loadGA() {
+    if (__gaLoaded) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', GA_ID, { anonymize_ip: true });
+    __gaLoaded = true;
+  }
 
-  function lsGet(key, def) {
+  // ----- helpers для localStorage -----
+  function lsGet(key) {
     try {
-      var v = root.localStorage.getItem(key);
-      return v === null ? def : v;
-    } catch (e) {
-      return def;
+      return window.localStorage.getItem(key);
+    } catch (_) {
+      return null;
     }
   }
 
   function lsSet(key, val) {
     try {
-      root.localStorage.setItem(key, val);
-    } catch (e) {
+      window.localStorage.setItem(key, val);
+    } catch (_) {
       // ignore
     }
   }
 
-  /* ---------------------------------------
-   * gtag bootstrap (без UI)
-   * ------------------------------------ */
-
-  function ensureDataLayer() {
-    root.dataLayer = root.dataLayer || [];
-    function gtag() {
-      root.dataLayer.push(arguments);
-    }
-    if (!root.gtag) {
-      root.gtag = gtag;
-    }
-  }
-
-  function setDefaultConsent() {
-    ensureDataLayer();
+  function lsRemove(key) {
     try {
-      root.gtag('consent', 'default', {
-        analytics_storage: 'denied'
-      });
-    } catch (e) {
+      window.localStorage.removeItem(key);
+    } catch (_) {
       // ignore
     }
   }
 
-  function loadGtmOnce() {
-    if (hasLoadedScript || !GTM_ID) return;
-    hasLoadedScript = true;
+  // ----- применение consent -----
 
-    ensureDataLayer();
-    root.dataLayer.push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
-    });
-
-    var script = doc.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(GTM_ID);
-    doc.head.appendChild(script);
-  }
-
-  function updateConsent(granted) {
-    ensureDataLayer();
-
-    try {
-      root.gtag('consent', 'update', {
-        analytics_storage: granted ? 'granted' : 'denied'
-      });
-    } catch (e) {
-      // ignore
-    }
+  function applyConsent(granted) {
+    granted = !!granted;
 
     if (granted) {
-      loadGtmOnce();
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+        functionality_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted'
+      });
+      loadGA();
+    } else {
+      gtag('consent', 'update', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+      // GA не загружаем
     }
   }
 
-  /* ---------------------------------------
-   * Public API for setup wizard
-   * ------------------------------------ */
+  function saveChoice(granted) {
+    granted = !!granted;
+    // новый ключ — для мастера
+    lsSet(LS_KEY_NEW, granted ? 'granted' : 'denied');
+    // старый ключ — для совместимости с существующими данными
+    lsSet(LS_KEY_OLD, granted ? 'yes' : 'no');
+  }
+
+  function readStoredChoice() {
+    // приоритет: новый ключ мастера
+    var vNew = lsGet(LS_KEY_NEW);
+    if (vNew === 'granted') return true;
+    if (vNew === 'denied') return false;
+
+    // fallback: старый ключ баннера
+    var vOld = lsGet(LS_KEY_OLD);
+    if (vOld === 'yes') return true;
+    if (vOld === 'no') return false;
+
+    // ничего не выбрано
+    return null;
+  }
+
+  // ----- публичный API -----
 
   var GAConsent = {
     /**
-     * applyChoice(true)  -> user granted analytics
-     * applyChoice(false) -> user denied analytics
+     * Универсальный метод для мастера:
+     * applyChoice(true)  -> пользователь дал согласие
+     * applyChoice(false) -> пользователь отказался
      */
     applyChoice: function (granted) {
       granted = !!granted;
-      lsSet(LS_GA_CHOICE, granted ? 'granted' : 'denied');
-      updateConsent(granted);
-
-      // на всякий случай кидаем событие для других частей кода
-      try {
-        doc.dispatchEvent(
-          new CustomEvent('mm:ga-consent', {
-            detail: { granted: granted }
-          })
-        );
-      } catch (e) {
-        // ignore
-      }
+      saveChoice(granted);
+      applyConsent(granted);
     },
 
-    /**
-     * Применить сохранённый выбор (из localStorage)
-     */
-    applyFromStorage: function () {
-      var stored = lsGet(LS_GA_CHOICE, '');
-      if (stored === 'granted') {
-        updateConsent(true);
-      } else if (stored === 'denied') {
-        updateConsent(false);
-      }
-      // если stored пустой — оставляем default = denied
+    // Совместимость со старым кодом (если где-то дергается)
+    accept: function () {
+      GAConsent.applyChoice(true);
+    },
+
+    decline: function () {
+      GAConsent.applyChoice(false);
+    },
+
+    revoke: function () {
+      // убрать выбор и вернуть всё к «denied»
+      lsRemove(LS_KEY_NEW);
+      lsRemove(LS_KEY_OLD);
+      applyConsent(false);
     }
   };
 
-  root.GAConsent = GAConsent;
+  window.GAConsent = GAConsent;
 
-  /* ---------------------------------------
-   * Init: default denied + apply saved choice
-   * ------------------------------------ */
+  // ----- инициализация без UI -----
 
-  setDefaultConsent();
-  GAConsent.applyFromStorage();
+  function init() {
+    // читаем, что уже есть в LS (новый или старый ключ)
+    var choice = readStoredChoice();
 
-  // ВНИМАНИЕ:
-  // Раньше здесь, скорее всего, создавался UI-баннер с кнопками.
-  // Теперь мы этого НЕ делаем: весь UI перемещён в мастер (ui.setup.modal).
+    if (choice === true) {
+      // уже есть согласие
+      applyConsent(true);
+    } else if (choice === false) {
+      // уже есть отказ — просто применяем denied
+      applyConsent(false);
+    } else {
+      // выбора ещё не было:
+      // оставляем default=denied и ничего не показываем —
+      // мастер сам спросит и вызовет GAConsent.applyChoice(...)
+    }
+  }
 
-})(window);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
+  } else {
+    init();
+  }
+})();

@@ -3,7 +3,7 @@
  * File: ui.setup.modal.js
  * Purpose: Initial setup wizard (UI + TOS + GA consent)
  * Integrated with StartupManager (SetupModal.build + lexitron:setup:done)
- * Version: 2.4
+ * Version: 2.5 (без инструкций/юр-страниц внутри мастера)
  * ========================================================== */
 
 (function (root) {
@@ -101,12 +101,9 @@
         start: 'Старт',
         langRu: 'Русский',
         langUk: 'Украинский',
-        tosLabel: 'Я принимаю ',
-        tosLink: 'условия использования',
+        tosLabel: 'Я принимаю условия использования приложения',
         gaLabel:
-          'Разрешаю анонимную статистику использования (Google Analytics).',
-        termsTitle: 'Условия использования',
-        termsFullLink: 'Полная версия условий'
+          'Разрешаю анонимную статистику использования (Google Analytics).'
       };
     }
 
@@ -124,12 +121,9 @@
       start: 'Старт',
       langRu: 'Російська',
       langUk: 'Українська',
-      tosLabel: 'Я приймаю ',
-      tosLink: 'умови використання',
+      tosLabel: 'Я приймаю умови використання застосунку',
       gaLabel:
-        'Дозволяю анонімну статистику використання (Google Analytics).',
-      termsTitle: 'Умови використання',
-      termsFullLink: 'Повна версія умов'
+        'Дозволяю анонімну статистику використання (Google Analytics).'
     };
   }
 
@@ -179,15 +173,6 @@
       '    <div class="setup-footer">',
       '      <button type="button" class="setup-start-btn" data-setup-start></button>',
       '    </div>',
-      '  </div>',
-      '</div>',
-      // оверлей для условий использования (термины)
-      '<div class="setup-terms-overlay" data-setup-terms-overlay>',
-      '  <div class="setup-terms-backdrop" data-setup-terms-close></div>',
-      '  <div class="setup-terms-modal">',
-      '    <button type="button" class="setup-terms-close" data-setup-terms-close aria-label="Close">×</button>',
-      '    <h3 class="setup-terms-title" data-setup-terms-title></h3>',
-      '    <div class="setup-terms-content" data-setup-terms-content></div>',
       '  </div>',
       '</div>'
     ].join('');
@@ -324,62 +309,7 @@
   }
 
   /* ---------------------------------------
-   * Terms modal helpers
-   * ------------------------------------ */
-
-  // Краткий HTML-текст условий (можешь заменить на полный текст из legal/terms.ru.html)
-    // Краткий HTML-текст условий (без ссылки на полную версию)
-  var TERMS_SNIPPET_HTML = (
-    '<p>Используя MOYAMOVA, вы соглашаетесь использовать приложение только ' +
-    'для личного обучения и не нарушать законы вашей страны. Разработчик не ' +
-    'несёт ответственности за потерю данных при очистке браузера, сбои ' +
-    'браузера или сторонних сервисов.</p>' +
-    '<p>Приложение предоставляется «как есть». Разработчик не гарантирует ' +
-    'непрерывную или безошибочную работу, но будет стараться улучшать ' +
-    'качество и стабильность.</p>' +
-    '<p>Разработчик может обновлять условия использования. Обновлённая ' +
-    'версия вступает в силу с момента публикации в приложении.</p>'
-  );
-  // TODO: если хочешь дословный текст, сюда можно вставить HTML из legal/terms.ru.html
-
-  function showTermsModal() {
-    var overlay = createOverlayIfNeeded();
-    var termsOverlay = overlay.querySelector('[data-setup-terms-overlay]');
-    var titleEl      = overlay.querySelector('[data-setup-terms-title]');
-    var contentEl    = overlay.querySelector('[data-setup-terms-content]');
-    var msgs         = t();
-
-    if (!termsOverlay || !titleEl || !contentEl) return;
-
-    titleEl.textContent = msgs.termsTitle;
-    contentEl.innerHTML = TERMS_SNIPPET_HTML;
-
-    // навешиваем закрытие
-    var closers = termsOverlay.querySelectorAll('[data-setup-terms-close]');
-    for (var i = 0; i < closers.length; i++) {
-      (function (btn) {
-        if (btn._setupBound) return;
-        btn._setupBound = true;
-        btn.addEventListener('click', function (ev) {
-          ev.preventDefault();
-          hideTermsModal();
-        });
-      })(closers[i]);
-    }
-
-    termsOverlay.classList.add('is-open');
-  }
-
-  function hideTermsModal() {
-    var overlay = doc.querySelector('[data-setup-overlay]');
-    if (!overlay) return;
-    var termsOverlay = overlay.querySelector('[data-setup-terms-overlay]');
-    if (!termsOverlay) return;
-    termsOverlay.classList.remove('is-open');
-  }
-
-  /* ---------------------------------------
-   * Consents
+   * Consents (TOS + GA)
    * ------------------------------------ */
 
   function attachCheckboxHandlers(wrapper, input, onChange) {
@@ -422,13 +352,9 @@
     var gaInput    = rootEl.querySelector('[data-setup-ga]');
     var gaLabel    = rootEl.querySelector('[data-setup-ga-label]');
 
-    // TOS label with link
+    // Лейбл TOS — просто текст, без ссылок и открытий страниц
     if (tosLabel) {
-      tosLabel.innerHTML =
-        msgs.tosLabel +
-        '<button type="button" class="setup-link" data-setup-tos-link>' +
-        msgs.tosLink +
-        '</button>';
+      tosLabel.textContent = msgs.tosLabel;
     }
     if (gaLabel) {
       gaLabel.textContent = msgs.gaLabel;
@@ -454,14 +380,6 @@
     attachCheckboxHandlers(gaWrapper, gaInput, function (checked) {
       state.gaAccepted = checked;
     });
-
-    var tosLink = rootEl.querySelector('[data-setup-tos-link]');
-    if (tosLink) {
-      tosLink.addEventListener('click', function (ev) {
-        ev.stopPropagation();
-        showTermsModal();
-      });
-    }
   }
 
   /* ---------------------------------------
@@ -607,64 +525,62 @@
   }
 
   function onStart() {
-  if (!state.tosAccepted) {
-    return;
-  }
+    if (!state.tosAccepted) {
+      return;
+    }
 
-  // 1) сохраняем выбор языка интерфейса и языка обучения
-  lsSet(LS_UI_LANG,    state.uiLang);
-  lsSet(LS_STUDY_LANG, state.studyLang);
+    // 1) сохраняем выбор языка интерфейса и языка обучения
+    lsSet(LS_UI_LANG,    state.uiLang);
+    lsSet(LS_STUDY_LANG, state.studyLang);
 
-  // 2) подбираем стартовую деку под язык обучения
-  var deckKey = resolveDeckForStudyLang();
-  if (deckKey) {
-    lsSet(LS_DECK_KEY,      deckKey);
-    lsSet(LS_LEGACY_ACTIVE, deckKey);
-  }
+    // 2) подбираем стартовую деку под язык обучения
+    var deckKey = resolveDeckForStudyLang();
+    if (deckKey) {
+      lsSet(LS_DECK_KEY,      deckKey);
+      lsSet(LS_LEGACY_ACTIVE, deckKey);
+    }
 
-  // 3) TOS и GA
-  lsSet(LS_TOS_ACCEPTED, '1');
-  applyGaChoice(state.gaAccepted);
+    // 3) TOS и GA
+    lsSet(LS_TOS_ACCEPTED, '1');
+    applyGaChoice(state.gaAccepted);
 
-  // 4) внутренние настройки приложения (на всякий случай)
-  applyToAppSettings();
+    // 4) внутренние настройки приложения
+    applyToAppSettings();
 
-  // 5) помечаем, что мастер пройден
-  lsSet(LS_SETUP_DONE, 'true');
+    // 5) помечаем, что мастер пройден
+    lsSet(LS_SETUP_DONE, 'true');
 
-  // 6) уведомляем слушателей (если что-то подписано)
-  try {
-    doc.dispatchEvent(
-      new CustomEvent('lexitron:setup:done', {
-        detail: {
-          uiLang:      state.uiLang,
-          studyLang:   state.studyLang,
-          level:       state.level,
-          tosAccepted: state.tosAccepted,
-          gaAccepted:  state.gaAccepted,
-          deckKey:     deckKey || null
-        }
-      })
-    );
-  } catch (e) {
-    // ignore
-  }
-
-  // 7) закрываем мастер
-  closeModal();
-
-  // 8) ВАЖНО: больше НЕ перезагружаем страницу.
-  //    Даём StartupManager'у самому дочитать настройки
-  //    и нормально запустить приложение в этом же рантайме.
-  if (root.StartupManager && typeof StartupManager.gate === 'function') {
+    // 6) уведомляем слушателей (если что-то подписано)
     try {
-      StartupManager.gate();
+      doc.dispatchEvent(
+        new CustomEvent('lexitron:setup:done', {
+          detail: {
+            uiLang:      state.uiLang,
+            studyLang:   state.studyLang,
+            level:       state.level,
+            tosAccepted: state.tosAccepted,
+            gaAccepted:  state.gaAccepted,
+            deckKey:     deckKey || null
+          }
+        })
+      );
     } catch (e) {
-      // если что-то пошло не так, хотя бы не уронить страницу
-      console.error('StartupManager.gate() after setup failed', e);
+      // ignore
+    }
+
+    // 7) закрываем мастер
+    closeModal();
+
+    // 8) Стартуем приложение в этом же рантайме
+    if (root.StartupManager && typeof StartupManager.gate === 'function') {
+      try {
+        StartupManager.gate();
+      } catch (e) {
+        console.error('StartupManager.gate() after setup failed', e);
+      }
     }
   }
-}
+
   /* ---------------------------------------
    * Public API
    * ------------------------------------ */

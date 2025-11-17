@@ -5,13 +5,6 @@
  * Версия: 1.0
  * Обновлено: 2025-11-17
  * ========================================================== */
-/* ==========================================================
- * Project: MOYAMOVA
- * File: ui.setup.modal.js
- * Purpose: Initial setup wizard (UI + TOS + GA consent)
- * Integrated with StartupManager (SetupModal.build + lexitron:setup:done)
- * Version: 2.5 (без инструкций/юр-страниц внутри мастера)
- * ========================================================== */
 
 (function (root) {
   'use strict';

@@ -1,0 +1,217 @@
+/* ==========================================================
+ * Проект: MOYAMOVA
+ * Файл: app.mistakes.js
+ * Назначение: Работа с ошибочными ответами пользователя и экраном «Мои ошибки»
+ * Версия: 1.0
+ * Обновлено: 2025-11-17
+ * ========================================================== */
+
+(function(){
+  'use strict';
+  const A = (window.App = window.App || {});
+
+  function getTrainLang(){
+    try{
+      const s = (A.settings && (A.settings.lang || A.settings.uiLang)) || 'ru';
+      return (String(s).toLowerCase() === 'uk') ? 'uk' : 'ru';
+    }catch(_){ return 'ru'; }
+  }
+
+  function ensure(){
+    A.mistakes = A.mistakes || {};
+    A.mistakes.buckets = A.mistakes.buckets || {}; // { trainLang: { baseDeckKey: { ids:Set, meta:Map } } }
+  }
+
+  function isMistakesDeckKey(deckKey){
+    return typeof deckKey === 'string' && deckKey.startsWith('mistakes:');
+  }
+
+  function makeKey(trainLang, baseDeckKey){
+    return `mistakes:${trainLang}:${baseDeckKey}`;
+  }
+
+  function parseKey(key){
+    if (!isMistakesDeckKey(key)) return null;
+    const parts = String(key).split(':');
+    if (parts.length < 3) return null;
+    const trainLang = parts[1];
+    const baseDeckKey = parts.slice(2).join(':');
+    return { trainLang, baseDeckKey };
+  }
+
+  function _bucket(trainLang, baseDeckKey){
+    ensure();
+    const lang = trainLang || getTrainLang();
+    A.mistakes.buckets[lang] = A.mistakes.buckets[lang] || {};
+    const byLang = A.mistakes.buckets[lang];
+    byLang[baseDeckKey] = byLang[baseKey] || { ids: new Set(), meta: new Map() };
+    return byLang[baseDeckKey];
+  }
+
+  function push(baseDeckKey, wordId, opts){
+    try{
+      const trainLang = (opts && opts.trainLang) || getTrainLang();
+      if (!baseDeckKey || wordId == null) return;
+
+      // ❗ Не копим ошибки во время тренировки "словарей ошибок"
+      if (isMistakesDeckKey(baseDeckKey)) return;
+
+      const b = _bucket(trainLang, baseDeckKey);
+      const idStr = String(wordId);
+      b.ids.add(idStr);
+
+      // простая мета: счётчик и timestamp
+      const now = Date.now();
+      const prev = b.meta.get(idStr) || { count: 0, last: 0 };
+      b.meta.set(idStr, { count: prev.count + 1, last: now });
+
+      if (typeof A.saveMistakes === 'function'){
+        try{ A.saveMistakes(A.mistakes); }catch(_){}
+      }
+    }catch(_){}
+  }
+
+  function getIds(trainLang, baseDeckKey){
+    const b = _bucket(trainLang, baseDeckKey);
+    return Array.from(b.ids || []);
+  }
+
+  function removeDeck(trainLang, baseDeckKey){
+    try{
+      ensure();
+      const lang = trainLang || getTrainLang();
+      const buckets = A.mistakes.buckets || {};
+      if (!buckets[lang]) return;
+      delete buckets[lang][baseDeckKey];
+      if (typeof A.saveMistakes === 'function'){
+        try{ A.saveMistakes(A.mistakes); }catch(_){}
+      }
+    }catch(_){}
+  }
+
+  function listSummary(){
+    ensure();
+    const out = [];
+    for (const lang of Object.keys(A.mistakes.buckets)){
+      const byLang = A.mistakes.buckets[lang] || {};
+      for (const baseKey of Object.keys(byLang)){
+        const b = byLang[baseKey];
+        out.push({
+          trainLang: lang,
+          baseKey,
+          mistakesKey: makeKey(lang, baseKey),
+          count: (b.ids ? b.ids.size : 0)
+        });
+      }
+    }
+    return out.sort((a,b)=> (a.trainLang.localeCompare(b.trainLang) || a.baseKey.localeCompare(b.baseKey)));
+  }
+
+  function resolveDeckForMistakesKey(mKey){
+    const parsed = parseKey(mKey);
+    if (!parsed) return [];
+    const { trainLang, baseDeckKey } = parsed;
+    const full = (A.Decks && A.Decks.resolveDeckByKey) ? (A.Decks.resolveDeckByKey(baseDeckKey) || []) : [];
+    if (!full.length) return [];
+    const ids = new Set(getIds(trainLang, baseDeckKey).map(String));
+    return full.filter(w => ids.has(String(w.id)));
+  }
+
+  // Экспорт структуры «Мои ошибки» в JSON-дружественный формат
+  function exportState(){
+    try{
+      ensure();
+      var out = {};
+      var buckets = A.mistakes && A.mistakes.buckets ? A.mistakes.buckets : {};
+
+      Object.keys(buckets).forEach(function(lang){
+        var byLang = buckets[lang] || {};
+        var outByLang = {};
+        Object.keys(byLang).forEach(function(baseKey){
+          var b = byLang[baseKey];
+          if (!b || !b.ids || !b.ids.size) return; // пустые не тащим
+          var idsArr = Array.from(b.ids || []);
+          var metaPlain = {};
+          if (b.meta && typeof b.meta.forEach === 'function'){
+            b.meta.forEach(function(meta, id){
+              if (!meta) meta = {};
+              metaPlain[String(id)] = {
+                count: meta.count|0,
+                last:  meta.last|0
+              };
+            });
+          }
+          outByLang[baseKey] = {
+            ids: idsArr,
+            meta: metaPlain
+          };
+        });
+        if (Object.keys(outByLang).length){
+          out[lang] = outByLang;
+        }
+      });
+
+      return out;
+    }catch(_){
+      return {};
+    }
+  }
+
+  // Импорт структуры «Мои ошибки» из бэкапа
+  function importState(data){
+    try{
+      if (!data || typeof data !== 'object') return;
+
+      ensure();
+      A.mistakes.buckets = A.mistakes.buckets || {};
+      var buckets = A.mistakes.buckets;
+
+      Object.keys(data).forEach(function(lang){
+        var byLangData = data[lang];
+        if (!byLangData || typeof byLangData !== 'object') return;
+        var byLang = buckets[lang] = buckets[lang] || {};
+
+        Object.keys(byLangData).forEach(function(baseKey){
+          var item = byLangData[baseKey];
+          if (!item || !Array.isArray(item.ids)) return;
+
+          var bucket = { ids: new Set(), meta: new Map() };
+
+          item.ids.forEach(function(id){
+            bucket.ids.add(String(id));
+          });
+
+          if (item.meta && typeof item.meta === 'object'){
+            Object.keys(item.meta).forEach(function(id){
+              var m = item.meta[id] || {};
+              var count = m.count|0;
+              var last  = m.last|0;
+              bucket.meta.set(String(id), { count: count, last: last });
+            });
+          }
+
+          byLang[baseKey] = bucket;
+        });
+      });
+
+      if (typeof A.saveMistakes === 'function'){
+        try { A.saveMistakes(A.mistakes); } catch(_){}
+      }
+    }catch(_){}
+  }
+
+  A.Mistakes = Object.assign({}, A.Mistakes || {}, {
+    makeKey: makeKey,
+    parseKey: parseKey,
+    listSummary: listSummary,
+    push: push,
+    getIds: getIds,
+    removeDeck: removeDeck,
+    resolveDeckForMistakesKey: resolveDeckForMistakesKey,
+    isMistakesDeckKey: isMistakesDeckKey,
+    export: exportState,
+    import: importState
+  });
+})();
+
+/* ========================= Конец файла: app.mistakes.js ========================= */

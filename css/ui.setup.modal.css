@@ -393,3 +393,79 @@ body[data-theme="dark"] .setup-checkbox__box {
     font-size: 12px;
   }
 }
+
+/* ===== Terms modal inside setup (Условия использования) ===== */
+
+.setup-terms-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;                 /* по умолчанию скрыта */
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;                 /* выше основного мастера */
+}
+
+.setup-terms-overlay.is-open {
+  display: flex;
+}
+
+.setup-terms-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* затемнение фона */
+}
+
+.setup-terms-modal {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  width: calc(100% - 32px);
+  max-height: calc(100vh - 80px);
+
+  background: var(--mm-surface, #ffffff);
+  color: var(--mm-text, #111827);
+
+  border-radius: 24px;
+  padding: 20px 24px;
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.35);
+
+  overflow: auto;                /* если текста много — скролл внутри */
+  -webkit-overflow-scrolling: touch;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.setup-terms-title {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.setup-terms-content p {
+  margin: 0 0 10px;
+}
+
+.setup-terms-content a {
+  color: #0b99ff;
+  text-decoration: underline;
+}
+
+/* Кнопка закрытия (крестик) */
+
+.setup-terms-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px;
+  cursor: pointer;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.setup-terms-close:active {
+  transform: scale(0.96);
+}

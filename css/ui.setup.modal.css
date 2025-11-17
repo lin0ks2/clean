@@ -2,13 +2,13 @@
  * Project: MOYAMOVA
  * File: ui.setup.modal.css
  * Purpose: Initial setup wizard (layout & theming)
- * Version: 1.2
- * Last modified: 2025-11-17
+ * Version: 1.3
  * ========================================================== */
 
 :root {
-  --setup-brand: var(--accent-main, #22c7ff);
-  --setup-brand-soft: rgba(34, 199, 255, 0.16);
+  --setup-accent: var(--accent-main, #22c7ff);
+  --setup-accent-soft: rgba(34, 199, 255, 0.12);
+  --setup-border-subtle: rgba(148, 163, 184, 0.45);
 }
 
 /* ---------------------------
@@ -19,7 +19,7 @@
   position: fixed;
   inset: 0;
   z-index: 9999;
-  display: none; /* по умолчанию скрыт, показывает JS */
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 16px;
@@ -33,7 +33,7 @@
   position: fixed;
   inset: 0;
   background: rgba(15, 23, 42, 0.55);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(8px);
 }
 
 /* ---------------------------
@@ -43,19 +43,19 @@
 .setup-modal {
   position: relative;
   z-index: 1;
-  max-width: 440px;
+  max-width: 430px;
   width: 100%;
 }
 
 .setup-modal__inner {
-  border-radius: 26px;
-  padding: 20px 20px 18px;
+  border-radius: 20px;
+  padding: 18px 18px 16px;
   text-align: center;
   background: #ffffff;
   color: #0f172a;
   box-shadow:
-    0 22px 55px rgba(15, 23, 42, 0.22),
-    0 0 0 1px rgba(148, 163, 184, 0.20);
+    0 8px 24px rgba(15, 23, 42, 0.16),
+    0 0 0 1px rgba(148, 163, 184, 0.18);
 }
 
 /* Тёмная тема */
@@ -64,8 +64,8 @@ body[data-theme="dark"] .setup-modal__inner {
   background: #020617;
   color: #e5e7eb;
   box-shadow:
-    0 22px 55px rgba(15, 23, 42, 0.75),
-    0 0 0 1px rgba(148, 163, 184, 0.24);
+    0 10px 30px rgba(15, 23, 42, 0.8),
+    0 0 0 1px rgba(148, 163, 184, 0.32);
 }
 
 /* ---------------------------
@@ -77,16 +77,16 @@ body[data-theme="dark"] .setup-modal__inner {
 }
 
 .setup-title {
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.01em;
 }
 
 .setup-subtitle {
   margin: 0;
   font-size: 12px;
-  opacity: 0.75;
+  opacity: 0.78;
 }
 
 /* ---------------------------
@@ -94,26 +94,26 @@ body[data-theme="dark"] .setup-modal__inner {
  * ------------------------ */
 
 .setup-section {
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .setup-section__label {
   font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.09em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.8;
   margin-bottom: 8px;
 }
 
 /* ---------------------------
- * Flags row (study language)
+ * Study language flags
  * ------------------------ */
 
 .setup-flags-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
 }
 
@@ -122,10 +122,10 @@ body[data-theme="dark"] .setup-modal__inner {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 38px;
+  width: 42px;
+  height: 34px;
   border-radius: 999px;
-  border: 1.5px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid var(--setup-border-subtle);
   background: #ffffff;
   color: inherit;
   font-size: 16px;
@@ -134,52 +134,49 @@ body[data-theme="dark"] .setup-modal__inner {
     background 0.14s ease,
     border-color 0.14s ease,
     box-shadow 0.14s ease,
-    transform 0.12s ease,
+    transform 0.1s ease,
     opacity 0.12s ease;
 }
 
-/* Тёмная тема для кнопок флагов */
+/* Dark theme flags */
 html[data-theme="dark"] .setup-flag-btn,
 body[data-theme="dark"] .setup-flag-btn {
   background: #020617;
-  border-color: rgba(148, 163, 184, 0.65);
+  border-color: rgba(148, 163, 184, 0.6);
 }
 
 .setup-flag-btn__flag {
   font-size: 18px;
 }
 
-/* Активный флаг */
+/* Active flag — как активные элементы в приложении */
 .setup-flag-btn.is-active {
-  border-color: var(--setup-brand);
-  background: #e0f7ff;
-  box-shadow:
-    0 0 0 1px rgba(34, 199, 255, 0.7),
-    0 10px 24px rgba(34, 199, 255, 0.45);
+  border-color: var(--setup-accent);
+  background: var(--setup-accent-soft);
+  box-shadow: 0 4px 12px rgba(34, 199, 255, 0.35);
 }
 
-/* Тёмная тема для активного флага */
+/* Dark theme active flag */
 html[data-theme="dark"] .setup-flag-btn.is-active,
 body[data-theme="dark"] .setup-flag-btn.is-active {
-  background: rgba(8, 47, 73, 0.9);
+  background: rgba(15, 118, 178, 0.5);
 }
 
 /* ---------------------------
- * Segmented toggles
+ * Segmented toggles (UI lang + difficulty)
  * ------------------------ */
 
-/* Общий контейнер segmented-control (и UI-язык, и сложность) */
 .setup-mode-toggle {
   display: inline-flex;
   align-items: center;
-  padding: 4px;
+  padding: 3px;
   border-radius: 999px;
-  background: #f9fafb;
-  border: 1.5px solid rgba(148, 163, 184, 0.55);
+  background: #f3f4f6;
+  border: 1px solid var(--setup-border-subtle);
   margin: 0 auto;
 }
 
-/* Темная тема segmented-control */
+/* Dark theme container */
 html[data-theme="dark"] .setup-mode-toggle,
 body[data-theme="dark"] .setup-mode-toggle {
   background: #020617;
@@ -191,10 +188,10 @@ body[data-theme="dark"] .setup-mode-toggle {
   background: transparent;
   color: inherit;
   font-size: 13px;
-  padding: 7px 14px;
+  padding: 6px 14px;
   border-radius: 999px;
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.78;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -203,33 +200,31 @@ body[data-theme="dark"] .setup-mode-toggle {
   transition:
     background 0.14s ease,
     opacity 0.14s ease,
-    transform 0.12s ease,
-    box-shadow 0.14s ease;
+    box-shadow 0.14s ease,
+    transform 0.1s ease;
 }
 
 .setup-mode-btn span[aria-hidden="true"] {
   font-size: 16px;
 }
 
+/* Активный сегмент */
 .setup-mode-btn.is-active {
-  background: var(--setup-brand);
+  background: var(--setup-accent);
   color: #0f172a;
   opacity: 1;
-  box-shadow:
-    0 12px 30px rgba(34, 199, 255, 0.65),
-    0 0 0 1px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 4px 12px rgba(34, 199, 255, 0.45);
 }
 
-/* Темная тема активного сегмента */
+/* Dark theme active segment */
 html[data-theme="dark"] .setup-mode-btn.is-active,
 body[data-theme="dark"] .setup-mode-btn.is-active {
   color: #020617;
 }
 
-/* UI-язык – чуть крупнее и с текстом */
+/* UI language segmented control — с текстом */
 .setup-mode-toggle--lang .setup-mode-btn {
-  font-size: 13px;
-  padding: 7px 18px;
+  padding-inline: 18px;
 }
 
 /* ---------------------------
@@ -237,16 +232,16 @@ body[data-theme="dark"] .setup-mode-btn.is-active {
  * ------------------------ */
 
 .setup-note {
-  margin: 11px 0 4px;
+  margin: 10px 0 4px;
   font-size: 11px;
-  line-height: 1.45;
+  line-height: 1.4;
   opacity: 0.78;
 }
 
 .setup-footer {
   margin-top: 10px;
   display: flex;
-  justify-content: center; /* кнопка "Старт" по центру */
+  justify-content: center;
 }
 
 /* ---------------------------
@@ -255,28 +250,24 @@ body[data-theme="dark"] .setup-mode-btn.is-active {
 
 .setup-start-btn {
   min-width: 160px;
-  padding: 10px 22px;
+  padding: 9px 22px;
   border-radius: 999px;
   border: none;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  background: var(--setup-brand);
+  background: var(--setup-accent);
   color: #0f172a;
-  box-shadow:
-    0 16px 40px rgba(34, 199, 255, 0.7),
-    0 0 0 1px rgba(15, 23, 42, 0.07);
+  box-shadow: 0 6px 18px rgba(34, 199, 255, 0.5);
   transition:
-    transform 0.12s ease,
-    box-shadow 0.12s ease,
-    filter 0.12s ease;
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    filter 0.1s ease;
 }
 
 .setup-start-btn:active {
   transform: translateY(1px) scale(0.99);
-  box-shadow:
-    0 8px 22px rgba(34, 199, 255, 0.55),
-    0 0 0 1px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 3px 10px rgba(34, 199, 255, 0.4);
 }
 
 /* ---------------------------
@@ -285,8 +276,8 @@ body[data-theme="dark"] .setup-mode-btn.is-active {
 
 @media (max-width: 360px) {
   .setup-modal__inner {
-    padding: 16px 14px 14px;
-    border-radius: 22px;
+    padding: 14px 12px 12px;
+    border-radius: 18px;
   }
 
   .setup-title {

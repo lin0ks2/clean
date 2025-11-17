@@ -239,12 +239,12 @@
       {
         code: 'normal',
         label: msgs.normalTitle,
-        icon: '🦆'
+        icon: '🐣'
       },
       {
         code: 'hard',
         label: msgs.hardTitle,
-        icon: '🛠'
+        icon: '🦅'
       }
     ];
 

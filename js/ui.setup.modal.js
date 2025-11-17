@@ -3,7 +3,7 @@
  * File: ui.setup.modal.js
  * Purpose: Initial setup wizard (UI + TOS + GA consent)
  * Integrated with StartupManager (SetupModal.build + lexitron:setup:done)
- * Version: 2.0
+ * Version: 2.1
  * ========================================================== */
 
 (function (root) {
@@ -12,9 +12,10 @@
   var doc = root.document;
 
   // Ключи StartupManager (если у тебя другие — поправь тут)
-  var LS_UI_LANG     = 'lexitron.uiLang';
-  var LS_STUDY_LANG  = 'lexitron.studyLang';
-  // setupDone ставит StartupManager сам, после validateAndFix/boot
+  var LS_UI_LANG       = 'lexitron.uiLang';
+  var LS_STUDY_LANG    = 'lexitron.studyLang';
+  var LS_DECK_KEY      = 'lexitron.deckKey';
+  var LS_LEGACY_ACTIVE = 'lexitron.activeKey'; // для совместимости с legacyActiveKey
 
   // Наши вспомогательные ключи
   var LS_TOS_ACCEPTED = 'mm.tosAccepted';
@@ -73,7 +74,6 @@
     state.studyLang = study;
 
     // уровень сложности пока живёт только у мастера / в App.settings
-    // по умолчанию обычный
     state.level = 'normal';
 
     state.tosAccepted = lsGet(LS_TOS_ACCEPTED, '') === '1';
@@ -89,7 +89,7 @@
 
     if (ru) {
       return {
-        title: 'Начальная настройка',
+        title: 'Начальная настройка MOYAMOVA',
         subtitle: 'Пара шагов — и можно учить слова.',
         intro:
           'MOYAMOVA — это офлайн-тренажёр слов на карточках: выбираете язык, тренируете слова, собираете статистику и возвращаетесь к ошибкам.',
@@ -110,7 +110,7 @@
     }
 
     return {
-      title: 'Початкове налаштування',
+      title: 'Початкова настройка MOYAMOVA',
       subtitle: 'Кілька кроків — і можна вчити слова.',
       intro:
         'MOYAMOVA — це офлайн-тренажер слів на картках: обираєте мову, тренуєте слова, збираєте статистику й повертаєтеся до помилок.',
@@ -446,6 +446,35 @@
   }
 
   /* ---------------------------------------
+   * Deck resolution for selected studyLang
+   * ------------------------------------ */
+
+  function resolveDeckForStudyLang() {
+    var lang = state.studyLang;
+    if (!lang) return null;
+
+    // Используем утилиты StartupManager, если доступны
+    try {
+      if (root.StartupManager && StartupManager._util) {
+        var util = StartupManager._util;
+
+        if (typeof util.firstNonEmptyForLang === 'function') {
+          var key = util.firstNonEmptyForLang(lang);
+          if (key) return key;
+        }
+        if (typeof util.firstForLang === 'function') {
+          return util.firstForLang(lang);
+        }
+      }
+    } catch (e) {
+      // ignore
+    }
+
+    // Fallback: ничего не нашли / утилит нет
+    return null;
+  }
+
+  /* ---------------------------------------
    * Render root
    * ------------------------------------ */
 
@@ -539,31 +568,39 @@
       return;
     }
 
-    // 1) сохраняем выбор в ключи, с которыми работает StartupManager
+    // 1) сохраняем выбор языка интерфейса и языка обучения
     lsSet(LS_UI_LANG,    state.uiLang);
     lsSet(LS_STUDY_LANG, state.studyLang);
 
-    // 2) TOS и GA
+    // 2) подбираем стартовую деку под язык обучения
+    var deckKey = resolveDeckForStudyLang();
+    if (deckKey) {
+      lsSet(LS_DECK_KEY,      deckKey);
+      lsSet(LS_LEGACY_ACTIVE, deckKey); // для legacyActiveKey в StartupManager
+    }
+
+    // 3) TOS и GA
     lsSet(LS_TOS_ACCEPTED, '1');
     applyGaChoice(state.gaAccepted);
 
-    // 3) internal App.settings (для runtime, если нужно)
+    // 4) internal App.settings (для runtime, если нужно)
     applyToAppSettings();
 
-    // 4) закрываем мастер
+    // 5) закрываем мастер
     closeModal();
 
-    // 5) уведомляем StartupManager, что можно продолжать gate():
+    // 6) уведомляем StartupManager, что можно продолжать gate():
     //    он перечитает настройки через readSettings(), validateAndFix и сделает boot()
     try {
       doc.dispatchEvent(
         new CustomEvent('lexitron:setup:done', {
           detail: {
-            uiLang: state.uiLang,
-            studyLang: state.studyLang,
-            level: state.level,
+            uiLang:     state.uiLang,
+            studyLang:  state.studyLang,
+            level:      state.level,
             tosAccepted: state.tosAccepted,
-            gaAccepted: state.gaAccepted
+            gaAccepted:  state.gaAccepted,
+            deckKey:     deckKey || null
           }
         })
       );
@@ -600,7 +637,6 @@
     reset: function () {
       lsRemove(LS_TOS_ACCEPTED);
       lsRemove(LS_GA_CHOICE);
-      // lexitron.setupDone трогает только StartupManager после успешного boot
       openModal();
     }
   };
@@ -609,6 +645,5 @@
 
   // ВАЖНО: не вешаемся на DOMContentLoaded
   // Мастер всегда запускается ТОЛЬКО через StartupManager.gate()
-  // никакого авто-ensure/ensure/auto-setup здесь нет.
 
 })(window);

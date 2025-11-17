@@ -112,49 +112,13 @@
     }catch(e){ return null; }
   }
 
-  function _activeDictLang() {
-  var A = window.App || {};
-  var lang = null;
-
-  // 1) Явный фильтр словарей — главный источник
-  if (A.settings && A.settings.dictsLangFilter) {
-    lang = A.settings.dictsLangFilter;
+  function _activeDictLang(){
+    if (App.settings && App.settings.dictsLangFilter) return App.settings.dictsLangFilter;
+    if (App.settings && App.settings.studyLang) return App.settings.studyLang;
+    if (App.settings && App.settings.lang) return App.settings.lang;
+    const key = (App.dictRegistry && App.dictRegistry.activeKey) || null;
+    return _langOfKey(key) || 'de';
   }
-
-  // 2) Если нет фильтра, но есть язык обучения
-  if (!lang && A.settings && A.settings.studyLang) {
-    lang = A.settings.studyLang;
-  }
-
-  // 3) Если нет отдельного studyLang, пробуем общий lang (язык интерфейса)
-  if (!lang && A.settings && A.settings.lang) {
-    lang = A.settings.lang;
-  }
-
-  // 4) Если до сих пор неизвестно — пробуем спросить StartupManager
-  if (!lang && window.StartupManager && typeof StartupManager.readSettings === 'function') {
-    try {
-      var s = StartupManager.readSettings();
-      if (s && s.studyLang) {
-        lang = s.studyLang;
-      } else if (s && s.uiLang) {
-        lang = s.uiLang;
-      }
-    } catch (_) {
-      // ignore
-    }
-  }
-
-  // 5) Если всё ещё нет языка — берём язык из активного ключа словаря
-  if (!lang) {
-    var key = (A.dictRegistry && A.dictRegistry.activeKey) || null;
-    lang = _langOfKey && _langOfKey(key);
-  }
-
-  // 6) Самый последний фаллбек — немецкий.
-  //    Оставляем как "старый мир", но добираемся сюда только если вообще ничего нет.
-  return lang || 'de';
-}
 
   App.clearFavoritesForLang = function(dictLang){
     try{

@@ -198,27 +198,9 @@
     }
 
     function applyFilters(state) {
-  // язык интерфейса + фильтр словарей
-  safe(function () {
-    if (!window.App) return;
-
-    if (!App.settings) App.settings = {};
-
-    // гарантия, что язык интерфейса совпадает с тем,
-    // что решил StartupManager (в т.ч. после мастера)
-    App.settings.lang = state.uiLang || App.settings.lang || 'ru';
-
-    // фильтр словарей по языку обучения
-    App.settings.dictsLangFilter = state.studyLang || null;
-  });
-
-  // активный словарь
-  safe(function () {
-    if (window.App && App.dictRegistry) {
-      App.dictRegistry.activeKey = state.deckKey;
+      safe(function () { if (window.App && App.settings) App.settings.dictsLangFilter = state.studyLang || null; });
+      safe(function () { if (window.App && App.dictRegistry) App.dictRegistry.activeKey = state.deckKey; });
     }
-  });
-}
 
     function boot(state) {
       if (!state.deckKey) {

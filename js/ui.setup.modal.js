@@ -90,7 +90,7 @@
 
     if (ru) {
       return {
-        title: 'Начальная настройка MOYAMOVA',
+        title: 'Начальная настройка',
         subtitle: 'Пара шагов — и можно учить слова.',
         intro:
           'MOYAMOVA — это офлайн-тренажёр слов на карточках: выбираете язык, тренируете слова, собираете статистику и возвращаетесь к ошибкам.',
@@ -111,7 +111,7 @@
     }
 
     return {
-      title: 'Початкова настройка MOYAMOVA',
+      title: 'Початкове налаштування',
       subtitle: 'Кілька кроків — і можна вчити слова.',
       intro:
         'MOYAMOVA — це офлайн-тренажер слів на картках: обираєте мову, тренуєте слова, збираєте статистику й повертаєтеся до помилок.',
@@ -332,19 +332,34 @@
   }
 
   function openTerms() {
-    // пытаемся использовать Legal, если он есть
-    try {
-      if (root.Legal && typeof root.Legal.legalUrl === 'function') {
-        var url = root.Legal.legalUrl('terms');
-        if (url) {
-          root.location.href = url;
-          return;
-        }
-      }
-    } catch (e) {
-      // ignore
+  try {
+    var url = null;
+
+    // Если есть Legal.legalUrl('terms') — используем его
+    if (root.Legal && typeof root.Legal.legalUrl === 'function') {
+      url = root.Legal.legalUrl('terms');
     }
 
+    // Фолбэк — старая локальная страница
+    if (!url) {
+      url = './legal/terms.ru.html';
+    }
+
+    // ВАЖНО: открываем в НОВОЙ вкладке, а не меняем текущую
+    var w = window.open(url, '_blank', 'noopener,noreferrer');
+    if (!w) {
+      // если браузер заблокировал window.open — хотя бы обычный переход
+      root.location.href = url;
+    }
+  } catch (e) {
+    // на всякий случай — прямой фолбэк
+    try {
+      root.open('./legal/terms.ru.html', '_blank');
+    } catch (_) {
+      root.location.href = './legal/terms.ru.html';
+    }
+  }
+}
     // fallback
     root.location.href = './legal/terms.ru.html';
   }

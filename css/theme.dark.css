@@ -1,3 +1,10 @@
+/* ==========================================================
+   Проект: MOYAMOVA
+   Файл: theme.dark.css
+   Назначение: Тёмная тема оформления приложения
+   Версия: 1.0
+   Обновлено: 2025-11-17
+   ========================================================== */
 /* ======================================================================================
    Dark Theme — Tokens & Overlays
    NOTE: Brand/Success/Danger colors are NOT changed here by agreement.
@@ -728,3 +735,4 @@ html[data-theme="dark"] :where(a,button,[role="button"],input,select,textarea,.b
 }
 /* опционально: .mistakes-delete сделать pointer */
 .mistakes-delete{ cursor:pointer; }
+/* ========================= Конец файла: theme.dark.css ========================= */

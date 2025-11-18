@@ -519,10 +519,10 @@
     A.settings.studyLang = state.studyLang;
     A.settings.level     = state.level === 'hard' ? 'hard' : 'normal';
 
-    if (typeof A.saveSettings === 'function') {
-      A.saveSettings();
-    }
+      if (typeof A.saveSettings === 'function') {
+    A.saveSettings(A.settings);
   }
+}
 
   function onStart() {
   if (!state.tosAccepted) {

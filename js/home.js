@@ -195,44 +195,39 @@
 // function activeDeckKey() { ... }
 // Заменяем на это:
 
+// Выбор активного словаря
 function activeDeckKey() {
   var A = window.App || {};
 
   try {
-    // 1) Trainer держит валидный ключ? (активный словарь в рантайме)
-    var kTrainer = (A.Trainer && typeof A.Trainer.getDeckKey === 'function')
-      ? A.Trainer.getDeckKey()
-      : null;
-    if (isValidDeckKey(kTrainer)) return kTrainer;
-
-    // 2) предпочитаемый возврат (например, после тренировок)
+    // 1) предпочитаемый возврат (если когда-нибудь начнём использовать)
     var prefer = (A.settings && A.settings.preferredReturnKey) || null;
     if (isValidDeckKey(prefer)) return prefer;
 
-    // 3) lastDeckKey (последний использованный пользователем словарь)
+    // 2) последний реально использованный словарь (наш главный источник истины)
     var last = (A.settings && A.settings.lastDeckKey) || null;
     if (isValidDeckKey(last)) return last;
 
-    // 4) Если есть StartupManager — используем его deckKey как "стартовый дефолт"
+    // 3) стартовый ключ из мастера (StartupManager) — только пока lastDeckKey ещё нет
     if (window.StartupManager && typeof StartupManager.readSettings === 'function') {
-      var s = StartupManager.readSettings && StartupManager.readSettings();
+      var s = StartupManager.readSettings();
       if (s && s.deckKey && isValidDeckKey(s.deckKey)) {
         return s.deckKey;
       }
     }
 
-    // 5) «как в референсе» — существующая логика выбора первого нормального словаря
-    var ref = pickDefaultKeyLikeRef && pickDefaultKeyLikeRef();
+    // 4) референсный дефолт (как в старой логике)
+    var ref = (typeof pickDefaultKeyLikeRef === 'function')
+      ? pickDefaultKeyLikeRef()
+      : null;
     if (isValidDeckKey(ref)) return ref;
 
-    // 6) Самый крайний фаллбек — если вообще всё сломалось / данных нет
+    // 5) самый крайний фолбэк
     return ACTIVE_KEY_FALLBACK;
   } catch (_) {
-    // Любая ошибка — в самом-самом конце возвращаем аварийный дефолт
     return ACTIVE_KEY_FALLBACK;
   }
 }
-
   // Идшники слов текущего сета
   function getActiveBatchIndex() {
     try { return (A.Trainer && typeof A.Trainer.getBatchIndex === 'function') ? A.Trainer.getBatchIndex(activeDeckKey()) : 0; }

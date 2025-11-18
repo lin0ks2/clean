@@ -487,11 +487,16 @@ const TRAINER_DEFAULT_LEARNED_REPEAT = 'ultra';
     }
   }
   function _save(key) {
-    try {
-      A.settings = A.settings || {};
+  try {
+    A.settings = A.settings || {};
+    if (A.settings.lastDeckKey !== key) {
       A.settings.lastDeckKey = key;
-    } catch (_) {}
-  }
+      if (typeof A.saveSettings === 'function') {
+        A.saveSettings(A.settings);
+      }
+    }
+  } catch (_) {}
+}
   function _resolve(key) {
     try {
       return (

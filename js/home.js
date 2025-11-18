@@ -199,16 +199,7 @@ function activeDeckKey() {
   var A = window.App || {};
 
   try {
-    // 0) Если есть StartupManager и он уже знает, какой словарь активный —
-    //    уважаем его в первую очередь.
-    if (window.StartupManager && typeof StartupManager.readSettings === 'function') {
-      var s = StartupManager.readSettings && StartupManager.readSettings();
-      if (s && s.deckKey && isValidDeckKey(s.deckKey)) {
-        return s.deckKey;
-      }
-    }
-
-    // 1) Trainer держит валидный ключ?
+    // 1) Trainer держит валидный ключ? (активный словарь в рантайме)
     var kTrainer = (A.Trainer && typeof A.Trainer.getDeckKey === 'function')
       ? A.Trainer.getDeckKey()
       : null;
@@ -222,12 +213,19 @@ function activeDeckKey() {
     var last = (A.settings && A.settings.lastDeckKey) || null;
     if (isValidDeckKey(last)) return last;
 
-    // 4) «как в референсе» — твоя существующая логика,
-    //    которая смотрит на App.Decks / window.decks и выбирает первый нормальный словарь
+    // 4) Если есть StartupManager — используем его deckKey как "стартовый дефолт"
+    if (window.StartupManager && typeof StartupManager.readSettings === 'function') {
+      var s = StartupManager.readSettings && StartupManager.readSettings();
+      if (s && s.deckKey && isValidDeckKey(s.deckKey)) {
+        return s.deckKey;
+      }
+    }
+
+    // 5) «как в референсе» — существующая логика выбора первого нормального словаря
     var ref = pickDefaultKeyLikeRef && pickDefaultKeyLikeRef();
     if (isValidDeckKey(ref)) return ref;
 
-    // 5) Самый крайний фаллбек — если вообще всё сломалось / данных нет.
+    // 6) Самый крайний фаллбек — если вообще всё сломалось / данных нет
     return ACTIVE_KEY_FALLBACK;
   } catch (_) {
     // Любая ошибка — в самом-самом конце возвращаем аварийный дефолт

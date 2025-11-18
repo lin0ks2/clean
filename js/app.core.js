@@ -26,7 +26,8 @@ try{
   
   App.state = loadState() || {
     index:0,lastIndex:-1,favorites:{},stars:{},successes:{},
-    lastShownWordId:null, totals:{shown:0,errors:0}, lastSeen:{}
+    lastShownWordId:null, totals:{shown:0,errors:0}, lastSeen:{},
+    mistakes:null
   };
 App._deckKey = function(){ try{ return (App.dictRegistry && App.dictRegistry.activeKey) || ''; }catch(_){ return ''; } };
 App.starKey = function(wid, dk){

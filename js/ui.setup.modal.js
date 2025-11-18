@@ -525,61 +525,55 @@
   }
 
   function onStart() {
-    if (!state.tosAccepted) {
-      return;
-    }
-
-    // 1) сохраняем выбор языка интерфейса и языка обучения
-    lsSet(LS_UI_LANG,    state.uiLang);
-    lsSet(LS_STUDY_LANG, state.studyLang);
-
-    // 2) подбираем стартовую деку под язык обучения
-    var deckKey = resolveDeckForStudyLang();
-    if (deckKey) {
-      lsSet(LS_DECK_KEY,      deckKey);
-      lsSet(LS_LEGACY_ACTIVE, deckKey);
-    }
-
-    // 3) TOS и GA
-    lsSet(LS_TOS_ACCEPTED, '1');
-    applyGaChoice(state.gaAccepted);
-
-    // 4) внутренние настройки приложения
-    applyToAppSettings();
-
-    // 5) помечаем, что мастер пройден
-    lsSet(LS_SETUP_DONE, 'true');
-
-    // 6) уведомляем слушателей (если что-то подписано)
-    try {
-      doc.dispatchEvent(
-        new CustomEvent('lexitron:setup:done', {
-          detail: {
-            uiLang:      state.uiLang,
-            studyLang:   state.studyLang,
-            level:       state.level,
-            tosAccepted: state.tosAccepted,
-            gaAccepted:  state.gaAccepted,
-            deckKey:     deckKey || null
-          }
-        })
-      );
-    } catch (e) {
-      // ignore
-    }
-
-    // 7) закрываем мастер
-    closeModal();
-
-    // 8) Стартуем приложение в этом же рантайме
-    if (root.StartupManager && typeof StartupManager.gate === 'function') {
-      try {
-        StartupManager.gate();
-      } catch (e) {
-        console.error('StartupManager.gate() after setup failed', e);
-      }
-    }
+  if (!state.tosAccepted) {
+    return;
   }
+
+  // 1) сохраняем выбор языка интерфейса и языка обучения
+  lsSet(LS_UI_LANG,    state.uiLang);
+  lsSet(LS_STUDY_LANG, state.studyLang);
+
+  // 2) подбираем стартовую деку под язык обучения
+  var deckKey = resolveDeckForStudyLang();
+  if (deckKey) {
+    lsSet(LS_DECK_KEY,      deckKey);
+    lsSet(LS_LEGACY_ACTIVE, deckKey);
+  }
+
+  // 3) TOS и GA
+  lsSet(LS_TOS_ACCEPTED, '1');
+  applyGaChoice(state.gaAccepted);
+
+  // 4) внутренние настройки приложения (на всякий случай)
+  applyToAppSettings();
+
+  // 5) помечаем, что мастер пройден
+  lsSet(LS_SETUP_DONE, 'true');
+
+  // 6) уведомляем возможных слушателей
+  try {
+    doc.dispatchEvent(
+      new CustomEvent('lexitron:setup:done', {
+        detail: {
+          uiLang:      state.uiLang,
+          studyLang:   state.studyLang,
+          level:       state.level,
+          tosAccepted: state.tosAccepted,
+          gaAccepted:  state.gaAccepted,
+          deckKey:     deckKey || null
+        }
+      })
+    );
+  } catch (e) {
+    // ignore
+  }
+
+  // 7) закрываем мастер
+  closeModal();
+
+  // 8) КРИТИЧНО: перезапускаем приложение "с нуля" уже с новыми настройками
+  root.location.reload();
+}
 
   /* ---------------------------------------
    * Public API

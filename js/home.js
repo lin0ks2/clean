@@ -191,24 +191,21 @@
   // starKey (единственное определение)
   const starKey = (typeof A.starKey === 'function') ? A.starKey : (id, key) => `${key}:${id}`;
 
-  // ЧИСТАЯ версия: не изменяет состояние, только выбирает лучший // Было что-то вроде:
-// function activeDeckKey() { ... }
-// Заменяем на это:
-
 // Выбор активного словаря
 function activeDeckKey() {
   var A = window.App || {};
 
   try {
-    // 1) предпочитаемый возврат (если когда-нибудь начнём использовать)
-    var prefer = (A.settings && A.settings.preferredReturnKey) || null;
-    if (isValidDeckKey(prefer)) return prefer;
-
-    // 2) последний реально использованный словарь (наш главный источник истины)
+    // 1) последний реально использованный словарь — главный источник истины
     var last = (A.settings && A.settings.lastDeckKey) || null;
     if (isValidDeckKey(last)) return last;
 
-    // 3) стартовый ключ из мастера (StartupManager) — только пока lastDeckKey ещё нет
+    // 2) "предпочитаемый возврат" при выходе из избранного/ошибок
+    //    используется только когда lastDeckKey ещё не задан
+    var prefer = (A.settings && A.settings.preferredReturnKey) || null;
+    if (isValidDeckKey(prefer)) return prefer;
+
+    // 3) стартовый ключ из мастера (StartupManager) — только для первого запуска
     if (window.StartupManager && typeof StartupManager.readSettings === 'function') {
       var s = StartupManager.readSettings();
       if (s && s.deckKey && isValidDeckKey(s.deckKey)) {

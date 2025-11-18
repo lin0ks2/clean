@@ -64,20 +64,24 @@
   };
 
   function initStateFromStorage() {
-    var ui = lsGet(LS_UI_LANG, 'ru');
-    if (ui !== 'ru' && ui !== 'uk') ui = 'ru';
-    state.uiLang = ui;
+  var ui = lsGet(LS_UI_LANG, 'ru');
+  if (ui !== 'ru' && ui !== 'uk') ui = 'ru';
+  state.uiLang = ui;
 
-    var study = lsGet(LS_STUDY_LANG, 'de');
-    var allowedStudy = ['de', 'en', 'fr', 'sr', 'es'];
-    if (allowedStudy.indexOf(study) === -1) study = 'de';
-    state.studyLang = study;
+  var studyDefault = (STUDY_LANGS[0] && STUDY_LANGS[0].code) || 'de';
+  var study = lsGet(LS_STUDY_LANG, studyDefault);
 
-    state.level = 'normal';
-
-    state.tosAccepted = lsGet(LS_TOS_ACCEPTED, '') === '1';
-    state.gaAccepted  = lsGet(LS_GA_CHOICE, '') === 'granted';
+  var allowedStudy = STUDY_LANGS.map(function (it) { return it.code; });
+  if (allowedStudy.indexOf(study) === -1) {
+    study = studyDefault;
   }
+  state.studyLang = study;
+
+  state.level = 'normal';
+
+  state.tosAccepted = lsGet(LS_TOS_ACCEPTED, '') === '1';
+  state.gaAccepted  = lsGet(LS_GA_CHOICE, '') === 'granted';
+}
 
   /* ---------------------------------------
    * Texts

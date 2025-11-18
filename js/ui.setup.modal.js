@@ -127,13 +127,46 @@
     };
   }
 
-  var STUDY_LANGS = [
+    // Полный список поддерживаемых языков обучения (мастер-список)
+  var STUDY_LANGS_MASTER = [
     { code: 'de', flag: '🇩🇪', label: 'Deutsch' },
     { code: 'en', flag: '🇬🇧', label: 'English' },
     { code: 'fr', flag: '🇫🇷', label: 'Français' },
     { code: 'sr', flag: '🇷🇸', label: 'Srpski' },
     { code: 'es', flag: '🇪🇸', label: 'Español' }
   ];
+
+  // Определяем, для каких языков реально есть словари (по window.decks)
+  function detectAvailableStudyLangCodes() {
+    try {
+      var decks = (root.decks || window.decks || {});
+      var langs = [];
+      for (var key in decks) {
+        if (!decks.hasOwnProperty(key)) continue;
+        var arr = decks[key];
+        if (!Array.isArray(arr) || !arr.length) continue;
+
+        // ключ вида "de_verbs" -> "de"
+        var lang = String(key).split('_')[0].toLowerCase();
+        if (lang && langs.indexOf(lang) === -1) {
+          langs.push(lang);
+        }
+      }
+      if (langs.length) return langs;
+    } catch (_) {}
+
+    // Фолбэк: если по какой-то причине ничего не нашли —
+    // считаем, что доступны все языки из мастер-списка
+    return STUDY_LANGS_MASTER.map(function (it) { return it.code; });
+  }
+
+  // Итоговый список языков для мастера, отфильтрованный по реально доступным словарям
+  var STUDY_LANGS = (function () {
+    var available = detectAvailableStudyLangCodes();
+    return STUDY_LANGS_MASTER.filter(function (item) {
+      return available.indexOf(item.code) !== -1;
+    });
+  })();
 
   /* ---------------------------------------
    * DOM helpers

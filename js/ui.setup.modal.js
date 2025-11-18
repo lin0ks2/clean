@@ -547,6 +547,23 @@
   // 4) внутренние настройки приложения (на всякий случай)
   applyToAppSettings();
 
+  // 4a) Аккуратно синхронизируем базовые настройки (в т.ч. level) в k_settings_v1_3_1
+  try {
+    var LS_SETTINGS = 'k_settings_v1_3_1';
+    var raw = localStorage.getItem(LS_SETTINGS);
+    var base = {};
+    if (raw) {
+      try { base = JSON.parse(raw) || {}; } catch(_) { base = {}; }
+    }
+
+    // Обновляем только то, чем управляет мастер
+    base.uiLang    = state.uiLang;
+    base.studyLang = state.studyLang;
+    base.level     = state.level === 'hard' ? 'hard' : 'normal';
+
+    localStorage.setItem(LS_SETTINGS, JSON.stringify(base));
+  } catch(_) {}
+    
   // 5) помечаем, что мастер пройден
   lsSet(LS_SETUP_DONE, 'true');
 

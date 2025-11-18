@@ -550,31 +550,13 @@
   // 5) помечаем, что мастер пройден
   lsSet(LS_SETUP_DONE, 'true');
 
-  // 6) уведомляем возможных слушателей
-  try {
-    doc.dispatchEvent(
-      new CustomEvent('lexitron:setup:done', {
-        detail: {
-          uiLang:      state.uiLang,
-          studyLang:   state.studyLang,
-          level:       state.level,
-          tosAccepted: state.tosAccepted,
-          gaAccepted:  state.gaAccepted,
-          deckKey:     deckKey || null
-        }
-      })
-    );
-  } catch (e) {
-    // ignore
-  }
-
-  // 7) закрываем мастер
+  // 6) закрываем мастер
   closeModal();
 
-  // 8) КРИТИЧНО: перезапускаем приложение "с нуля" уже с новыми настройками
+  // 7) КРИТИЧНО: даём приложению стартануть "с нуля"
+  //    уже с новыми настройками из localStorage.
   root.location.reload();
 }
-
   /* ---------------------------------------
    * Public API
    * ------------------------------------ */

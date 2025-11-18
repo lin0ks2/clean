@@ -164,10 +164,18 @@
       const ok = document.getElementById('dicts-apply');
       if (ok){
         ok.addEventListener('click', ()=>{
-          try { A.settings = A.settings || {}; A.settings.lastDeckKey = selectedKey; } catch(_){}
-          try { document.dispatchEvent(new CustomEvent('lexitron:deck-selected', { detail:{ key: selectedKey } })); } catch(_) {}
-          goHome();
-        });
+  try {
+    A.settings = A.settings || {};
+    A.settings.lastDeckKey = selectedKey;
+    if (typeof A.saveSettings === 'function') {
+      A.saveSettings(A.settings);
+    }
+  } catch(_){}
+  try {
+    document.dispatchEvent(new CustomEvent('lexitron:deck-selected', { detail:{ key: selectedKey } }));
+  } catch(_) {}
+  goHome();
+});
       }
 
       renderFlagsUI();

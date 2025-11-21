@@ -13,7 +13,7 @@ window.decks.de_nouns = [
     uk: "гроші",
     level: "A1",
     topics: ["money", "daily"],    ruNote: "Может обозначать как наличные, так и безналичные средства.",
-    ukNote: "Може означати як готівкові, так і безготівкові кошти."
+    ukNote: "Може означати як готівкові, так і безготівкові кошти.",
     examples: [
       {
         L2: "Ich habe heute kein Geld dabei.",
@@ -29,7 +29,7 @@ window.decks.de_nouns = [
     uk: "час",
     level: "A1",
     topics: ["time", "abstract"],    ruNote: "Часто используется в выражениях: Freizeit, Zeit haben, keine Zeit.",
-    ukNote: "Часто вживається у виразах: Freizeit, Zeit haben, keine Zeit."
+    ukNote: "Часто вживається у виразах: Freizeit, Zeit haben, keine Zeit.",
     examples: [
       {
         L2: "Ich habe heute keine Zeit.",
@@ -45,7 +45,7 @@ window.decks.de_nouns = [
     uk: "рік",
     level: "A1",
     topics: ["time"],    ruNote: "Plural: die Jahre.",
-    ukNote: "Множина: die Jahre."
+    ukNote: "Множина: die Jahre.",
     examples: [
       {
         L2: "Das Jahr hat zwölf Monate.",
@@ -61,7 +61,7 @@ window.decks.de_nouns = [
     uk: "людина",
     level: "A1",
     topics: ["people", "abstract"],    ruNote: "Часто в значении «человеческое существо» вообще.",
-    ukNote: "Часто у значенні «людська істота» загалом."
+    ukNote: "Часто у значенні «людська істота» загалом.",
     examples: [
       {
         L2: "Jeder Mensch ist anders.",
@@ -77,7 +77,7 @@ window.decks.de_nouns = [
     uk: "жінка",
     level: "A1",
     topics: ["people", "family"],    ruNote: "Также: «die Frau» — жена.",
-    ukNote: "Також: «die Frau» — дружина."
+    ukNote: "Також: «die Frau» — дружина.",
     examples: [
       {
         L2: "Die Frau arbeitet im Büro.",
@@ -93,7 +93,7 @@ window.decks.de_nouns = [
     uk: "чоловік",
     level: "A1",
     topics: ["people", "family"],    ruNote: "Также: «der Mann» — муж.",
-    ukNote: "Також: «der Mann» — чоловік (чоловік у шлюбі)."
+    ukNote: "Також: «der Mann» — чоловік (чоловік у шлюбі).",
     examples: [
       {
         L2: "Der Mann liest die Zeitung.",
@@ -109,7 +109,7 @@ window.decks.de_nouns = [
     uk: "дитина",
     level: "A1",
     topics: ["people", "family"],    ruNote: "Часто в сочетаниях: das Schulkind, das Kleinkind.",
-    ukNote: "Часто у сполуках: das Schulkind, das Kleinkind."
+    ukNote: "Часто у сполуках: das Schulkind, das Kleinkind.",
     examples: [
       {
         L2: "Das Kind spielt im Garten.",
@@ -125,7 +125,7 @@ window.decks.de_nouns = [
     uk: "місто",
     level: "A1",
     topics: ["places"],    ruNote: "Может обозначать административную единицу.",
-    ukNote: "Може позначати адміністративну одиницю."
+    ukNote: "Може позначати адміністративну одиницю.",
     examples: [
       {
         L2: "Berlin ist eine große Stadt.",
@@ -141,7 +141,7 @@ window.decks.de_nouns = [
     uk: "країна",
     level: "A1",
     topics: ["places", "geography"],    ruNote: "Также: «das Land» — сельская местность (auf dem Land).",
-    ukNote: "Також: «das Land» — сільська місцевість (auf dem Land)."
+    ukNote: "Також: «das Land» — сільська місцевість (auf dem Land).",
     examples: [
       {
         L2: "Deutschland ist ein europäisches Land.",
@@ -157,7 +157,7 @@ window.decks.de_nouns = [
     uk: "будинок",
     level: "A1",
     topics: ["home"],    ruNote: "Может означать и «семью» (im Haus Schmidt).",
-    ukNote: "Може означати й «родину» (im Haus Schmidt)."
+    ukNote: "Може означати й «родину» (im Haus Schmidt).",
     examples: [
       {
         L2: "Unser Haus ist alt, aber gemütlich.",
@@ -173,7 +173,7 @@ window.decks.de_nouns = [
     uk: "квартира",
     level: "A1",
     topics: ["home"],    ruNote: "Жилое помещение в доме.",
-    ukNote: "Житлове приміщення в будинку."
+    ukNote: "Житлове приміщення в будинку.",
     examples: [
       {
         L2: "Die Wohnung ist klein, aber modern.",
@@ -189,7 +189,7 @@ window.decks.de_nouns = [
     uk: "кімната",
     level: "A1",
     topics: ["home"],    ruNote: "Часто с уточнениями: Schlafzimmer, Wohnzimmer.",
-    ukNote: "Часто з уточненнями: Schlafzimmer, Wohnzimmer."
+    ukNote: "Часто з уточненнями: Schlafzimmer, Wohnzimmer.",
     examples: [
       {
         L2: "Mein Zimmer hat ein großes Fenster.",
@@ -205,7 +205,7 @@ window.decks.de_nouns = [
     uk: "двері",
     level: "A1",
     topics: ["home"],    ruNote: "Может означать вход в помещение или шкаф.",
-    ukNote: "Може означати вхід у приміщення чи шафу."
+    ukNote: "Може означати вхід у приміщення чи шафу.",
     examples: [
       {
         L2: "Mach bitte die Tür zu.",
@@ -221,7 +221,7 @@ window.decks.de_nouns = [
     uk: "вікно",
     level: "A1",
     topics: ["home"],    ruNote: "Также используется в смысле «временное окно» (Zeitfenster).",
-    ukNote: "Також уживається в значенні «часове вікно» (Zeitfenster)."
+    ukNote: "Також уживається в значенні «часове вікно» (Zeitfenster).",
     examples: [
       {
         L2: "Das Fenster ist offen.",
@@ -237,7 +237,7 @@ window.decks.de_nouns = [
     uk: "стіл",
     level: "A1",
     topics: ["home"],    ruNote: "Часто: Es liegt viel auf dem Tisch.",
-    ukNote: "Часто: На столі багато всього."
+    ukNote: "Часто: На столі багато всього.",
     examples: [
       {
         L2: "Das Essen steht auf dem Tisch.",
@@ -253,7 +253,7 @@ window.decks.de_nouns = [
     uk: "стілець",
     level: "A1",
     topics: ["home"],    ruNote: "Не путать с «der Sessel» — кресло.",
-    ukNote: "Не плутати з «der Sessel» — крісло."
+    ukNote: "Не плутати з «der Sessel» — крісло.",
     examples: [
       {
         L2: "Auf dem Stuhl liegt eine Jacke.",
@@ -269,7 +269,7 @@ window.decks.de_nouns = [
     uk: "ліжко",
     level: "A1",
     topics: ["home"],    ruNote: "В выражениях: ins Bett gehen, im Bett bleiben.",
-    ukNote: "У виразах: ins Bett gehen, im Bett bleiben."
+    ukNote: "У виразах: ins Bett gehen, im Bett bleiben.",
     examples: [
       {
         L2: "Ich gehe früh ins Bett.",
@@ -285,7 +285,7 @@ window.decks.de_nouns = [
     uk: "шафа",
     level: "A1",
     topics: ["home"],    ruNote: "Es gibt Kleiderschrank, Küchenschrank usw.",
-    ukNote: "Є Kleiderschrank, Küchenschrank тощо."
+    ukNote: "Є Kleiderschrank, Küchenschrank тощо.",
     examples: [
       {
         L2: "Die Kleidung ist im Schrank.",
@@ -301,7 +301,7 @@ window.decks.de_nouns = [
     uk: "лампа",
     level: "A1",
     topics: ["home", "light"],    ruNote: "Настольная, потолочная и т.п.",
-    ukNote: "Настільна, стельова тощо."
+    ukNote: "Настільна, стельова тощо.",
     examples: [
       {
         L2: "Die Lampe ist sehr hell.",
@@ -317,7 +317,7 @@ window.decks.de_nouns = [
     uk: "килим",
     level: "A1",
     topics: ["home"],    ruNote: "Напольное покрытие из ткани.",
-    ukNote: "Текстильне покриття для підлоги."
+    ukNote: "Текстильне покриття для підлоги.",
     examples: [
       {
         L2: "Der Teppich liegt im Wohnzimmer.",
@@ -333,7 +333,7 @@ window.decks.de_nouns = [
     uk: "автомобіль",
     level: "A1",
     topics: ["transport"],    ruNote: "Часто: mit dem Auto fahren.",
-    ukNote: "Часто: mit dem Auto fahren."
+    ukNote: "Часто: mit dem Auto fahren.",
     examples: [
       {
         L2: "Mein Auto ist kaputt.",
@@ -349,7 +349,7 @@ window.decks.de_nouns = [
     uk: "автобус",
     level: "A1",
     topics: ["transport"],    ruNote: "Öffentlicher Verkehr: der Bus, der Zug.",
-    ukNote: "Громадський транспорт: der Bus, der Zug."
+    ukNote: "Громадський транспорт: der Bus, der Zug.",
     examples: [
       {
         L2: "Der Bus kommt in zehn Minuten.",
@@ -365,7 +365,7 @@ window.decks.de_nouns = [
     uk: "поїзд",
     level: "A1",
     topics: ["transport"],    ruNote: "Также: «der Zug» — движение, тяга (am Zug sein).",
-    ukNote: "Також: «der Zug» — хід, черга (am Zug sein)."
+    ukNote: "Також: «der Zug» — хід, черга (am Zug sein).",
     examples: [
       {
         L2: "Der Zug hat Verspätung.",
@@ -381,7 +381,7 @@ window.decks.de_nouns = [
     uk: "літак",
     level: "A1",
     topics: ["transport", "travel"],    ruNote: "Сложное существительное: Flug + Zeug.",
-    ukNote: "Складене слово: Flug + Zeug."
+    ukNote: "Складене слово: Flug + Zeug.",
     examples: [
       {
         L2: "Das Flugzeug landet pünktlich.",
@@ -397,7 +397,7 @@ window.decks.de_nouns = [
     uk: "корабель",
     level: "A1",
     topics: ["transport", "travel"],    ruNote: "Может обозначать и большие, и малые суда.",
-    ukNote: "Може позначати як великі, так і менші судна."
+    ukNote: "Може позначати як великі, так і менші судна.",
     examples: [
       {
         L2: "Das Schiff fährt über den Fluss.",
@@ -413,7 +413,7 @@ window.decks.de_nouns = [
     uk: "велосипед",
     level: "A1",
     topics: ["transport", "sport"],    ruNote: "Часто: mit dem Fahrrad fahren.",
-    ukNote: "Часто: mit dem Fahrrad fahren."
+    ukNote: "Часто: mit dem Fahrrad fahren.",
     examples: [
       {
         L2: "Ich fahre jeden Tag mit dem Fahrrad.",
@@ -429,7 +429,7 @@ window.decks.de_nouns = [
     uk: "вулиця",
     level: "A1",
     topics: ["places", "transport"],    ruNote: "Название улицы: die Straße + Name.",
-    ukNote: "Назва вулиці: die Straße + Name."
+    ukNote: "Назва вулиці: die Straße + Name.",
     examples: [
       {
         L2: "Viele Autos stehen auf der Straße.",
@@ -445,7 +445,7 @@ window.decks.de_nouns = [
     uk: "міст",
     level: "A2",
     topics: ["places", "transport"],    ruNote: "Соединяет два берега, дороги и т.д.",
-    ukNote: "З’єднує два береги, дороги тощо."
+    ukNote: "З’єднує два береги, дороги тощо.",
     examples: [
       {
         L2: "Wir gehen über die Brücke.",
@@ -461,7 +461,7 @@ window.decks.de_nouns = [
     uk: "шлях",
     level: "A1",
     topics: ["places", "abstract"],    ruNote: "Также в абстрактном смысле: der richtige Weg.",
-    ukNote: "Також в абстрактному значенні: der richtige Weg."
+    ukNote: "Також в абстрактному значенні: der richtige Weg.",
     examples: [
       {
         L2: "Der Weg zur Schule ist kurz.",
@@ -477,7 +477,7 @@ window.decks.de_nouns = [
     uk: "площа",
     level: "A1",
     topics: ["places"],    ruNote: "Также: место (Sitzplatz, Parkplatz).",
-    ukNote: "Також: місце (Sitzplatz, Parkplatz)."
+    ukNote: "Також: місце (Sitzplatz, Parkplatz).",
     examples: [
       {
         L2: "Wir treffen uns auf dem Platz vor der Kirche.",
@@ -493,7 +493,7 @@ window.decks.de_nouns = [
     uk: "вода",
     level: "A1",
     topics: ["food", "nature"],    ruNote: "Still (ohne Kohlensäure) oder mit Kohlensäure.",
-    ukNote: "Без газу або газована."
+    ukNote: "Без газу або газована.",
     examples: [
       {
         L2: "Ich trinke gern stilles Wasser.",
@@ -509,7 +509,7 @@ window.decks.de_nouns = [
     uk: "хліб",
     level: "A1",
     topics: ["food"],    ruNote: "Часто: das Brötchen — булочка.",
-    ukNote: "Часто: das Brötchen — булочка."
+    ukNote: "Часто: das Brötchen — булочка.",
     examples: [
       {
         L2: "Zum Frühstück esse ich Brot mit Käse.",
@@ -525,7 +525,7 @@ window.decks.de_nouns = [
     uk: "молоко",
     level: "A1",
     topics: ["food"],    ruNote: "Kuhmilch, Pflanzenmilch usw.",
-    ukNote: "Коров’яче молоко, рослинне молоко тощо."
+    ukNote: "Коров’яче молоко, рослинне молоко тощо.",
     examples: [
       {
         L2: "Ich trinke Kaffee mit Milch.",
@@ -541,7 +541,7 @@ window.decks.de_nouns = [
     uk: "сир",
     level: "A1",
     topics: ["food"],    ruNote: "Verschiedene Sorten: Hartkäse, Weichkäse.",
-    ukNote: "Різні види: твердий сир, м’який сир."
+    ukNote: "Різні види: твердий сир, м’який сир.",
     examples: [
       {
         L2: "Der Käse schmeckt sehr gut.",
@@ -557,7 +557,7 @@ window.decks.de_nouns = [
     uk: "м'ясо",
     level: "A1",
     topics: ["food"],    ruNote: "Обычно животное мясо, не фарш.",
-    ukNote: "Зазвичай м’ясо тварин, не фарш."
+    ukNote: "Зазвичай м’ясо тварин, не фарш.",
     examples: [
       {
         L2: "Isst du gern Fleisch?",
@@ -573,7 +573,7 @@ window.decks.de_nouns = [
     uk: "риба",
     level: "A1",
     topics: ["food", "animals"],    ruNote: "И животное, и блюдо.",
-    ukNote: "І тварина, і страва."
+    ukNote: "І тварина, і страва.",
     examples: [
       {
         L2: "Der Fisch ist frisch.",
@@ -589,7 +589,7 @@ window.decks.de_nouns = [
     uk: "овочі",
     level: "A1",
     topics: ["food"],    ruNote: "Общее название для овощей.",
-    ukNote: "Загальна назва для овочів."
+    ukNote: "Загальна назва для овочів.",
     examples: [
       {
         L2: "Gemüse ist gesund.",
@@ -605,7 +605,7 @@ window.decks.de_nouns = [
     uk: "фрукти",
     level: "A1",
     topics: ["food"],    ruNote: "Общее название для фруктов.",
-    ukNote: "Загальна назва для фруктів."
+    ukNote: "Загальна назва для фруктів.",
     examples: [
       {
         L2: "Wir kaufen frisches Obst auf dem Markt.",
@@ -621,7 +621,7 @@ window.decks.de_nouns = [
     uk: "яблуко",
     level: "A1",
     topics: ["food"],    ruNote: "Plural: die Äpfel.",
-    ukNote: "Множина: die Äpfel."
+    ukNote: "Множина: die Äpfel.",
     examples: [
       {
         L2: "Der Apfel ist süß und saftig.",
@@ -637,7 +637,7 @@ window.decks.de_nouns = [
     uk: "банан",
     level: "A1",
     topics: ["food"],    ruNote: "Exotische Frucht im Deutschen Kontext.",
-    ukNote: "Екзотичний фрукт у німецькому контексті."
+    ukNote: "Екзотичний фрукт у німецькому контексті.",
     examples: [
       {
         L2: "Die Banane ist gelb.",
@@ -653,7 +653,7 @@ window.decks.de_nouns = [
     uk: "робота",
     level: "A1",
     topics: ["work"],    ruNote: "И процесс, и место (zur Arbeit gehen).",
-    ukNote: "І процес, і місце (zur Arbeit gehen)."
+    ukNote: "І процес, і місце (zur Arbeit gehen).",
     examples: [
       {
         L2: "Ich gehe jeden Tag zur Arbeit.",
@@ -669,7 +669,7 @@ window.decks.de_nouns = [
     uk: "професія",
     level: "A2",
     topics: ["work"],    ruNote: "Обычно формальное название профессии.",
-    ukNote: "Зазвичай формальна назва професії."
+    ukNote: "Зазвичай формальна назва професії.",
     examples: [
       {
         L2: "Was ist dein Beruf?",
@@ -685,7 +685,7 @@ window.decks.de_nouns = [
     uk: "школа",
     level: "A1",
     topics: ["education"],    ruNote: "Grundschule, Mittelschule usw.",
-    ukNote: "Початкова школа, середня школа тощо."
+    ukNote: "Початкова школа, середня школа тощо.",
     examples: [
       {
         L2: "Die Kinder gehen morgens zur Schule.",
@@ -701,7 +701,7 @@ window.decks.de_nouns = [
     uk: "університет",
     level: "A2",
     topics: ["education"],    ruNote: "Можно сказать kurz: die Uni.",
-    ukNote: "Можна сказати коротко: die Uni."
+    ukNote: "Можна сказати коротко: die Uni.",
     examples: [
       {
         L2: "Sie studiert an der Universität.",
@@ -717,7 +717,7 @@ window.decks.de_nouns = [
     uk: "вчитель",
     level: "A1",
     topics: ["education", "people"],    ruNote: "Женский вариант: die Lehrerin.",
-    ukNote: "Жіночий варіант: die Lehrerin."
+    ukNote: "Жіночий варіант: die Lehrerin.",
     examples: [
       {
         L2: "Der Lehrer erklärt die Grammatik.",
@@ -733,7 +733,7 @@ window.decks.de_nouns = [
     uk: "учень",
     level: "A1",
     topics: ["education", "people"],    ruNote: "Обычно школьник, не студент.",
-    ukNote: "Зазвичай школяр, не студент."
+    ukNote: "Зазвичай школяр, не студент.",
     examples: [
       {
         L2: "Die Schüler hören gut zu.",
@@ -749,7 +749,7 @@ window.decks.de_nouns = [
     uk: "студент",
     level: "A1",
     topics: ["education", "people"],    ruNote: "Учится в вузе или университете.",
-    ukNote: "Навчається у виші чи університеті."
+    ukNote: "Навчається у виші чи університеті.",
     examples: [
       {
         L2: "Der Student lernt für die Prüfung.",
@@ -765,7 +765,7 @@ window.decks.de_nouns = [
     uk: "книга",
     level: "A1",
     topics: ["media", "learning"],    ruNote: "Plural: die Bücher.",
-    ukNote: "Множина: die Bücher."
+    ukNote: "Множина: die Bücher.",
     examples: [
       {
         L2: "Ich lese ein interessantes Buch.",
@@ -781,7 +781,7 @@ window.decks.de_nouns = [
     uk: "газета",
     level: "A1",
     topics: ["media"],    ruNote: "Ежедневная или еженедельная.",
-    ukNote: "Щоденна або щотижнева."
+    ukNote: "Щоденна або щотижнева.",
     examples: [
       {
         L2: "Er liest jeden Morgen die Zeitung.",
@@ -797,7 +797,7 @@ window.decks.de_nouns = [
     uk: "зошит",
     level: "A1",
     topics: ["education"],    ruNote: "Тонкая тетрадь, не толстая книга.",
-    ukNote: "Тонкий зошит, не товста книжка."
+    ukNote: "Тонкий зошит, не товста книжка.",
     examples: [
       {
         L2: "Schreib es bitte in dein Heft.",
@@ -813,7 +813,7 @@ window.decks.de_nouns = [
     uk: "комп’ютер",
     level: "A1",
     topics: ["it"],    ruNote: "Oft auch: der PC.",
-    ukNote: "Часто також: der PC."
+    ukNote: "Часто також: der PC.",
     examples: [
       {
         L2: "Der Computer ist sehr schnell.",
@@ -829,7 +829,7 @@ window.decks.de_nouns = [
     uk: "ноутбук",
     level: "A1",
     topics: ["it"],    ruNote: "Kleiner tragbarer Computer.",
-    ukNote: "Невеликий переносний комп’ютер."
+    ukNote: "Невеликий переносний комп’ютер.",
     examples: [
       {
         L2: "Mein Laptop ist leicht und praktisch.",
@@ -845,7 +845,7 @@ window.decks.de_nouns = [
     uk: "телефон",
     level: "A1",
     topics: ["it", "communication"],    ruNote: "Разговорное слово для мобильного телефона.",
-    ukNote: "Розмовне слово для мобільного телефона."
+    ukNote: "Розмовне слово для мобільного телефона.",
     examples: [
       {
         L2: "Wo ist mein Handy?",
@@ -861,7 +861,7 @@ window.decks.de_nouns = [
     uk: "телефон",
     level: "A1",
     topics: ["communication"],    ruNote: "Может быть стационарным или мобильным.",
-    ukNote: "Може бути стаціонарним або мобільним."
+    ukNote: "Може бути стаціонарним або мобільним.",
     examples: [
       {
         L2: "Das Telefon klingelt.",
@@ -877,7 +877,7 @@ window.decks.de_nouns = [
     uk: "електронний лист",
     level: "A1",
     topics: ["it", "communication"],    ruNote: "Можно писать: die Mail (разг.).",
-    ukNote: "Можна писати: die Mail (розм.)."
+    ukNote: "Можна писати: die Mail (розм.).",
     examples: [
       {
         L2: "Ich habe eine E-Mail bekommen.",
@@ -893,7 +893,7 @@ window.decks.de_nouns = [
     uk: "інтернет",
     level: "A1",
     topics: ["it"],    ruNote: "Im Internet surfen, etwas im Internet suchen.",
-    ukNote: "Im Internet surfen, щось шукати в інтернеті."
+    ukNote: "Im Internet surfen, щось шукати в інтернеті.",
     examples: [
       {
         L2: "Ohne Internet ist es heute schwierig.",
@@ -909,7 +909,7 @@ window.decks.de_nouns = [
     uk: "екран",
     level: "A2",
     topics: ["it"],    ruNote: "Computerbildschirm, Handybildschirm usw.",
-    ukNote: "Екран комп’ютера, телефона тощо."
+    ukNote: "Екран комп’ютера, телефона тощо.",
     examples: [
       {
         L2: "Der Bildschirm ist zu dunkel.",
@@ -925,7 +925,7 @@ window.decks.de_nouns = [
     uk: "миша",
     level: "A1",
     topics: ["it", "animals"],    ruNote: "И животное, и компьютерная мышь.",
-    ukNote: "І тварина, і комп’ютерна миша."
+    ukNote: "І тварина, і комп’ютерна миша.",
     examples: [
       {
         L2: "Die Maus liegt neben der Tastatur.",
@@ -941,7 +941,7 @@ window.decks.de_nouns = [
     uk: "клавіатура",
     level: "A1",
     topics: ["it"],    ruNote: "Компьютерная или ноутбучная.",
-    ukNote: "Комп’ютерна чи ноутбучна."
+    ukNote: "Комп’ютерна чи ноутбучна.",
     examples: [
       {
         L2: "Die Tastatur ist kabellos.",
@@ -957,7 +957,7 @@ window.decks.de_nouns = [
     uk: "принтер",
     level: "A2",
     topics: ["it", "office"],    ruNote: "Geräte zum Drucken von Dokumenten.",
-    ukNote: "Пристрій для друку документів."
+    ukNote: "Пристрій для друку документів.",
     examples: [
       {
         L2: "Der Drucker ist leer, wir brauchen neue Tinte.",
@@ -973,7 +973,7 @@ window.decks.de_nouns = [
     uk: "родина",
     level: "A1",
     topics: ["family", "people"],    ruNote: "Eltern, Kinder und oft Verwandte.",
-    ukNote: "Батьки, діти та часто родичі."
+    ukNote: "Батьки, діти та часто родичі.",
     examples: [
       {
         L2: "Meine Familie ist sehr wichtig für mich.",
@@ -989,7 +989,7 @@ window.decks.de_nouns = [
     uk: "батько",
     level: "A1",
     topics: ["family"],    ruNote: "Umgangssprachlich: der Papa.",
-    ukNote: "Розмовно: der Papa."
+    ukNote: "Розмовно: der Papa.",
     examples: [
       {
         L2: "Mein Vater arbeitet viel.",
@@ -1005,7 +1005,7 @@ window.decks.de_nouns = [
     uk: "мати",
     level: "A1",
     topics: ["family"],    ruNote: "Umgangssprachlich: die Mama.",
-    ukNote: "Розмовно: die Mama."
+    ukNote: "Розмовно: die Mama.",
     examples: [
       {
         L2: "Meine Mutter kocht gern.",
@@ -1021,7 +1021,7 @@ window.decks.de_nouns = [
     uk: "син",
     level: "A1",
     topics: ["family"],    ruNote: "Männliches Kind der Eltern.",
-    ukNote: "Син для батьків."
+    ukNote: "Син для батьків.",
     examples: [
       {
         L2: "Ihr Sohn ist fünf Jahre alt.",
@@ -1037,7 +1037,7 @@ window.decks.de_nouns = [
     uk: "дочка",
     level: "A1",
     topics: ["family"],    ruNote: "Weibliches Kind der Eltern.",
-    ukNote: "Донька для батьків."
+    ukNote: "Донька для батьків.",
     examples: [
       {
         L2: "Die Tochter studiert in Berlin.",
@@ -1053,7 +1053,7 @@ window.decks.de_nouns = [
     uk: "брат",
     level: "A1",
     topics: ["family"],    ruNote: "Männlicher Geschwisterteil.",
-    ukNote: "Чоловічий брат серед братів і сестер."
+    ukNote: "Чоловічий брат серед братів і сестер.",
     examples: [
       {
         L2: "Mein Bruder ist jünger als ich.",
@@ -1069,7 +1069,7 @@ window.decks.de_nouns = [
     uk: "сестра",
     level: "A1",
     topics: ["family"],    ruNote: "Weiblicher Geschwisterteil.",
-    ukNote: "Жіноча сестра серед братів і сестер."
+    ukNote: "Жіноча сестра серед братів і сестер.",
     examples: [
       {
         L2: "Meine Schwester wohnt in Wien.",
@@ -1085,7 +1085,7 @@ window.decks.de_nouns = [
     uk: "друг",
     level: "A1",
     topics: ["people", "social"],    ruNote: "Также может означать «парень» (в отношениях).",
-    ukNote: "Також може означати «хлопець» (у стосунках)."
+    ukNote: "Також може означати «хлопець» (у стосунках).",
     examples: [
       {
         L2: "Er ist mein bester Freund.",
@@ -1101,7 +1101,7 @@ window.decks.de_nouns = [
     uk: "подруга",
     level: "A1",
     topics: ["people", "social"],    ruNote: "Также: девушка (в отношениях).",
-    ukNote: "Також: дівчина (у стосунках)."
+    ukNote: "Також: дівчина (у стосунках).",
     examples: [
       {
         L2: "Sie ist meine beste Freundin.",
@@ -1117,7 +1117,7 @@ window.decks.de_nouns = [
     uk: "батьки",
     level: "A1",
     topics: ["family"],    ruNote: "Pluralwort, kein Singular.",
-    ukNote: "Слово у множині, немає однини."
+    ukNote: "Слово у множині, немає однини.",
     examples: [
       {
         L2: "Meine Eltern wohnen auf dem Land.",
@@ -1133,7 +1133,7 @@ window.decks.de_nouns = [
     uk: "їжа",
     level: "A1",
     topics: ["food"],    ruNote: "И процесс (zum Essen gehen), и саму еду.",
-    ukNote: "І процес (zum Essen gehen), і саму їжу."
+    ukNote: "І процес (zum Essen gehen), і саму їжу.",
     examples: [
       {
         L2: "Das Essen schmeckt lecker.",
@@ -1149,7 +1149,7 @@ window.decks.de_nouns = [
     uk: "сніданок",
     level: "A1",
     topics: ["food", "daily"],    ruNote: "Morgens: frühstücken.",
-    ukNote: "Вранці: frühstücken."
+    ukNote: "Вранці: frühstücken.",
     examples: [
       {
         L2: "Zum Frühstück esse ich Müsli.",
@@ -1165,7 +1165,7 @@ window.decks.de_nouns = [
     uk: "обід",
     level: "A1",
     topics: ["food", "daily"],    ruNote: "Mittagsmahlzeit.",
-    ukNote: "Прийом їжі вдень."
+    ukNote: "Прийом їжі вдень.",
     examples: [
       {
         L2: "Wir haben um zwölf Uhr Mittagessen.",
@@ -1181,7 +1181,7 @@ window.decks.de_nouns = [
     uk: "вечеря",
     level: "A1",
     topics: ["food", "daily"],    ruNote: "Abendmahlzeit.",
-    ukNote: "Прийом їжі ввечері."
+    ukNote: "Прийом їжі ввечері.",
     examples: [
       {
         L2: "Wir essen das Abendessen um sieben Uhr.",
@@ -1197,7 +1197,7 @@ window.decks.de_nouns = [
     uk: "напій",
     level: "A1",
     topics: ["food"],    ruNote: "Alkoholfreie und alkoholische Getränke.",
-    ukNote: "Безалкогольні та алкогольні напої."
+    ukNote: "Безалкогольні та алкогольні напої.",
     examples: [
       {
         L2: "Welches Getränk möchten Sie?",
@@ -1213,7 +1213,7 @@ window.decks.de_nouns = [
     uk: "сік",
     level: "A1",
     topics: ["food"],    ruNote: "Obstsaft oder Gemüsesaft.",
-    ukNote: "Фруктовий або овочевий сік."
+    ukNote: "Фруктовий або овочевий сік.",
     examples: [
       {
         L2: "Ich trinke gern Orangensaft.",
@@ -1229,7 +1229,7 @@ window.decks.de_nouns = [
     uk: "чай",
     level: "A1",
     topics: ["food"],    ruNote: "Schwarzer, grüner, Kräutertee usw.",
-    ukNote: "Чорний, зелений, трав’яний чай тощо."
+    ukNote: "Чорний, зелений, трав’яний чай тощо.",
     examples: [
       {
         L2: "Möchtest du Tee oder Kaffee?",
@@ -1245,7 +1245,7 @@ window.decks.de_nouns = [
     uk: "кава",
     level: "A1",
     topics: ["food"],    ruNote: "Mit Milch, ohne Milch, mit Zucker.",
-    ukNote: "З молоком, без молока, з цукром."
+    ukNote: "З молоком, без молока, з цукром.",
     examples: [
       {
         L2: "Ich brauche morgens Kaffee.",
@@ -1261,7 +1261,7 @@ window.decks.de_nouns = [
     uk: "пиво",
     level: "A1",
     topics: ["food", "social"],    ruNote: "Alkoholisches Getränk.",
-    ukNote: "Алкогольний напій."
+    ukNote: "Алкогольний напій.",
     examples: [
       {
         L2: "In Deutschland trinken viele Leute Bier.",
@@ -1277,7 +1277,7 @@ window.decks.de_nouns = [
     uk: "вино",
     level: "A1",
     topics: ["food", "social"],    ruNote: "Rotwein, Weißwein, Roséwein.",
-    ukNote: "Червоне, біле, рожеве вино."
+    ukNote: "Червоне, біле, рожеве вино.",
     examples: [
       {
         L2: "Zum Essen trinken sie roten Wein.",
@@ -1293,7 +1293,7 @@ window.decks.de_nouns = [
     uk: "лікар",
     level: "A1",
     topics: ["health", "people"],    ruNote: "Weibliche Form: die Ärztin.",
-    ukNote: "Жіноча форма: die Ärztin."
+    ukNote: "Жіноча форма: die Ärztin.",
     examples: [
       {
         L2: "Der Arzt untersucht den Patienten.",
@@ -1309,7 +1309,7 @@ window.decks.de_nouns = [
     uk: "лікарка",
     level: "A1",
     topics: ["health", "people"],    ruNote: "Weibliche Form von «der Arzt».",
-    ukNote: "Жіноча форма від «der Arzt»."
+    ukNote: "Жіноча форма від «der Arzt».",
     examples: [
       {
         L2: "Die Ärztin spricht mit dem Kind.",
@@ -1325,7 +1325,7 @@ window.decks.de_nouns = [
     uk: "лікарня",
     level: "A1",
     topics: ["health", "places"],    ruNote: "Größere medizinische Einrichtung.",
-    ukNote: "Великий медичний заклад."
+    ukNote: "Великий медичний заклад.",
     examples: [
       {
         L2: "Er liegt im Krankenhaus.",
@@ -1341,7 +1341,7 @@ window.decks.de_nouns = [
     uk: "клініка",
     level: "A2",
     topics: ["health", "places"],    ruNote: "Часто специализируется на определённых заболеваниях.",
-    ukNote: "Часто спеціалізується на певних захворюваннях."
+    ukNote: "Часто спеціалізується на певних захворюваннях.",
     examples: [
       {
         L2: "Sie arbeitet in einer privaten Klinik.",
@@ -1357,7 +1357,7 @@ window.decks.de_nouns = [
     uk: "таблетка",
     level: "A1",
     topics: ["health"],    ruNote: "Feste Form von Medikament.",
-    ukNote: "Тверда форма ліків."
+    ukNote: "Тверда форма ліків.",
     examples: [
       {
         L2: "Du musst die Tablette zweimal täglich nehmen.",
@@ -1373,7 +1373,7 @@ window.decks.de_nouns = [
     uk: "ліки",
     level: "A2",
     topics: ["health"],    ruNote: "Allgemeines Wort für Arzneimittel.",
-    ukNote: "Загальне слово для лікарських засобів."
+    ukNote: "Загальне слово для лікарських засобів.",
     examples: [
       {
         L2: "Das Medikament hilft gegen Schmerzen.",
@@ -1389,7 +1389,7 @@ window.decks.de_nouns = [
     uk: "здоров’я",
     level: "A2",
     topics: ["health", "abstract"],    ruNote: "In Ausrufen: Gesundheit! (после чихания).",
-    ukNote: "У вигуку: Gesundheit! (після чхання)."
+    ukNote: "У вигуку: Gesundheit! (після чхання).",
     examples: [
       {
         L2: "Gesundheit ist sehr wichtig.",
@@ -1405,7 +1405,7 @@ window.decks.de_nouns = [
     uk: "хвороба",
     level: "A2",
     topics: ["health"],    ruNote: "Akute oder chronische Zustände.",
-    ukNote: "Гострі або хронічні стани."
+    ukNote: "Гострі або хронічні стани.",
     examples: [
       {
         L2: "Nach der Krankheit braucht er Ruhe.",
@@ -1421,7 +1421,7 @@ window.decks.de_nouns = [
     uk: "біль",
     level: "A2",
     topics: ["health", "feelings"],    ruNote: "Körperlicher oder seelischer Schmerz.",
-    ukNote: "Фізичний або душевний біль."
+    ukNote: "Фізичний або душевний біль.",
     examples: [
       {
         L2: "Der Schmerz ist sehr stark.",
@@ -1437,7 +1437,7 @@ window.decks.de_nouns = [
     uk: "допомога",
     level: "A1",
     topics: ["social"],    ruNote: "Um Hilfe bitten, jemandem Hilfe geben.",
-    ukNote: "Просити про допомогу, давати комусь допомогу."
+    ukNote: "Просити про допомогу, давати комусь допомогу.",
     examples: [
       {
         L2: "Danke für deine Hilfe!",
@@ -1453,7 +1453,7 @@ window.decks.de_nouns = [
     uk: "погода",
     level: "A1",
     topics: ["nature"],    ruNote: "Gutes, schlechtes, warmes Wetter usw.",
-    ukNote: "Гарна, погана, тепла погода тощо."
+    ukNote: "Гарна, погана, тепла погода тощо.",
     examples: [
       {
         L2: "Das Wetter ist heute schön.",
@@ -1469,7 +1469,7 @@ window.decks.de_nouns = [
     uk: "сонце",
     level: "A1",
     topics: ["nature"],    ruNote: "Sonne scheint, Sonnenaufgang, Sonnenuntergang.",
-    ukNote: "Sonne scheint, схід і захід сонця."
+    ukNote: "Sonne scheint, схід і захід сонця.",
     examples: [
       {
         L2: "Die Sonne scheint den ganzen Tag.",
@@ -1485,7 +1485,7 @@ window.decks.de_nouns = [
     uk: "місяць",
     level: "A2",
     topics: ["nature"],    ruNote: "Erdtrabant, nachts sichtbar.",
-    ukNote: "Супутник Землі, видно вночі."
+    ukNote: "Супутник Землі, видно вночі.",
     examples: [
       {
         L2: "Der Mond ist heute sehr hell.",
@@ -1501,7 +1501,7 @@ window.decks.de_nouns = [
     uk: "зірка",
     level: "A2",
     topics: ["nature"],    ruNote: "Auch im übertragenen Sinn: Filmstar.",
-    ukNote: "Також у переносному значенні: зірка кіно."
+    ukNote: "Також у переносному значенні: зірка кіно.",
     examples: [
       {
         L2: "Am Himmel sind viele Sterne.",
@@ -1517,7 +1517,7 @@ window.decks.de_nouns = [
     uk: "дощ",
     level: "A1",
     topics: ["nature", "weather"],    ruNote: "Es regnet, Regenwetter.",
-    ukNote: "Іде дощ, дощова погода."
+    ukNote: "Іде дощ, дощова погода.",
     examples: [
       {
         L2: "Heute gibt es viel Regen.",
@@ -1533,7 +1533,7 @@ window.decks.de_nouns = [
     uk: "сніг",
     level: "A1",
     topics: ["nature", "weather"],    ruNote: "Es schneit, Schneefall.",
-    ukNote: "Йде сніг, снігопад."
+    ukNote: "Йде сніг, снігопад.",
     examples: [
       {
         L2: "Im Winter gibt es viel Schnee.",
@@ -1549,7 +1549,7 @@ window.decks.de_nouns = [
     uk: "вітер",
     level: "A1",
     topics: ["nature", "weather"],    ruNote: "Starker, schwacher Wind.",
-    ukNote: "Сильний, слабкий вітер."
+    ukNote: "Сильний, слабкий вітер.",
     examples: [
       {
         L2: "Der Wind ist heute sehr stark.",
@@ -1565,7 +1565,7 @@ window.decks.de_nouns = [
     uk: "хмара",
     level: "A1",
     topics: ["nature", "weather"],    ruNote: "Helles oder dunkles Wolkenbild.",
-    ukNote: "Світлі або темні хмари."
+    ukNote: "Світлі або темні хмари.",
     examples: [
       {
         L2: "Am Himmel sind viele Wolken.",
@@ -1581,7 +1581,7 @@ window.decks.de_nouns = [
     uk: "небо",
     level: "A1",
     topics: ["nature", "abstract"],    ruNote: "Auch religiös: der Himmel vs. die Hölle.",
-    ukNote: "Також релігійно: der Himmel vs. die Hölle."
+    ukNote: "Також релігійно: der Himmel vs. die Hölle.",
     examples: [
       {
         L2: "Der Himmel ist blau.",
@@ -1597,7 +1597,7 @@ window.decks.de_nouns = [
     uk: "температура",
     level: "A2",
     topics: ["weather", "health"],    ruNote: "Körpertemperatur oder Außentemperatur.",
-    ukNote: "Температура тіла або зовнішня температура."
+    ukNote: "Температура тіла або зовнішня температура.",
     examples: [
       {
         L2: "Die Temperatur ist heute sehr niedrig.",
@@ -1613,7 +1613,7 @@ window.decks.de_nouns = [
     uk: "день",
     level: "A1",
     topics: ["time"],    ruNote: "Календарный или обычный день.",
-    ukNote: "Календарний або звичайний день."
+    ukNote: "Календарний або звичайний день.",
     examples: [
       {
         L2: "Der Tag ist heute sehr lang.",
@@ -1629,7 +1629,7 @@ window.decks.de_nouns = [
     uk: "ніч",
     level: "A1",
     topics: ["time"],    ruNote: "Время суток, когда темно и обычно спят.",
-    ukNote: "Час доби, коли темно і зазвичай сплять."
+    ukNote: "Час доби, коли темно і зазвичай сплять.",
     examples: [
       {
         L2: "In der Nacht ist es ruhig.",
@@ -1645,7 +1645,7 @@ window.decks.de_nouns = [
     uk: "ранок",
     level: "A1",
     topics: ["time", "daily_routine"],    ruNote: "Первая часть дня до полудня.",
-    ukNote: "Перша частина дня до полудня."
+    ukNote: "Перша частина дня до полудня.",
     examples: [
       {
         L2: "Am Morgen trinke ich Kaffee.",
@@ -1661,7 +1661,7 @@ window.decks.de_nouns = [
     uk: "вечір",
     level: "A1",
     topics: ["time", "daily_routine"],    ruNote: "Время суток после работы и учёбы.",
-    ukNote: "Час доби після роботи та навчання."
+    ukNote: "Час доби після роботи та навчання.",
     examples: [
       {
         L2: "Am Abend lese ich ein Buch.",
@@ -1677,7 +1677,7 @@ window.decks.de_nouns = [
     uk: "весна",
     level: "A1",
     topics: ["seasons", "nature"],    ruNote: "Время года, когда становится теплее и всё цветёт.",
-    ukNote: "Пора року, коли теплішає і все цвіте."
+    ukNote: "Пора року, коли теплішає і все цвіте.",
     examples: [
       {
         L2: "Im Frühling blühen viele Blumen.",
@@ -1693,7 +1693,7 @@ window.decks.de_nouns = [
     uk: "літо",
     level: "A1",
     topics: ["seasons", "weather"],    ruNote: "Самое тёплое время года.",
-    ukNote: "Найтепліша пора року."
+    ukNote: "Найтепліша пора року.",
     examples: [
       {
         L2: "Im Sommer fahren wir ans Meer.",
@@ -1709,7 +1709,7 @@ window.decks.de_nouns = [
     uk: "осінь",
     level: "A1",
     topics: ["seasons", "nature"],    ruNote: "Время года, когда листья падают и становится холоднее.",
-    ukNote: "Пора року, коли опадає листя і холодає."
+    ukNote: "Пора року, коли опадає листя і холодає.",
     examples: [
       {
         L2: "Im Herbst fallen die Blätter.",
@@ -1725,7 +1725,7 @@ window.decks.de_nouns = [
     uk: "зима",
     level: "A1",
     topics: ["seasons", "weather"],    ruNote: "Самое холодное время года, часто со снегом.",
-    ukNote: "Найхолодніша пора року, часто зі снігом."
+    ukNote: "Найхолодніша пора року, часто зі снігом.",
     examples: [
       {
         L2: "Im Winter schneit es oft.",
@@ -1741,7 +1741,7 @@ window.decks.de_nouns = [
     uk: "тиждень",
     level: "A1",
     topics: ["time"],    ruNote: "Состоит из семи дней.",
-    ukNote: "Складається з семи днів."
+    ukNote: "Складається з семи днів.",
     examples: [
       {
         L2: "Die Woche hat sieben Tage.",
@@ -1757,7 +1757,7 @@ window.decks.de_nouns = [
     uk: "місяць",
     level: "A1",
     topics: ["time"],    ruNote: "Одна из двенадцати частей года.",
-    ukNote: "Одна з дванадцяти частин року."
+    ukNote: "Одна з дванадцяти частин року.",
     examples: [
       {
         L2: "Ich bleibe einen Monat in Deutschland.",
@@ -1773,7 +1773,7 @@ window.decks.de_nouns = [
     uk: "голова",
     level: "A1",
     topics: ["body"],    ruNote: "Часть тела, где мозг, глаза, рот и т.д.",
-    ukNote: "Частина тіла, де мозок, очі, рот тощо."
+    ukNote: "Частина тіла, де мозок, очі, рот тощо.",
     examples: [
       {
         L2: "Ich habe Kopfschmerzen.",
@@ -1789,7 +1789,7 @@ window.decks.de_nouns = [
     uk: "обличчя",
     level: "A2",
     topics: ["body"],    ruNote: "Передняя часть головы.",
-    ukNote: "Передня частина голови."
+    ukNote: "Передня частина голови.",
     examples: [
       {
         L2: "Sie hat ein freundliches Gesicht.",
@@ -1805,7 +1805,7 @@ window.decks.de_nouns = [
     uk: "око",
     level: "A1",
     topics: ["body"],    ruNote: "Орган зрения.",
-    ukNote: "Орган зору."
+    ukNote: "Орган зору.",
     examples: [
       {
         L2: "Er hat blaue Augen.",
@@ -1821,7 +1821,7 @@ window.decks.de_nouns = [
     uk: "ніс",
     level: "A1",
     topics: ["body"],    ruNote: "Орган обоняния, находится в центре лица.",
-    ukNote: "Орган нюху, розташований у центрі обличчя."
+    ukNote: "Орган нюху, розташований у центрі обличчя.",
     examples: [
       {
         L2: "Ich rieche mit der Nase.",
@@ -1837,7 +1837,7 @@ window.decks.de_nouns = [
     uk: "рот",
     level: "A1",
     topics: ["body", "food"],    ruNote: "Часть лица, с губами и зубами, для еды и речи.",
-    ukNote: "Частина обличчя з губами та зубами, для їжі і мовлення."
+    ukNote: "Частина обличчя з губами та зубами, для їжі і мовлення.",
     examples: [
       {
         L2: "Mach bitte den Mund auf.",
@@ -1853,7 +1853,7 @@ window.decks.de_nouns = [
     uk: "вухо",
     level: "A1",
     topics: ["body"],    ruNote: "Орган слуха.",
-    ukNote: "Орган слуху."
+    ukNote: "Орган слуху.",
     examples: [
       {
         L2: "Ich höre Musik mit den Ohren.",
@@ -1869,7 +1869,7 @@ window.decks.de_nouns = [
     uk: "шия",
     level: "A1",
     topics: ["body"],    ruNote: "Связывает голову и туловище.",
-    ukNote: "З’єднує голову і тулуб."
+    ukNote: "З’єднує голову і тулуб.",
     examples: [
       {
         L2: "Mein Hals tut weh.",
@@ -1885,7 +1885,7 @@ window.decks.de_nouns = [
     uk: "плече",
     level: "A2",
     topics: ["body"],    ruNote: "Часть тела между шеей и рукой.",
-    ukNote: "Частина тіла між шиєю та рукою."
+    ukNote: "Частина тіла між шиєю та рукою.",
     examples: [
       {
         L2: "Er trägt die Tasche auf der Schulter.",
@@ -1901,7 +1901,7 @@ window.decks.de_nouns = [
     uk: "рука",
     level: "A1",
     topics: ["body"],    ruNote: "Конечность от плеча до кисти.",
-    ukNote: "Кінцівка від плеча до кисті."
+    ukNote: "Кінцівка від плеча до кисті.",
     examples: [
       {
         L2: "Sie hebt den Arm.",
@@ -1917,7 +1917,7 @@ window.decks.de_nouns = [
     uk: "долоня",
     level: "A1",
     topics: ["body"],    ruNote: "Часть руки с пальцами.",
-    ukNote: "Частина руки з пальцями."
+    ukNote: "Частина руки з пальцями.",
     examples: [
       {
         L2: "Gib mir deine Hand.",
@@ -1933,7 +1933,7 @@ window.decks.de_nouns = [
     uk: "палець",
     level: "A1",
     topics: ["body"],    ruNote: "Один из пяти на каждой руке.",
-    ukNote: "Один з п’яти на кожній руці."
+    ukNote: "Один з п’яти на кожній руці.",
     examples: [
       {
         L2: "Ich habe mir den Finger verletzt.",
@@ -1949,7 +1949,7 @@ window.decks.de_nouns = [
     uk: "нога",
     level: "A1",
     topics: ["body"],    ruNote: "Конечность, на которой человек ходит.",
-    ukNote: "Кінцівка, на якій людина ходить."
+    ukNote: "Кінцівка, на якій людина ходить.",
     examples: [
       {
         L2: "Er kann sein Bein nicht bewegen.",
@@ -1965,7 +1965,7 @@ window.decks.de_nouns = [
     uk: "коліно",
     level: "A2",
     topics: ["body"],    ruNote: "Сустав посередине ноги.",
-    ukNote: "Суглоб посередині ноги."
+    ukNote: "Суглоб посередині ноги.",
     examples: [
       {
         L2: "Sie sitzt auf den Knien.",
@@ -1981,7 +1981,7 @@ window.decks.de_nouns = [
     uk: "ступня",
     level: "A1",
     topics: ["body"],    ruNote: "Нижняя часть ноги, на которой стоят.",
-    ukNote: "Нижня частина ноги, на якій стоять."
+    ukNote: "Нижня частина ноги, на якій стоять.",
     examples: [
       {
         L2: "Meine Füße tun weh.",
@@ -1997,7 +1997,7 @@ window.decks.de_nouns = [
     uk: "серце",
     level: "A2",
     topics: ["body", "feelings"],    ruNote: "Орган кровообращения; также символ чувств.",
-    ukNote: "Орган кровообігу; також символ почуттів."
+    ukNote: "Орган кровообігу; також символ почуттів.",
     examples: [
       {
         L2: "Mein Herz schlägt schnell.",
@@ -2013,7 +2013,7 @@ window.decks.de_nouns = [
     uk: "кров",
     level: "A2",
     topics: ["body", "health"],    ruNote: "Красная жидкость, которая течёт в сосудах.",
-    ukNote: "Червона рідина, що тече в судинах."
+    ukNote: "Червона рідина, що тече в судинах.",
     examples: [
       {
         L2: "Es gibt Blutgruppen wie A, B oder 0.",
@@ -2029,7 +2029,7 @@ window.decks.de_nouns = [
     uk: "тіло",
     level: "A1",
     topics: ["body"],    ruNote: "Всё физическое тело человека или животного.",
-    ukNote: "Все фізичне тіло людини або тварини."
+    ukNote: "Все фізичне тіло людини або тварини.",
     examples: [
       {
         L2: "Der Körper braucht Wasser.",
@@ -2045,7 +2045,7 @@ window.decks.de_nouns = [
     uk: "здоров’я",
     level: "A2",
     topics: ["health"],    ruNote: "Состояние, когда человек хорошо себя чувствует.",
-    ukNote: "Стан, коли людина добре себе почуває."
+    ukNote: "Стан, коли людина добре себе почуває.",
     examples: [
       {
         L2: "Gesundheit ist sehr wichtig.",
@@ -2061,7 +2061,7 @@ window.decks.de_nouns = [
     uk: "хвороба",
     level: "A2",
     topics: ["health"],    ruNote: "Состояние, когда человек болен.",
-    ukNote: "Стан, коли людина хвора."
+    ukNote: "Стан, коли людина хвора.",
     examples: [
       {
         L2: "Welche Krankheit haben Sie?",
@@ -2077,7 +2077,7 @@ window.decks.de_nouns = [
     uk: "медицина",
     level: "A2",
     topics: ["health", "science"],    ruNote: "Наука о болезнях и их лечении; иногда — лекарство.",
-    ukNote: "Наука про хвороби та їх лікування; інколи — ліки."
+    ukNote: "Наука про хвороби та їх лікування; інколи — ліки.",
     examples: [
       {
         L2: "Er studiert Medizin.",
@@ -2093,7 +2093,7 @@ window.decks.de_nouns = [
     uk: "гра",
     level: "A1",
     topics: ["free_time", "sport"],    ruNote: "Активность для удовольствия или соревнования.",
-    ukNote: "Активність для задоволення або змагання."
+    ukNote: "Активність для задоволення або змагання.",
     examples: [
       {
         L2: "Das Spiel war spannend.",
@@ -2109,7 +2109,7 @@ window.decks.de_nouns = [
     uk: "спорт",
     level: "A1",
     topics: ["sport", "health"],    ruNote: "Физическая активность для здоровья или соревнований.",
-    ukNote: "Фізична активність для здоров’я або змагань."
+    ukNote: "Фізична активність для здоров’я або змагань.",
     examples: [
       {
         L2: "Sie macht jeden Tag Sport.",
@@ -2125,7 +2125,7 @@ window.decks.de_nouns = [
     uk: "команда",
     level: "A2",
     topics: ["sport", "people"],    ruNote: "Группа людей, которые вместе играют или работают.",
-    ukNote: "Група людей, які разом грають або працюють."
+    ukNote: "Група людей, які разом грають або працюють.",
     examples: [
       {
         L2: "Unsere Mannschaft hat gewonnen.",
@@ -2141,7 +2141,7 @@ window.decks.de_nouns = [
     uk: "м'яч",
     level: "A1",
     topics: ["sport", "objects"],    ruNote: "Круглый предмет для игр; также может быть танцевальный бал.",
-    ukNote: "Круглий предмет для ігор; також може бути танцювальний бал."
+    ukNote: "Круглий предмет для ігор; також може бути танцювальний бал.",
     examples: [
       {
         L2: "Das Kind spielt mit dem Ball.",
@@ -2157,7 +2157,7 @@ window.decks.de_nouns = [
     uk: "басейн",
     level: "A2",
     topics: ["sport", "places"],    ruNote: "Место, где можно плавать, открытое или крытое.",
-    ukNote: "Місце, де можна плавати, відкрите або критe."
+    ukNote: "Місце, де можна плавати, відкрите або критe.",
     examples: [
       {
         L2: "Wir gehen ins Schwimmbad.",
@@ -2173,7 +2173,7 @@ window.decks.de_nouns = [
     uk: "море",
     level: "A1",
     topics: ["nature", "travel"],    ruNote: "Большая солёная вода, часть океана.",
-    ukNote: "Велика солона вода, частина океану."
+    ukNote: "Велика солона вода, частина океану.",
     examples: [
       {
         L2: "Ich fahre gern ans Meer.",
@@ -2189,7 +2189,7 @@ window.decks.de_nouns = [
     uk: "озеро",
     level: "A1",
     topics: ["nature"],    ruNote: "Внутренний водоём, не море.",
-    ukNote: "Внутрішня водойма, не море."
+    ukNote: "Внутрішня водойма, не море.",
     examples: [
       {
         L2: "Der See ist sehr tief.",
@@ -2205,7 +2205,7 @@ window.decks.de_nouns = [
     uk: "річка",
     level: "A1",
     topics: ["nature"],    ruNote: "Текущая вода, которая впадает в море или озеро.",
-    ukNote: "Текуча вода, що впадає в море або озеро."
+    ukNote: "Текуча вода, що впадає в море або озеро.",
     examples: [
       {
         L2: "Ein großer Fluss fließt durch die Stadt.",
@@ -2221,7 +2221,7 @@ window.decks.de_nouns = [
     uk: "гора",
     level: "A1",
     topics: ["nature", "geography"],    ruNote: "Высокий холм, возвышенность.",
-    ukNote: "Високий пагорб, височина."
+    ukNote: "Високий пагорб, височина.",
     examples: [
       {
         L2: "Wir steigen auf den Berg.",
@@ -2237,7 +2237,7 @@ window.decks.de_nouns = [
     uk: "долина",
     level: "A2",
     topics: ["nature", "geography"],    ruNote: "Низкая область между горами или холмами.",
-    ukNote: "Низина між горами або пагорбами."
+    ukNote: "Низина між горами або пагорбами.",
     examples: [
       {
         L2: "Im Tal liegt ein kleines Dorf.",
@@ -2253,7 +2253,7 @@ window.decks.de_nouns = [
     uk: "ліс",
     level: "A1",
     topics: ["nature"],    ruNote: "Большая территория с деревьями и растениями.",
-    ukNote: "Велика територія з деревами та рослинами."
+    ukNote: "Велика територія з деревами та рослинами.",
     examples: [
       {
         L2: "Wir machen einen Spaziergang im Wald.",
@@ -2269,7 +2269,7 @@ window.decks.de_nouns = [
     uk: "дерево",
     level: "A1",
     topics: ["nature"],    ruNote: "Растение с стволом и кроной.",
-    ukNote: "Рослина зі стовбуром і кроною."
+    ukNote: "Рослина зі стовбуром і кроною.",
     examples: [
       {
         L2: "Der Baum ist sehr alt.",
@@ -2285,7 +2285,7 @@ window.decks.de_nouns = [
     uk: "квітка",
     level: "A1",
     topics: ["nature"],    ruNote: "Красивая часть растения, часто с запахом.",
-    ukNote: "Красива частина рослини, часто з ароматом."
+    ukNote: "Красива частина рослини, часто з ароматом.",
     examples: [
       {
         L2: "Die Blume riecht gut.",
@@ -2301,7 +2301,7 @@ window.decks.de_nouns = [
     uk: "тварина",
     level: "A1",
     topics: ["animals"],    ruNote: "Живое существо, не человек и не растение.",
-    ukNote: "Жива істота, не людина і не рослина."
+    ukNote: "Жива істота, не людина і не рослина.",
     examples: [
       {
         L2: "Welches Tier magst du?",
@@ -2317,7 +2317,7 @@ window.decks.de_nouns = [
     uk: "пес",
     level: "A1",
     topics: ["animals", "pets"],    ruNote: "Очень распространённое домашнее животное.",
-    ukNote: "Дуже поширена домашня тварина."
+    ukNote: "Дуже поширена домашня тварина.",
     examples: [
       {
         L2: "Der Hund ist sehr freundlich.",
@@ -2333,7 +2333,7 @@ window.decks.de_nouns = [
     uk: "кішка",
     level: "A1",
     topics: ["animals", "pets"],    ruNote: "Домашнее животное, часто живёт в квартире.",
-    ukNote: "Домашня тварина, часто живе в квартирі."
+    ukNote: "Домашня тварина, часто живе в квартирі.",
     examples: [
       {
         L2: "Die Katze schläft auf dem Sofa.",
@@ -2349,7 +2349,7 @@ window.decks.de_nouns = [
     uk: "птах",
     level: "A1",
     topics: ["animals"],    ruNote: "Животное, которое обычно умеет летать.",
-    ukNote: "Тварина, яка зазвичай уміє літати."
+    ukNote: "Тварина, яка зазвичай уміє літати.",
     examples: [
       {
         L2: "Die Vögel singen am Morgen.",
@@ -2365,7 +2365,7 @@ window.decks.de_nouns = [
     uk: "кінь",
     level: "A1",
     topics: ["animals"],    ruNote: "Крупное животное, на котором можно ездить.",
-    ukNote: "Велика тварина, на якій можна їздити."
+    ukNote: "Велика тварина, на якій можна їздити.",
     examples: [
       {
         L2: "Sie reitet gern auf dem Pferd.",
@@ -2381,7 +2381,7 @@ window.decks.de_nouns = [
     uk: "корова",
     level: "A1",
     topics: ["animals", "food"],    ruNote: "Домашнее животное, даёт молоко.",
-    ukNote: "Домашня тварина, дає молоко."
+    ukNote: "Домашня тварина, дає молоко.",
     examples: [
       {
         L2: "Die Kuh steht auf der Wiese.",
@@ -2397,7 +2397,7 @@ window.decks.de_nouns = [
     uk: "свиня",
     level: "A2",
     topics: ["animals", "food"],    ruNote: "Домашнее животное; также мясо – свинина.",
-    ukNote: "Домашня тварина; також м’ясо – свинина."
+    ukNote: "Домашня тварина; також м’ясо – свинина.",
     examples: [
       {
         L2: "Auf dem Bauernhof gibt es viele Schweine.",
@@ -2413,7 +2413,7 @@ window.decks.de_nouns = [
     uk: "вівця",
     level: "A2",
     topics: ["animals"],    ruNote: "Домашнее животное, даёт шерсть.",
-    ukNote: "Домашня тварина, дає вовну."
+    ukNote: "Домашня тварина, дає вовну.",
     examples: [
       {
         L2: "Die Schafe stehen auf der Weide.",
@@ -2429,7 +2429,7 @@ window.decks.de_nouns = [
     uk: "коза",
     level: "A2",
     topics: ["animals"],    ruNote: "Домашнее животное; даёт молоко и мясо.",
-    ukNote: "Домашня тварина; дає молоко і м’ясо."
+    ukNote: "Домашня тварина; дає молоко і м’ясо.",
     examples: [
       {
         L2: "Die Ziege frisst Gras.",
@@ -2445,7 +2445,7 @@ window.decks.de_nouns = [
     uk: "курка",
     level: "A2",
     topics: ["animals", "food"],    ruNote: "Взрослая самка курицы.",
-    ukNote: "Доросла самка курки."
+    ukNote: "Доросла самка курки.",
     examples: [
       {
         L2: "Die Henne legt ein Ei.",
@@ -2461,7 +2461,7 @@ window.decks.de_nouns = [
     uk: "півень",
     level: "A2",
     topics: ["animals"],    ruNote: "Самец курицы; по утрам громко поёт.",
-    ukNote: "Самець курки; вранці голосно кукурікає."
+    ukNote: "Самець курки; вранці голосно кукурікає.",
     examples: [
       {
         L2: "Der Hahn weckt uns früh am Morgen.",
@@ -2477,7 +2477,7 @@ window.decks.de_nouns = [
     uk: "яйце",
     level: "A1",
     topics: ["food"],    ruNote: "Продукт, который несут птицы, особенно куры.",
-    ukNote: "Продукт, який несуть птахи, особливо кури."
+    ukNote: "Продукт, який несуть птахи, особливо кури.",
     examples: [
       {
         L2: "Zum Frühstück esse ich ein Ei.",
@@ -2493,7 +2493,7 @@ window.decks.de_nouns = [
     uk: "село",
     level: "A2",
     topics: ["places", "geography"],    ruNote: "Небольшое поселение на селе.",
-    ukNote: "Невелике поселення в сільській місцевості."
+    ukNote: "Невелике поселення в сільській місцевості.",
     examples: [
       {
         L2: "Das Dorf ist sehr ruhig.",
@@ -2509,7 +2509,7 @@ window.decks.de_nouns = [
     uk: "місто",
     level: "A1",
     topics: ["places", "geography"],    ruNote: "Крупное поселение с улицами и домами.",
-    ukNote: "Велике поселення з вулицями та будинками."
+    ukNote: "Велике поселення з вулицями та будинками.",
     examples: [
       {
         L2: "Die Stadt ist groß und laut.",
@@ -2525,7 +2525,7 @@ window.decks.de_nouns = [
     uk: "столиця",
     level: "A2",
     topics: ["geography", "politics"],    ruNote: "Главный город страны, где находится правительство.",
-    ukNote: "Головне місто країни, де розташований уряд."
+    ukNote: "Головне місто країни, де розташований уряд.",
     examples: [
       {
         L2: "Berlin ist die Hauptstadt von Deutschland.",
@@ -2541,7 +2541,7 @@ window.decks.de_nouns = [
     uk: "уряд",
     level: "B1",
     topics: ["politics", "society"],    ruNote: "Группа людей, которая официально управляет страной.",
-    ukNote: "Група людей, яка офіційно керує країною."
+    ukNote: "Група людей, яка офіційно керує країною.",
     examples: [
       {
         L2: "Die Regierung plant ein neues Gesetz.",
@@ -2557,7 +2557,7 @@ window.decks.de_nouns = [
     uk: "закон",
     level: "B1",
     topics: ["law", "politics"],    ruNote: "Официальное правило, которое действует в стране.",
-    ukNote: "Офіційне правило, що діє в країні."
+    ukNote: "Офіційне правило, що діє в країні.",
     examples: [
       {
         L2: "Niemand steht über dem Gesetz.",
@@ -2573,7 +2573,7 @@ window.decks.de_nouns = [
     uk: "поліція",
     level: "A2",
     topics: ["law", "public_services"],    ruNote: "Орган, который поддерживает порядок и безопасность.",
-    ukNote: "Орган, що підтримує порядок і безпеку."
+    ukNote: "Орган, що підтримує порядок і безпеку.",
     examples: [
       {
         L2: "Die Polizei hilft den Menschen.",
@@ -2589,7 +2589,7 @@ window.decks.de_nouns = [
     uk: "суд",
     level: "B1",
     topics: ["law"],    ruNote: "Учреждение, где решают юридические споры.",
-    ukNote: "Установа, де вирішують юридичні спори."
+    ukNote: "Установа, де вирішують юридичні спори.",
     examples: [
       {
         L2: "Der Fall kommt vor Gericht.",
@@ -2605,7 +2605,7 @@ window.decks.de_nouns = [
     uk: "суддя",
     level: "B1",
     topics: ["law", "jobs"],    ruNote: "Человек, который выносит решение в суде.",
-    ukNote: "Людина, яка виносить рішення в суді."
+    ukNote: "Людина, яка виносить рішення в суді.",
     examples: [
       {
         L2: "Der Richter spricht das Urteil.",
@@ -2621,7 +2621,7 @@ window.decks.de_nouns = [
     uk: "адвокат",
     level: "B1",
     topics: ["law", "jobs"],    ruNote: "Юрист, который защищает клиента в суде.",
-    ukNote: "Юрист, який захищає клієнта в суді."
+    ukNote: "Юрист, який захищає клієнта в суді.",
     examples: [
       {
         L2: "Der Anwalt berät seine Mandanten.",
@@ -2637,7 +2637,7 @@ window.decks.de_nouns = [
     uk: "в'язниця",
     level: "B1",
     topics: ["law", "society"],    ruNote: "Место, где сидят люди, осуждённые за преступления.",
-    ukNote: "Місце, де сидять люди, засуджені за злочини."
+    ukNote: "Місце, де сидять люди, засуджені за злочини.",
     examples: [
       {
         L2: "Er muss ins Gefängnis.",
@@ -2653,7 +2653,7 @@ window.decks.de_nouns = [
     uk: "свобода",
     level: "B1",
     topics: ["society", "values"],    ruNote: "Состояние без ограничений или лишения свободы.",
-    ukNote: "Стан без обмеження або позбавлення волі."
+    ukNote: "Стан без обмеження або позбавлення волі.",
     examples: [
       {
         L2: "Die Freiheit ist ein wichtiges Recht.",
@@ -2669,7 +2669,7 @@ window.decks.de_nouns = [
     uk: "право",
     level: "B1",
     topics: ["law", "society"],    ruNote: "То, что человеку разрешено законом.",
-    ukNote: "Те, що людині дозволено законом."
+    ukNote: "Те, що людині дозволено законом.",
     examples: [
       {
         L2: "Jeder Mensch hat das Recht auf Bildung.",
@@ -2685,7 +2685,7 @@ window.decks.de_nouns = [
     uk: "обов’язок",
     level: "B1",
     topics: ["law", "society"],    ruNote: "То, что человек должен делать.",
-    ukNote: "Те, що людина повинна робити."
+    ukNote: "Те, що людина повинна робити.",
     examples: [
       {
         L2: "Es ist deine Pflicht, die Wahrheit zu sagen.",
@@ -2701,7 +2701,7 @@ window.decks.de_nouns = [
     uk: "покарання",
     level: "B1",
     topics: ["law", "society"],    ruNote: "Негативное последствие за нарушение правил.",
-    ukNote: "Негативний наслідок за порушення правил."
+    ukNote: "Негативний наслідок за порушення правил.",
     examples: [
       {
         L2: "Für diese Tat gibt es eine Strafe.",
@@ -2717,7 +2717,7 @@ window.decks.de_nouns = [
     uk: "безпека",
     level: "B1",
     topics: ["society", "everyday_life"],    ruNote: "Состояние без угрозы или риска.",
-    ukNote: "Стан без загрози чи ризику."
+    ukNote: "Стан без загрози чи ризику.",
     examples: [
       {
         L2: "Sicherheit im Straßenverkehr ist wichtig.",
@@ -2733,7 +2733,7 @@ window.decks.de_nouns = [
     uk: "мистецтво",
     level: "A2",
     topics: ["art", "culture"],    ruNote: "Творческая деятельность: живопись, музыка, театр и т.п.",
-    ukNote: "Творча діяльність: живопис, музика, театр тощо."
+    ukNote: "Творча діяльність: живопис, музика, театр тощо.",
     examples: [
       {
         L2: "Sie interessiert sich für moderne Kunst.",
@@ -2749,7 +2749,7 @@ window.decks.de_nouns = [
     uk: "музика",
     level: "A1",
     topics: ["art", "free_time"],    ruNote: "Искусство звуков и мелодий.",
-    ukNote: "Мистецтво звуків і мелодій."
+    ukNote: "Мистецтво звуків і мелодій.",
     examples: [
       {
         L2: "Ich höre gern Musik.",
@@ -2765,7 +2765,7 @@ window.decks.de_nouns = [
     uk: "пісня",
     level: "A1",
     topics: ["music", "art"],    ruNote: "Небольшой музыкальный текст, который поют.",
-    ukNote: "Невеликий музичний твір, який співають."
+    ukNote: "Невеликий музичний твір, який співають.",
     examples: [
       {
         L2: "Das Lied ist sehr bekannt.",
@@ -2781,7 +2781,7 @@ window.decks.de_nouns = [
     uk: "фільм",
     level: "A1",
     topics: ["media", "free_time"],    ruNote: "История, снятая на камеру и показанная в кино или по TV.",
-    ukNote: "Історія, знята на камеру та показана в кіно чи по ТБ."
+    ukNote: "Історія, знята на камеру та показана в кіно чи по ТБ.",
     examples: [
       {
         L2: "Wir schauen einen Film im Kino.",
@@ -2797,7 +2797,7 @@ window.decks.de_nouns = [
     uk: "театр",
     level: "A2",
     topics: ["art", "culture"],    ruNote: "Здание и искусство, где актёры играют на сцене.",
-    ukNote: "Будівля й мистецтво, де актори грають на сцені."
+    ukNote: "Будівля й мистецтво, де актори грають на сцені.",
     examples: [
       {
         L2: "Wir gehen heute ins Theater.",
@@ -2813,7 +2813,7 @@ window.decks.de_nouns = [
     uk: "музей",
     level: "A2",
     topics: ["culture", "education"],    ruNote: "Место, где показывают картины, истории, экспонаты.",
-    ukNote: "Місце, де показують картини, історії, експонати."
+    ukNote: "Місце, де показують картини, історії, експонати.",
     examples: [
       {
         L2: "Das Museum ist am Montag geschlossen.",
@@ -2829,7 +2829,7 @@ window.decks.de_nouns = [
     uk: "картина",
     level: "A1",
     topics: ["art", "objects"],    ruNote: "Рисунок, фотография или картина на стене.",
-    ukNote: "Малюнок, фотографія або картина на стіні."
+    ukNote: "Малюнок, фотографія або картина на стіні.",
     examples: [
       {
         L2: "Das Bild hängt an der Wand.",
@@ -2845,7 +2845,7 @@ window.decks.de_nouns = [
     uk: "колір",
     level: "A1",
     topics: ["art", "description"],    ruNote: "Свойство предмета, например красный, синий.",
-    ukNote: "Властивість предмета, наприклад червоний, синій."
+    ukNote: "Властивість предмета, наприклад червоний, синій.",
     examples: [
       {
         L2: "Welche Farbe hat dein Auto?",
@@ -2861,7 +2861,7 @@ window.decks.de_nouns = [
     uk: "форма",
     level: "A2",
     topics: ["description", "math"],    ruNote: "Вид или контур предмета: круг, квадрат и т.п.",
-    ukNote: "Вид або контур предмета: коло, квадрат тощо."
+    ukNote: "Вид або контур предмета: коло, квадрат тощо.",
     examples: [
       {
         L2: "Der Tisch hat eine runde Form.",
@@ -2877,7 +2877,7 @@ window.decks.de_nouns = [
     uk: "приклад",
     level: "A2",
     topics: ["education", "language"],    ruNote: "Конкретный случай, который помогает понять правило.",
-    ukNote: "Конкретний випадок, що допомагає зрозуміти правило."
+    ukNote: "Конкретний випадок, що допомагає зрозуміти правило.",
     examples: [
       {
         L2: "Kannst du mir ein Beispiel geben?",
@@ -2893,7 +2893,7 @@ window.decks.de_nouns = [
     uk: "питання",
     level: "A1",
     topics: ["communication", "language"],    ruNote: "То, что мы спрашиваем у другого человека.",
-    ukNote: "Те, що ми запитуємо в іншої людини."
+    ukNote: "Те, що ми запитуємо в іншої людини.",
     examples: [
       {
         L2: "Ich habe eine Frage.",
@@ -2909,7 +2909,7 @@ window.decks.de_nouns = [
     uk: "відповідь",
     level: "A1",
     topics: ["communication", "language"],    ruNote: "То, что мы говорим после вопроса.",
-    ukNote: "Те, що ми говоримо після запитання."
+    ukNote: "Те, що ми говоримо після запитання.",
     examples: [
       {
         L2: "Danke für deine Antwort.",
@@ -2925,7 +2925,7 @@ window.decks.de_nouns = [
     uk: "мова",
     level: "A1",
     topics: ["language"],    ruNote: "Система слов и правил общения, например немецкий.",
-    ukNote: "Система слів і правил спілкування, наприклад німецька."
+    ukNote: "Система слів і правил спілкування, наприклад німецька.",
     examples: [
       {
         L2: "Deutsch ist eine schöne Sprache.",
@@ -2941,7 +2941,7 @@ window.decks.de_nouns = [
     uk: "слово",
     level: "A1",
     topics: ["language"],    ruNote: "Маленькая единица языка, из которых строятся предложения.",
-    ukNote: "Найменша одиниця мови, з якої будуються речення."
+    ukNote: "Найменша одиниця мови, з якої будуються речення.",
     examples: [
       {
         L2: "Ich kenne dieses Wort nicht.",
@@ -2957,7 +2957,7 @@ window.decks.de_nouns = [
     uk: "речення",
     level: "A1",
     topics: ["language"],    ruNote: "Слова, соединённые в законченную мысль.",
-    ukNote: "Слова, поєднані в завершену думку."
+    ukNote: "Слова, поєднані в завершену думку.",
     examples: [
       {
         L2: "Dieser Satz ist sehr lang.",
@@ -2973,7 +2973,7 @@ window.decks.de_nouns = [
     uk: "текст",
     level: "A1",
     topics: ["language", "reading"],    ruNote: "Несколько предложений, которые образуют целое.",
-    ukNote: "Кілька речень, що утворюють ціле."
+    ukNote: "Кілька речень, що утворюють ціле.",
     examples: [
       {
         L2: "Lies bitte den Text.",
@@ -2989,7 +2989,7 @@ window.decks.de_nouns = [
     uk: "розмова",
     level: "A2",
     topics: ["communication"],    ruNote: "Обмен словами между двумя или несколькими людьми.",
-    ukNote: "Обмін словами між двома чи кількома людьми."
+    ukNote: "Обмін словами між двома чи кількома людьми.",
     examples: [
       {
         L2: "Wir führen ein interessantes Gespräch.",
@@ -3005,7 +3005,7 @@ window.decks.de_nouns = [
     uk: "історія",
     level: "A2",
     topics: ["history", "stories"],    ruNote: "Может быть рассказ или наука об исторических событиях.",
-    ukNote: "Може бути оповідання або наука про історичні події."
+    ukNote: "Може бути оповідання або наука про історичні події.",
     examples: [
       {
         L2: "Er erzählt eine lustige Geschichte.",
@@ -3021,7 +3021,7 @@ window.decks.de_nouns = [
     uk: "проблема",
     level: "A2",
     topics: ["everyday_life"],    ruNote: "Ситуация, которую нужно решать.",
-    ukNote: "Ситуація, яку потрібно вирішити."
+    ukNote: "Ситуація, яку потрібно вирішити.",
     examples: [
       {
         L2: "Wir haben ein technisches Problem.",
@@ -3037,7 +3037,7 @@ window.decks.de_nouns = [
     uk: "рішення",
     level: "A2",
     topics: ["everyday_life", "logic"],    ruNote: "Ответ или способ решить проблему.",
-    ukNote: "Відповідь або спосіб розв’язати проблему."
+    ukNote: "Відповідь або спосіб розв’язати проблему.",
     examples: [
       {
         L2: "Ich habe eine Lösung für dieses Problem.",
@@ -3053,7 +3053,7 @@ window.decks.de_nouns = [
     uk: "початок",
     level: "A2",
     topics: ["time", "structure"],    ruNote: "Первая часть чего-то.",
-    ukNote: "Перша частина чогось."
+    ukNote: "Перша частина чогось.",
     examples: [
       {
         L2: "Der Anfang des Films ist spannend.",
@@ -3069,7 +3069,7 @@ window.decks.de_nouns = [
     uk: "кінець",
     level: "A1",
     topics: ["time", "structure"],    ruNote: "Последняя часть чего-то.",
-    ukNote: "Остання частина чогось."
+    ukNote: "Остання частина чогось.",
     examples: [
       {
         L2: "Am Ende des Tages bin ich müde.",
@@ -3085,7 +3085,7 @@ window.decks.de_nouns = [
     uk: "середина",
     level: "A2",
     topics: ["position"],    ruNote: "Точка или часть посередине.",
-    ukNote: "Точка або частина посередині."
+    ukNote: "Точка або частина посередині.",
     examples: [
       {
         L2: "Das Haus steht in der Mitte des Platzes.",
@@ -3101,7 +3101,7 @@ window.decks.de_nouns = [
     uk: "сторона",
     level: "A2",
     topics: ["position", "objects"],    ruNote: "Может быть бок предмета или страница в книге.",
-    ukNote: "Може бути бік предмета або сторінка в книжці."
+    ukNote: "Може бути бік предмета або сторінка в книжці.",
     examples: [
       {
         L2: "Bitte schlagen Sie die nächste Seite auf.",
@@ -3117,7 +3117,7 @@ window.decks.de_nouns = [
     uk: "напрямок",
     level: "A2",
     topics: ["movement", "travel"],    ruNote: "Путь, в котором кто-то или что-то движется.",
-    ukNote: "Шлях, у якому хтось або щось рухається."
+    ukNote: "Шлях, у якому хтось або щось рухається.",
     examples: [
       {
         L2: "In welche Richtung fahren wir?",
@@ -3133,7 +3133,7 @@ window.decks.de_nouns = [
     uk: "рух",
     level: "A2",
     topics: ["movement", "health"],    ruNote: "Изменение положения в пространстве; также спортивная активность.",
-    ukNote: "Зміна положення в просторі; також фізична активність."
+    ukNote: "Зміна положення в просторі; також фізична активність.",
     examples: [
       {
         L2: "Mehr Bewegung ist gut für die Gesundheit.",
@@ -3149,7 +3149,7 @@ window.decks.de_nouns = [
     uk: "подорож",
     level: "A2",
     topics: ["travel"],    ruNote: "Поездка из одного места в другое, часто на долгое время.",
-    ukNote: "Поїздка з одного місця в інше, часто на довший час."
+    ukNote: "Поїздка з одного місця в інше, часто на довший час.",
     examples: [
       {
         L2: "Die Reise nach Deutschland war toll.",
@@ -3165,7 +3165,7 @@ window.decks.de_nouns = [
     uk: "відпустка",
     level: "A2",
     topics: ["travel", "work"],    ruNote: "Время, когда человек не работает и отдыхает.",
-    ukNote: "Час, коли людина не працює й відпочиває."
+    ukNote: "Час, коли людина не працює й відпочиває.",
     examples: [
       {
         L2: "Ich mache im Juli Urlaub.",
@@ -3181,7 +3181,7 @@ window.decks.de_nouns = [
     uk: "мета",
     level: "A2",
     topics: ["goals", "travel"],    ruNote: "Место, куда кто-то идёт, или результат, которого хотят достичь.",
-    ukNote: "Місце, куди хтось йде, або результат, якого хочуть досягти."
+    ukNote: "Місце, куди хтось йде, або результат, якого хочуть досягти.",
     examples: [
       {
         L2: "Mein Ziel ist es, besser Deutsch zu sprechen.",
@@ -3197,7 +3197,7 @@ window.decks.de_nouns = [
     uk: "успіх",
     level: "A2",
     topics: ["goals", "work"],    ruNote: "Положительный результат, когда цель достигнута.",
-    ukNote: "Позитивний результат, коли мети досягнуто."
+    ukNote: "Позитивний результат, коли мети досягнуто.",
     examples: [
       {
         L2: "Viel Arbeit brachte endlich Erfolg.",
@@ -3213,7 +3213,7 @@ window.decks.de_nouns = [
     uk: "наука",
     level: "B1",
     topics: ["science", "education"],    ruNote: "Система знаний, полученных с помощью исследований.",
-    ukNote: "Система знань, отриманих завдяки дослідженням."
+    ukNote: "Система знань, отриманих завдяки дослідженням.",
     examples: [
       {
         L2: "Die Wissenschaft entwickelt sich ständig weiter.",
@@ -3229,7 +3229,7 @@ window.decks.de_nouns = [
     uk: "дослідження",
     level: "B1",
     topics: ["science", "research"],    ruNote: "Систематическое изучение чего-либо с целью получить новые знания.",
-    ukNote: "Систематичне вивчення чогось із метою отримати нові знання."
+    ukNote: "Систематичне вивчення чогось із метою отримати нові знання.",
     examples: [
       {
         L2: "Die Forschung in diesem Bereich ist noch am Anfang.",
@@ -3245,7 +3245,7 @@ window.decks.de_nouns = [
     uk: "техніка",
     level: "B1",
     topics: ["technology", "engineering"],    ruNote: "Может значить и технологии в целом, и конкретное оборудование.",
-    ukNote: "Може означати і технології загалом, і конкретне обладнання."
+    ukNote: "Може означати і технології загалом, і конкретне обладнання.",
     examples: [
       {
         L2: "Die moderne Technik erleichtert unseren Alltag.",
@@ -3261,7 +3261,7 @@ window.decks.de_nouns = [
     uk: "машина",
     level: "A2",
     topics: ["technology", "work"],    ruNote: "Обычно техническое устройство, выполняющее работу.",
-    ukNote: "Зазвичай технічний пристрій, що виконує роботу."
+    ukNote: "Зазвичай технічний пристрій, що виконує роботу.",
     examples: [
       {
         L2: "Die Maschine funktioniert heute nicht richtig.",
@@ -3277,7 +3277,7 @@ window.decks.de_nouns = [
     uk: "інструмент",
     level: "A2",
     topics: ["work", "tools"],    ruNote: "Предмет, с помощью которого выполняют ручную работу.",
-    ukNote: "Предмет, за допомогою якого виконують ручну роботу."
+    ukNote: "Предмет, за допомогою якого виконують ручну роботу.",
     examples: [
       {
         L2: "Für diese Reparatur brauchst du das richtige Werkzeug.",
@@ -3293,7 +3293,7 @@ window.decks.de_nouns = [
     uk: "матеріал",
     level: "A2",
     topics: ["materials", "work"],    ruNote: "То, из чего что-то производят или строят.",
-    ukNote: "Те, з чого щось виготовляють або будують."
+    ukNote: "Те, з чого щось виготовляють або будують.",
     examples: [
       {
         L2: "Welches Material wird für dieses Haus verwendet?",
@@ -3309,7 +3309,7 @@ window.decks.de_nouns = [
     uk: "енергія",
     level: "A2",
     topics: ["science", "environment"],    ruNote: "Может быть физической (электроэнергия) или личной (жизненные силы).",
-    ukNote: "Може бути фізичною (електроенергія) або особистою (життєві сили)."
+    ukNote: "Може бути фізичною (електроенергія) або особистою (життєві сили).",
     examples: [
       {
         L2: "Wir müssen mehr erneuerbare Energie nutzen.",
@@ -3325,7 +3325,7 @@ window.decks.de_nouns = [
     uk: "струм",
     level: "A2",
     topics: ["electricity", "home"],    ruNote: "Обычно означает электрический ток; также «поток» воды или людей.",
-    ukNote: "Зазвичай означає електричний струм; також «потік» води чи людей."
+    ukNote: "Зазвичай означає електричний струм; також «потік» води чи людей.",
     examples: [
       {
         L2: "Ohne Strom funktioniert der Computer nicht.",
@@ -3341,7 +3341,7 @@ window.decks.de_nouns = [
     uk: "світло",
     level: "A1",
     topics: ["home", "environment"],    ruNote: "Может значить и физический свет, и «ясность» в переносном смысле.",
-    ukNote: "Може означати і фізичне світло, і «ясність» у переносному значенні."
+    ukNote: "Може означати і фізичне світло, і «ясність» у переносному значенні.",
     examples: [
       {
         L2: "Kannst du bitte das Licht einschalten?",
@@ -3357,7 +3357,7 @@ window.decks.de_nouns = [
     uk: "тінь",
     level: "B1",
     topics: ["environment", "abstract"],    ruNote: "Тёмная область за предметом; также негативный след события.",
-    ukNote: "Темна ділянка за предметом; також негативний відбиток події."
+    ukNote: "Темна ділянка за предметом; також негативний відбиток події.",
     examples: [
       {
         L2: "Der Baum wirft einen großen Schatten.",
@@ -3373,7 +3373,7 @@ window.decks.de_nouns = [
     uk: "звук",
     level: "B1",
     topics: ["music", "perception"],    ruNote: "Чаще о приятном или характерном звучании.",
-    ukNote: "Частіше про приємне або характерне звучання."
+    ukNote: "Частіше про приємне або характерне звучання.",
     examples: [
       {
         L2: "Der Klang dieser Gitarre ist sehr warm.",
@@ -3389,7 +3389,7 @@ window.decks.de_nouns = [
     uk: "голос",
     level: "A2",
     topics: ["communication", "politics"],    ruNote: "Может значить и человеческий голос, и «голос» на выборах.",
-    ukNote: "Може означати і людський голос, і «голос» на виборах."
+    ukNote: "Може означати і людський голос, і «голос» на виборах.",
     examples: [
       {
         L2: "Sie hat eine sehr schöne Stimme.",
@@ -3405,7 +3405,7 @@ window.decks.de_nouns = [
     uk: "шум",
     level: "A2",
     topics: ["sound", "everyday"],    ruNote: "Обычно нейтральный или неприятный звук, в отличие от «Klang».",
-    ukNote: "Зазвичай нейтральний або неприємний звук, на відміну від «Klang»."
+    ukNote: "Зазвичай нейтральний або неприємний звук, на відміну від «Klang».",
     examples: [
       {
         L2: "Was ist das für ein Geräusch?",
@@ -3421,7 +3421,7 @@ window.decks.de_nouns = [
     uk: "тиша",
     level: "A2",
     topics: ["everyday", "health"],    ruNote: "И про отсутствие шума, и про внутреннее спокойствие.",
-    ukNote: "І про відсутність шуму, і про внутрішній спокій."
+    ukNote: "І про відсутність шуму, і про внутрішній спокій.",
     examples: [
       {
         L2: "Ich brauche jetzt etwas Ruhe.",
@@ -3437,7 +3437,7 @@ window.decks.de_nouns = [
     uk: "гамір",
     level: "A2",
     topics: ["city", "sound"],    ruNote: "Громкий, неприятный шум, часто в городе или на стройке.",
-    ukNote: "Гучний, неприємний шум, часто в місті або на будівництві."
+    ukNote: "Гучний, неприємний шум, часто в місті або на будівництві.",
     examples: [
       {
         L2: "Der Lärm auf der Straße ist heute besonders laut.",
@@ -3453,7 +3453,7 @@ window.decks.de_nouns = [
     uk: "запах",
     level: "A2",
     topics: ["perception", "food"],    ruNote: "Может быть приятным или неприятным; контекст решает.",
-    ukNote: "Може бути приємним або неприємним; це залежить від контексту."
+    ukNote: "Може бути приємним або неприємним; це залежить від контексту.",
     examples: [
       {
         L2: "Der Geruch von frischem Brot ist wunderbar.",
@@ -3469,7 +3469,7 @@ window.decks.de_nouns = [
     uk: "смак",
     level: "A2",
     topics: ["food", "perception"],    ruNote: "Также может значить «чувство вкуса» в моде или искусстве.",
-    ukNote: "Також може означати «почуття смаку» в моді чи мистецтві."
+    ukNote: "Також може означати «почуття смаку» в моді чи мистецтві.",
     examples: [
       {
         L2: "Der Geschmack dieser Suppe ist sehr intensiv.",
@@ -3485,7 +3485,7 @@ window.decks.de_nouns = [
     uk: "почуття",
     level: "A2",
     topics: ["emotions", "perception"],    ruNote: "И физическое ощущение, и эмоциональное состояние.",
-    ukNote: "І фізичне відчуття, і емоційний стан."
+    ukNote: "І фізичне відчуття, і емоційний стан.",
     examples: [
       {
         L2: "Ich habe das Gefühl, dass etwas nicht stimmt.",
@@ -3501,7 +3501,7 @@ window.decks.de_nouns = [
     uk: "радість",
     level: "A2",
     topics: ["emotions"],    ruNote: "Сильное положительное чувство удовлетворения.",
-    ukNote: "Сильне позитивне почуття задоволення."
+    ukNote: "Сильне позитивне почуття задоволення.",
     examples: [
       {
         L2: "Die Kinder zeigen ihre Freude laut.",
@@ -3517,7 +3517,7 @@ window.decks.de_nouns = [
     uk: "любов",
     level: "A2",
     topics: ["emotions", "relationships"],    ruNote: "Чувство сильной привязанности к человеку, делу или месту.",
-    ukNote: "Почуття сильної прихильності до людини, справи чи місця."
+    ukNote: "Почуття сильної прихильності до людини, справи чи місця.",
     examples: [
       {
         L2: "Liebe ist für viele Menschen sehr wichtig.",
@@ -3533,7 +3533,7 @@ window.decks.de_nouns = [
     uk: "ненависть",
     level: "B1",
     topics: ["emotions"],    ruNote: "Очень сильное отрицательное чувство к кому-то или чему-то.",
-    ukNote: "Дуже сильне негативне почуття до когось або чогось."
+    ukNote: "Дуже сильне негативне почуття до когось або чогось.",
     examples: [
       {
         L2: "Hass kann viel Schaden anrichten.",
@@ -3549,7 +3549,7 @@ window.decks.de_nouns = [
     uk: "страх",
     level: "A2",
     topics: ["emotions", "health"],    ruNote: "Сильное беспокойство перед опасностью или неизвестным.",
-    ukNote: "Сильне занепокоєння перед небезпекою або невідомим."
+    ukNote: "Сильне занепокоєння перед небезпекою або невідомим.",
     examples: [
       {
         L2: "Sie hat Angst vor Prüfungen.",
@@ -3565,7 +3565,7 @@ window.decks.de_nouns = [
     uk: "надія",
     level: "A2",
     topics: ["emotions"],    ruNote: "Ожидание положительного результата в будущем.",
-    ukNote: "Очікування позитивного результату в майбутньому."
+    ukNote: "Очікування позитивного результату в майбутньому.",
     examples: [
       {
         L2: "Wir haben die Hoffnung noch nicht verloren.",
@@ -3581,7 +3581,7 @@ window.decks.de_nouns = [
     uk: "сон / мрія",
     level: "A2",
     topics: ["sleep", "emotions"],    ruNote: "И картинки во сне, и сильное желание в жизни.",
-    ukNote: "І картини уві сні, і сильне бажання в житті."
+    ukNote: "І картини уві сні, і сильне бажання в житті.",
     examples: [
       {
         L2: "Mein größter Traum ist eine Weltreise.",
@@ -3597,7 +3597,7 @@ window.decks.de_nouns = [
     uk: "сон",
     level: "A1",
     topics: ["health"],    ruNote: "Состояние отдыха, когда человек не бодрствует.",
-    ukNote: "Стан відпочинку, коли людина не неспить."
+    ukNote: "Стан відпочинку, коли людина не неспить.",
     examples: [
       {
         L2: "Guter Schlaf ist wichtig für die Gesundheit.",
@@ -3613,7 +3613,7 @@ window.decks.de_nouns = [
     uk: "голод",
     level: "A1",
     topics: ["food", "health"],    ruNote: "Сильное желание есть; может употребляться и переносно.",
-    ukNote: "Сильне бажання їсти; може вживатися й переносно."
+    ukNote: "Сильне бажання їсти; може вживатися й переносно.",
     examples: [
       {
         L2: "Nach der Arbeit habe ich immer großen Hunger.",
@@ -3629,7 +3629,7 @@ window.decks.de_nouns = [
     uk: "спрага",
     level: "A1",
     topics: ["food", "health"],    ruNote: "Сильное желание пить.",
-    ukNote: "Сильне бажання пити."
+    ukNote: "Сильне бажання пити.",
     examples: [
       {
         L2: "Ich habe Durst, ich brauche Wasser.",
@@ -3645,7 +3645,7 @@ window.decks.de_nouns = [
     uk: "рух",
     level: "A2",
     topics: ["health", "physics"],    ruNote: "И физическое перемещение, и физическая активность.",
-    ukNote: "І фізичне переміщення, і фізична активність."
+    ukNote: "І фізичне переміщення, і фізична активність.",
     examples: [
       {
         L2: "Mehr Bewegung ist gut für den Körper.",
@@ -3661,7 +3661,7 @@ window.decks.de_nouns = [
     uk: "крок",
     level: "A2",
     topics: ["movement", "abstract"],    ruNote: "И физический шаг ногой, и этап в процессе.",
-    ukNote: "І фізичний крок ногою, і етап у процесі."
+    ukNote: "І фізичний крок ногою, і етап у процесі.",
     examples: [
       {
         L2: "Der erste Schritt ist oft der schwerste.",
@@ -3677,7 +3677,7 @@ window.decks.de_nouns = [
     uk: "біг",
     level: "B1",
     topics: ["sport", "movement"],    ruNote: "Может значить бег как спорт или «ход» чего-то.",
-    ukNote: "Може означати біг як спорт або «хід» чогось."
+    ukNote: "Може означати біг як спорт або «хід» чогось.",
     examples: [
       {
         L2: "Er hat den Lauf in der besten Zeit beendet.",
@@ -3693,7 +3693,7 @@ window.decks.de_nouns = [
     uk: "стрибок",
     level: "A2",
     topics: ["movement", "sport"],    ruNote: "И физический прыжок, и резкое изменение (скачок).",
-    ukNote: "І фізичний стрибок, і різка зміна (стрибок)."
+    ukNote: "І фізичний стрибок, і різка зміна (стрибок).",
     examples: [
       {
         L2: "Der Sprung über das Hindernis war hoch.",
@@ -3709,7 +3709,7 @@ window.decks.de_nouns = [
     uk: "іграшка",
     level: "A1",
     topics: ["children", "objects"],    ruNote: "Предмет для игры, обычно для детей.",
-    ukNote: "Предмет для гри, зазвичай для дітей."
+    ukNote: "Предмет для гри, зазвичай для дітей.",
     examples: [
       {
         L2: "Das Kind hat neues Spielzeug bekommen.",
@@ -3725,7 +3725,7 @@ window.decks.de_nouns = [
     uk: "подарунок",
     level: "A1",
     topics: ["celebration", "social"],    ruNote: "То, что дарят без оплаты.",
-    ukNote: "Те, що дарують без оплати."
+    ukNote: "Те, що дарують без оплати.",
     examples: [
       {
         L2: "Zum Geburtstag bekam sie viele Geschenke.",
@@ -3741,7 +3741,7 @@ window.decks.de_nouns = [
     uk: "сюрприз",
     level: "A2",
     topics: ["emotions", "celebration"],    ruNote: "Неожиданное событие, часто приятное.",
-    ukNote: "Несподівана подія, часто приємна."
+    ukNote: "Несподівана подія, часто приємна.",
     examples: [
       {
         L2: "Die Party war eine große Überraschung.",
@@ -3757,7 +3757,7 @@ window.decks.de_nouns = [
     uk: "свято",
     level: "A2",
     topics: ["celebration", "culture"],    ruNote: "Особенное событие с празднованием.",
-    ukNote: "Особлива подія зі святкуванням."
+    ukNote: "Особлива подія зі святкуванням.",
     examples: [
       {
         L2: "Im Sommer gibt es viele Feste in der Stadt.",
@@ -3773,7 +3773,7 @@ window.decks.de_nouns = [
     uk: "урочистість",
     level: "B1",
     topics: ["celebration"],    ruNote: "Организованное празднование по какому-то поводу.",
-    ukNote: "Організоване святкування з якогось приводу."
+    ukNote: "Організоване святкування з якогось приводу.",
     examples: [
       {
         L2: "Die Firmenfeier war sehr gelungen.",
@@ -3789,7 +3789,7 @@ window.decks.de_nouns = [
     uk: "день народження",
     level: "A1",
     topics: ["celebration", "personal"],    ruNote: "Годовой праздник в день рождения человека.",
-    ukNote: "Щорічне свято в день народження людини."
+    ukNote: "Щорічне свято в день народження людини.",
     examples: [
       {
         L2: "Wann hast du Geburtstag?",
@@ -3805,7 +3805,7 @@ window.decks.de_nouns = [
     uk: "Різдво",
     level: "A2",
     topics: ["celebration", "religion"],    ruNote: "Христианский праздник в конце декабря.",
-    ukNote: "Християнське свято наприкінці грудня."
+    ukNote: "Християнське свято наприкінці грудня.",
     examples: [
       {
         L2: "Zu Weihnachten trifft sich die ganze Familie.",
@@ -3821,7 +3821,7 @@ window.decks.de_nouns = [
     uk: "Новий рік",
     level: "A2",
     topics: ["celebration"],    ruNote: "Праздник начала нового календарного года.",
-    ukNote: "Свято початку нового календарного року."
+    ukNote: "Свято початку нового календарного року.",
     examples: [
       {
         L2: "Wir feiern Neujahr mit Freunden.",
@@ -3837,7 +3837,7 @@ window.decks.de_nouns = [
     uk: "Великдень",
     level: "A2",
     topics: ["celebration", "religion"],    ruNote: "Христианский праздник Воскресения Христова.",
-    ukNote: "Християнське свято Воскресіння Христа."
+    ukNote: "Християнське свято Воскресіння Христа.",
     examples: [
       {
         L2: "Zu Ostern verstecken wir bunte Eier.",
@@ -3853,7 +3853,7 @@ window.decks.de_nouns = [
     uk: "понеділок",
     level: "A1",
     topics: ["time", "weekdays"],    ruNote: "Первый рабочий день недели в Германии.",
-    ukNote: "Перший робочий день тижня в Німеччині."
+    ukNote: "Перший робочий день тижня в Німеччині.",
     examples: [
       {
         L2: "Am Montag beginnt die Woche.",
@@ -3869,7 +3869,7 @@ window.decks.de_nouns = [
     uk: "вівторок",
     level: "A1",
     topics: ["time", "weekdays"],    ruNote: "Второй день недели.",
-    ukNote: "Другий день тижня."
+    ukNote: "Другий день тижня.",
     examples: [
       {
         L2: "Dienstag ist oft ein normaler Arbeitstag.",
@@ -3885,7 +3885,7 @@ window.decks.de_nouns = [
     uk: "середа",
     level: "A1",
     topics: ["time", "weekdays"],    ruNote: "День в середине рабочей недели.",
-    ukNote: "День посеред тижня."
+    ukNote: "День посеред тижня.",
     examples: [
       {
         L2: "Am Mittwoch habe ich einen Termin.",
@@ -3901,7 +3901,7 @@ window.decks.de_nouns = [
     uk: "четвер",
     level: "A1",
     topics: ["time", "weekdays"],    ruNote: "Четвёртый день недели.",
-    ukNote: "Четвертий день тижня."
+    ukNote: "Четвертий день тижня.",
     examples: [
       {
         L2: "Donnerstag ist fast das Ende der Woche.",
@@ -3917,7 +3917,7 @@ window.decks.de_nouns = [
     uk: "п’ятниця",
     level: "A1",
     topics: ["time", "weekdays"],    ruNote: "Последний рабочий день недели для многих людей.",
-    ukNote: "Останній робочий день тижня для багатьох людей."
+    ukNote: "Останній робочий день тижня для багатьох людей.",
     examples: [
       {
         L2: "Viele freuen sich auf den Freitagabend.",
@@ -3933,7 +3933,7 @@ window.decks.de_nouns = [
     uk: "субота",
     level: "A1",
     topics: ["time", "weekdays"],    ruNote: "Обычно выходной день.",
-    ukNote: "Зазвичай вихідний день."
+    ukNote: "Зазвичай вихідний день.",
     examples: [
       {
         L2: "Am Samstag gehen viele Leute einkaufen.",
@@ -3949,7 +3949,7 @@ window.decks.de_nouns = [
     uk: "неділя",
     level: "A1",
     topics: ["time", "weekdays"],    ruNote: "Традиционный выходной и семейный день.",
-    ukNote: "Традиційний вихідний і сімейний день."
+    ukNote: "Традиційний вихідний і сімейний день.",
     examples: [
       {
         L2: "Sonntag ist oft ein Ruhetag.",
@@ -3965,7 +3965,7 @@ window.decks.de_nouns = [
     uk: "календар",
     level: "A2",
     topics: ["time", "office"],    ruNote: "Система или таблица для разделения времени на дни, недели и месяцы.",
-    ukNote: "Система або таблиця для поділу часу на дні, тижні й місяці."
+    ukNote: "Система або таблиця для поділу часу на дні, тижні й місяці.",
     examples: [
       {
         L2: "Ich trage alle Termine in meinen Kalender ein.",
@@ -3981,7 +3981,7 @@ window.decks.de_nouns = [
     uk: "дата",
     level: "A2",
     topics: ["time"],    ruNote: "Конкретный день, указанный числом, месяцем и годом.",
-    ukNote: "Конкретний день, зазначений числом, місяцем і роком."
+    ukNote: "Конкретний день, зазначений числом, місяцем і роком.",
     examples: [
       {
         L2: "Welches Datum haben wir heute?",
@@ -3997,7 +3997,7 @@ window.decks.de_nouns = [
     uk: "годинник",
     level: "A1",
     topics: ["time", "objects"],    ruNote: "Прибор для измерения времени; также «час» как единица (14 Uhr).",
-    ukNote: "Прилад для вимірювання часу; також «година» як позначення (14 Uhr)."
+    ukNote: "Прилад для вимірювання часу; також «година» як позначення (14 Uhr).",
     examples: [
       {
         L2: "Die Uhr zeigt neun Uhr.",
@@ -4013,7 +4013,7 @@ window.decks.de_nouns = [
     uk: "хвилина",
     level: "A1",
     topics: ["time"],    ruNote: "Единица времени: 60 секунд.",
-    ukNote: "Одиниця часу: 60 секунд."
+    ukNote: "Одиниця часу: 60 секунд.",
     examples: [
       {
         L2: "In fünf Minuten bin ich fertig.",
@@ -4029,7 +4029,7 @@ window.decks.de_nouns = [
     uk: "секунда",
     level: "A1",
     topics: ["time"],    ruNote: "Самая маленькая стандартная единица времени в повседневной жизни.",
-    ukNote: "Найменша стандартна одиниця часу в повсякденному житті."
+    ukNote: "Найменша стандартна одиниця часу в повсякденному житті.",
     examples: [
       {
         L2: "Er wartete nur ein paar Sekunden.",
@@ -4045,7 +4045,7 @@ window.decks.de_nouns = [
     uk: "теперішнє",
     level: "B1",
     topics: ["time", "abstract"],    ruNote: "Время, которое происходит сейчас.",
-    ukNote: "Час, який відбувається зараз."
+    ukNote: "Час, який відбувається зараз.",
     examples: [
       {
         L2: "Wir sollten in der Gegenwart leben.",
@@ -4061,7 +4061,7 @@ window.decks.de_nouns = [
     uk: "минуле",
     level: "A2",
     topics: ["time", "abstract"],    ruNote: "Всё, что уже произошло.",
-    ukNote: "Все, що вже відбулося."
+    ukNote: "Все, що вже відбулося.",
     examples: [
       {
         L2: "Er spricht ungern über seine Vergangenheit.",
@@ -4077,7 +4077,7 @@ window.decks.de_nouns = [
     uk: "майбутнє",
     level: "A2",
     topics: ["time", "abstract"],    ruNote: "Время, которое ещё не наступило.",
-    ukNote: "Час, який ще не настав."
+    ukNote: "Час, який ще не настав.",
     examples: [
       {
         L2: "Wir machen uns Gedanken über die Zukunft.",
@@ -4093,7 +4093,7 @@ window.decks.de_nouns = [
     uk: "простір",
     level: "B1",
     topics: ["space", "home"],    ruNote: "Может значить и абстрактное пространство, и комнату.",
-    ukNote: "Може означати як абстрактний простір, так і кімнату."
+    ukNote: "Може означати як абстрактний простір, так і кімнату.",
     examples: [
       {
         L2: "In diesem Raum ist es sehr hell.",
@@ -4109,7 +4109,7 @@ window.decks.de_nouns = [
     uk: "відстань",
     level: "B1",
     topics: ["space", "travel"],    ruNote: "Расстояние между двумя точками или местами.",
-    ukNote: "Відстань між двома точками чи місцями."
+    ukNote: "Відстань між двома точками чи місцями.",
     examples: [
       {
         L2: "Die Entfernung zwischen den Städten ist groß.",
@@ -4125,7 +4125,7 @@ window.decks.de_nouns = [
     uk: "близькість",
     level: "A2",
     topics: ["space", "relationships"],    ruNote: "И физическая близость, и эмоциональная.",
-    ukNote: "І фізична близькість, і емоційна."
+    ukNote: "І фізична близькість, і емоційна.",
     examples: [
       {
         L2: "In der Nähe gibt es einen Park.",
@@ -4141,7 +4141,7 @@ window.decks.de_nouns = [
     uk: "сторона",
     level: "A2",
     topics: ["space", "abstract"],    ruNote: "Может значить физическую сторону, часть книги или аспект темы.",
-    ukNote: "Може означати фізичний бік, сторінку книги або аспект теми."
+    ukNote: "Може означати фізичний бік, сторінку книги або аспект теми.",
     examples: [
       {
         L2: "Auf dieser Seite des Hauses ist es ruhiger.",
@@ -4157,7 +4157,7 @@ window.decks.de_nouns = [
     uk: "напрямок",
     level: "A2",
     topics: ["space", "travel"],    ruNote: "Путь, в котором кто-то или что-то движется.",
-    ukNote: "Шлях, у якому хтось або щось рухається."
+    ukNote: "Шлях, у якому хтось або щось рухається.",
     examples: [
       {
         L2: "In welche Richtung müssen wir gehen?",
@@ -4173,7 +4173,7 @@ window.decks.de_nouns = [
     uk: "північ",
     level: "A2",
     topics: ["geography"],    ruNote: "Одна из четырёх сторон света.",
-    ukNote: "Одна з чотирьох сторін світу."
+    ukNote: "Одна з чотирьох сторін світу.",
     examples: [
       {
         L2: "Im Norden ist es oft kälter.",
@@ -4189,7 +4189,7 @@ window.decks.de_nouns = [
     uk: "південь",
     level: "A2",
     topics: ["geography"],    ruNote: "Часто ассоциируется с более тёплым климатом.",
-    ukNote: "Часто асоціюється з теплішим кліматом."
+    ukNote: "Часто асоціюється з теплішим кліматом.",
     examples: [
       {
         L2: "Viele fahren im Sommer in den Süden.",
@@ -4205,7 +4205,7 @@ window.decks.de_nouns = [
     uk: "схід",
     level: "A2",
     topics: ["geography"],    ruNote: "Одна из сторон света; также политический или культурный регион.",
-    ukNote: "Одна зі сторін світу; також політичний чи культурний регіон."
+    ukNote: "Одна зі сторін світу; також політичний чи культурний регіон.",
     examples: [
       {
         L2: "Die Sonne geht im Osten auf.",
@@ -4221,7 +4221,7 @@ window.decks.de_nouns = [
     uk: "захід",
     level: "A2",
     topics: ["geography"],    ruNote: "Противоположная сторона по отношению к востоку.",
-    ukNote: "Протилежна сторона щодо сходу."
+    ukNote: "Протилежна сторона щодо сходу.",
     examples: [
       {
         L2: "Die Sonne geht im Westen unter.",
@@ -4237,7 +4237,7 @@ window.decks.de_nouns = [
     uk: "середина",
     level: "A2",
     topics: ["space", "abstract"],    ruNote: "То, что равно удалено от краёв или начала и конца.",
-    ukNote: "Те, що однаково віддалене від країв або початку і кінця."
+    ukNote: "Те, що однаково віддалене від країв або початку і кінця.",
     examples: [
       {
         L2: "In der Mitte des Raumes steht ein Tisch.",
@@ -4253,7 +4253,7 @@ window.decks.de_nouns = [
     uk: "оточення",
     level: "A2",
     topics: ["place", "environment"],    ruNote: "Пространство вокруг какого-то места.",
-    ukNote: "Простір навколо певного місця."
+    ukNote: "Простір навколо певного місця.",
     examples: [
       {
         L2: "Die Umgebung der Stadt ist sehr grün.",
@@ -4269,7 +4269,7 @@ window.decks.de_nouns = [
     uk: "ландшафт",
     level: "B1",
     topics: ["nature", "geography"],    ruNote: "Внешний вид местности, природы.",
-    ukNote: "Зовнішній вигляд місцевості, природи."
+    ukNote: "Зовнішній вигляд місцевості, природи.",
     examples: [
       {
         L2: "Die Landschaft in den Bergen ist beeindruckend.",
@@ -4285,7 +4285,7 @@ window.decks.de_nouns = [
     uk: "природа",
     level: "A2",
     topics: ["nature", "environment"],    ruNote: "Всё, что не создано человеком; также характер чего-то.",
-    ukNote: "Все, що не створене людиною; також характер чогось."
+    ukNote: "Все, що не створене людиною; також характер чогось.",
     examples: [
       {
         L2: "Viele Menschen entspannen sich gern in der Natur.",
@@ -4301,7 +4301,7 @@ window.decks.de_nouns = [
     uk: "довкілля",
     level: "B1",
     topics: ["environment"],    ruNote: "Природные условия, в которых живут люди, животные и растения.",
-    ukNote: "Природні умови, у яких живуть люди, тварини й рослини."
+    ukNote: "Природні умови, у яких живуть люди, тварини й рослини.",
     examples: [
       {
         L2: "Wir müssen die Umwelt besser schützen.",
@@ -4317,7 +4317,7 @@ window.decks.de_nouns = [
     uk: "захист довкілля",
     level: "B1",
     topics: ["environment", "politics"],    ruNote: "Меры и действия по сохранению природы.",
-    ukNote: "Заходи та дії для збереження природи."
+    ukNote: "Заходи та дії для збереження природи.",
     examples: [
       {
         L2: "Umweltschutz ist ein wichtiges Thema.",
@@ -4333,7 +4333,7 @@ window.decks.de_nouns = [
     uk: "вогонь",
     level: "A2",
     topics: ["nature", "danger"],    ruNote: "Может быть полезным (отопление) или опасным (пожар).",
-    ukNote: "Може бути корисним (опалення) або небезпечним (пожежа)."
+    ukNote: "Може бути корисним (опалення) або небезпечним (пожежа).",
     examples: [
       {
         L2: "Feuer kann sich schnell ausbreiten.",
@@ -4349,7 +4349,7 @@ window.decks.de_nouns = [
     uk: "земля",
     level: "A2",
     topics: ["nature", "geography"],    ruNote: "И почва под ногами, и наша планета.",
-    ukNote: "І ґрунт під ногами, і наша планета."
+    ukNote: "І ґрунт під ногами, і наша планета.",
     examples: [
       {
         L2: "Die Erde dreht sich um die Sonne.",
@@ -4365,7 +4365,7 @@ window.decks.de_nouns = [
     uk: "повітря",
     level: "A1",
     topics: ["nature", "health"],    ruNote: "Газовая смесь, которой мы дышим.",
-    ukNote: "Газова суміш, якою ми дихаємо."
+    ukNote: "Газова суміш, якою ми дихаємо.",
     examples: [
       {
         L2: "Frische Luft ist gesund.",
@@ -4381,7 +4381,7 @@ window.decks.de_nouns = [
     uk: "клімат",
     level: "B1",
     topics: ["environment", "geography"],    ruNote: "Средние погодные условия в регионе за долгий период.",
-    ukNote: "Середні погодні умови в регіоні за тривалий період."
+    ukNote: "Середні погодні умови в регіоні за тривалий період.",
     examples: [
       {
         L2: "Das Klima verändert sich weltweit.",
@@ -4397,7 +4397,7 @@ window.decks.de_nouns = [
     uk: "тепло",
     level: "A2",
     topics: ["weather", "physics"],    ruNote: "Приятное ощущение тепла; физическая величина.",
-    ukNote: "Приємне відчуття тепла; фізична величина."
+    ukNote: "Приємне відчуття тепла; фізична величина.",
     examples: [
       {
         L2: "Die Wärme der Sonne tut gut.",
@@ -4413,7 +4413,7 @@ window.decks.de_nouns = [
     uk: "холод",
     level: "A2",
     topics: ["weather", "physics"],    ruNote: "Низкая температура, часто неприятное ощущение.",
-    ukNote: "Низька температура, часто неприємне відчуття."
+    ukNote: "Низька температура, часто неприємне відчуття.",
     examples: [
       {
         L2: "Die Kälte im Winter kann stark sein.",
@@ -4429,7 +4429,7 @@ window.decks.de_nouns = [
     uk: "спека",
     level: "A2",
     topics: ["weather"],    ruNote: "Очень высокая температура воздуха.",
-    ukNote: "Дуже висока температура повітря."
+    ukNote: "Дуже висока температура повітря.",
     examples: [
       {
         L2: "Die Hitze im Sommer ist manchmal schwer zu ertragen.",
@@ -4445,7 +4445,7 @@ window.decks.de_nouns = [
     uk: "висота",
     level: "B1",
     topics: ["space", "measure"],    ruNote: "Расстояние сверху вниз; также сумма денег (высота суммы).",
-    ukNote: "Відстань зверху донизу; також сума грошей (величина суми)."
+    ukNote: "Відстань зверху донизу; також сума грошей (величина суми).",
     examples: [
       {
         L2: "Die Höhe des Berges ist beeindruckend.",
@@ -4461,7 +4461,7 @@ window.decks.de_nouns = [
     uk: "глибина",
     level: "B1",
     topics: ["space", "measure"],    ruNote: "Расстояние сверху вниз или внутрь; также «глубина мысли».",
-    ukNote: "Відстань зверху вниз або всередину; також «глибина думки»."
+    ukNote: "Відстань зверху вниз або всередину; також «глибина думки».",
     examples: [
       {
         L2: "Die Tiefe des Sees ist unbekannt.",
@@ -4477,7 +4477,7 @@ window.decks.de_nouns = [
     uk: "розмір",
     level: "A2",
     topics: ["measure", "clothes"],    ruNote: "Общая характеристика: насколько что-то большое или маленькое.",
-    ukNote: "Загальна характеристика: наскільки щось велике чи мале."
+    ukNote: "Загальна характеристика: наскільки щось велике чи мале.",
     examples: [
       {
         L2: "Welche Größe tragen Sie?",
@@ -4493,7 +4493,7 @@ window.decks.de_nouns = [
     uk: "довжина",
     level: "A2",
     topics: ["measure"],    ruNote: "Расстояние в одном направлении; также длительность (Länge eines Films).",
-    ukNote: "Відстань в одному напрямку; також тривалість (довжина фільму)."
+    ukNote: "Відстань в одному напрямку; також тривалість (довжина фільму).",
     examples: [
       {
         L2: "Die Länge des Tisches beträgt zwei Meter.",
@@ -4509,7 +4509,7 @@ window.decks.de_nouns = [
     uk: "ширина",
     level: "A2",
     topics: ["measure"],    ruNote: "Размер поперёк, перпендикулярно длине.",
-    ukNote: "Розмір упоперек, перпендикулярно до довжини."
+    ukNote: "Розмір упоперек, перпендикулярно до довжини.",
     examples: [
       {
         L2: "Die Breite der Straße ist hier größer.",
@@ -4525,7 +4525,7 @@ window.decks.de_nouns = [
     uk: "товщина",
     level: "B1",
     topics: ["measure"],    ruNote: "Показывает, насколько что-то толстое или тонкое.",
-    ukNote: "Показує, наскільки щось товсте чи тонке."
+    ukNote: "Показує, наскільки щось товсте чи тонке.",
     examples: [
       {
         L2: "Die Dicke des Buches überrascht mich.",
@@ -4541,7 +4541,7 @@ window.decks.de_nouns = [
     uk: "число",
     level: "A1",
     topics: ["math"],    ruNote: "Математическое понятие: 1, 2, 3 и т.д.",
-    ukNote: "Математичне поняття: 1, 2, 3 тощо."
+    ukNote: "Математичне поняття: 1, 2, 3 тощо.",
     examples: [
       {
         L2: "Kannst du diese Zahl lesen?",
@@ -4557,7 +4557,7 @@ window.decks.de_nouns = [
     uk: "номер",
     level: "A1",
     topics: ["everyday"],    ruNote: "Идентификационное обозначение: номер телефона, комнаты и т.д.",
-    ukNote: "Ідентифікаційне позначення: номер телефону, кімнати тощо."
+    ukNote: "Ідентифікаційне позначення: номер телефону, кімнати тощо.",
     examples: [
       {
         L2: "Wie ist deine Telefonnummer? Ich brauche deine Nummer.",
@@ -4573,7 +4573,7 @@ window.decks.de_nouns = [
     uk: "кількість",
     level: "A2",
     topics: ["measure"],    ruNote: "Нефиксированное число чего-либо.",
-    ukNote: "Невизначене число або об’єм чогось."
+    ukNote: "Невизначене число або об’єм чогось.",
     examples: [
       {
         L2: "Er hat eine große Menge Arbeit.",
@@ -4589,7 +4589,7 @@ window.decks.de_nouns = [
     uk: "пара",
     level: "A2",
     topics: ["measure", "relationships"],    ruNote: "Два элемента, которые принадлежат вместе.",
-    ukNote: "Два елементи, які належать разом."
+    ukNote: "Два елементи, які належать разом.",
     examples: [
       {
         L2: "Ich brauche ein Paar neue Schuhe.",
@@ -4605,7 +4605,7 @@ window.decks.de_nouns = [
     uk: "група",
     level: "A2",
     topics: ["social"],    ruNote: "Несколько людей или предметов, объединённых чем-то.",
-    ukNote: "Кілька людей чи предметів, об’єднаних чимось."
+    ukNote: "Кілька людей чи предметів, об’єднаних чимось.",
     examples: [
       {
         L2: "Wir arbeiten in einer kleinen Gruppe.",
@@ -4621,7 +4621,7 @@ window.decks.de_nouns = [
     uk: "ряд",
     level: "B1",
     topics: ["order"],    ruNote: "Ряд предметов или людей; также серия событий.",
-    ukNote: "Ряд предметів чи людей; також серія подій."
+    ukNote: "Ряд предметів чи людей; також серія подій.",
     examples: [
       {
         L2: "Bitte stellen Sie sich in eine Reihe.",
@@ -4637,7 +4637,7 @@ window.decks.de_nouns = [
     uk: "список",
     level: "A2",
     topics: ["office", "organization"],    ruNote: "Упорядоченный набор пунктов, имён или вещей.",
-    ukNote: "Упорядкований набір пунктів, імен чи речей."
+    ukNote: "Упорядкований набір пунктів, імен чи речей.",
     examples: [
       {
         L2: "Ich schreibe eine Liste mit Aufgaben.",
@@ -4653,7 +4653,7 @@ window.decks.de_nouns = [
     uk: "початок",
     level: "A2",
     topics: ["time", "abstract"],    ruNote: "Первая фаза чего-либо.",
-    ukNote: "Перша фаза чогось."
+    ukNote: "Перша фаза чогось.",
     examples: [
       {
         L2: "Der Anfang war schwierig.",
@@ -4669,7 +4669,7 @@ window.decks.de_nouns = [
     uk: "кінець",
     level: "A2",
     topics: ["time", "abstract"],    ruNote: "Последняя часть чего-либо.",
-    ukNote: "Остання частина чогось."
+    ukNote: "Остання частина чогось.",
     examples: [
       {
         L2: "Am Ende des Films waren alle zufrieden.",
@@ -4685,7 +4685,7 @@ window.decks.de_nouns = [
     uk: "продовження",
     level: "B1",
     topics: ["media", "process"],    ruNote: "То, что идёт дальше после первой части.",
-    ukNote: "Те, що йде далі після першої частини."
+    ukNote: "Те, що йде далі після першої частини.",
     examples: [
       {
         L2: "Wir warten auf die Fortsetzung der Serie.",
@@ -4701,7 +4701,7 @@ window.decks.de_nouns = [
     uk: "мета",
     level: "A2",
     topics: ["planning", "sport"],    ruNote: "Желаемый результат или место, куда хотят попасть.",
-    ukNote: "Бажаний результат або місце, куди хочуть потрапити."
+    ukNote: "Бажаний результат або місце, куди хочуть потрапити.",
     examples: [
       {
         L2: "Mein Ziel ist es, Deutsch fließend zu sprechen.",
@@ -4717,7 +4717,7 @@ window.decks.de_nouns = [
     uk: "призначення",
     level: "B1",
     topics: ["planning", "abstract"],    ruNote: "То, для чего что-то делается или существует.",
-    ukNote: "Те, заради чого щось робиться або існує."
+    ukNote: "Те, заради чого щось робиться або існує.",
     examples: [
       {
         L2: "Der Zweck dieses Projekts ist klar.",
@@ -4733,7 +4733,7 @@ window.decks.de_nouns = [
     uk: "завдання",
     level: "A2",
     topics: ["work", "school"],    ruNote: "То, что нужно выполнить; также упражнение в учебнике.",
-    ukNote: "Те, що потрібно виконати; також вправа в підручнику."
+    ukNote: "Те, що потрібно виконати; також вправа в підручнику.",
     examples: [
       {
         L2: "Ich habe meine Hausaufgaben und eine schwierige Aufgabe.",
@@ -4749,7 +4749,7 @@ window.decks.de_nouns = [
     uk: "відповідальність",
     level: "B1",
     topics: ["work", "ethics"],    ruNote: "Готовность отвечать за свои действия и их последствия.",
-    ukNote: "Готовність відповідати за свої дії та їхні наслідки."
+    ukNote: "Готовність відповідати за свої дії та їхні наслідки.",
     examples: [
       {
         L2: "In dieser Position trägt man viel Verantwortung.",
@@ -4765,7 +4765,7 @@ window.decks.de_nouns = [
     uk: "план",
     level: "A2",
     topics: ["work", "planning"],    ruNote: "Обдуманное расписание действий или замысел.",
-    ukNote: "Продуманий розклад дій або задум."
+    ukNote: "Продуманий розклад дій або задум.",
     examples: [
       {
         L2: "Wir machen einen Plan für die nächste Woche.",
@@ -4781,7 +4781,7 @@ window.decks.de_nouns = [
     uk: "проєкт",
     level: "A2",
     topics: ["work", "study"],    ruNote: "Запланированная работа с определённой целью и сроками.",
-    ukNote: "Запланована робота з певною метою та строками."
+    ukNote: "Запланована робота з певною метою та строками.",
     examples: [
       {
         L2: "Das Projekt soll in drei Monaten fertig sein.",
@@ -4797,7 +4797,7 @@ window.decks.de_nouns = [
     uk: "стратегія",
     level: "B1",
     topics: ["work", "planning"],    ruNote: "Долгосрочный план для достижения важной цели.",
-    ukNote: "Довгостроковий план для досягнення важливої мети."
+    ukNote: "Довгостроковий план для досягнення важливої мети.",
     examples: [
       {
         L2: "Wir brauchen eine neue Strategie für den Markt.",
@@ -4813,7 +4813,7 @@ window.decks.de_nouns = [
     uk: "рішення",
     level: "A2",
     topics: ["everyday", "work"],    ruNote: "Выбор одного варианта из нескольких возможных.",
-    ukNote: "Вибір одного варіанта з кількох можливих."
+    ukNote: "Вибір одного варіанта з кількох можливих.",
     examples: [
       {
         L2: "Die Entscheidung war nicht leicht.",
@@ -4829,7 +4829,7 @@ window.decks.de_nouns = [
     uk: "спроба",
     level: "A2",
     topics: ["everyday", "science"],    ruNote: "Действие, чтобы попробовать что-то сделать или проверить.",
-    ukNote: "Дія, щоб спробувати щось зробити або перевірити."
+    ukNote: "Дія, щоб спробувати щось зробити або перевірити.",
     examples: [
       {
         L2: "Ich mache einen letzten Versuch.",
@@ -4845,7 +4845,7 @@ window.decks.de_nouns = [
     uk: "успіх",
     level: "A2",
     topics: ["work", "personal"],    ruNote: "Хороший результат работы или попытки.",
-    ukNote: "Добрий результат роботи або спроби."
+    ukNote: "Добрий результат роботи або спроби.",
     examples: [
       {
         L2: "Der Kurs war ein großer Erfolg.",
@@ -4861,7 +4861,7 @@ window.decks.de_nouns = [
     uk: "результат",
     level: "A2",
     topics: ["study", "work"],    ruNote: "То, что получается в конце процесса или действия.",
-    ukNote: "Те, що виходить у кінці процесу чи дії."
+    ukNote: "Те, що виходить у кінці процесу чи дії.",
     examples: [
       {
         L2: "Das Ergebnis der Prüfung ist gut.",
@@ -4877,7 +4877,7 @@ window.decks.de_nouns = [
     uk: "прибуток",
     level: "B1",
     topics: ["business", "economy"],    ruNote: "Деньги или выгода, полученные сверх затрат.",
-    ukNote: "Гроші або вигода, отримані понад витрати."
+    ukNote: "Гроші або вигода, отримані понад витрати.",
     examples: [
       {
         L2: "Die Firma macht dieses Jahr viel Gewinn.",
@@ -4893,7 +4893,7 @@ window.decks.de_nouns = [
     uk: "втрата",
     level: "B1",
     topics: ["business", "personal"],    ruNote: "Когда что-то исчезает или становится меньше (деньги, вещи и т.д.).",
-    ukNote: "Коли щось зникає або зменшується (гроші, речі тощо)."
+    ukNote: "Коли щось зникає або зменшується (гроші, речі тощо).",
     examples: [
       {
         L2: "Wir hatten einen großen finanziellen Verlust.",
@@ -4909,7 +4909,7 @@ window.decks.de_nouns = [
     uk: "перевага",
     level: "A2",
     topics: ["general"],    ruNote: "Хорошая сторона ситуации или вещи.",
-    ukNote: "Хороший бік ситуації або речі."
+    ukNote: "Хороший бік ситуації або речі.",
     examples: [
       {
         L2: "Ein Vorteil ist, dass die Wohnung sehr ruhig ist.",
@@ -4925,7 +4925,7 @@ window.decks.de_nouns = [
     uk: "недолік",
     level: "A2",
     topics: ["general"],    ruNote: "Плохая сторона чего-то, что мешает или ухудшает.",
-    ukNote: "Поганий бік чогось, що заважає або погіршує."
+    ukNote: "Поганий бік чогось, що заважає або погіршує.",
     examples: [
       {
         L2: "Ein Nachteil ist der hohe Preis.",
@@ -4941,7 +4941,7 @@ window.decks.de_nouns = [
     uk: "можливість",
     level: "A2",
     topics: ["general"],    ruNote: "То, что можно сделать или что может произойти.",
-    ukNote: "Те, що можна зробити або що може статися."
+    ukNote: "Те, що можна зробити або що може статися.",
     examples: [
       {
         L2: "Ich habe keine Möglichkeit, früher zu kommen.",
@@ -4957,7 +4957,7 @@ window.decks.de_nouns = [
     uk: "ймовірність",
     level: "B1",
     topics: ["math", "general"],    ruNote: "Степень того, насколько что-то скорее всего произойдёт.",
-    ukNote: "Міра того, наскільки щось швидше за все відбудеться."
+    ukNote: "Міра того, наскільки щось швидше за все відбудеться.",
     examples: [
       {
         L2: "Die Wahrscheinlichkeit für Regen ist heute hoch.",
@@ -4973,7 +4973,7 @@ window.decks.de_nouns = [
     uk: "небезпека",
     level: "A2",
     topics: ["safety"],    ruNote: "Ситуация, в которой может случиться что-то плохое.",
-    ukNote: "Ситуація, у якій може статися щось погане."
+    ukNote: "Ситуація, у якій може статися щось погане.",
     examples: [
       {
         L2: "Rauchen ist eine Gefahr für die Gesundheit.",
@@ -4989,7 +4989,7 @@ window.decks.de_nouns = [
     uk: "ризик",
     level: "B1",
     topics: ["business", "safety"],    ruNote: "Шанс потерь или вреда при каком-то действии.",
-    ukNote: "Шанс втрат або шкоди при певній дії."
+    ukNote: "Шанс втрат або шкоди при певній дії.",
     examples: [
       {
         L2: "Dieses Investment hat ein hohes Risiko.",
@@ -5005,7 +5005,7 @@ window.decks.de_nouns = [
     uk: "шанс",
     level: "A2",
     topics: ["general"],    ruNote: "Хорошая возможность добиться чего-то.",
-    ukNote: "Хороша можливість чогось досягти."
+    ukNote: "Хороша можливість чогось досягти.",
     examples: [
       {
         L2: "Du hast eine gute Chance auf den Job.",
@@ -5021,7 +5021,7 @@ window.decks.de_nouns = [
     uk: "вибір",
     level: "A2",
     topics: ["politics", "everyday"],    ruNote: "И процесс голосования, и личный выбор между вариантами.",
-    ukNote: "І процес голосування, і особистий вибір між варіантами."
+    ukNote: "І процес голосування, і особистий вибір між варіантами.",
     examples: [
       {
         L2: "Die Wahl findet nächsten Monat statt.",
@@ -5037,7 +5037,7 @@ window.decks.de_nouns = [
     uk: "голос",
     level: "A2",
     topics: ["body", "politics"],    ruNote: "И голос человека, и голос как единица при голосовании.",
-    ukNote: "І голос людини, і голос як одиниця при голосуванні."
+    ukNote: "І голос людини, і голос як одиниця при голосуванні.",
     examples: [
       {
         L2: "Er hat seine Stimme abgegeben.",
@@ -5053,7 +5053,7 @@ window.decks.de_nouns = [
     uk: "більшість",
     level: "B1",
     topics: ["politics", "society"],    ruNote: "Группа, которая численно больше других.",
-    ukNote: "Група, що чисельно більша за інші."
+    ukNote: "Група, що чисельно більша за інші.",
     examples: [
       {
         L2: "Die Mehrheit der Leute ist dafür.",
@@ -5069,7 +5069,7 @@ window.decks.de_nouns = [
     uk: "меншість",
     level: "B1",
     topics: ["politics", "society"],    ruNote: "Группа людей, которых меньше, чем других.",
-    ukNote: "Група людей, яких менше, ніж інших."
+    ukNote: "Група людей, яких менше, ніж інших.",
     examples: [
       {
         L2: "Eine kleine Minderheit war dagegen.",
@@ -5085,7 +5085,7 @@ window.decks.de_nouns = [
     uk: "суспільство",
     level: "B1",
     topics: ["society"],    ruNote: "Совокупность людей, которые живут вместе по общим правилам.",
-    ukNote: "Сукупність людей, що живуть разом за спільними правилами."
+    ukNote: "Сукупність людей, що живуть разом за спільними правилами.",
     examples: [
       {
         L2: "Die Gesellschaft verändert sich schnell.",
@@ -5101,7 +5101,7 @@ window.decks.de_nouns = [
     uk: "спільнота",
     level: "B1",
     topics: ["society"],    ruNote: "Группа людей, объединённых общей целью или интересами.",
-    ukNote: "Група людей, об’єднаних спільною метою чи інтересами."
+    ukNote: "Група людей, об’єднаних спільною метою чи інтересами.",
     examples: [
       {
         L2: "Wir wohnen in einer kleinen Gemeinschaft.",
@@ -5117,7 +5117,7 @@ window.decks.de_nouns = [
     uk: "організація",
     level: "B1",
     topics: ["work", "society"],    ruNote: "Учреждение или группа людей с общей задачей.",
-    ukNote: "Установа або група людей зі спільним завданням."
+    ukNote: "Установа або група людей зі спільним завданням.",
     examples: [
       {
         L2: "Die Organisation hilft armen Kindern.",
@@ -5133,7 +5133,7 @@ window.decks.de_nouns = [
     uk: "фірма",
     level: "A2",
     topics: ["work", "business"],    ruNote: "Коммерческая организация, которая что-то производит или продаёт.",
-    ukNote: "Комерційна організація, яка щось виробляє або продає."
+    ukNote: "Комерційна організація, яка щось виробляє або продає.",
     examples: [
       {
         L2: "Er arbeitet in einer großen Firma.",
@@ -5149,7 +5149,7 @@ window.decks.de_nouns = [
     uk: "підприємство",
     level: "B1",
     topics: ["business"],    ruNote: "Экономическая единица, которая производит товары или услуги.",
-    ukNote: "Економічна одиниця, що виробляє товари або послуги."
+    ukNote: "Економічна одиниця, що виробляє товари або послуги.",
     examples: [
       {
         L2: "Das Unternehmen wächst sehr schnell.",
@@ -5165,7 +5165,7 @@ window.decks.de_nouns = [
     uk: "відділ",
     level: "A2",
     topics: ["work"],    ruNote: "Часть фирмы или учреждения с конкретными задачами.",
-    ukNote: "Частина фірми чи установи з конкретними завданнями."
+    ukNote: "Частина фірми чи установи з конкретними завданнями.",
     examples: [
       {
         L2: "Ich arbeite in der IT-Abteilung.",
@@ -5181,7 +5181,7 @@ window.decks.de_nouns = [
     uk: "шеф",
     level: "A2",
     topics: ["work"],    ruNote: "Человек, который руководит сотрудниками.",
-    ukNote: "Людина, яка керує працівниками."
+    ukNote: "Людина, яка керує працівниками.",
     examples: [
       {
         L2: "Mein Chef ist heute nicht im Büro.",
@@ -5197,7 +5197,7 @@ window.decks.de_nouns = [
     uk: "співробітник",
     level: "A2",
     topics: ["work"],    ruNote: "Человек, который работает в фирме или организации.",
-    ukNote: "Людина, яка працює у фірмі чи організації."
+    ukNote: "Людина, яка працює у фірмі чи організації.",
     examples: [
       {
         L2: "Die Mitarbeiter sind sehr freundlich.",
@@ -5213,7 +5213,7 @@ window.decks.de_nouns = [
     uk: "колега",
     level: "A2",
     topics: ["work"],    ruNote: "Женщина, которая работает вместе с вами.",
-    ukNote: "Жінка, яка працює разом з вами."
+    ukNote: "Жінка, яка працює разом з вами.",
     examples: [
       {
         L2: "Meine Kollegin hilft mir oft.",
@@ -5229,7 +5229,7 @@ window.decks.de_nouns = [
     uk: "клієнт",
     level: "A2",
     topics: ["business"],    ruNote: "Человек, который покупает товары или услуги.",
-    ukNote: "Людина, яка купує товари чи послуги."
+    ukNote: "Людина, яка купує товари чи послуги.",
     examples: [
       {
         L2: "Der Kunde ist mit dem Produkt zufrieden.",
@@ -5245,7 +5245,7 @@ window.decks.de_nouns = [
     uk: "клієнтка",
     level: "A2",
     topics: ["business"],    ruNote: "Женщина, которая покупает товары или услуги.",
-    ukNote: "Жінка, яка купує товари чи послуги."
+    ukNote: "Жінка, яка купує товари чи послуги.",
     examples: [
       {
         L2: "Die Kundin möchte eine Rechnung.",
@@ -5261,7 +5261,7 @@ window.decks.de_nouns = [
     uk: "замовлення",
     level: "B1",
     topics: ["business"],    ruNote: "Официальное поручение выполнить работу или поставить товар.",
-    ukNote: "Офіційне доручення виконати роботу або поставити товар."
+    ukNote: "Офіційне доручення виконати роботу або поставити товар.",
     examples: [
       {
         L2: "Wir haben einen großen Auftrag bekommen.",
@@ -5277,7 +5277,7 @@ window.decks.de_nouns = [
     uk: "договір",
     level: "B1",
     topics: ["business", "law"],    ruNote: "Письменное юридическое соглашение между сторонами.",
-    ukNote: "Письмова юридична угода між сторонами."
+    ukNote: "Письмова юридична угода між сторонами.",
     examples: [
       {
         L2: "Bevor du unterschreibst, lies den Vertrag gut durch.",
@@ -5293,7 +5293,7 @@ window.decks.de_nouns = [
     uk: "магазин",
     level: "A2",
     topics: ["shopping", "business"],    ruNote: "И место для покупок, и «дело» в деловом смысле.",
-    ukNote: "І місце для покупок, і «справа» у діловому значенні."
+    ukNote: "І місце для покупок, і «справа» у діловому значенні.",
     examples: [
       {
         L2: "Das Geschäft macht um neun Uhr auf.",
@@ -5309,7 +5309,7 @@ window.decks.de_nouns = [
     uk: "крамниця",
     level: "A2",
     topics: ["shopping"],    ruNote: "Небольшой магазин, часто с личной атмосферой.",
-    ukNote: "Невелика крамниця, часто з домашньою атмосферою."
+    ukNote: "Невелика крамниця, часто з домашньою атмосферою.",
     examples: [
       {
         L2: "In diesem Laden kaufe ich oft Brot.",
@@ -5325,7 +5325,7 @@ window.decks.de_nouns = [
     uk: "ринок",
     level: "A2",
     topics: ["shopping", "economy"],    ruNote: "Открытая площадь для торговли или абстрактный «рынок» в экономике.",
-    ukNote: "Відкритий майданчик для торгівлі або абстрактний «ринок» в економіці."
+    ukNote: "Відкритий майданчик для торгівлі або абстрактний «ринок» в економіці.",
     examples: [
       {
         L2: "Auf dem Markt gibt es frisches Gemüse.",
@@ -5341,7 +5341,7 @@ window.decks.de_nouns = [
     uk: "торговий центр",
     level: "A2",
     topics: ["shopping"],    ruNote: "Большое здание с множеством магазинов.",
-    ukNote: "Велика будівля з багатьма магазинами."
+    ukNote: "Велика будівля з багатьма магазинами.",
     examples: [
       {
         L2: "Im Einkaufszentrum gibt es viele Geschäfte.",
@@ -5357,7 +5357,7 @@ window.decks.de_nouns = [
     uk: "каса",
     level: "A2",
     topics: ["shopping", "finance"],    ruNote: "Место или аппарат, где платят за покупки.",
-    ukNote: "Місце або апарат, де платять за покупки."
+    ukNote: "Місце або апарат, де платять за покупки.",
     examples: [
       {
         L2: "Sie wartet an der Kasse.",
@@ -5373,7 +5373,7 @@ window.decks.de_nouns = [
     uk: "ціна",
     level: "A2",
     topics: ["shopping", "economy"],    ruNote: "Сумма денег, которую нужно заплатить за товар или услугу.",
-    ukNote: "Сума грошей, яку потрібно заплатити за товар чи послугу."
+    ukNote: "Сума грошей, яку потрібно заплатити за товар чи послугу.",
     examples: [
       {
         L2: "Der Preis ist zu hoch.",
@@ -5389,7 +5389,7 @@ window.decks.de_nouns = [
     uk: "вартість",
     level: "B1",
     topics: ["economy", "general"],    ruNote: "И денежная стоимость, и важность чего-то.",
-    ukNote: "І грошова вартість, і важливість чогось."
+    ukNote: "І грошова вартість, і важливість чогось.",
     examples: [
       {
         L2: "Der wahre Wert dieser Arbeit ist hoch.",
@@ -5405,7 +5405,7 @@ window.decks.de_nouns = [
     uk: "пропозиція",
     level: "A2",
     topics: ["shopping", "business"],    ruNote: "То, что кто-то предлагает купить или сделать.",
-    ukNote: "Те, що хтось пропонує купити або зробити."
+    ukNote: "Те, що хтось пропонує купити або зробити.",
     examples: [
       {
         L2: "Dieses Angebot gilt nur bis morgen.",
@@ -5421,7 +5421,7 @@ window.decks.de_nouns = [
     uk: "попит",
     level: "B1",
     topics: ["economy"],    ruNote: "Желание и возможность людей покупать товары или услуги.",
-    ukNote: "Бажання та можливість людей купувати товари чи послуги."
+    ukNote: "Бажання та можливість людей купувати товари чи послуги.",
     examples: [
       {
         L2: "Die Nachfrage nach Elektroautos steigt.",
@@ -5437,7 +5437,7 @@ window.decks.de_nouns = [
     uk: "товар",
     level: "A2",
     topics: ["shopping", "business"],    ruNote: "Материальный предмет, который продают и покупают.",
-    ukNote: "Матеріальний предмет, який продають і купують."
+    ukNote: "Матеріальний предмет, який продають і купують.",
     examples: [
       {
         L2: "Die Ware ist leider ausverkauft.",
@@ -5453,7 +5453,7 @@ window.decks.de_nouns = [
     uk: "продукт",
     level: "A2",
     topics: ["business"],    ruNote: "То, что производится и предлагается на рынке.",
-    ukNote: "Те, що виробляють і пропонують на ринку."
+    ukNote: "Те, що виробляють і пропонують на ринку.",
     examples: [
       {
         L2: "Unser neues Produkt ist sehr beliebt.",
@@ -5469,7 +5469,7 @@ window.decks.de_nouns = [
     uk: "якість",
     level: "A2",
     topics: ["business", "general"],    ruNote: "То, насколько хорошо сделан товар или работа.",
-    ukNote: "Те, наскільки добре зроблено товар або роботу."
+    ukNote: "Те, наскільки добре зроблено товар або роботу.",
     examples: [
       {
         L2: "Die Qualität der Lebensmittel ist sehr wichtig.",
@@ -5485,7 +5485,7 @@ window.decks.de_nouns = [
     uk: "поставка",
     level: "B1",
     topics: ["business", "logistics"],    ruNote: "Передача товара покупателю, обычно после заказа.",
-    ukNote: "Передача товару покупцеві, зазвичай після замовлення."
+    ukNote: "Передача товару покупцеві, зазвичай після замовлення.",
     examples: [
       {
         L2: "Die Lieferung kommt morgen an.",
@@ -5501,7 +5501,7 @@ window.decks.de_nouns = [
     uk: "замовлення",
     level: "A2",
     topics: ["shopping", "business"],    ruNote: "Заявка на товар или услугу.",
-    ukNote: "Заявка на товар або послугу."
+    ukNote: "Заявка на товар або послугу.",
     examples: [
       {
         L2: "Ich habe die Bestellung online gemacht.",
@@ -5517,7 +5517,7 @@ window.decks.de_nouns = [
     uk: "рахунок",
     level: "A2",
     topics: ["finance", "shopping"],    ruNote: "Документ с перечнем товаров или услуг и суммой к оплате.",
-    ukNote: "Документ зі списком товарів або послуг і сумою до оплати."
+    ukNote: "Документ зі списком товарів або послуг і сумою до оплати.",
     examples: [
       {
         L2: "Können Sie mir bitte die Rechnung bringen?",
@@ -5533,7 +5533,7 @@ window.decks.de_nouns = [
     uk: "квитанція",
     level: "B1",
     topics: ["finance", "shopping"],    ruNote: "Подтверждение оплаты, которое выдают после расчёта.",
-    ukNote: "Підтвердження оплати, яке видають після розрахунку."
+    ukNote: "Підтвердження оплати, яке видають після розрахунку.",
     examples: [
       {
         L2: "Bewahren Sie die Quittung gut auf.",
@@ -5549,7 +5549,7 @@ window.decks.de_nouns = [
     uk: "знижка",
     level: "A2",
     topics: ["shopping", "business"],    ruNote: "Уменьшение обычной цены товара или услуги.",
-    ukNote: "Зменшення звичайної ціни товару або послуги."
+    ukNote: "Зменшення звичайної ціни товару або послуги.",
     examples: [
       {
         L2: "Wir geben heute zehn Prozent Rabatt.",
@@ -5565,7 +5565,7 @@ window.decks.de_nouns = [
     uk: "гарантія",
     level: "B1",
     topics: ["shopping", "law"],    ruNote: "Право клиента на ремонт или обмен товара в течение определённого срока.",
-    ukNote: "Право клієнта на ремонт або обмін товару протягом певного строку."
+    ukNote: "Право клієнта на ремонт або обмін товару протягом певного строку.",
     examples: [
       {
         L2: "Auf dieses Gerät haben Sie zwei Jahre Garantie.",
@@ -5581,7 +5581,7 @@ window.decks.de_nouns = [
     uk: "сервіс",
     level: "B1",
     topics: ["business", "customer care"],    ruNote: "Обслуживание клиентов до и после покупки.",
-    ukNote: "Обслуговування клієнтів до і після покупки."
+    ukNote: "Обслуговування клієнтів до і після покупки.",
     examples: [
       {
         L2: "Der Kundenservice ist sehr freundlich.",
@@ -5597,7 +5597,7 @@ window.decks.de_nouns = [
     uk: "реклама",
     level: "B1",
     topics: ["marketing", "media"],    ruNote: "Мероприятия для привлечения внимания к товару или услуге.",
-    ukNote: "Дії для привернення уваги до товару або послуги."
+    ukNote: "Дії для привернення уваги до товару або послуги.",
     examples: [
       {
         L2: "Die Werbung läuft im Fernsehen und im Internet.",
@@ -5613,7 +5613,7 @@ window.decks.de_nouns = [
     uk: "бренд",
     level: "B1",
     topics: ["marketing", "shopping"],    ruNote: "Название и образ товара или фирмы на рынке.",
-    ukNote: "Назва й образ товару чи фірми на ринку."
+    ukNote: "Назва й образ товару чи фірми на ринку.",
     examples: [
       {
         L2: "Diese Marke ist sehr bekannt.",
@@ -5629,7 +5629,7 @@ window.decks.de_nouns = [
     uk: "етикетка",
     level: "B1",
     topics: ["shopping", "packaging"],    ruNote: "Наклейка или бирка с информацией о товаре.",
-    ukNote: "Наліпка або бірка з інформацією про товар."
+    ukNote: "Наліпка або бірка з інформацією про товар.",
     examples: [
       {
         L2: "Lies bitte das Etikett vor dem Kauf.",
@@ -5645,7 +5645,7 @@ window.decks.de_nouns = [
     uk: "упаковка",
     level: "B1",
     topics: ["packaging", "environment"],    ruNote: "Материал и форма, в которых находится товар.",
-    ukNote: "Матеріал і форма, в яких знаходиться товар."
+    ukNote: "Матеріал і форма, в яких знаходиться товар.",
     examples: [
       {
         L2: "Die Verpackung ist recycelbar.",
@@ -5661,7 +5661,7 @@ window.decks.de_nouns = [
     uk: "склад",
     level: "B1",
     topics: ["logistics", "business"],    ruNote: "Место, где хранят товары.",
-    ukNote: "Місце, де зберігають товари."
+    ukNote: "Місце, де зберігають товари.",
     examples: [
       {
         L2: "Die Ware liegt noch im Lager.",
@@ -5677,7 +5677,7 @@ window.decks.de_nouns = [
     uk: "відправлення",
     level: "B1",
     topics: ["logistics", "online shopping"],    ruNote: "Процесс отправки товара покупателю.",
-    ukNote: "Процес відправлення товару покупцеві."
+    ukNote: "Процес відправлення товару покупцеві.",
     examples: [
       {
         L2: "Der Versand kann ein paar Tage dauern.",
@@ -5693,7 +5693,7 @@ window.decks.de_nouns = [
     uk: "час поставки",
     level: "B1",
     topics: ["logistics", "online shopping"],    ruNote: "Период от заказа до получения товара.",
-    ukNote: "Період від замовлення до отримання товару."
+    ukNote: "Період від замовлення до отримання товару.",
     examples: [
       {
         L2: "Die Lieferzeit beträgt drei bis fünf Tage.",
@@ -5709,7 +5709,7 @@ window.decks.de_nouns = [
     uk: "крива попиту",
     level: "B2",
     topics: ["economics"],    ruNote: "График зависимости спроса от цены.",
-    ukNote: "Графік залежності попиту від ціни."
+    ukNote: "Графік залежності попиту від ціни.",
     examples: [
       {
         L2: "In der Volkswirtschaftslehre analysiert man die Nachfragekurve.",
@@ -5725,7 +5725,7 @@ window.decks.de_nouns = [
     uk: "конкуренція",
     level: "B2",
     topics: ["economics", "business"],    ruNote: "Состязание фирм или людей за лучший результат или клиентов.",
-    ukNote: "Змагання фірм чи людей за кращий результат або клієнтів."
+    ukNote: "Змагання фірм чи людей за кращий результат або клієнтів.",
     examples: [
       {
         L2: "Der Wettbewerb auf dem Markt ist sehr stark.",
@@ -5741,7 +5741,7 @@ window.decks.de_nouns = [
     uk: "частка ринку",
     level: "B2",
     topics: ["economics", "business"],    ruNote: "Часть общего объёма продаж, которую занимает компания.",
-    ukNote: "Частина загального обсягу продажів, яку займає компанія."
+    ukNote: "Частина загального обсягу продажів, яку займає компанія.",
     examples: [
       {
         L2: "Die Firma hat ihren Marktanteil vergrößert.",
@@ -5757,7 +5757,7 @@ window.decks.de_nouns = [
     uk: "податок",
     level: "B1",
     topics: ["finance", "law"],    ruNote: "Обязательный платёж государству.",
-    ukNote: "Обов’язковий платіж державі."
+    ukNote: "Обов’язковий платіж державі.",
     examples: [
       {
         L2: "Man muss auf sein Einkommen Steuern zahlen.",
@@ -5773,7 +5773,7 @@ window.decks.de_nouns = [
     uk: "бюджет",
     level: "B1",
     topics: ["finance"],    ruNote: "План доходов и расходов на определённый период.",
-    ukNote: "План доходів і витрат на певний період."
+    ukNote: "План доходів і витрат на певний період.",
     examples: [
       {
         L2: "Wir müssen unser Budget gut planen.",
@@ -5789,7 +5789,7 @@ window.decks.de_nouns = [
     uk: "витрата",
     level: "B1",
     topics: ["finance"],    ruNote: "Сумма денег, которая уходит на оплату чего-либо.",
-    ukNote: "Сума грошей, що витрачається на оплату чогось."
+    ukNote: "Сума грошей, що витрачається на оплату чогось.",
     examples: [
       {
         L2: "Die Ausgaben sind dieses Jahr gestiegen.",
@@ -5805,7 +5805,7 @@ window.decks.de_nouns = [
     uk: "дохід",
     level: "B1",
     topics: ["finance"],    ruNote: "Деньги, которые поступают, например от продаж.",
-    ukNote: "Гроші, які надходять, наприклад від продажів."
+    ukNote: "Гроші, які надходять, наприклад від продажів.",
     examples: [
       {
         L2: "Die Einnahmen waren höher als erwartet.",
@@ -5821,7 +5821,7 @@ window.decks.de_nouns = [
     uk: "борги",
     level: "B1",
     topics: ["finance"],    ruNote: "Суммы денег, которые нужно вернуть кредитору.",
-    ukNote: "Суми грошей, які потрібно повернути кредитору."
+    ukNote: "Суми грошей, які потрібно повернути кредитору.",
     examples: [
       {
         L2: "Er hat viele Schulden bei der Bank.",
@@ -5837,7 +5837,7 @@ window.decks.de_nouns = [
     uk: "кредит",
     level: "B1",
     topics: ["finance", "banking"],    ruNote: "Деньги, которые банк выдаёт на определённых условиях.",
-    ukNote: "Гроші, які банк видає на певних умовах."
+    ukNote: "Гроші, які банк видає на певних умовах.",
     examples: [
       {
         L2: "Sie hat einen Kredit für die Wohnung aufgenommen.",
@@ -5853,7 +5853,7 @@ window.decks.de_nouns = [
     uk: "банк",
     level: "A2",
     topics: ["finance", "places"],    ruNote: "Финансовое учреждение для хранения и движения денег.",
-    ukNote: "Фінансова установа для зберігання та руху грошей."
+    ukNote: "Фінансова установа для зберігання та руху грошей.",
     examples: [
       {
         L2: "Ich muss noch zur Bank gehen.",
@@ -5869,7 +5869,7 @@ window.decks.de_nouns = [
     uk: "рахунок",
     level: "A2",
     topics: ["finance", "banking"],    ruNote: "Запись в банке о деньгах клиента.",
-    ukNote: "Запис у банку про гроші клієнта."
+    ukNote: "Запис у банку про гроші клієнта.",
     examples: [
       {
         L2: "Ich habe ein neues Konto eröffnet.",
@@ -5885,7 +5885,7 @@ window.decks.de_nouns = [
     uk: "переказ",
     level: "B1",
     topics: ["finance", "banking"],    ruNote: "Перемещение денег с одного счёта на другой.",
-    ukNote: "Переміщення грошей з одного рахунку на інший."
+    ukNote: "Переміщення грошей з одного рахунку на інший.",
     examples: [
       {
         L2: "Die Überweisung ist noch nicht angekommen.",
@@ -5901,7 +5901,7 @@ window.decks.de_nouns = [
     uk: "готівка",
     level: "A2",
     topics: ["finance"],    ruNote: "Деньги в виде купюр и монет.",
-    ukNote: "Гроші у вигляді купюр і монет."
+    ukNote: "Гроші у вигляді купюр і монет.",
     examples: [
       {
         L2: "Man kann nur mit Bargeld bezahlen.",
@@ -5917,7 +5917,7 @@ window.decks.de_nouns = [
     uk: "картка",
     level: "A2",
     topics: ["finance", "shopping"],    ruNote: "Пластиковая карта для безналичной оплаты.",
-    ukNote: "Пластикова картка для безготівкової оплати."
+    ukNote: "Пластикова картка для безготівкової оплати.",
     examples: [
       {
         L2: "Kann ich mit Karte zahlen?",
@@ -5933,7 +5933,7 @@ window.decks.de_nouns = [
     uk: "автомат",
     level: "A2",
     topics: ["technology", "everyday life"],    ruNote: "Самообслуживающееся устройство, например банкомат или вендинг.",
-    ukNote: "Пристрій самообслуговування, наприклад банкомат чи вендинг."
+    ukNote: "Пристрій самообслуговування, наприклад банкомат чи вендинг.",
     examples: [
       {
         L2: "Der Fahrkartenautomat ist kaputt.",
@@ -5949,7 +5949,7 @@ window.decks.de_nouns = [
     uk: "відсоток",
     level: "B1",
     topics: ["finance", "banking"],    ruNote: "Плата за пользование деньгами (кредит или вклад).",
-    ukNote: "Плата за користування грошима (кредит чи вклад)."
+    ukNote: "Плата за користування грошима (кредит чи вклад).",
     examples: [
       {
         L2: "Die Zinsen sind im Moment sehr niedrig.",
@@ -5965,7 +5965,7 @@ window.decks.de_nouns = [
     uk: "інфляція",
     level: "B2",
     topics: ["economics"],    ruNote: "Общее повышение цен и падение покупательной способности денег.",
-    ukNote: "Загальне зростання цін і падіння купівельної спроможності грошей."
+    ukNote: "Загальне зростання цін і падіння купівельної спроможності грошей.",
     examples: [
       {
         L2: "Die Inflation steigt von Jahr zu Jahr.",
@@ -5981,7 +5981,7 @@ window.decks.de_nouns = [
     uk: "дефляція",
     level: "B2",
     topics: ["economics"],    ruNote: "Общее снижение цен и рост покупательной способности денег.",
-    ukNote: "Загальне зниження цін і зростання купівельної спроможності грошей."
+    ukNote: "Загальне зниження цін і зростання купівельної спроможності грошей.",
     examples: [
       {
         L2: "Anhaltende Deflation kann der Wirtschaft schaden.",
@@ -5997,7 +5997,7 @@ window.decks.de_nouns = [
     uk: "обмінний курс",
     level: "B2",
     topics: ["economics", "travel"],    ruNote: "Соотношение ценности одной валюты к другой.",
-    ukNote: "Співвідношення вартості однієї валюти до іншої."
+    ukNote: "Співвідношення вартості однієї валюти до іншої.",
     examples: [
       {
         L2: "Der Wechselkurs ändert sich täglich.",
@@ -6013,7 +6013,7 @@ window.decks.de_nouns = [
     uk: "валюта",
     level: "B1",
     topics: ["economics", "travel"],    ruNote: "Официальные деньги страны.",
-    ukNote: "Офіційні гроші країни."
+    ukNote: "Офіційні гроші країни.",
     examples: [
       {
         L2: "Der Euro ist die Währung in vielen Ländern Europas.",
@@ -6029,7 +6029,7 @@ window.decks.de_nouns = [
     uk: "біржа",
     level: "B2",
     topics: ["finance", "economics"],    ruNote: "Организованный рынок ценных бумаг и других активов.",
-    ukNote: "Організований ринок цінних паперів та інших активів."
+    ukNote: "Організований ринок цінних паперів та інших активів.",
     examples: [
       {
         L2: "Viele Firmen sind an der Börse notiert.",
@@ -6045,7 +6045,7 @@ window.decks.de_nouns = [
     uk: "акція",
     level: "B2",
     topics: ["finance"],    ruNote: "Ценная бумага, представляющая долю в компании.",
-    ukNote: "Цінний папір, що представляє частку в компанії."
+    ukNote: "Цінний папір, що представляє частку в компанії.",
     examples: [
       {
         L2: "Der Kurs der Aktie ist stark gestiegen.",
@@ -6061,7 +6061,7 @@ window.decks.de_nouns = [
     uk: "частка",
     level: "B1",
     topics: ["finance", "general"],    ruNote: "Определённая часть чего-либо, например компании или прибыли.",
-    ukNote: "Певна частина чогось, наприклад компанії чи прибутку."
+    ukNote: "Певна частина чогось, наприклад компанії чи прибутку.",
     examples: [
       {
         L2: "Er hat einen großen Anteil an der Firma.",
@@ -6077,7 +6077,7 @@ window.decks.de_nouns = [
     uk: "політика",
     level: "B1",
     topics: ["politics", "society"],    ruNote: "Деятельность, связанная с управлением государством и обществом.",
-    ukNote: "Діяльність, пов’язана з управлінням державою та суспільством."
+    ukNote: "Діяльність, пов’язана з управлінням державою та суспільством.",
     examples: [
       {
         L2: "Er interessiert sich sehr für Politik.",
@@ -6093,7 +6093,7 @@ window.decks.de_nouns = [
     uk: "партія",
     level: "B1",
     topics: ["politics"],    ruNote: "Организация с общими политическими целями.",
-    ukNote: "Організація зі спільними політичними цілями."
+    ukNote: "Організація зі спільними політичними цілями.",
     examples: [
       {
         L2: "Welche Partei wirst du wählen?",
@@ -6109,7 +6109,7 @@ window.decks.de_nouns = [
     uk: "виборча кампанія",
     level: "B2",
     topics: ["politics"],    ruNote: "Действия партий и кандидатов перед выборами.",
-    ukNote: "Дії партій та кандидатів перед виборами."
+    ukNote: "Дії партій та кандидатів перед виборами.",
     examples: [
       {
         L2: "Die Wahlkampagne hat viel Geld gekostet.",
@@ -6125,7 +6125,7 @@ window.decks.de_nouns = [
     uk: "парламент",
     level: "B1",
     topics: ["politics"],    ruNote: "Собрание избранных представителей народа.",
-    ukNote: "Зібрання обраних представників народу."
+    ukNote: "Зібрання обраних представників народу.",
     examples: [
       {
         L2: "Das Parlament stimmt über das Gesetz ab.",
@@ -6141,7 +6141,7 @@ window.decks.de_nouns = [
     uk: "демократія",
     level: "B1",
     topics: ["politics", "society"],    ruNote: "Форма правления, при которой народ участвует в принятии решений.",
-    ukNote: "Форма правління, за якої народ бере участь у прийнятті рішень."
+    ukNote: "Форма правління, за якої народ бере участь у прийнятті рішень.",
     examples: [
       {
         L2: "In einer Demokratie gibt es freie Wahlen.",
@@ -6157,7 +6157,7 @@ window.decks.de_nouns = [
     uk: "диктатура",
     level: "B1",
     topics: ["politics"],    ruNote: "Форма правления с очень большой властью одного лица или группы.",
-    ukNote: "Форма правління з дуже великою владою однієї особи або групи."
+    ukNote: "Форма правління з дуже великою владою однієї особи або групи.",
     examples: [
       {
         L2: "In einer Diktatur gibt es keine freien Wahlen.",
@@ -6173,7 +6173,7 @@ window.decks.de_nouns = [
     uk: "кордон",
     level: "A2",
     topics: ["geography", "politics"],    ruNote: "Линия, которая отделяет территории или страны.",
-    ukNote: "Лінія, що відділяє території або країни."
+    ukNote: "Лінія, що відділяє території або країни.",
     examples: [
       {
         L2: "Wir fahren morgen über die Grenze.",
@@ -6189,7 +6189,7 @@ window.decks.de_nouns = [
     uk: "паспорт",
     level: "A2",
     topics: ["documents", "travel"],    ruNote: "Официальный документ, удостоверяющий личность и гражданство.",
-    ukNote: "Офіційний документ, що посвідчує особу та громадянство."
+    ukNote: "Офіційний документ, що посвідчує особу та громадянство.",
     examples: [
       {
         L2: "Vergiss deinen Pass nicht!",
@@ -6205,7 +6205,7 @@ window.decks.de_nouns = [
     uk: "віза",
     level: "B1",
     topics: ["travel", "documents"],    ruNote: "Разрешение на въезд и пребывание в другой стране.",
-    ukNote: "Дозвіл на в’їзд і перебування в іншій країні."
+    ukNote: "Дозвіл на в’їзд і перебування в іншій країні.",
     examples: [
       {
         L2: "Für dieses Land braucht man ein Visum.",
@@ -6221,7 +6221,7 @@ window.decks.de_nouns = [
     uk: "громадянин",
     level: "B1",
     topics: ["society", "law"],    ruNote: "Человек с гражданством определённого государства.",
-    ukNote: "Людина з громадянством певної держави."
+    ukNote: "Людина з громадянством певної держави.",
     examples: [
       {
         L2: "Jeder Bürger hat Rechte und Pflichten.",
@@ -6237,7 +6237,7 @@ window.decks.de_nouns = [
     uk: "громадянка",
     level: "B1",
     topics: ["society", "law"],    ruNote: "Женская форма слова «гражданин».",
-    ukNote: "Жіноча форма слова «громадянин»."
+    ukNote: "Жіноча форма слова «громадянин».",
     examples: [
       {
         L2: "Die Bürgerin stellt einen Antrag beim Amt.",
@@ -6253,7 +6253,7 @@ window.decks.de_nouns = [
     uk: "установа",
     level: "B2",
     topics: ["administration", "law"],    ruNote: "Официальный государственный орган с определёнными задачами.",
-    ukNote: "Офіційний державний орган з певними завданнями."
+    ukNote: "Офіційний державний орган з певними завданнями.",
     examples: [
       {
         L2: "Die Behörde bearbeitet den Antrag.",
@@ -6269,7 +6269,7 @@ window.decks.de_nouns = [
     uk: "формуляр",
     level: "A2",
     topics: ["administration", "documents"],    ruNote: "Стандартный лист с полями для заполнения.",
-    ukNote: "Стандартний лист із полями для заповнення."
+    ukNote: "Стандартний лист із полями для заповнення.",
     examples: [
       {
         L2: "Bitte füllen Sie dieses Formular aus.",
@@ -6285,7 +6285,7 @@ window.decks.de_nouns = [
     uk: "реєстрація",
     level: "A2",
     topics: ["administration", "IT"],    ruNote: "Официальное сообщение о том, что кто-то где-то числится.",
-    ukNote: "Офіційне повідомлення про те, що хтось десь значиться."
+    ukNote: "Офіційне повідомлення про те, що хтось десь значиться.",
     examples: [
       {
         L2: "Die Anmeldung im Rathaus ist verpflichtend.",
@@ -6301,7 +6301,7 @@ window.decks.de_nouns = [
     uk: "зняття з обліку",
     level: "B1",
     topics: ["administration"],    ruNote: "Сообщение о том, что человек больше не зарегистрирован по адресу или в системе.",
-    ukNote: "Повідомлення про те, що людину знято з обліку за адресою чи в системі."
+    ukNote: "Повідомлення про те, що людину знято з обліку за адресою чи в системі.",
     examples: [
       {
         L2: "Die Abmeldung muss rechtzeitig erfolgen.",
@@ -6317,7 +6317,7 @@ window.decks.de_nouns = [
     uk: "дозвіл",
     level: "B1",
     topics: ["law", "administration"],    ruNote: "Официальное согласие что-то сделать.",
-    ukNote: "Офіційна згода щось зробити."
+    ukNote: "Офіційна згода щось зробити.",
     examples: [
       {
         L2: "Für den Bau braucht man eine Genehmigung.",
@@ -6333,7 +6333,7 @@ window.decks.de_nouns = [
     uk: "заява",
     level: "B1",
     topics: ["administration", "law"],    ruNote: "Письменная просьба в официальную инстанцию.",
-    ukNote: "Письмове прохання до офіційної інстанції."
+    ukNote: "Письмове прохання до офіційної інстанції.",
     examples: [
       {
         L2: "Sie hat einen Antrag auf Hilfe gestellt.",
@@ -6349,7 +6349,7 @@ window.decks.de_nouns = [
     uk: "повідомлення",
     level: "B1",
     topics: ["administration"],    ruNote: "Официальная информация о принятом решении.",
-    ukNote: "Офіційна інформація про прийняте рішення."
+    ukNote: "Офіційна інформація про прийняте рішення.",
     examples: [
       {
         L2: "Sie bekommen den Bescheid per Post.",
@@ -6365,7 +6365,7 @@ window.decks.de_nouns = [
     uk: "строк",
     level: "B1",
     topics: ["law", "administration"],    ruNote: "Определённое время, до которого нужно что-то сделать.",
-    ukNote: "Визначений час, до якого потрібно щось зробити."
+    ukNote: "Визначений час, до якого потрібно щось зробити.",
     examples: [
       {
         L2: "Die Frist endet nächste Woche.",
@@ -6381,7 +6381,7 @@ window.decks.de_nouns = [
     uk: "умова",
     level: "B1",
     topics: ["law", "general"],    ruNote: "Требование, от которого зависит выполнение или согласие.",
-    ukNote: "Вимога, від якої залежить виконання або згода."
+    ukNote: "Вимога, від якої залежить виконання або згода.",
     examples: [
       {
         L2: "Unter dieser Bedingung stimme ich zu.",
@@ -6397,7 +6397,7 @@ window.decks.de_nouns = [
     uk: "вид / перспектива",
     level: "B1",
     topics: ["nature", "abstract"],    ruNote: "Может означать и вид из окна, и шансы на будущее.",
-    ukNote: "Може означати і краєвид з вікна, і шанси на майбутнє."
+    ukNote: "Може означати і краєвид з вікна, і шанси на майбутнє.",
     examples: [
       {
         L2: "Die Aussicht aus dem Fenster ist wunderschön.",
@@ -6413,7 +6413,7 @@ window.decks.de_nouns = [
     uk: "досвід",
     level: "B1",
     topics: ["work", "life"],    ruNote: "Знания и умения, полученные на практике.",
-    ukNote: "Знання та вміння, отримані на практиці."
+    ukNote: "Знання та вміння, отримані на практиці.",
     examples: [
       {
         L2: "Er hat viel Erfahrung in diesem Beruf.",
@@ -6429,7 +6429,7 @@ window.decks.de_nouns = [
     uk: "знайомство",
     level: "B1",
     topics: ["people", "communication"],    ruNote: "И сам факт знакомства, и человек, с которым знакомы.",
-    ukNote: "І сам факт знайомства, і людина, з якою знайомі."
+    ukNote: "І сам факт знайомства, і людина, з якою знайомі.",
     examples: [
       {
         L2: "Ich freue mich über unsere Bekanntschaft.",
@@ -6445,7 +6445,7 @@ window.decks.de_nouns = [
     uk: "стосунок / відносини",
     level: "B1",
     topics: ["people", "abstract"],    ruNote: "Часто употребляется во мн. числе для личных или деловых отношений.",
-    ukNote: "Часто вживається у множині для особистих або ділових стосунків."
+    ukNote: "Часто вживається у множині для особистих або ділових стосунків.",
     examples: [
       {
         L2: "Sie haben eine gute Beziehung zueinander.",
@@ -6461,7 +6461,7 @@ window.decks.de_nouns = [
     uk: "зв’язок",
     level: "B1",
     topics: ["technology", "people"],    ruNote: "Может быть техническая (интернет, поезд), личная или логическая связь.",
-    ukNote: "Може бути технічний (інтернет, поїзд), особистий або логічний зв’язок."
+    ukNote: "Може бути технічний (інтернет, поїзд), особистий або логічний зв’язок.",
     examples: [
       {
         L2: "Die Internetverbindung ist heute sehr schlecht.",
@@ -6477,7 +6477,7 @@ window.decks.de_nouns = [
     uk: "догляд / опіка",
     level: "B2",
     topics: ["social", "health"],    ruNote: "Длительный заботливый уход, например за детьми, пациентами, клиентами.",
-    ukNote: "Тривалий турботливий догляд, наприклад за дітьми, пацієнтами, клієнтами."
+    ukNote: "Тривалий турботливий догляд, наприклад за дітьми, пацієнтами, клієнтами.",
     examples: [
       {
         L2: "Die Kinder brauchen eine gute Betreuung.",
@@ -6493,7 +6493,7 @@ window.decks.de_nouns = [
     uk: "консультація",
     level: "B1",
     topics: ["work", "services"],    ruNote: "Профессиональный совет по какому-либо вопросу.",
-    ukNote: "Професійна порада з певного питання."
+    ukNote: "Професійна порада з певного питання.",
     examples: [
       {
         L2: "Die Beratung ist für Sie kostenlos.",
@@ -6509,7 +6509,7 @@ window.decks.de_nouns = [
     uk: "підтримка",
     level: "B1",
     topics: ["social", "work"],    ruNote: "Может быть финансовой, эмоциональной или практической.",
-    ukNote: "Може бути фінансовою, емоційною або практичною."
+    ukNote: "Може бути фінансовою, емоційною або практичною.",
     examples: [
       {
         L2: "Vielen Dank für Ihre Unterstützung.",
@@ -6525,7 +6525,7 @@ window.decks.de_nouns = [
     uk: "дозвіл",
     level: "B1",
     topics: ["law", "everyday life"],    ruNote: "Согласие что-то делать, часто официальное.",
-    ukNote: "Згода щось робити, часто офіційна."
+    ukNote: "Згода щось робити, часто офіційна.",
     examples: [
       {
         L2: "Ich habe die Erlaubnis bekommen, früher zu gehen.",
@@ -6541,7 +6541,7 @@ window.decks.de_nouns = [
     uk: "оповідання",
     level: "B1",
     topics: ["literature", "communication"],    ruNote: "И литературный жанр, и просто подробное устное/письменное описание событий.",
-    ukNote: "І літературний жанр, і просто докладний усний/письмовий опис подій."
+    ukNote: "І літературний жанр, і просто докладний усний/письмовий опис подій.",
     examples: [
       {
         L2: "Die Erzählung war sehr spannend.",
@@ -6557,7 +6557,7 @@ window.decks.de_nouns = [
     uk: "опис",
     level: "B1",
     topics: ["communication"],    ruNote: "Слова, которые объясняют, как что-то выглядит или как оно устроено.",
-    ukNote: "Слова, що пояснюють, як щось виглядає або як воно влаштоване."
+    ukNote: "Слова, що пояснюють, як щось виглядає або як воно влаштоване.",
     examples: [
       {
         L2: "In der Anzeige fehlt eine genaue Beschreibung.",
@@ -6573,7 +6573,7 @@ window.decks.de_nouns = [
     uk: "пояснення",
     level: "B1",
     topics: ["communication", "education"],    ruNote: "Ответ на вопрос «почему?» или «как это работает?».",
-    ukNote: "Відповідь на запитання «чому?» або «як це працює?»."
+    ukNote: "Відповідь на запитання «чому?» або «як це працює?».",
     examples: [
       {
         L2: "Ich brauche eine einfache Erklärung.",
@@ -6589,7 +6589,7 @@ window.decks.de_nouns = [
     uk: "переклад",
     level: "B1",
     topics: ["language"],    ruNote: "Текст или речь, переданные на другом языке.",
-    ukNote: "Текст або мовлення, передані іншою мовою."
+    ukNote: "Текст або мовлення, передані іншою мовою.",
     examples: [
       {
         L2: "Die Übersetzung ist sehr gut gelungen.",
@@ -6605,7 +6605,7 @@ window.decks.de_nouns = [
     uk: "порівняння",
     level: "B1",
     topics: ["abstract"],    ruNote: "Рассмотрение двух или больше вещей, чтобы увидеть сходства и различия.",
-    ukNote: "Розгляд двох або більше речей, щоб побачити подібності й відмінності."
+    ukNote: "Розгляд двох або більше речей, щоб побачити подібності й відмінності.",
     examples: [
       {
         L2: "Im Vergleich zu früher ist es jetzt besser.",
@@ -6621,7 +6621,7 @@ window.decks.de_nouns = [
     uk: "огляд",
     level: "B2",
     topics: ["work", "information"],    ruNote: "Краткое, ясное представление о теме или данных.",
-    ukNote: "Коротке, чітке уявлення про тему або дані."
+    ukNote: "Коротке, чітке уявлення про тему або дані.",
     examples: [
       {
         L2: "Die Tabelle gibt eine gute Übersicht.",
@@ -6637,7 +6637,7 @@ window.decks.de_nouns = [
     uk: "повідомлення",
     level: "B1",
     topics: ["communication"],    ruNote: "Официальное или личное сообщение в письменной или устной форме.",
-    ukNote: "Офіційне або особисте повідомлення в письмовій чи усній формі."
+    ukNote: "Офіційне або особисте повідомлення в письмовій чи усній формі.",
     examples: [
       {
         L2: "Sie bekam eine wichtige Mitteilung per E-Mail.",
@@ -6653,7 +6653,7 @@ window.decks.de_nouns = [
     uk: "новина / повідомлення",
     level: "A2",
     topics: ["communication"],    ruNote: "Короткая информация для кого-то или новость из СМИ.",
-    ukNote: "Коротка інформація для когось або новина зі ЗМІ."
+    ukNote: "Коротка інформація для когось або новина зі ЗМІ.",
     examples: [
       {
         L2: "Ich habe eine gute Nachricht für dich.",
@@ -6669,7 +6669,7 @@ window.decks.de_nouns = [
     uk: "нотатка",
     level: "A2",
     topics: ["writing"],    ruNote: "Короткая запись, чтобы что-то не забыть.",
-    ukNote: "Короткий запис, щоб щось не забути."
+    ukNote: "Короткий запис, щоб щось не забути.",
     examples: [
       {
         L2: "Mach dir eine Notiz in dein Heft.",
@@ -6685,7 +6685,7 @@ window.decks.de_nouns = [
     uk: "оголошення",
     level: "B1",
     topics: ["communication", "events"],    ruNote: "Сообщение о том, что что-то произойдёт в будущем.",
-    ukNote: "Повідомлення про те, що щось відбудеться в майбутньому."
+    ukNote: "Повідомлення про те, що щось відбудеться в майбутньому.",
     examples: [
       {
         L2: "Die Ankündigung der Veranstaltung kam per E-Mail.",
@@ -6701,7 +6701,7 @@ window.decks.de_nouns = [
     uk: "запрошення",
     level: "A2",
     topics: ["social"],    ruNote: "Просьба прийти на праздник, встречу или мероприятие.",
-    ukNote: "Прохання прийти на свято, зустріч чи захід."
+    ukNote: "Прохання прийти на свято, зустріч чи захід.",
     examples: [
       {
         L2: "Danke für die Einladung zur Party.",
@@ -6717,7 +6717,7 @@ window.decks.de_nouns = [
     uk: "згода",
     level: "B1",
     topics: ["law", "communication"],    ruNote: "Положительный ответ или одобрение решения.",
-    ukNote: "Позитивна відповідь або схвалення рішення."
+    ukNote: "Позитивна відповідь або схвалення рішення.",
     examples: [
       {
         L2: "Wir brauchen Ihre Zustimmung.",
@@ -6733,7 +6733,7 @@ window.decks.de_nouns = [
     uk: "відмова",
     level: "B1",
     topics: ["communication"],    ruNote: "Непринятие предложения, просьбы или идеи.",
-    ukNote: "Неприйняття пропозиції, прохання чи ідеї."
+    ukNote: "Неприйняття пропозиції, прохання чи ідеї.",
     examples: [
       {
         L2: "Er bekam eine schriftliche Ablehnung.",
@@ -6749,7 +6749,7 @@ window.decks.de_nouns = [
     uk: "скарга",
     level: "B1",
     topics: ["communication", "law"],    ruNote: "Официальное недовольство чем-то.",
-    ukNote: "Офіційне невдоволення чимось."
+    ukNote: "Офіційне невдоволення чимось.",
     examples: [
       {
         L2: "Er hat eine Beschwerde eingereicht.",
@@ -6765,7 +6765,7 @@ window.decks.de_nouns = [
     uk: "дискусія",
     level: "B1",
     topics: ["communication"],    ruNote: "Обмен мнениями по теме, часто с разными позициями.",
-    ukNote: "Обмін думками з певної теми, часто з різними позиціями."
+    ukNote: "Обмін думками з певної теми, часто з різними позиціями.",
     examples: [
       {
         L2: "Die Diskussion war sehr lebendig.",
@@ -6781,7 +6781,7 @@ window.decks.de_nouns = [
     uk: "дебати",
     level: "B2",
     topics: ["politics", "communication"],    ruNote: "Формальное публичное обсуждение, часто в парламенте или в СМИ.",
-    ukNote: "Формальне публічне обговорення, часто в парламенті або в ЗМІ."
+    ukNote: "Формальне публічне обговорення, часто в парламенті або в ЗМІ.",
     examples: [
       {
         L2: "Im Parlament gab es eine lange Debatte.",
@@ -6797,7 +6797,7 @@ window.decks.de_nouns = [
     uk: "переговори",
     level: "B2",
     topics: ["business", "law"],    ruNote: "Официальные разговоры для достижения соглашения.",
-    ukNote: "Офіційні розмови для досягнення домовленості."
+    ukNote: "Офіційні розмови для досягнення домовленості.",
     examples: [
       {
         L2: "Die Verhandlungen waren erfolgreich.",
@@ -6813,7 +6813,7 @@ window.decks.de_nouns = [
     uk: "угода",
     level: "B1",
     topics: ["business", "law"],    ruNote: "Результат переговоров — то, о чём договорились.",
-    ukNote: "Результат переговорів — те, про що домовилися."
+    ukNote: "Результат переговорів — те, про що домовилися.",
     examples: [
       {
         L2: "Wir haben eine schriftliche Vereinbarung getroffen.",
@@ -6829,7 +6829,7 @@ window.decks.de_nouns = [
     uk: "контрагент",
     level: "B2",
     topics: ["business", "law"],    ruNote: "Лицо или организация, с которыми заключён договор.",
-    ukNote: "Особа або організація, з якою укладено договір."
+    ukNote: "Особа або організація, з якою укладено договір.",
     examples: [
       {
         L2: "Der Vertragspartner ist eine große Firma.",
@@ -6845,7 +6845,7 @@ window.decks.de_nouns = [
     uk: "загроза",
     level: "B2",
     topics: ["security", "abstract"],    ruNote: "Ситуация, в которой что-то или кто-то может причинить вред.",
-    ukNote: "Ситуація, у якій щось або хтось може завдати шкоди."
+    ukNote: "Ситуація, у якій щось або хтось може завдати шкоди.",
     examples: [
       {
         L2: "Der Klimawandel ist eine Bedrohung für die Umwelt.",
@@ -6861,7 +6861,7 @@ window.decks.de_nouns = [
     uk: "передумова",
     level: "B2",
     topics: ["abstract", "education"],    ruNote: "То, без чего что-то невозможно или трудно представить.",
-    ukNote: "Те, без чого щось неможливо або важко уявити."
+    ukNote: "Те, без чого щось неможливо або важко уявити.",
     examples: [
       {
         L2: "Vertrauen ist eine wichtige Voraussetzung für gute Zusammenarbeit.",
@@ -6877,7 +6877,7 @@ window.decks.de_nouns = [
     uk: "умова",
     level: "B2",
     topics: ["work", "education"],    ruNote: "Конкретное требование, которое нужно выполнить (например, для работы или курса).",
-    ukNote: "Конкретна умова, яку треба виконати (наприклад, для роботи чи курсу)."
+    ukNote: "Конкретна умова, яку треба виконати (наприклад, для роботи чи курсу).",
     examples: [
       {
         L2: "Deutschkenntnisse sind eine Voraussetzung für diese Stelle.",
@@ -6893,7 +6893,7 @@ window.decks.de_nouns = [
     uk: "ланцюг умов",
     level: "C1",
     topics: ["abstract"],    ruNote: "Последовательность взаимосвязанных условий, которые зависят друг от друга.",
-    ukNote: "Послідовність взаємопов’язаних умов, які залежать одна від одної."
+    ukNote: "Послідовність взаємопов’язаних умов, які залежать одна від одної.",
     examples: [
       {
         L2: "In komplexen Projekten gibt es oft eine lange Voraussetzungskette.",
@@ -6909,7 +6909,7 @@ window.decks.de_nouns = [
     uk: "звичка",
     level: "B1",
     topics: ["life"],    ruNote: "То, что человек делает регулярно и почти автоматически.",
-    ukNote: "Те, що людина робить регулярно й майже автоматично."
+    ukNote: "Те, що людина робить регулярно й майже автоматично.",
     examples: [
       {
         L2: "Früh aufzustehen ist für ihn eine Gewohnheit.",
@@ -6925,7 +6925,7 @@ window.decks.de_nouns = [
     uk: "здатність",
     level: "B1",
     topics: ["psychology", "work"],    ruNote: "То, что человек может делать благодаря знаниям или талантам.",
-    ukNote: "Те, що людина може робити завдяки знанням або талантам."
+    ukNote: "Те, що людина може робити завдяки знанням або талантам.",
     examples: [
       {
         L2: "Sie hat eine große Fähigkeit zu organisieren.",
@@ -6941,7 +6941,7 @@ window.decks.de_nouns = [
     uk: "навичка",
     level: "B1",
     topics: ["work", "education"],    ruNote: "Практически отработанное умение, которое выполняется уверенно.",
-    ukNote: "Практично відпрацьоване вміння, яке виконується впевнено."
+    ukNote: "Практично відпрацьоване вміння, яке виконується впевнено.",
     examples: [
       {
         L2: "Schreiben auf Deutsch ist eine wichtige Fertigkeit.",
@@ -6957,7 +6957,7 @@ window.decks.de_nouns = [
     uk: "пам’ять / пригадування",
     level: "B1",
     topics: ["psychology"],    ruNote: "И способность помнить, и конкретный образ из прошлого, и напоминание.",
-    ukNote: "І здатність пам’ятати, і конкретний спогад, і нагадування."
+    ukNote: "І здатність пам’ятати, і конкретний спогад, і нагадування.",
     examples: [
       {
         L2: "Dieses Foto weckt schöne Erinnerungen.",
@@ -6973,7 +6973,7 @@ window.decks.de_nouns = [
     uk: "значення",
     level: "B1",
     topics: ["language", "abstract"],    ruNote: "И смысл слова, и важность чего-либо.",
-    ukNote: "І сенс слова, і важливість чогось."
+    ukNote: "І сенс слова, і важливість чогось.",
     examples: [
       {
         L2: "Dieses Wort hat mehrere Bedeutungen.",
@@ -6989,7 +6989,7 @@ window.decks.de_nouns = [
     uk: "рекомендація",
     level: "B1",
     topics: ["communication", "work"],    ruNote: "Совет что-то сделать или выбрать, часто от эксперта.",
-    ukNote: "Порада щось зробити чи обрати, часто від експерта."
+    ukNote: "Порада щось зробити чи обрати, часто від експерта.",
     examples: [
       {
         L2: "Ich gebe dir eine Empfehlung für dieses Restaurant.",
@@ -7005,7 +7005,7 @@ window.decks.de_nouns = [
     uk: "дозвіл",
     level: "B1",
     topics: ["law", "administration"],    ruNote: "Официальное письменное разрешение от власти или учреждения.",
-    ukNote: "Офіційний письмовий дозвіл від влади чи установи."
+    ukNote: "Офіційний письмовий дозвіл від влади чи установи.",
     examples: [
       {
         L2: "Für den Umbau brauchen wir eine Genehmigung.",
@@ -7021,7 +7021,7 @@ window.decks.de_nouns = [
     uk: "санкція / дозвіл",
     level: "B2",
     topics: ["law", "administration"],    ruNote: "Формальное одобрение, часто о выделении денег или права на действие.",
-    ukNote: "Формальне схвалення, часто про виділення коштів або право на дію."
+    ukNote: "Формальне схвалення, часто про виділення коштів або право на дію.",
     examples: [
       {
         L2: "Die Bewilligung der Mittel dauerte lange.",
@@ -7037,7 +7037,7 @@ window.decks.de_nouns = [
     uk: "підказка / натяк",
     level: "B1",
     topics: ["communication"],    ruNote: "Короткая информация, которая помогает что-то понять или найти.",
-    ukNote: "Коротка інформація, що допомагає щось зрозуміти або знайти."
+    ukNote: "Коротка інформація, що допомагає щось зрозуміти або знайти.",
     examples: [
       {
         L2: "Haben Sie einen Hinweis für mich?",
@@ -7053,7 +7053,7 @@ window.decks.de_nouns = [
     uk: "доказ",
     level: "B2",
     topics: ["law", "science"],    ruNote: "Факт или аргумент, который показывает, что что-то правда.",
-    ukNote: "Факт або аргумент, що показує, що щось є правдою."
+    ukNote: "Факт або аргумент, що показує, що щось є правдою.",
     examples: [
       {
         L2: "Dafür gibt es keinen Beweis.",
@@ -7069,7 +7069,7 @@ window.decks.de_nouns = [
     uk: "наслідок / серія",
     level: "B1",
     topics: ["abstract", "media"],    ruNote: "И результат действия, и отдельный выпуск сериала.",
-    ukNote: "І результат дії, і окремий випуск серіалу."
+    ukNote: "І результат дії, і окремий випуск серіалу.",
     examples: [
       {
         L2: "Jede Handlung hat ihre Folgen.",
@@ -7085,7 +7085,7 @@ window.decks.de_nouns = [
     uk: "причина",
     level: "B1",
     topics: ["abstract"],    ruNote: "То, что вызывает какое-то событие или состояние.",
-    ukNote: "Те, що викликає певну подію чи стан."
+    ukNote: "Те, що викликає певну подію чи стан.",
     examples: [
       {
         L2: "Die Ursache des Problems ist noch unbekannt.",
@@ -7101,7 +7101,7 @@ window.decks.de_nouns = [
     uk: "дія / ефект",
     level: "B1",
     topics: ["abstract", "medicine"],    ruNote: "Результат влияния чего-то на что-то.",
-    ukNote: "Результат впливу чогось на щось."
+    ukNote: "Результат впливу чогось на щось.",
     examples: [
       {
         L2: "Das Medikament hat eine schnelle Wirkung.",
@@ -7117,7 +7117,7 @@ window.decks.de_nouns = [
     uk: "контроль",
     level: "B1",
     topics: ["work", "administration"],    ruNote: "Проверка или управление процессами и людьми.",
-    ukNote: "Перевірка або керування процесами й людьми."
+    ukNote: "Перевірка або керування процесами й людьми.",
     examples: [
       {
         L2: "Es gibt regelmäßige Kontrollen in der Firma.",
@@ -7133,7 +7133,7 @@ window.decks.de_nouns = [
     uk: "іспит / перевірка",
     level: "B1",
     topics: ["education", "work"],    ruNote: "Формальная проверка знаний или качества.",
-    ukNote: "Формальна перевірка знань або якості."
+    ukNote: "Формальна перевірка знань або якості.",
     examples: [
       {
         L2: "Ich habe morgen eine wichtige Prüfung.",
@@ -7149,7 +7149,7 @@ window.decks.de_nouns = [
     uk: "іспит",
     level: "B2",
     topics: ["education"],    ruNote: "Обычно письменный экзамен в университете или школе.",
-    ukNote: "Зазвичай письмовий іспит в університеті чи школі."
+    ukNote: "Зазвичай письмовий іспит в університеті чи школі.",
     examples: [
       {
         L2: "Die Klausur dauert 90 Minuten.",
@@ -7165,7 +7165,7 @@ window.decks.de_nouns = [
     uk: "лекція",
     level: "B1",
     topics: ["education"],    ruNote: "Университетское занятие, где преподаватель говорит, а студенты слушают.",
-    ukNote: "Університетське заняття, де викладач говорить, а студенти слухають."
+    ukNote: "Університетське заняття, де викладач говорить, а студенти слухають.",
     examples: [
       {
         L2: "Die Vorlesung beginnt um acht Uhr.",
@@ -7181,7 +7181,7 @@ window.decks.de_nouns = [
     uk: "семінар",
     level: "B1",
     topics: ["education"],    ruNote: "Университетское занятие с активным участием студентов.",
-    ukNote: "Університетське заняття з активною участю студентів."
+    ukNote: "Університетське заняття з активною участю студентів.",
     examples: [
       {
         L2: "Im Seminar diskutieren wir viel.",
@@ -7197,7 +7197,7 @@ window.decks.de_nouns = [
     uk: "практика",
     level: "B1",
     topics: ["work", "education"],    ruNote: "Практическая работа для получения опыта.",
-    ukNote: "Практична робота для отримання досвіду."
+    ukNote: "Практична робота для отримання досвіду.",
     examples: [
       {
         L2: "Sie macht ein Praktikum in einer Firma.",
@@ -7213,7 +7213,7 @@ window.decks.de_nouns = [
     uk: "домашня робота / реферат",
     level: "B1",
     topics: ["education"],    ruNote: "Длинная письменная работа для школы или университета.",
-    ukNote: "Довга письмова робота для школи чи університету."
+    ukNote: "Довга письмова робота для школи чи університету.",
     examples: [
       {
         L2: "Ich muss noch meine Hausarbeit schreiben.",
@@ -7229,7 +7229,7 @@ window.decks.de_nouns = [
     uk: "випускна робота",
     level: "B2",
     topics: ["education"],    ruNote: "Итоговая научная работа в конце учёбы.",
-    ukNote: "Підсумкова наукова робота наприкінці навчання."
+    ukNote: "Підсумкова наукова робота наприкінці навчання.",
     examples: [
       {
         L2: "Er schreibt seine Abschlussarbeit an der Universität.",
@@ -7245,7 +7245,7 @@ window.decks.de_nouns = [
     uk: "заявка / резюме",
     level: "B1",
     topics: ["work"],    ruNote: "Письменное обращение с просьбой принять на работу или учёбу.",
-    ukNote: "Письмове звернення з проханням прийняти на роботу чи навчання."
+    ukNote: "Письмове звернення з проханням прийняти на роботу чи навчання.",
     examples: [
       {
         L2: "Die Bewerbung muss bis Freitag eintreffen.",
@@ -7261,7 +7261,7 @@ window.decks.de_nouns = [
     uk: "співбесіда",
     level: "B1",
     topics: ["work"],    ruNote: "Разговор между кандидатом и работодателем.",
-    ukNote: "Розмова між кандидатом і роботодавцем."
+    ukNote: "Розмова між кандидатом і роботодавцем.",
     examples: [
       {
         L2: "Ich habe morgen ein Vorstellungsgespräch.",
@@ -7277,7 +7277,7 @@ window.decks.de_nouns = [
     uk: "прийом на роботу / налаштування",
     level: "B2",
     topics: ["work", "IT"],    ruNote: "И процесс найма, и параметр в технике или программе.",
-    ukNote: "І процес найму, і параметр у техніці чи програмі."
+    ukNote: "І процес найму, і параметр у техніці чи програмі.",
     examples: [
       {
         L2: "Die Einstellung neuer Mitarbeiter ist geplant.",
@@ -7293,7 +7293,7 @@ window.decks.de_nouns = [
     uk: "підвищення",
     level: "B2",
     topics: ["work"],    ruNote: "Переход на более высокую должность.",
-    ukNote: "Перехід на вищу посаду."
+    ukNote: "Перехід на вищу посаду.",
     examples: [
       {
         L2: "Sie hat eine Beförderung bekommen.",
@@ -7309,7 +7309,7 @@ window.decks.de_nouns = [
     uk: "звільнення",
     level: "B1",
     topics: ["work", "law"],    ruNote: "Окончание трудовых отношений по инициативе работника или фирмы.",
-    ukNote: "Припинення трудових відносин з ініціативи працівника або фірми."
+    ukNote: "Припинення трудових відносин з ініціативи працівника або фірми.",
     examples: [
       {
         L2: "Er hat die Kündigung bekommen.",
@@ -7325,7 +7325,7 @@ window.decks.de_nouns = [
     uk: "резюме",
     level: "B1",
     topics: ["work"],    ruNote: "Документ с информацией об образовании и опыте работы.",
-    ukNote: "Документ з інформацією про освіту та досвід роботи."
+    ukNote: "Документ з інформацією про освіту та досвід роботи.",
     examples: [
       {
         L2: "Bitte schicken Sie uns Ihren Lebenslauf.",
@@ -7341,7 +7341,7 @@ window.decks.de_nouns = [
     uk: "супровідний лист",
     level: "B2",
     topics: ["work"],    ruNote: "Письмо, которое объясняет, почему вы подаётесь на должность.",
-    ukNote: "Лист, у якому пояснюється, чому ви подаєтеся на посаду."
+    ukNote: "Лист, у якому пояснюється, чому ви подаєтеся на посаду.",
     examples: [
       {
         L2: "Ein gutes Anschreiben ist sehr wichtig.",
@@ -7357,7 +7357,7 @@ window.decks.de_nouns = [
     uk: "галузь",
     level: "B1",
     topics: ["economy", "work"],    ruNote: "Область экономики или рынка, например IT-Branche.",
-    ukNote: "Сфера економіки чи ринку, наприклад IT-Branche."
+    ukNote: "Сфера економіки чи ринку, наприклад IT-Branche.",
     examples: [
       {
         L2: "Er arbeitet in der IT-Branche.",
@@ -7373,7 +7373,7 @@ window.decks.de_nouns = [
     uk: "сфера / область",
     level: "B1",
     topics: ["abstract", "work"],    ruNote: "Часть пространства или темы, например Fachbereich.",
-    ukNote: "Частина простору або теми, наприклад Fachbereich."
+    ukNote: "Частина простору або теми, наприклад Fachbereich.",
     examples: [
       {
         L2: "In welchem Bereich arbeiten Sie?",
@@ -7389,7 +7389,7 @@ window.decks.de_nouns = [
     uk: "зміна / шар",
     level: "B1",
     topics: ["work", "nature"],    ruNote: "И рабочая смена, и слой какого-то материала.",
-    ukNote: "І робоча зміна, і шар певного матеріалу."
+    ukNote: "І робоча зміна, і шар певного матеріалу.",
     examples: [
       {
         L2: "Ich arbeite diese Woche in der Nachtschicht.",
@@ -7405,7 +7405,7 @@ window.decks.de_nouns = [
     uk: "керівництво / лінія",
     level: "B2",
     topics: ["work", "technology"],    ruNote: "И руководство коллективом, и техническая линия/кабель.",
-    ukNote: "І керівництво колективом, і технічна лінія/кабель."
+    ukNote: "І керівництво колективом, і технічна лінія/кабель.",
     examples: [
       {
         L2: "Die Leitung des Projekts liegt bei ihm.",
@@ -7421,7 +7421,7 @@ window.decks.de_nouns = [
     uk: "штаб-квартира",
     level: "B2",
     topics: ["business"],    ruNote: "Главный офис организации, откуда всё управляется.",
-    ukNote: "Головний офіс організації, звідки всім керують."
+    ukNote: "Головний офіс організації, звідки всім керують.",
     examples: [
       {
         L2: "Die Zentrale befindet sich in Berlin.",
@@ -7437,7 +7437,7 @@ window.decks.de_nouns = [
     uk: "філія",
     level: "B2",
     topics: ["business"],    ruNote: "Отделение компании в другом месте.",
-    ukNote: "Відділення компанії в іншому місці."
+    ukNote: "Відділення компанії в іншому місці.",
     examples: [
       {
         L2: "Die Firma hat mehrere Zweigstellen im Ausland.",
@@ -7453,7 +7453,7 @@ window.decks.de_nouns = [
     uk: "філія",
     level: "B1",
     topics: ["business"],    ruNote: "Магазин или отделение сети в другом месте.",
-    ukNote: "Магазин або відділення мережі в іншому місці."
+    ukNote: "Магазин або відділення мережі в іншому місці.",
     examples: [
       {
         L2: "Die Bank hat eine Filiale in meiner Stadt.",
@@ -7469,7 +7469,7 @@ window.decks.de_nouns = [
     uk: "папка заявника",
     level: "B2",
     topics: ["work"],    ruNote: "Папка с резюме, письмом и другими документами для заявки.",
-    ukNote: "Папка з резюме, листом та іншими документами для заявки."
+    ukNote: "Папка з резюме, листом та іншими документами для заявки.",
     examples: [
       {
         L2: "Ihre Bewerbungsmappe macht einen guten Eindruck.",
@@ -7485,7 +7485,7 @@ window.decks.de_nouns = [
     uk: "тендер / конкурс",
     level: "B2",
     topics: ["business", "administration"],    ruNote: "Официальный конкурс на заказ, должность или проект.",
-    ukNote: "Офіційний конкурс на замовлення, посаду чи проєкт."
+    ukNote: "Офіційний конкурс на замовлення, посаду чи проєкт.",
     examples: [
       {
         L2: "Die Ausschreibung wurde im Internet veröffentlicht.",
@@ -7501,7 +7501,7 @@ window.decks.de_nouns = [
     uk: "директива",
     level: "B2",
     topics: ["law", "administration"],    ruNote: "Общее правило или указание, по которому нужно действовать.",
-    ukNote: "Загальне правило або вказівка, за якою треба діяти."
+    ukNote: "Загальне правило або вказівка, за якою треба діяти.",
     examples: [
       {
         L2: "Die EU hat neue Richtlinien beschlossen.",
@@ -7517,7 +7517,7 @@ window.decks.de_nouns = [
     uk: "інструкція / припис",
     level: "B2",
     topics: ["law", "work"],    ruNote: "Обязательное правило, которого нужно соблюдать.",
-    ukNote: "Обов’язкове правило, якого треба дотримуватися."
+    ukNote: "Обов’язкове правило, якого треба дотримуватися.",
     examples: [
       {
         L2: "Die Sicherheitsvorschriften müssen eingehalten werden.",
@@ -7533,7 +7533,7 @@ window.decks.de_nouns = [
     uk: "захід",
     level: "B2",
     topics: ["politics", "work"],    ruNote: "Конкретное действие для достижения цели.",
-    ukNote: "Конкретна дія для досягнення мети."
+    ukNote: "Конкретна дія для досягнення мети.",
     examples: [
       {
         L2: "Die Regierung plant neue Maßnahmen.",
@@ -7549,7 +7549,7 @@ window.decks.de_nouns = [
     uk: "втілення / реалізація",
     level: "B2",
     topics: ["work", "projects"],    ruNote: "Практическое выполнение плана или идеи.",
-    ukNote: "Практичне виконання плану чи ідеї."
+    ukNote: "Практичне виконання плану чи ідеї.",
     examples: [
       {
         L2: "Die Umsetzung des Projekts ist schwierig.",
@@ -7565,7 +7565,7 @@ window.decks.de_nouns = [
     uk: "виконання",
     level: "B2",
     topics: ["work", "technical"],    ruNote: "И процесс выполнения, и конкретный вариант изделия.",
-    ukNote: "І процес виконання, і конкретний варіант виробу."
+    ukNote: "І процес виконання, і конкретний варіант виробу.",
     examples: [
       {
         L2: "Die Ausführung war sehr genau.",
@@ -7581,7 +7581,7 @@ window.decks.de_nouns = [
     uk: "обслуговування",
     level: "B2",
     topics: ["technical"],    ruNote: "Регулярные работы, чтобы техника оставалась в хорошем состоянии.",
-    ukNote: "Регулярні роботи, щоб техніка залишалася в доброму стані."
+    ukNote: "Регулярні роботи, щоб техніка залишалася в доброму стані.",
     examples: [
       {
         L2: "Die Maschine braucht regelmäßige Wartung.",
@@ -7597,7 +7597,7 @@ window.decks.de_nouns = [
     uk: "підтримка в справн. стані",
     level: "C1",
     topics: ["technical"],    ruNote: "Все меры, чтобы оборудование оставалось исправным в долгосрочной перспективе.",
-    ukNote: "Усі заходи, щоб обладнання залишалося справним у довгостроковій перспективі."
+    ukNote: "Усі заходи, щоб обладнання залишалося справним у довгостроковій перспективі.",
     examples: [
       {
         L2: "Die Instandhaltung der Anlage ist sehr aufwendig.",
@@ -7613,7 +7613,7 @@ window.decks.de_nouns = [
     uk: "несправність / збій",
     level: "B2",
     topics: ["technical", "communication"],    ruNote: "Нарушение нормальной работы системы или процесса.",
-    ukNote: "Порушення нормальної роботи системи чи процесу."
+    ukNote: "Порушення нормальної роботи системи чи процесу.",
     examples: [
       {
         L2: "Es gibt eine Störung im Netzwerk.",
@@ -7629,7 +7629,7 @@ window.decks.de_nouns = [
     uk: "повідомлення",
     level: "B1",
     topics: ["communication", "IT"],    ruNote: "Короткая информация или сообщение, часто системное.",
-    ukNote: "Коротка інформація або повідомлення, часто системне."
+    ukNote: "Коротка інформація або повідомлення, часто системне.",
     examples: [
       {
         L2: "Auf dem Bildschirm erscheint eine Fehlermeldung.",
@@ -7645,7 +7645,7 @@ window.decks.de_nouns = [
     uk: "довідка / інформація",
     level: "B1",
     topics: ["services"],    ruNote: "Информация, которую дают по запросу.",
-    ukNote: "Інформація, яку надають на запит."
+    ukNote: "Інформація, яку надають на запит.",
     examples: [
       {
         L2: "Die Auskunft am Bahnhof hilft gern weiter.",
@@ -7661,7 +7661,7 @@ window.decks.de_nouns = [
     uk: "зворотний зв’язок",
     level: "B2",
     topics: ["communication"],    ruNote: "Ответ или реакция на информацию, продукт или поведение.",
-    ukNote: "Відповідь або реакція на інформацію, продукт чи поведінку."
+    ukNote: "Відповідь або реакція на інформацію, продукт чи поведінку.",
     examples: [
       {
         L2: "Wir freuen uns über Ihre Rückmeldung.",
@@ -7677,7 +7677,7 @@ window.decks.de_nouns = [
     uk: "список вимог",
     level: "C1",
     topics: ["work", "projects"],    ruNote: "Документ со всеми условиями, которые нужно выполнить.",
-    ukNote: "Документ з усіма вимогами, які потрібно виконати."
+    ukNote: "Документ з усіма вимогами, які потрібно виконати.",
     examples: [
       {
         L2: "Bitte lesen Sie die Voraussetzungsliste sorgfältig.",
@@ -7693,7 +7693,7 @@ window.decks.de_nouns = [
     uk: "термін поставки",
     level: "B2",
     topics: ["logistics", "business"],    ruNote: "Максимальное время, в течение которого товар должен быть доставлен.",
-    ukNote: "Максимальний час, протягом якого товар мають доставити."
+    ukNote: "Максимальний час, протягом якого товар мають доставити.",
     examples: [
       {
         L2: "Die Lieferfrist beträgt zwei Wochen.",
@@ -7709,7 +7709,7 @@ window.decks.de_nouns = [
     uk: "постачальник",
     level: "B1",
     topics: ["business", "logistics"],    ruNote: "Лицо или фирма, которые поставляют товары или услуги.",
-    ukNote: "Особа або фірма, що постачає товари чи послуги."
+    ukNote: "Особа або фірма, що постачає товари чи послуги.",
     examples: [
       {
         L2: "Wir suchen einen neuen Lieferanten.",
@@ -7725,7 +7725,7 @@ window.decks.de_nouns = [
     uk: "виробник",
     level: "B1",
     topics: ["business"],    ruNote: "Фирма, которая производит товары.",
-    ukNote: "Компанія, яка виробляє товари."
+    ukNote: "Компанія, яка виробляє товари.",
     examples: [
       {
         L2: "Der Hersteller gibt zwei Jahre Garantie.",
@@ -7741,7 +7741,7 @@ window.decks.de_nouns = [
     uk: "споживач",
     level: "B1",
     topics: ["economy"],    ruNote: "Человек, который покупает и использует товары и услуги.",
-    ukNote: "Людина, яка купує та використовує товари й послуги."
+    ukNote: "Людина, яка купує та використовує товари й послуги.",
     examples: [
       {
         L2: "Die Rechte der Verbraucher sind wichtig.",
@@ -7757,7 +7757,7 @@ window.decks.de_nouns = [
     uk: "користувач",
     level: "B1",
     topics: ["IT", "services"],    ruNote: "Человек, который пользуется системой, сайтом или услугой.",
-    ukNote: "Людина, яка користується системою, сайтом чи послугою."
+    ukNote: "Людина, яка користується системою, сайтом чи послугою.",
     examples: [
       {
         L2: "Die App hat viele Nutzer.",
@@ -7773,7 +7773,7 @@ window.decks.de_nouns = [
     uk: "цільова аудиторія",
     level: "B2",
     topics: ["marketing"],    ruNote: "Группа людей, для которых предназначен продукт или реклама.",
-    ukNote: "Група людей, для яких призначено продукт або рекламу."
+    ukNote: "Група людей, для яких призначено продукт або рекламу.",
     examples: [
       {
         L2: "Unsere Zielgruppe sind junge Erwachsene.",
@@ -7789,7 +7789,7 @@ window.decks.de_nouns = [
     uk: "повернення",
     level: "B1",
     topics: ["shopping"],    ruNote: "Процесс, когда клиент возвращает товар.",
-    ukNote: "Процес, коли клієнт повертає товар."
+    ukNote: "Процес, коли клієнт повертає товар.",
     examples: [
       {
         L2: "Die Rückgabe ist innerhalb von 14 Tagen möglich.",
@@ -7805,7 +7805,7 @@ window.decks.de_nouns = [
     uk: "обмін",
     level: "B1",
     topics: ["shopping"],    ruNote: "Замена купленного товара на другой.",
-    ukNote: "Заміна купленого товару на інший."
+    ukNote: "Заміна купленого товару на інший.",
     examples: [
       {
         L2: "Der Umtausch ist nur mit Kassenbon möglich.",
@@ -7821,7 +7821,7 @@ window.decks.de_nouns = [
     uk: "гарантія",
     level: "B2",
     topics: ["law", "shopping"],    ruNote: "Юридическая обязанность продавца отвечать за качество товара.",
-    ukNote: "Юридичний обов’язок продавця відповідати за якість товару."
+    ukNote: "Юридичний обов’язок продавця відповідати за якість товару.",
     examples: [
       {
         L2: "Die Gewährleistung beträgt zwei Jahre.",
@@ -7837,7 +7837,7 @@ window.decks.de_nouns = [
     uk: "попередній перегляд",
     level: "B2",
     topics: ["IT", "media"],    ruNote: "Краткий первый взгляд на содержание файла, фильма и т.п.",
-    ukNote: "Короткий перший погляд на вміст файлу, фільму тощо."
+    ukNote: "Короткий перший погляд на вміст файлу, фільму тощо.",
     examples: [
       {
         L2: "Sie können in der Vorschau das Dokument prüfen.",
@@ -7853,7 +7853,7 @@ window.decks.de_nouns = [
     uk: "вигляд / думка",
     level: "B2",
     topics: ["abstract", "IT"],    ruNote: "И собственное мнение, и способ отображения данных на экране.",
-    ukNote: "І власна думка, і спосіб відображення даних на екрані."
+    ukNote: "І власна думка, і спосіб відображення даних на екрані.",
     examples: [
       {
         L2: "Meiner Ansicht nach ist das eine gute Idee.",
@@ -7869,7 +7869,7 @@ window.decks.de_nouns = [
     uk: "зображення / представлення",
     level: "B2",
     topics: ["IT", "art"],    ruNote: "То, как что-то показывают визуально или описывают словами.",
-    ukNote: "Те, як щось показують візуально або описують словами."
+    ukNote: "Те, як щось показують візуально або описують словами.",
     examples: [
       {
         L2: "Die grafische Darstellung hilft beim Verständnis.",
@@ -7885,7 +7885,7 @@ window.decks.de_nouns = [
     uk: "аналіз / оцінка",
     level: "B2",
     topics: ["work", "statistics"],    ruNote: "Тщательный просмотр данных, чтобы сделать выводы.",
-    ukNote: "Уважний перегляд даних, щоб зробити висновки."
+    ukNote: "Уважний перегляд даних, щоб зробити висновки.",
     examples: [
       {
         L2: "Die Auswertung der Ergebnisse dauert noch.",
@@ -7901,7 +7901,7 @@ window.decks.de_nouns = [
     uk: "обчислення",
     level: "B2",
     topics: ["math", "work"],    ruNote: "Процесс вычисления числа или стоимости.",
-    ukNote: "Процес обчислення числа або вартості."
+    ukNote: "Процес обчислення числа або вартості.",
     examples: [
       {
         L2: "Die Berechnung ist noch nicht fertig.",
@@ -7917,7 +7917,7 @@ window.decks.de_nouns = [
     uk: "звіт",
     level: "B1",
     topics: ["work", "media"],    ruNote: "Текст или устное сообщение о событиях или результатах.",
-    ukNote: "Текст або усне повідомлення про події чи результати."
+    ukNote: "Текст або усне повідомлення про події чи результати.",
     examples: [
       {
         L2: "Er schreibt einen Bericht für den Chef.",
@@ -7933,7 +7933,7 @@ window.decks.de_nouns = [
     uk: "статистика",
     level: "B1",
     topics: ["math", "work"],    ruNote: "Собрание числовых данных и наука об их анализе.",
-    ukNote: "Зібрання числових даних і наука про їх аналіз."
+    ukNote: "Зібрання числових даних і наука про їх аналіз.",
     examples: [
       {
         L2: "Laut Statistik steigt die Zahl der Nutzer.",
@@ -7949,7 +7949,7 @@ window.decks.de_nouns = [
     uk: "таблиця",
     level: "A2",
     topics: ["work", "education"],    ruNote: "Структура с рядами и колонками для данных.",
-    ukNote: "Структура з рядками й стовпцями для даних."
+    ukNote: "Структура з рядками й стовпцями для даних.",
     examples: [
       {
         L2: "Die Daten stehen in der Tabelle.",
@@ -7965,7 +7965,7 @@ window.decks.de_nouns = [
     uk: "графіка / діаграма",
     level: "B1",
     topics: ["statistics", "IT"],    ruNote: "Визуальное представление данных или изображение.",
-    ukNote: "Візуальне представлення даних або зображення."
+    ukNote: "Візуальне представлення даних або зображення.",
     examples: [
       {
         L2: "Die Grafik zeigt die Entwicklung der Preise.",
@@ -7981,7 +7981,7 @@ window.decks.de_nouns = [
     uk: "діаграма",
     level: "B1",
     topics: ["statistics"],    ruNote: "Чертёж или график, на котором наглядно показаны числа.",
-    ukNote: "Чертеж або графік, на якому наочно показано числа."
+    ukNote: "Чертеж або графік, на якому наочно показано числа.",
     examples: [
       {
         L2: "Im Diagramm sieht man den Trend deutlich.",
@@ -7997,7 +7997,7 @@ window.decks.de_nouns = [
   uk: "постачальник",
   level: "B2",
   topics: ["it", "internet"],  ruNote: "Компания или человек, который предоставляет услуги или продукт.",
-  ukNote: "Компанія або людина, яка надає послуги чи продукт."
+  ukNote: "Компанія або людина, яка надає послуги чи продукт.",
   examples: [
     {
       L2: "Der Anbieter speichert deine Daten auf sicheren Servern.",
@@ -8014,7 +8014,7 @@ window.decks.de_nouns = [
   uk: "доступ",
   level: "B1",
   topics: ["it", "interface"],  ruNote: "Возможность войти куда-то или использовать что-то.",
-  ukNote: "Можливість увійти кудись або користуватися чимось."
+  ukNote: "Можливість увійти кудись або користуватися чимось.",
   examples: [
     {
       L2: "Ohne Passwort hast du keinen Zugang zum System.",
@@ -8031,7 +8031,7 @@ window.decks.de_nouns = [
   uk: "вхід",
   level: "B1",
   topics: ["it", "interface"],  ruNote: "Процесс входа или регистрации в системе.",
-  ukNote: "Процес входу або реєстрації в системі."
+  ukNote: "Процес входу або реєстрації в системі.",
   examples: [
     {
       L2: "Die Anmeldung auf der Webseite dauert nur eine Minute.",
@@ -8048,7 +8048,7 @@ window.decks.de_nouns = [
   uk: "вихід",
   level: "B1",
   topics: ["it", "interface"],  ruNote: "Выход из системы или отмена регистрации.",
-  ukNote: "Вихід із системи або скасування реєстрації."
+  ukNote: "Вихід із системи або скасування реєстрації.",
   examples: [
     {
       L2: "Vergiss die Abmeldung am öffentlichen Computer nicht.",
@@ -8065,7 +8065,7 @@ window.decks.de_nouns = [
   uk: "пароль",
   level: "A2",
   topics: ["it", "security"],  ruNote: "Секретное слово или комбинация символов для входа.",
-  ukNote: "Секретне слово або комбінація символів для входу."
+  ukNote: "Секретне слово або комбінація символів для входу.",
   examples: [
     {
       L2: "Du solltest dein Passwort regelmäßig ändern.",
@@ -8082,7 +8082,7 @@ window.decks.de_nouns = [
   uk: "ім’я користувача",
   level: "A2",
   topics: ["it", "interface"],  ruNote: "Идентификатор, под которым пользователь входит в систему.",
-  ukNote: "Ідентифікатор, під яким користувач входить у систему."
+  ukNote: "Ідентифікатор, під яким користувач входить у систему.",
   examples: [
     {
       L2: "Der Benutzername darf keine Leerzeichen enthalten.",
@@ -8099,7 +8099,7 @@ window.decks.de_nouns = [
   uk: "налаштування безпеки",
   level: "B2",
   topics: ["it", "security"],  ruNote: "Параметр, который влияет на уровень защиты системы.",
-  ukNote: "Параметр, який впливає на рівень захисту системи."
+  ukNote: "Параметр, який впливає на рівень захисту системи.",
   examples: [
     {
       L2: "Du kannst die Sicherheitseinstellungen im Profil ändern.",
@@ -8116,7 +8116,7 @@ window.decks.de_nouns = [
   uk: "політика конфіденційності",
   level: "B2",
   topics: ["it", "law"],  ruNote: "Правила, по которым обрабатываются и защищаются личные данные.",
-  ukNote: "Правила, за якими обробляють і захищають персональні дані."
+  ukNote: "Правила, за якими обробляють і захищають персональні дані.",
   examples: [
     {
       L2: "Lies die Datenschutzrichtlinie, bevor du zustimmst.",
@@ -8133,7 +8133,7 @@ window.decks.de_nouns = [
   uk: "сесія",
   level: "B2",
   topics: ["it", "meeting"],  ruNote: "Период активной работы пользователя или собрание людей.",
-  ukNote: "Період активної роботи користувача або зібрання людей."
+  ukNote: "Період активної роботи користувача або зібрання людей.",
   examples: [
     {
       L2: "Aus Sicherheitsgründen endet die Sitzung nach 15 Minuten.",
@@ -8150,7 +8150,7 @@ window.decks.de_nouns = [
   uk: "блокування",
   level: "B2",
   topics: ["it", "security"],  ruNote: "Мера, которая не позволяет получить доступ к ресурсу.",
-  ukNote: "Захід, що не дозволяє отримати доступ до ресурсу."
+  ukNote: "Захід, що не дозволяє отримати доступ до ресурсу.",
   examples: [
     {
       L2: "Nach drei falschen Passwörtern kommt eine Sperre.",
@@ -8167,7 +8167,7 @@ window.decks.de_nouns = [
   uk: "дозвіл",
   level: "B2",
   topics: ["it", "security"],  ruNote: "Официальное разрешение или открытие доступа.",
-  ukNote: "Офіційний дозвіл або відкриття доступу."
+  ukNote: "Офіційний дозвіл або відкриття доступу.",
   examples: [
     {
       L2: "Die Freigabe der Datei erfolgt durch den Administrator.",
@@ -8184,7 +8184,7 @@ window.decks.de_nouns = [
   uk: "файл",
   level: "A2",
   topics: ["it", "data"],  ruNote: "Единица информации, сохранённая на компьютере.",
-  ukNote: "Одиниця інформації, збережена на комп’ютері."
+  ukNote: "Одиниця інформації, збережена на комп’ютері.",
   examples: [
     {
       L2: "Speichere die Datei, bevor du das Programm schließt.",
@@ -8201,7 +8201,7 @@ window.decks.de_nouns = [
   uk: "тека",
   level: "A2",
   topics: ["it", "data"],  ruNote: "Место для объединения файлов по теме.",
-  ukNote: "Місце для об’єднання файлів за темою."
+  ukNote: "Місце для об’єднання файлів за темою.",
   examples: [
     {
       L2: "Lege die Bilder in einem neuen Ordner ab.",
@@ -8218,7 +8218,7 @@ window.decks.de_nouns = [
   uk: "довідник",
   level: "B2",
   topics: ["it", "data"],  ruNote: "Структурированный список файлов или данных.",
-  ukNote: "Структурований список файлів або даних."
+  ukNote: "Структурований список файлів або даних.",
   examples: [
     {
       L2: "Alle Dateien liegen im gleichen Verzeichnis.",
@@ -8235,7 +8235,7 @@ window.decks.de_nouns = [
   uk: "резервне копіювання",
   level: "B2",
   topics: ["it", "backup"],  ruNote: "Создание копии данных для защиты от потери.",
-  ukNote: "Створення копії даних для захисту від втрати."
+  ukNote: "Створення копії даних для захисту від втрати.",
   examples: [
     {
       L2: "Die tägliche Sicherung läuft automatisch.",
@@ -8252,7 +8252,7 @@ window.decks.de_nouns = [
   uk: "відновлення",
   level: "B2",
   topics: ["it", "backup"],  ruNote: "Процесс возвращения данных из резервной копии.",
-  ukNote: "Процес повернення даних із резервної копії."
+  ukNote: "Процес повернення даних із резервної копії.",
   examples: [
     {
       L2: "Die Wiederherstellung kann einige Minuten dauern.",
@@ -8269,7 +8269,7 @@ window.decks.de_nouns = [
   uk: "версія",
   level: "B1",
   topics: ["it", "software"],  ruNote: "Определённый выпуск программы или документа.",
-  ukNote: "Певний випуск програми чи документа."
+  ukNote: "Певний випуск програми чи документа.",
   examples: [
     {
       L2: "Welche Version der App verwendest du?",
@@ -8286,7 +8286,7 @@ window.decks.de_nouns = [
   uk: "оновлення",
   level: "B1",
   topics: ["it", "software"],  ruNote: "Процесс установки новой версии или свежих данных.",
-  ukNote: "Процес встановлення нової версії чи свіжих даних."
+  ukNote: "Процес встановлення нової версії чи свіжих даних.",
   examples: [
     {
       L2: "Nach der Aktualisierung läuft das Programm schneller.",
@@ -8303,7 +8303,7 @@ window.decks.de_nouns = [
   uk: "сумісність",
   level: "B2",
   topics: ["it", "software"],  ruNote: "Способность разных систем работать вместе без проблем.",
-  ukNote: "Здатність різних систем працювати разом без проблем."
+  ukNote: "Здатність різних систем працювати разом без проблем.",
   examples: [
     {
       L2: "Die Kompatibilität mit älteren Geräten ist wichtig.",
@@ -8320,7 +8320,7 @@ window.decks.de_nouns = [
   uk: "повідомлення про помилку",
   level: "B1",
   topics: ["it", "error"],  ruNote: "Текст или код, который сообщает о сбое.",
-  ukNote: "Текст або код, який повідомляє про збій."
+  ukNote: "Текст або код, який повідомляє про збій.",
   examples: [
     {
       L2: "Die Fehlermeldung erklärt, was genau schiefgelaufen ist.",
@@ -8337,7 +8337,7 @@ window.decks.de_nouns = [
   uk: "чернетка",
   level: "B1",
   topics: ["design", "writing"],  ruNote: "Предварительный вариант текста или дизайна.",
-  ukNote: "Попередній варіант тексту або дизайну."
+  ukNote: "Попередній варіант тексту або дизайну.",
   examples: [
     {
       L2: "Speichere den Entwurf, bevor du weiterarbeitest.",
@@ -8354,7 +8354,7 @@ window.decks.de_nouns = [
   uk: "шаблон",
   level: "B1",
   topics: ["design", "template"],  ruNote: "Готовая структура, по которой создают новые документы.",
-  ukNote: "Готова структура, за якою створюють нові документи."
+  ukNote: "Готова структура, за якою створюють нові документи.",
   examples: [
     {
       L2: "Du kannst eine Vorlage für neue Projekte verwenden.",
@@ -8371,7 +8371,7 @@ window.decks.de_nouns = [
   uk: "налаштування",
   level: "A2",
   topics: ["it", "interface"],  ruNote: "Изменяемый параметр программы или устройства.",
-  ukNote: "Змінний параметр програми чи пристрою."
+  ukNote: "Змінний параметр програми чи пристрою.",
   examples: [
     {
       L2: "Die Sprache kannst du in den Einstellungen ändern.",
@@ -8388,7 +8388,7 @@ window.decks.de_nouns = [
   uk: "параметр",
   level: "B1",
   topics: ["it", "math"],  ruNote: "Величина, которая определяет поведение системы.",
-  ukNote: "Величина, що визначає поведінку системи."
+  ukNote: "Величина, що визначає поведінку системи.",
   examples: [
     {
       L2: "Ändere den Parameter, um das Ergebnis zu testen.",
@@ -8405,7 +8405,7 @@ window.decks.de_nouns = [
   uk: "опція",
   level: "B1",
   topics: ["it", "interface"],  ruNote: "Возможный выбор в меню или настройках.",
-  ukNote: "Можливий вибір у меню чи налаштуваннях."
+  ukNote: "Можливий вибір у меню чи налаштуваннях.",
   examples: [
     {
       L2: "Du hast die Option, die Funktion zu deaktivieren.",
@@ -8422,7 +8422,7 @@ window.decks.de_nouns = [
   uk: "режим",
   level: "B1",
   topics: ["it", "ui"],  ruNote: "Определённый способ работы системы или интерфейса.",
-  ukNote: "Певний спосіб роботи системи чи інтерфейсу."
+  ukNote: "Певний спосіб роботи системи чи інтерфейсу.",
   examples: [
     {
       L2: "Im Lernmodus sind einige Optionen ausgeblendet.",
@@ -8439,7 +8439,7 @@ window.decks.de_nouns = [
   uk: "налаштування вигляду",
   level: "B2",
   topics: ["ui", "design"],  ruNote: "Настройка, которая влияет на внешний вид интерфейса.",
-  ukNote: "Налаштування, що впливає на зовнішній вигляд інтерфейсу."
+  ukNote: "Налаштування, що впливає на зовнішній вигляд інтерфейсу.",
   examples: [
     {
       L2: "In den Ansichtseinstellungen kannst du die Schriftgröße anpassen.",
@@ -8456,7 +8456,7 @@ window.decks.de_nouns = [
   uk: "інтерфейс",
   level: "B2",
   topics: ["it", "api"],  ruNote: "Граница или способ взаимодействия между системами.",
-  ukNote: "Межа або спосіб взаємодії між системами."
+  ukNote: "Межа або спосіб взаємодії між системами.",
   examples: [
     {
       L2: "Die Schnittstelle verbindet zwei unterschiedliche Systeme.",
@@ -8473,7 +8473,7 @@ window.decks.de_nouns = [
   uk: "розширення",
   level: "B2",
   topics: ["it", "software"],  ruNote: "Дополнительный модуль, который добавляет функции.",
-  ukNote: "Додатковий модуль, що додає функції."
+  ukNote: "Додатковий модуль, що додає функції.",
   examples: [
     {
       L2: "Mit dieser Erweiterung wird der Browser schneller.",
@@ -8490,7 +8490,7 @@ window.decks.de_nouns = [
   uk: "плагін",
   level: "B2",
   topics: ["it", "software"],  ruNote: "Небольшой модуль, который подключается к основной программе.",
-  ukNote: "Невеликий модуль, що підключається до основної програми."
+  ukNote: "Невеликий модуль, що підключається до основної програми.",
   examples: [
     {
       L2: "Das Plugin muss zuerst installiert werden.",
@@ -8507,7 +8507,7 @@ window.decks.de_nouns = [
   uk: "рядок",
   level: "A2",
   topics: ["ui", "table"],  ruNote: "Горизонтальная строка текста или таблицы.",
-  ukNote: "Горизонтальний рядок тексту або таблиці."
+  ukNote: "Горизонтальний рядок тексту або таблиці.",
   examples: [
     {
       L2: "Füge eine neue Zeile in die Tabelle ein.",
@@ -8524,7 +8524,7 @@ window.decks.de_nouns = [
   uk: "стовпчик",
   level: "A2",
   topics: ["ui", "table"],  ruNote: "Вертикальная колонка в таблице.",
-  ukNote: "Вертикальний стовпчик у таблиці."
+  ukNote: "Вертикальний стовпчик у таблиці.",
   examples: [
     {
       L2: "Sortiere die Daten nach dieser Spalte.",
@@ -8541,7 +8541,7 @@ window.decks.de_nouns = [
   uk: "комірка",
   level: "A2",
   topics: ["ui", "table"],  ruNote: "Маленький прямоугольник на пересечении строки и столбца.",
-  ukNote: "Невеликий прямокутник на перетині рядка і стовпчика."
+  ukNote: "Невеликий прямокутник на перетині рядка і стовпчика.",
   examples: [
     {
       L2: "Die Zelle B2 ist noch leer.",
@@ -8558,7 +8558,7 @@ window.decks.de_nouns = [
   uk: "запис",
   level: "B1",
   topics: ["data", "ui"],  ruNote: "Отдельная запись в списке или базе данных.",
-  ukNote: "Окремий запис у списку чи базі даних."
+  ukNote: "Окремий запис у списку чи базі даних.",
   examples: [
     {
       L2: "Jeder Eintrag hat eine eindeutige ID.",
@@ -8575,7 +8575,7 @@ window.decks.de_nouns = [
   uk: "набір даних",
   level: "B2",
   topics: ["data"],  ruNote: "Структурированная единица информации в базе данных.",
-  ukNote: "Структурована одиниця інформації в базі даних."
+  ukNote: "Структурована одиниця інформації в базі даних.",
   examples: [
     {
       L2: "Der Datensatz enthält alle Informationen zum Nutzer.",
@@ -8592,7 +8592,7 @@ window.decks.de_nouns = [
   uk: "збірка",
   level: "B1",
   topics: ["data", "general"],  ruNote: "Группа объектов, объединённых по какому-то признаку.",
-  ukNote: "Група об’єктів, об’єднаних за певною ознакою."
+  ukNote: "Група об’єктів, об’єднаних за певною ознакою.",
   examples: [
     {
       L2: "Er hat eine Sammlung von Lernkarten angelegt.",
@@ -8609,7 +8609,7 @@ window.decks.de_nouns = [
   uk: "віднесення",
   level: "B2",
   topics: ["data", "logic"],  ruNote: "Связь одного элемента с другим.",
-  ukNote: "Зв’язок одного елемента з іншим."
+  ukNote: "Зв’язок одного елемента з іншим.",
   examples: [
     {
       L2: "Die Zuordnung der Felder muss eindeutig sein.",
@@ -8626,7 +8626,7 @@ window.decks.de_nouns = [
   uk: "звірка",
   level: "B2",
   topics: ["data", "quality"],  ruNote: "Проверка и сравнение данных между собой.",
-  ukNote: "Перевірка й порівняння даних між собою."
+  ukNote: "Перевірка й порівняння даних між собою.",
   examples: [
     {
       L2: "Ein regelmäßiger Abgleich verhindert Fehler.",
@@ -8643,7 +8643,7 @@ window.decks.de_nouns = [
   uk: "дедуплікація",
   level: "C1",
   topics: ["data", "quality"],  ruNote: "Процесс удаления повторяющихся записей.",
-  ukNote: "Процес видалення повторюваних записів."
+  ukNote: "Процес видалення повторюваних записів.",
   examples: [
     {
       L2: "Die Deduplizierung reduziert die Größe der Datenbank.",
@@ -8660,7 +8660,7 @@ window.decks.de_nouns = [
   uk: "пріоритизація",
   level: "B2",
   topics: ["management", "learning"],  ruNote: "Определение того, что важно делать в первую очередь.",
-  ukNote: "Визначення того, що важливо робити насамперед."
+  ukNote: "Визначення того, що важливо робити насамперед.",
   examples: [
     {
       L2: "Eine klare Priorisierung hilft beim Lernen.",
@@ -8677,7 +8677,7 @@ window.decks.de_nouns = [
   uk: "послідовність",
   level: "A2",
   topics: ["logic", "learning"],  ruNote: "Определённая последовательность элементов.",
-  ukNote: "Певна послідовність елементів."
+  ukNote: "Певна послідовність елементів.",
   examples: [
     {
       L2: "Du kannst die Reihenfolge der Karten ändern.",
@@ -8694,7 +8694,7 @@ window.decks.de_nouns = [
   uk: "випадковість",
   level: "B2",
   topics: ["statistics", "learning"],  ruNote: "Свойство происходить без предсказуемого порядка.",
-  ukNote: "Властивість відбуватися без передбачуваного порядку."
+  ukNote: "Властивість відбуватися без передбачуваного порядку.",
   examples: [
     {
       L2: "Die Zufälligkeit der Auswahl motiviert viele Nutzer.",
@@ -8711,7 +8711,7 @@ window.decks.de_nouns = [
   uk: "вибір",
   level: "A2",
   topics: ["ui", "learning"],  ruNote: "Действие, когда выбирают один или несколько вариантов.",
-  ukNote: "Дія, коли обирають один або кілька варіантів."
+  ukNote: "Дія, коли обирають один або кілька варіантів.",
   examples: [
     {
       L2: "Die Auswahl der richtigen Übung ist wichtig.",
@@ -8728,7 +8728,7 @@ window.decks.de_nouns = [
   uk: "комбінація",
   level: "A2",
   topics: ["logic", "learning"],  ruNote: "Сочетание нескольких элементов.",
-  ukNote: "Поєднання кількох елементів."
+  ukNote: "Поєднання кількох елементів.",
   examples: [
     {
       L2: "Diese Kombination von Karten ist besonders effektiv.",
@@ -8745,7 +8745,7 @@ window.decks.de_nouns = [
   uk: "варіант",
   level: "A2",
   topics: ["general", "learning"],  ruNote: "Один из нескольких возможных вариантов.",
-  ukNote: "Один із кількох можливих варіантів."
+  ukNote: "Один із кількох можливих варіантів.",
   examples: [
     {
       L2: "Es gibt mehrere Varianten dieser Übung.",
@@ -8762,7 +8762,7 @@ window.decks.de_nouns = [
   uk: "синхронізація",
   level: "B2",
   topics: ["it", "data"],  ruNote: "Процесс выравнивания данных между устройствами.",
-  ukNote: "Процес вирівнювання даних між пристроями."
+  ukNote: "Процес вирівнювання даних між пристроями.",
   examples: [
     {
       L2: "Die Synchronisierung läuft im Hintergrund.",
@@ -8779,7 +8779,7 @@ window.decks.de_nouns = [
   uk: "копія",
   level: "A2",
   topics: ["general", "data"],  ruNote: "Точный дубликат чего-то.",
-  ukNote: "Точний дублікат чогось."
+  ukNote: "Точний дублікат чогось.",
   examples: [
     {
       L2: "Mach eine Kopie der wichtigsten Dateien.",
@@ -8796,7 +8796,7 @@ window.decks.de_nouns = [
   uk: "резервна копія",
   level: "B1",
   topics: ["it", "backup"],  ruNote: "Копия данных специально для восстановления.",
-  ukNote: "Копія даних спеціально для відновлення."
+  ukNote: "Копія даних спеціально для відновлення.",
   examples: [
     {
       L2: "Die Sicherungskopie liegt in der Cloud.",
@@ -8813,7 +8813,7 @@ window.decks.de_nouns = [
   uk: "повтор",
   level: "A2",
   topics: ["learning"],  ruNote: "Снова делать или видеть то же самое.",
-  ukNote: "Знову робити або бачити те саме."
+  ukNote: "Знову робити або бачити те саме.",
   examples: [
     {
       L2: "Regelmäßige Wiederholung hilft beim Behalten.",
@@ -8830,7 +8830,7 @@ window.decks.de_nouns = [
   uk: "рівень складності",
   level: "B1",
   topics: ["learning", "game"],  ruNote: "Показатель, насколько что-то трудно.",
-  ukNote: "Показник того, наскільки щось важко."
+  ukNote: "Показник того, наскільки щось важко.",
   examples: [
     {
       L2: "Du kannst die Schwierigkeitsstufe jederzeit ändern.",
@@ -8847,7 +8847,7 @@ window.decks.de_nouns = [
   uk: "прогрес",
   level: "B1",
   topics: ["learning", "statistics"],  ruNote: "Изменение в лучшую сторону или достигнутый результат.",
-  ukNote: "Зміна на краще або досягнутий результат."
+  ukNote: "Зміна на краще або досягнутий результат.",
   examples: [
     {
       L2: "Dein Lernfortschritt wird in Prozent angezeigt.",
@@ -8864,7 +8864,7 @@ window.decks.de_nouns = [
   uk: "регрес",
   level: "B2",
   topics: ["learning"],  ruNote: "Ухудшение результатов по сравнению с прошлым.",
-  ukNote: "Погіршення результатів порівняно з минулим."
+  ukNote: "Погіршення результатів порівняно з минулим.",
   examples: [
     {
       L2: "Nach einer Pause kann ein kleiner Rückschritt passieren.",
@@ -8881,7 +8881,7 @@ window.decks.de_nouns = [
   uk: "проміжний стан",
   level: "B2",
   topics: ["statistics", "learning"],  ruNote: "Текущий результат на определённом этапе.",
-  ukNote: "Поточний результат на певному етапі."
+  ukNote: "Поточний результат на певному етапі.",
   examples: [
     {
       L2: "Das Dashboard zeigt dir den aktuellen Zwischenstand.",
@@ -8898,7 +8898,7 @@ window.decks.de_nouns = [
   uk: "показник",
   level: "B2",
   topics: ["statistics", "business"],  ruNote: "Число, по которому оценивают ситуацию или результат.",
-  ukNote: "Число, за яким оцінюють ситуацію чи результат."
+  ukNote: "Число, за яким оцінюють ситуацію чи результат.",
   examples: [
     {
       L2: "Die wichtigste Kennzahl ist hier die Erfolgsrate.",
@@ -8915,7 +8915,7 @@ window.decks.de_nouns = [
   uk: "лічильник",
   level: "B1",
   topics: ["statistics", "ui"],  ruNote: "Устройство или поле, которое считает количество.",
-  ukNote: "Пристрій або поле, що рахує кількість."
+  ukNote: "Пристрій або поле, що рахує кількість.",
   examples: [
     {
       L2: "Der Zähler zeigt dir die gelösten Aufgaben.",
@@ -8932,7 +8932,7 @@ window.decks.de_nouns = [
   uk: "оцінка",
   level: "B1",
   topics: ["learning", "feedback"],  ruNote: "Результат или мнение о качестве чего-то.",
-  ukNote: "Результат або думка про якість чогось."
+  ukNote: "Результат або думка про якість чогось.",
   examples: [
     {
       L2: "Du kannst dem Kurs eine Bewertung geben.",
@@ -8949,7 +8949,7 @@ window.decks.de_nouns = [
   uk: "нагорода",
   level: "A2",
   topics: ["learning", "gamification"],  ruNote: "Что-то приятное за выполненную работу.",
-  ukNote: "Щось приємне за виконану роботу."
+  ukNote: "Щось приємне за виконану роботу.",
   examples: [
     {
       L2: "Als Belohnung bekommst du ein Abzeichen.",
@@ -8966,7 +8966,7 @@ window.decks.de_nouns = [
   uk: "покарання",
   level: "B1",
   topics: ["learning", "law"],  ruNote: "Неприятное последствие за нарушение правила.",
-  ukNote: "Неприємний наслідок за порушення правила."
+  ukNote: "Неприємний наслідок за порушення правила.",
   examples: [
     {
       L2: "In der App gibt es keine Strafe für Fehler.",
@@ -8983,7 +8983,7 @@ window.decks.de_nouns = [
   uk: "картотека нагадувань",
   level: "B2",
   topics: ["learning", "ui"],  ruNote: "Собрание карточек или записей для напоминаний.",
-  ukNote: "Збірка карток чи записів для нагадувань."
+  ukNote: "Збірка карток чи записів для нагадувань.",
   examples: [
     {
       L2: "Die Erinnerungskartei zeigt dir, was du heute wiederholen sollst.",
@@ -9000,7 +9000,7 @@ window.decks.de_nouns = [
   uk: "успіхи в навчанні",
   level: "B1",
   topics: ["learning"],  ruNote: "То, насколько далеко человек продвинулся в обучении.",
-  ukNote: "Наскільки далеко людина просунулася в навчанні."
+  ukNote: "Наскільки далеко людина просунулася в навчанні.",
   examples: [
     {
       L2: "Dein Lernfortschritt wird grafisch dargestellt.",
@@ -9017,7 +9017,7 @@ window.decks.de_nouns = [
   uk: "список улюбленого",
   level: "B1",
   topics: ["ui", "favorites"],  ruNote: "Список объектов, отмеченных как любимые.",
-  ukNote: "Список об’єктів, позначених як улюблені."
+  ukNote: "Список об’єктів, позначених як улюблені.",
   examples: [
     {
       L2: "Du kannst jede Karte zur Lieblingsliste hinzufügen.",
@@ -9034,7 +9034,7 @@ window.decks.de_nouns = [
   uk: "позначка обраного",
   level: "B1",
   topics: ["ui", "favorites"],  ruNote: "Знак, показывающий, что элемент добавлен в избранное.",
-  ukNote: "Знак, який показує, що елемент додано в обране."
+  ukNote: "Знак, який показує, що елемент додано в обране.",
   examples: [
     {
       L2: "Ein Klick auf das Favoritenzeichen speichert die Karte.",
@@ -9051,7 +9051,7 @@ window.decks.de_nouns = [
   uk: "символ серця",
   level: "A2",
   topics: ["ui", "favorites"],  ruNote: "Значок в форме сердца, часто означает «нравится».",
-  ukNote: "Значок у формі серця, часто означає «подобається»."
+  ukNote: "Значок у формі серця, часто означає «подобається».",
   examples: [
     {
       L2: "Mit dem Herzsymbol kannst du Inhalte liken.",
@@ -9068,7 +9068,7 @@ window.decks.de_nouns = [
   uk: "позначка",
   level: "B1",
   topics: ["ui"],  ruNote: "Отметка или выделение чего-то важного.",
-  ukNote: "Позначка або виділення чогось важливого."
+  ukNote: "Позначка або виділення чогось важливого.",
   examples: [
     {
       L2: "Die Markierung hilft dir, wichtige Karten schneller zu finden.",
@@ -9085,7 +9085,7 @@ window.decks.de_nouns = [
   uk: "деактивація",
   level: "B2",
   topics: ["ui", "it"],  ruNote: "Выключение функции или аккаунта.",
-  ukNote: "Вимкнення функції чи акаунта."
+  ukNote: "Вимкнення функції чи акаунта.",
   examples: [
     {
       L2: "Die Deaktivierung der Option ist jederzeit möglich.",
@@ -9102,7 +9102,7 @@ window.decks.de_nouns = [
   uk: "активація",
   level: "B2",
   topics: ["ui", "it"],  ruNote: "Включение функции или аккаунта.",
-  ukNote: "Увімкнення функції чи акаунта."
+  ukNote: "Увімкнення функції чи акаунта.",
   examples: [
     {
       L2: "Zur Aktivierung musst du den Link anklicken.",
@@ -9119,7 +9119,7 @@ window.decks.de_nouns = [
   uk: "повзунок",
   level: "B1",
   topics: ["ui"],  ruNote: "Элемент управления, который двигают мышью или пальцем.",
-  ukNote: "Елемент керування, який рухають мишкою або пальцем."
+  ukNote: "Елемент керування, який рухають мишкою або пальцем.",
   examples: [
     {
       L2: "Mit dem Schieberegler stellst du die Lautstärke ein.",
@@ -9136,7 +9136,7 @@ window.decks.de_nouns = [
   uk: "перемикач",
   level: "A2",
   topics: ["ui", "hardware"],  ruNote: "Маленький элемент, который включает или выключает что-то.",
-  ukNote: "Невеликий елемент, що вмикає або вимикає щось."
+  ukNote: "Невеликий елемент, що вмикає або вимикає щось.",
   examples: [
     {
       L2: "Der Schalter für den Dunkelmodus ist oben rechts.",
@@ -9153,7 +9153,7 @@ window.decks.de_nouns = [
   uk: "кнопка",
   level: "A2",
   topics: ["ui"],  ruNote: "Область на экране, по которой можно нажать.",
-  ukNote: "Область на екрані, по якій можна натиснути."
+  ukNote: "Область на екрані, по якій можна натиснути.",
   examples: [
     {
       L2: "Klicke auf die Schaltfläche, um fortzufahren.",
@@ -9170,7 +9170,7 @@ window.decks.de_nouns = [
   uk: "кнопка OK",
   level: "A2",
   topics: ["ui"],  ruNote: "Кнопка для подтверждения действия.",
-  ukNote: "Кнопка для підтвердження дії."
+  ukNote: "Кнопка для підтвердження дії.",
   examples: [
     {
       L2: "Bestätige die Auswahl mit der Schaltfläche OK.",
@@ -9187,7 +9187,7 @@ window.decks.de_nouns = [
   uk: "інтерфейс",
   level: "B1",
   topics: ["ui", "design"],  ruNote: "Видимая часть программы, с которой работает пользователь.",
-  ukNote: "Видима частина програми, з якою працює користувач."
+  ukNote: "Видима частина програми, з якою працює користувач.",
   examples: [
     {
       L2: "Die Oberfläche ist klar und übersichtlich.",
@@ -9204,7 +9204,7 @@ window.decks.de_nouns = [
   uk: "макет",
   level: "B1",
   topics: ["design", "ui"],  ruNote: "Расположение элементов на странице или экране.",
-  ukNote: "Розташування елементів на сторінці чи екрані."
+  ukNote: "Розташування елементів на сторінці чи екрані.",
   examples: [
     {
       L2: "Das Layout passt sich an kleinere Bildschirme an.",
@@ -9221,7 +9221,7 @@ window.decks.de_nouns = [
   uk: "вирівнювання",
   level: "B1",
   topics: ["design", "ui"],  ruNote: "То, как элементы ориентированы относительно края.",
-  ukNote: "Те, як елементи орієнтовані відносно краю."
+  ukNote: "Те, як елементи орієнтовані відносно краю.",
   examples: [
     {
       L2: "Stelle die Ausrichtung des Textes auf zentriert.",
@@ -9238,7 +9238,7 @@ window.decks.de_nouns = [
   uk: "відступ",
   level: "B1",
   topics: ["design", "ui"],  ruNote: "Расстояние между элементами.",
-  ukNote: "Відстань між елементами."
+  ukNote: "Відстань між елементами.",
   examples: [
     {
       L2: "Der Abstand zwischen den Zeilen ist zu klein.",
@@ -9255,7 +9255,7 @@ window.decks.de_nouns = [
   uk: "поле",
   level: "B1",
   topics: ["design", "ui"],  ruNote: "Свободное пространство по краю страницы или блока.",
-  ukNote: "Вільний простір по краю сторінки або блока."
+  ukNote: "Вільний простір по краю сторінки або блока.",
   examples: [
     {
       L2: "Lass einen kleinen Rand um den Text.",
@@ -9272,7 +9272,7 @@ window.decks.de_nouns = [
   uk: "ширина",
   level: "A2",
   topics: ["design", "ui"],  ruNote: "Размер объекта по горизонтали.",
-  ukNote: "Розмір об’єкта по горизонталі."
+  ukNote: "Розмір об’єкта по горизонталі.",
   examples: [
     {
       L2: "Du kannst die Breite des Fensters anpassen.",
@@ -9289,7 +9289,7 @@ window.decks.de_nouns = [
   uk: "висота",
   level: "A2",
   topics: ["design", "ui"],  ruNote: "Размер объекта по вертикали.",
-  ukNote: "Розмір об’єкта по вертикалі."
+  ukNote: "Розмір об’єкта по вертикалі.",
   examples: [
     {
       L2: "Die Höhe der Karte wird automatisch berechnet.",
@@ -9306,7 +9306,7 @@ window.decks.de_nouns = [
   uk: "масштабування",
   level: "B2",
   topics: ["design", "ui"],  ruNote: "Изменение размера объекта при сохранении пропорций.",
-  ukNote: "Зміна розміру об’єкта зі збереженням пропорцій."
+  ukNote: "Зміна розміру об’єкта зі збереженням пропорцій.",
   examples: [
     {
       L2: "Die Skalierung passt sich der Bildschirmgröße an.",
@@ -9323,7 +9323,7 @@ window.decks.de_nouns = [
   uk: "шрифт",
   level: "A2",
   topics: ["design", "typography"],  ruNote: "Конкретный стиль написания букв.",
-  ukNote: "Конкретний стиль написання літер."
+  ukNote: "Конкретний стиль написання літер.",
   examples: [
     {
       L2: "Wähle eine gut lesbare Schrifttype.",
@@ -9340,7 +9340,7 @@ window.decks.de_nouns = [
   uk: "читабельність",
   level: "B2",
   topics: ["design", "typography"],  ruNote: "То, насколько легко можно читать текст.",
-  ukNote: "Те, наскільки легко можна читати текст."
+  ukNote: "Те, наскільки легко можна читати текст.",
   examples: [
     {
       L2: "Kontrast und Schriftgröße beeinflussen die Lesbarkeit.",
@@ -9357,7 +9357,7 @@ window.decks.de_nouns = [
   uk: "підказка",
   level: "B1",
   topics: ["ui"],  ruNote: "Короткий текст, который объясняет поле или функцию.",
-  ukNote: "Короткий текст, що пояснює поле чи функцію."
+  ukNote: "Короткий текст, що пояснює поле чи функцію.",
   examples: [
     {
       L2: "Der Hinweistext erscheint, wenn du mit der Maus darüber fährst.",
@@ -9374,7 +9374,7 @@ window.decks.de_nouns = [
   uk: "відмовостійкість",
   level: "C1",
   topics: ["it", "quality"],  ruNote: "Способность системы продолжать работу при ошибках.",
-  ukNote: "Здатність системи продовжувати роботу під час відмов."
+  ukNote: "Здатність системи продовжувати роботу під час відмов.",
   examples: [
     {
       L2: "Hohe Fehlertoleranz ist bei Lernsystemen sehr wichtig.",
@@ -9391,7 +9391,7 @@ window.decks.de_nouns = [
   uk: "повторне використання",
   level: "C1",
   topics: ["it", "architecture"],  ruNote: "Свойство компонента быть полезным в разных местах.",
-  ukNote: "Властивість компонента бути корисним у різних місцях."
+  ukNote: "Властивість компонента бути корисним у різних місцях.",
   examples: [
     {
       L2: "Wiederverwendbarkeit spart Zeit bei der Entwicklung.",
@@ -9408,7 +9408,7 @@ window.decks.de_nouns = [
   uk: "розширюваність",
   level: "C1",
   topics: ["it", "architecture"],  ruNote: "Насколько легко в систему добавлять новые функции.",
-  ukNote: "Наскільки легко додавати в систему нові функції."
+  ukNote: "Наскільки легко додавати в систему нові функції.",
   examples: [
     {
       L2: "Eine gute Architektur erhöht die Erweiterbarkeit.",
@@ -9425,7 +9425,7 @@ window.decks.de_nouns = [
   uk: "підтримуваність",
   level: "C1",
   topics: ["it", "architecture"],  ruNote: "То, насколько просто систему исправлять и улучшать.",
-  ukNote: "Те, наскільки просто систему виправляти й покращувати."
+  ukNote: "Те, наскільки просто систему виправляти й покращувати.",
   examples: [
     {
       L2: "Klare Struktur erhöht die Wartbarkeit des Codes.",
@@ -9442,7 +9442,7 @@ window.decks.de_nouns = [
   uk: "стабільність",
   level: "B2",
   topics: ["it", "quality"],  ruNote: "Насколько редко система падает или зависает.",
-  ukNote: "Наскільки рідко система падає чи зависає."
+  ukNote: "Наскільки рідко система падає чи зависає.",
   examples: [
     {
       L2: "Nach dem Update hat sich die Stabilität verbessert.",
@@ -9459,7 +9459,7 @@ window.decks.de_nouns = [
   uk: "надійність",
   level: "B2",
   topics: ["it", "quality"],  ruNote: "Свойство системы работать предсказуемо и без сбоев.",
-  ukNote: "Властивість системи працювати передбачувано й без збоїв."
+  ukNote: "Властивість системи працювати передбачувано й без збоїв.",
   examples: [
     {
       L2: "Zuverlässigkeit ist für Lerndaten besonders wichtig.",
@@ -9476,7 +9476,7 @@ window.decks.de_nouns = [
   uk: "продуктивність",
   level: "B2",
   topics: ["it", "performance"],  ruNote: "То, насколько быстро и эффективно работает система.",
-  ukNote: "Те, наскільки швидко й ефективно працює система."
+  ukNote: "Те, наскільки швидко й ефективно працює система.",
   examples: [
     {
       L2: "Viele Nutzer gleichzeitig können die Leistung beeinflussen.",
@@ -9493,7 +9493,7 @@ window.decks.de_nouns = [
   uk: "вузьке місце",
   level: "B2",
   topics: ["performance", "management"],  ruNote: "Самая медленная часть системы, которая ограничивает скорость.",
-  ukNote: "Найповільніша частина системи, що обмежує швидкість."
+  ukNote: "Найповільніша частина системи, що обмежує швидкість.",
   examples: [
     {
       L2: "Die Datenbank ist hier der größte Engpass.",
@@ -9510,7 +9510,7 @@ window.decks.de_nouns = [
   uk: "тест-кейс",
   level: "B2",
   topics: ["testing"],  ruNote: "Описанная ситуация, по которой проверяют систему.",
-  ukNote: "Описана ситуація, за якою перевіряють систему."
+  ukNote: "Описана ситуація, за якою перевіряють систему.",
   examples: [
     {
       L2: "Jeder Testfall beschreibt Eingaben und erwartete Ausgaben.",
@@ -9527,7 +9527,7 @@ window.decks.de_nouns = [
   uk: "покриття",
   level: "B2",
   topics: ["testing", "statistics"],  ruNote: "Доля системы, которая проверена тестами.",
-  ukNote: "Частка системи, яку перевірили тестами."
+  ukNote: "Частка системи, яку перевірили тестами.",
   examples: [
     {
       L2: "Wir wollen eine höhere Testabdeckung erreichen.",
@@ -9544,7 +9544,7 @@ window.decks.de_nouns = [
   uk: "забезпечення",
   level: "B2",
   topics: ["management", "quality"],  ruNote: "Действия, чтобы что-то точно произошло.",
-  ukNote: "Дії, щоб щось точно відбулося."
+  ukNote: "Дії, щоб щось точно відбулося.",
   examples: [
     {
       L2: "Die Sicherstellung der Qualität hat Priorität.",
@@ -9561,7 +9561,7 @@ window.decks.de_nouns = [
   uk: "дотримання",
   level: "B2",
   topics: ["management", "law"],  ruNote: "То, что все действуют по правилам или плану.",
-  ukNote: "Те, що всі діють за правилами чи планом."
+  ukNote: "Те, що всі діють за правилами чи планом.",
   examples: [
     {
       L2: "Die Einhaltung der Vorgaben wird regelmäßig geprüft.",
@@ -9578,7 +9578,7 @@ window.decks.de_nouns = [
   uk: "вимога",
   level: "B2",
   topics: ["management", "spec"],  ruNote: "Официальное правило или целевой параметр.",
-  ukNote: "Офіційне правило або цільовий параметр."
+  ukNote: "Офіційне правило або цільовий параметр.",
   examples: [
     {
       L2: "Die Vorgaben sind in der Spezifikation dokumentiert.",
@@ -9595,7 +9595,7 @@ window.decks.de_nouns = [
   uk: "відхилення",
   level: "B2",
   topics: ["quality", "statistics"],  ruNote: "Разница между фактом и планом или нормой.",
-  ukNote: "Різниця між фактом і планом чи нормою."
+  ukNote: "Різниця між фактом і планом чи нормою.",
   examples: [
     {
       L2: "Jede Abweichung von der Vorgabe wird dokumentiert.",
@@ -9612,7 +9612,7 @@ window.decks.de_nouns = [
   uk: "виправлення",
   level: "B1",
   topics: ["quality", "editing"],  ruNote: "Исправление ошибки или неточности.",
-  ukNote: "Виправлення помилки чи неточності."
+  ukNote: "Виправлення помилки чи неточності.",
   examples: [
     {
       L2: "Nach der Korrektur ist der Text fehlerfrei.",
@@ -9629,7 +9629,7 @@ window.decks.de_nouns = [
   uk: "рівень допуску",
   level: "C1",
   topics: ["management", "release"],  ruNote: "Уровень, на котором решение считается окончательно одобренным.",
-  ukNote: "Рівень, на якому рішення вважають остаточно затвердженим."
+  ukNote: "Рівень, на якому рішення вважають остаточно затвердженим.",
   examples: [
     {
       L2: "Das Dokument hat noch nicht die letzte Freigabestufe erreicht.",
@@ -9646,7 +9646,7 @@ window.decks.de_nouns = [
   uk: "версіонування",
   level: "C1",
   topics: ["it", "versioning"],  ruNote: "Система отслеживания изменений по версиям.",
-  ukNote: "Система відстеження змін за версіями."
+  ukNote: "Система відстеження змін за версіями.",
   examples: [
     {
       L2: "Dank der Versionierung kannst du alte Stände wiederherstellen.",
@@ -9663,7 +9663,7 @@ window.decks.de_nouns = [
   uk: "зміна схеми",
   level: "C1",
   topics: ["it", "database"],  ruNote: "Изменение структуры базы данных или модели.",
-  ukNote: "Зміна структури бази даних чи моделі."
+  ukNote: "Зміна структури бази даних чи моделі.",
   examples: [
     {
       L2: "Jede Schemaänderung muss gut geplant werden.",
@@ -9680,7 +9680,7 @@ window.decks.de_nouns = [
   uk: "зворотна сумісність",
   level: "C1",
   topics: ["it", "software"],  ruNote: "Свойство новой версии работать с старыми данными или интерфейсами.",
-  ukNote: "Властивість нової версії працювати зі старими даними чи інтерфейсами."
+  ukNote: "Властивість нової версії працювати зі старими даними чи інтерфейсами.",
   examples: [
     {
       L2: "Rückwärtskompatibilität ist für bestehende Nutzer entscheidend.",
@@ -9697,7 +9697,7 @@ window.decks.de_nouns = [
   uk: "тіло",
   level: "A2",
   topics: ["general", "health"],  ruNote: "Физическое тело человека или предмета.",
-  ukNote: "Фізичне тіло людини чи предмета."
+  ukNote: "Фізичне тіло людини чи предмета.",
   examples: [
     {
       L2: "Der Körper braucht regelmäßig Bewegung.",
@@ -9713,7 +9713,7 @@ window.decks.de_nouns = [
   uk: "голова",
   level: "A1",
   topics: ["body"],  ruNote: "Верхняя часть тела с мозгом, глазами и ртом.",
-  ukNote: "Верхня частина тіла з мозком, очима та ротом."
+  ukNote: "Верхня частина тіла з мозком, очима та ротом.",
   examples: [
     {
       L2: "Ich habe Kopfschmerzen.",
@@ -9730,7 +9730,7 @@ window.decks.de_nouns = [
   uk: "обличчя",
   level: "A1",
   topics: ["body"],  ruNote: "Передняя часть головы с глазами, носом и ртом.",
-  ukNote: "Передня частина голови з очима, носом і ротом."
+  ukNote: "Передня частина голови з очима, носом і ротом.",
   examples: [
     {
       L2: "Sie hat ein freundliches Gesicht.",
@@ -9747,7 +9747,7 @@ window.decks.de_nouns = [
   uk: "око",
   level: "A1",
   topics: ["body"],  ruNote: "Орган зрения, которым мы видим.",
-  ukNote: "Орган зору, яким ми бачимо."
+  ukNote: "Орган зору, яким ми бачимо.",
   examples: [
     {
       L2: "Mit diesem Auge sehe ich schlechter.",
@@ -9764,7 +9764,7 @@ window.decks.de_nouns = [
   uk: "вухо",
   level: "A1",
   topics: ["body"],  ruNote: "Орган слуха по бокам головы.",
-  ukNote: "Орган слуху з боків голови."
+  ukNote: "Орган слуху з боків голови.",
   examples: [
     {
       L2: "Er hat Schmerzen am rechten Ohr.",
@@ -9781,7 +9781,7 @@ window.decks.de_nouns = [
   uk: "ніс",
   level: "A1",
   topics: ["body"],  ruNote: "Часть лица, которой мы дышим и чувствуем запахи.",
-  ukNote: "Частина обличчя, якою ми дихаємо й відчуваємо запахи."
+  ukNote: "Частина обличчя, якою ми дихаємо й відчуваємо запахи.",
   examples: [
     {
       L2: "Meine Nase ist verstopft.",
@@ -9798,7 +9798,7 @@ window.decks.de_nouns = [
   uk: "рот",
   level: "A1",
   topics: ["body"],  ruNote: "Часть лица, которой мы говорим и едим.",
-  ukNote: "Частина обличчя, якою ми говоримо й їмо."
+  ukNote: "Частина обличчя, якою ми говоримо й їмо.",
   examples: [
     {
       L2: "Mach bitte den Mund auf.",
@@ -9815,7 +9815,7 @@ window.decks.de_nouns = [
   uk: "зуб",
   level: "A1",
   topics: ["body"],  ruNote: "Твёрдая часть во рту, которой мы кусаем и жуём.",
-  ukNote: "Тверда частина в роті, якою ми кусаємо й жуємо."
+  ukNote: "Тверда частина в роті, якою ми кусаємо й жуємо.",
   examples: [
     {
       L2: "Der Zahn tut beim Kauen weh.",
@@ -9832,7 +9832,7 @@ window.decks.de_nouns = [
   uk: "язик",
   level: "A2",
   topics: ["body"],  ruNote: "Мышца во рту, важная для вкуса и речи.",
-  ukNote: "М’яз у роті, важливий для смаку та мовлення."
+  ukNote: "М’яз у роті, важливий для смаку та мовлення.",
   examples: [
     {
       L2: "Zeig mir bitte deine Zunge.",
@@ -9849,7 +9849,7 @@ window.decks.de_nouns = [
   uk: "волосся",
   level: "A1",
   topics: ["body"],  ruNote: "Тонкие нити, которые растут на голове и теле.",
-  ukNote: "Тонкі нитки, що ростуть на голові та тілі."
+  ukNote: "Тонкі нитки, що ростуть на голові та тілі.",
   examples: [
     {
       L2: "Sie hat lange dunkle Haare.",
@@ -9866,7 +9866,7 @@ window.decks.de_nouns = [
   uk: "шия",
   level: "A1",
   topics: ["body"],  ruNote: "Часть тела между головой и грудью.",
-  ukNote: "Частина тіла між головою та грудьми."
+  ukNote: "Частина тіла між головою та грудьми.",
   examples: [
     {
       L2: "Mein Hals ist entzündet.",
@@ -9883,7 +9883,7 @@ window.decks.de_nouns = [
   uk: "плече",
   level: "A1",
   topics: ["body"],  ruNote: "Часть тела, где рука соединяется с туловищем.",
-  ukNote: "Частина тіла, де рука з’єднується з тулубом."
+  ukNote: "Частина тіла, де рука з’єднується з тулубом.",
   examples: [
     {
       L2: "Er trägt eine Tasche auf der Schulter.",
@@ -9900,7 +9900,7 @@ window.decks.de_nouns = [
   uk: "рука",
   level: "A1",
   topics: ["body"],  ruNote: "Конечность от плеча до кисти.",
-  ukNote: "Кінцівка від плеча до кисті."
+  ukNote: "Кінцівка від плеча до кисті.",
   examples: [
     {
       L2: "Mein rechter Arm ist müde.",
@@ -9917,7 +9917,7 @@ window.decks.de_nouns = [
   uk: "лікоть",
   level: "A2",
   topics: ["body"],  ruNote: "Сустав посередине руки.",
-  ukNote: "Суглоб посередині руки."
+  ukNote: "Суглоб посередині руки.",
   examples: [
     {
       L2: "Sie hat sich den Ellbogen gestoßen.",
@@ -9934,7 +9934,7 @@ window.decks.de_nouns = [
   uk: "кисть",
   level: "A1",
   topics: ["body"],  ruNote: "Конечность с пальцами в конце руки.",
-  ukNote: "Кінцівка з пальцями в кінці руки."
+  ukNote: "Кінцівка з пальцями в кінці руки.",
   examples: [
     {
       L2: "Was hast du in der Hand?",
@@ -9951,7 +9951,7 @@ window.decks.de_nouns = [
   uk: "палець",
   level: "A1",
   topics: ["body"],  ruNote: "Один из пяти маленьких отростков на руке.",
-  ukNote: "Один із п’яти невеликих відростків на руці."
+  ukNote: "Один із п’яти невеликих відростків на руці.",
   examples: [
     {
       L2: "Ich habe mir den Finger geschnitten.",
@@ -9968,7 +9968,7 @@ window.decks.de_nouns = [
   uk: "груди",
   level: "A1",
   topics: ["body"],  ruNote: "Передняя часть верхнего туловища.",
-  ukNote: "Передня частина верхнього тулуба."
+  ukNote: "Передня частина верхнього тулуба.",
   examples: [
     {
       L2: "Er hat Schmerzen in der Brust.",
@@ -9985,7 +9985,7 @@ window.decks.de_nouns = [
   uk: "спина",
   level: "A1",
   topics: ["body"],  ruNote: "Задняя часть туловища.",
-  ukNote: "Задня частина тулуба."
+  ukNote: "Задня частина тулуба.",
   examples: [
     {
       L2: "Mein Rücken tut vom Sitzen weh.",
@@ -10002,7 +10002,7 @@ window.decks.de_nouns = [
   uk: "живіт",
   level: "A1",
   topics: ["body"],  ruNote: "Передняя часть тела между грудью и ногами.",
-  ukNote: "Передня частина тіла між грудьми та ногами."
+  ukNote: "Передня частина тіла між грудьми та ногами.",
   examples: [
     {
       L2: "Ich habe Bauchschmerzen.",
@@ -10019,7 +10019,7 @@ window.decks.de_nouns = [
   uk: "нога",
   level: "A1",
   topics: ["body"],  ruNote: "Нижняя конечность, на которой мы ходим.",
-  ukNote: "Нижня кінцівка, на якій ми ходимо."
+  ukNote: "Нижня кінцівка, на якій ми ходимо.",
   examples: [
     {
       L2: "Sie kann das Bein nicht bewegen.",
@@ -10036,7 +10036,7 @@ window.decks.de_nouns = [
   uk: "коліно",
   level: "A1",
   topics: ["body"],  ruNote: "Сустав посередине ноги.",
-  ukNote: "Суглоб посередині ноги."
+  ukNote: "Суглоб посередині ноги.",
   examples: [
     {
       L2: "Er ist aufs Knie gefallen.",
@@ -10053,7 +10053,7 @@ window.decks.de_nouns = [
   uk: "ступня",
   level: "A1",
   topics: ["body"],  ruNote: "Часть ноги, которой мы стоим и ходим.",
-  ukNote: "Частина ноги, якою ми стоїмо й ходимо."
+  ukNote: "Частина ноги, якою ми стоїмо й ходимо.",
   examples: [
     {
       L2: "Mein Fuß ist geschwollen.",
@@ -10070,7 +10070,7 @@ window.decks.de_nouns = [
   uk: "серце",
   level: "A2",
   topics: ["body", "health"],  ruNote: "Орган, который перекачивает кровь по телу.",
-  ukNote: "Орган, що перекачує кров по тілу."
+  ukNote: "Орган, що перекачує кров по тілу.",
   examples: [
     {
       L2: "Das Herz schlägt zu schnell.",
@@ -10087,7 +10087,7 @@ window.decks.de_nouns = [
   uk: "легеня",
   level: "A2",
   topics: ["body", "health"],  ruNote: "Орган, с помощью которого мы дышим.",
-  ukNote: "Орган, за допомогою якого ми дихаємо."
+  ukNote: "Орган, за допомогою якого ми дихаємо.",
   examples: [
     {
       L2: "Rauchen ist schlecht für die Lunge.",
@@ -10104,7 +10104,7 @@ window.decks.de_nouns = [
   uk: "печінка",
   level: "A2",
   topics: ["body", "health"],  ruNote: "Важный орган, который очищает кровь.",
-  ukNote: "Важливий орган, що очищує кров."
+  ukNote: "Важливий орган, що очищує кров.",
   examples: [
     {
       L2: "Alkohol schadet der Leber.",
@@ -10121,7 +10121,7 @@ window.decks.de_nouns = [
   uk: "шлунок",
   level: "A2",
   topics: ["body", "health"],  ruNote: "Орган, в котором переваривается пища.",
-  ukNote: "Орган, у якому перетравлюється їжа."
+  ukNote: "Орган, у якому перетравлюється їжа.",
   examples: [
     {
       L2: "Fettes Essen ist schwer für den Magen.",
@@ -10138,7 +10138,7 @@ window.decks.de_nouns = [
   uk: "кров",
   level: "A2",
   topics: ["body", "health"],  ruNote: "Жидкость, которая переносит кислород и вещества в теле.",
-  ukNote: "Рідина, що переносить кисень і речовини в тілі."
+  ukNote: "Рідина, що переносить кисень і речовини в тілі.",
   examples: [
     {
       L2: "Der Arzt nimmt Blut ab.",
@@ -10155,7 +10155,7 @@ window.decks.de_nouns = [
   uk: "м’яз",
   level: "A2",
   topics: ["body", "health"],  ruNote: "Ткань, которая сокращается и двигает тело.",
-  ukNote: "Тканина, яка скорочується й рухає тіло."
+  ukNote: "Тканина, яка скорочується й рухає тіло.",
   examples: [
     {
       L2: "Nach dem Sport tut mir jeder Muskel weh.",
@@ -10172,7 +10172,7 @@ window.decks.de_nouns = [
   uk: "кістка",
   level: "A2",
   topics: ["body"],  ruNote: "Твёрдый элемент скелета.",
-  ukNote: "Твердий елемент скелета."
+  ukNote: "Твердий елемент скелета.",
   examples: [
     {
       L2: "Er hat sich den Knochen gebrochen.",
@@ -10189,7 +10189,7 @@ window.decks.de_nouns = [
   uk: "шкіра",
   level: "A1",
   topics: ["body"],  ruNote: "Внешнее покрытие тела.",
-  ukNote: "Зовнішнє покриття тіла."
+  ukNote: "Зовнішнє покриття тіла.",
   examples: [
     {
       L2: "Im Winter ist meine Haut sehr trocken.",
@@ -10206,7 +10206,7 @@ window.decks.de_nouns = [
   uk: "лікар",
   level: "A1",
   topics: ["health", "job"],  ruNote: "Мужчина, который лечит людей.",
-  ukNote: "Чоловік, який лікує людей."
+  ukNote: "Чоловік, який лікує людей.",
   examples: [
     {
       L2: "Ich muss zum Arzt gehen.",
@@ -10223,7 +10223,7 @@ window.decks.de_nouns = [
   uk: "лікарка",
   level: "A1",
   topics: ["health", "job"],  ruNote: "Женщина, которая лечит людей.",
-  ukNote: "Жінка, яка лікує людей."
+  ukNote: "Жінка, яка лікує людей.",
   examples: [
     {
       L2: "Die Ärztin untersucht den Patienten.",
@@ -10240,7 +10240,7 @@ window.decks.de_nouns = [
   uk: "лікарня",
   level: "A1",
   topics: ["health", "place"],  ruNote: "Большое медицинское учреждение для лечения людей.",
-  ukNote: "Великий медичний заклад для лікування людей."
+  ukNote: "Великий медичний заклад для лікування людей.",
   examples: [
     {
       L2: "Er liegt seit gestern im Krankenhaus.",
@@ -10257,7 +10257,7 @@ window.decks.de_nouns = [
   uk: "клініка",
   level: "A2",
   topics: ["health", "place"],  ruNote: "Медицинское учреждение, часто специализированное.",
-  ukNote: "Медичний заклад, часто спеціалізований."
+  ukNote: "Медичний заклад, часто спеціалізований.",
   examples: [
     {
       L2: "Sie arbeitet in einer privaten Klinik.",
@@ -10274,7 +10274,7 @@ window.decks.de_nouns = [
   uk: "приватна практика",
   level: "A2",
   topics: ["health", "place"],  ruNote: "Небольшой кабинет или приём врача.",
-  ukNote: "Невеликий кабінет чи прийом лікаря."
+  ukNote: "Невеликий кабінет чи прийом лікаря.",
   examples: [
     {
       L2: "Die Praxis ist bis 18 Uhr geöffnet.",
@@ -10291,7 +10291,7 @@ window.decks.de_nouns = [
   uk: "аптека",
   level: "A1",
   topics: ["health", "shopping"],  ruNote: "Магазин, где продают лекарства.",
-  ukNote: "Магазин, де продають ліки."
+  ukNote: "Магазин, де продають ліки.",
   examples: [
     {
       L2: "Die Apotheke ist gleich um die Ecke.",
@@ -10308,7 +10308,7 @@ window.decks.de_nouns = [
   uk: "рецепт",
   level: "A2",
   topics: ["health"],  ruNote: "Письменное назначение врача для лекарства.",
-  ukNote: "Письмове призначення лікаря для ліків."
+  ukNote: "Письмове призначення лікаря для ліків.",
   examples: [
     {
       L2: "Dieses Medikament bekommst du nur mit Rezept.",
@@ -10325,7 +10325,7 @@ window.decks.de_nouns = [
   uk: "ліки",
   level: "A2",
   topics: ["health"],  ruNote: "Средство для лечения болезней.",
-  ukNote: "Засіб для лікування хвороб."
+  ukNote: "Засіб для лікування хвороб.",
   examples: [
     {
       L2: "Nimm das Medikament dreimal am Tag.",
@@ -10342,7 +10342,7 @@ window.decks.de_nouns = [
   uk: "укол / шприц",
   level: "A2",
   topics: ["health"],  ruNote: "Инструмент или действие для введения лекарства в тело.",
-  ukNote: "Інструмент або дія для введення ліків у тіло."
+  ukNote: "Інструмент або дія для введення ліків у тіло.",
   examples: [
     {
       L2: "Der Arzt gibt dir eine Spritze.",
@@ -10359,7 +10359,7 @@ window.decks.de_nouns = [
   uk: "пов’язка",
   level: "A2",
   topics: ["health"],  ruNote: "Материал, которым закрывают рану.",
-  ukNote: "Матеріал, яким закривають рану."
+  ukNote: "Матеріал, яким закривають рану.",
   examples: [
     {
       L2: "Der Verband muss täglich gewechselt werden.",
@@ -10376,7 +10376,7 @@ window.decks.de_nouns = [
   uk: "обстеження",
   level: "B1",
   topics: ["health"],  ruNote: "Проверка здоровья пациента врачом.",
-  ukNote: "Перевірка здоров’я пацієнта лікарем."
+  ukNote: "Перевірка здоров’я пацієнта лікарем.",
   examples: [
     {
       L2: "Die Untersuchung dauert nur wenige Minuten.",
@@ -10393,7 +10393,7 @@ window.decks.de_nouns = [
   uk: "лікування",
   level: "B1",
   topics: ["health"],  ruNote: "Меры и процедуры, чтобы улучшить здоровье.",
-  ukNote: "Заходи та процедури, щоб покращити здоров’я."
+  ukNote: "Заходи та процедури, щоб покращити здоров’я.",
   examples: [
     {
       L2: "Die Behandlung kann mehrere Wochen dauern.",
@@ -10410,7 +10410,7 @@ window.decks.de_nouns = [
   uk: "здоров’я",
   level: "A2",
   topics: ["health"],  ruNote: "Состояние, когда тело и психика в порядке.",
-  ukNote: "Стан, коли тіло й психіка в порядку."
+  ukNote: "Стан, коли тіло й психіка в порядку.",
   examples: [
     {
       L2: "Rauchfrei zu leben ist gut für die Gesundheit.",
@@ -10427,7 +10427,7 @@ window.decks.de_nouns = [
   uk: "хвороба",
   level: "A2",
   topics: ["health"],  ruNote: "Состояние, когда тело или психика не в порядке.",
-  ukNote: "Стан, коли тіло чи психіка не в порядку."
+  ukNote: "Стан, коли тіло чи психіка не в порядку.",
   examples: [
     {
       L2: "Welche Krankheit haben Sie genau?",
@@ -10444,7 +10444,7 @@ window.decks.de_nouns = [
   uk: "травма",
   level: "B1",
   topics: ["health"],  ruNote: "Повреждение тела из-за удара, падения и т.п.",
-  ukNote: "Ушкодження тіла через удар, падіння тощо."
+  ukNote: "Ушкодження тіла через удар, падіння тощо.",
   examples: [
     {
       L2: "Die Verletzung ist nicht lebensgefährlich.",
@@ -10461,7 +10461,7 @@ window.decks.de_nouns = [
   uk: "гарячка",
   level: "A2",
   topics: ["health"],  ruNote: "Повышенная температура тела при болезни.",
-  ukNote: "Підвищена температура тіла під час хвороби."
+  ukNote: "Підвищена температура тіла під час хвороби.",
   examples: [
     {
       L2: "Ich habe seit gestern Fieber.",
@@ -10478,7 +10478,7 @@ window.decks.de_nouns = [
   uk: "застуда",
   level: "A2",
   topics: ["health"],  ruNote: "Лёгкая вирусная болезнь с насморком и кашлем.",
-  ukNote: "Легка вірусна хвороба з нежитем і кашлем."
+  ukNote: "Легка вірусна хвороба з нежитем і кашлем.",
   examples: [
     {
       L2: "Im Winter habe ich oft eine Erkältung.",
@@ -10495,7 +10495,7 @@ window.decks.de_nouns = [
   uk: "кашель",
   level: "A2",
   topics: ["health"],  ruNote: "Звук и движение, когда мы резко выдыхаем воздух из горла.",
-  ukNote: "Звук і рух, коли ми різко видихаємо повітря з горла."
+  ukNote: "Звук і рух, коли ми різко видихаємо повітря з горла.",
   examples: [
     {
       L2: "Der Husten wird langsam besser.",
@@ -10512,7 +10512,7 @@ window.decks.de_nouns = [
   uk: "грип",
   level: "B1",
   topics: ["health"],  ruNote: "Серьёзная вирусная инфекция с высокой температурой.",
-  ukNote: "Серйозна вірусна інфекція з високою температурою."
+  ukNote: "Серйозна вірусна інфекція з високою температурою.",
   examples: [
     {
       L2: "Er liegt mit Grippe im Bett.",
@@ -10529,7 +10529,7 @@ window.decks.de_nouns = [
   uk: "догляд",
   level: "B1",
   topics: ["health", "care"],  ruNote: "Уход за больными, пожилыми или телом в целом.",
-  ukNote: "Догляд за хворими, літніми або за тілом загалом."
+  ukNote: "Догляд за хворими, літніми або за тілом загалом.",
   examples: [
     {
       L2: "Die richtige Pflege ist für ältere Menschen wichtig.",
@@ -10546,7 +10546,7 @@ window.decks.de_nouns = [
   uk: "місто",
   level: "A1",
   topics: ["city"],  ruNote: "Большой населённый пункт с развитой инфраструктурой.",
-  ukNote: "Великий населений пункт із розвиненою інфраструктурою."
+  ukNote: "Великий населений пункт із розвиненою інфраструктурою.",
   examples: [
     {
       L2: "Berlin ist eine große Stadt.",
@@ -10563,7 +10563,7 @@ window.decks.de_nouns = [
   uk: "село",
   level: "A1",
   topics: ["city"],  ruNote: "Небольшой населённый пункт на селе.",
-  ukNote: "Невеликий населений пункт у сільській місцевості."
+  ukNote: "Невеликий населений пункт у сільській місцевості.",
   examples: [
     {
       L2: "Sie lebt in einem kleinen Dorf.",
@@ -10580,7 +10580,7 @@ window.decks.de_nouns = [
   uk: "вулиця",
   level: "A1",
   topics: ["city", "transport"],  ruNote: "Дорога в городе или между городами.",
-  ukNote: "Дорога в місті або між містами."
+  ukNote: "Дорога в місті або між містами.",
   examples: [
     {
       L2: "Die Straße ist heute sehr voll.",
@@ -10597,7 +10597,7 @@ window.decks.de_nouns = [
   uk: "площа / місце",
   level: "A1",
   topics: ["city"],  ruNote: "Открытое пространство в городе или просто свободное место.",
-  ukNote: "Відкритий простір у місті або просто вільне місце."
+  ukNote: "Відкритий простір у місті або просто вільне місце.",
   examples: [
     {
       L2: "Wir treffen uns auf dem Platz vor der Kirche.",
@@ -10614,7 +10614,7 @@ window.decks.de_nouns = [
   uk: "перехрестя",
   level: "A2",
   topics: ["city", "transport"],  ruNote: "Место, где встречаются две или больше дорог.",
-  ukNote: "Місце, де перетинаються дві або більше доріг."
+  ukNote: "Місце, де перетинаються дві або більше доріг.",
   examples: [
     {
       L2: "An der nächsten Kreuzung musst du links abbiegen.",
@@ -10631,7 +10631,7 @@ window.decks.de_nouns = [
   uk: "міст",
   level: "A2",
   topics: ["city", "transport"],  ruNote: "Строение, которое соединяет два берега или дороги.",
-  ukNote: "Споруда, що з’єднує два береги чи дороги."
+  ukNote: "Споруда, що з’єднує два береги чи дороги.",
   examples: [
     {
       L2: "Die Brücke führt über den Fluss.",
@@ -10648,7 +10648,7 @@ window.decks.de_nouns = [
   uk: "вокзал",
   level: "A1",
   topics: ["transport", "travel"],  ruNote: "Место, откуда отправляются и куда приходят поезда.",
-  ukNote: "Місце, звідки відправляються й куди прибувають потяги."
+  ukNote: "Місце, звідки відправляються й куди прибувають потяги.",
   examples: [
     {
       L2: "Wir treffen uns am Bahnhof.",
@@ -10665,7 +10665,7 @@ window.decks.de_nouns = [
   uk: "аеропорт",
   level: "A2",
   topics: ["transport", "travel"],  ruNote: "Большое место, где взлетают и садятся самолёты.",
-  ukNote: "Велике місце, де злітають і сідають літаки."
+  ukNote: "Велике місце, де злітають і сідають літаки.",
   examples: [
     {
       L2: "Der Flughafen liegt außerhalb der Stadt.",
@@ -10682,7 +10682,7 @@ window.decks.de_nouns = [
   uk: "зупинка",
   level: "A1",
   topics: ["transport"],  ruNote: "Место, где останавливаются автобус, трамвай и т.п.",
-  ukNote: "Місце, де зупиняються автобус, трамвай тощо."
+  ukNote: "Місце, де зупиняються автобус, трамвай тощо.",
   examples: [
     {
       L2: "Die Haltestelle ist gleich um die Ecke.",
@@ -10699,7 +10699,7 @@ window.decks.de_nouns = [
   uk: "метро",
   level: "A1",
   topics: ["transport"],  ruNote: "Подземный городской поезд.",
-  ukNote: "Підземний міський поїзд."
+  ukNote: "Підземний міський поїзд.",
   examples: [
     {
       L2: "Ich fahre jeden Tag mit der U-Bahn.",
@@ -10716,7 +10716,7 @@ window.decks.de_nouns = [
   uk: "автобус",
   level: "A1",
   topics: ["transport"],  ruNote: "Большое транспортное средство для многих людей.",
-  ukNote: "Великий транспортний засіб для багатьох людей."
+  ukNote: "Великий транспортний засіб для багатьох людей.",
   examples: [
     {
       L2: "Der Bus kommt alle zehn Minuten.",
@@ -10733,7 +10733,7 @@ window.decks.de_nouns = [
   uk: "трамвай",
   level: "A1",
   topics: ["transport"],  ruNote: "Городской поезд, который едет по рельсам на улице.",
-  ukNote: "Міський потяг, що їде рейками на вулиці."
+  ukNote: "Міський потяг, що їде рейками на вулиці.",
   examples: [
     {
       L2: "Ich nehme die Straßenbahn ins Zentrum.",
@@ -10750,7 +10750,7 @@ window.decks.de_nouns = [
   uk: "таксі",
   level: "A1",
   topics: ["transport"],  ruNote: "Машина с водителем, который везёт за плату.",
-  ukNote: "Машина з водієм, який везе за плату."
+  ukNote: "Машина з водієм, який везе за плату.",
   examples: [
     {
       L2: "Wir nehmen ein Taxi zum Bahnhof.",
@@ -10767,7 +10767,7 @@ window.decks.de_nouns = [
   uk: "авто",
   level: "A1",
   topics: ["transport"],  ruNote: "Небольшой личный автомобиль.",
-  ukNote: "Невеликий особистий автомобіль."
+  ukNote: "Невеликий особистий автомобіль.",
   examples: [
     {
       L2: "Er fährt mit dem Auto zur Arbeit.",
@@ -10784,7 +10784,7 @@ window.decks.de_nouns = [
   uk: "велосипед",
   level: "A1",
   topics: ["transport"],  ruNote: "Транспорт с двумя колёсами, который крутят ногами.",
-  ukNote: "Транспорт із двома колесами, який крутять ногами."
+  ukNote: "Транспорт із двома колесами, який крутять ногами.",
   examples: [
     {
       L2: "Sie fährt gern Fahrrad.",
@@ -10801,7 +10801,7 @@ window.decks.de_nouns = [
   uk: "мотоцикл",
   level: "A2",
   topics: ["transport"],  ruNote: "Двухколёсное моторизированное транспортное средство.",
-  ukNote: "Двоколісний моторизований транспортний засіб."
+  ukNote: "Двоколісний моторизований транспортний засіб.",
   examples: [
     {
       L2: "Mit dem Motorrad ist er schneller als mit dem Auto.",
@@ -10818,7 +10818,7 @@ window.decks.de_nouns = [
   uk: "потяг",
   level: "A1",
   topics: ["transport"],  ruNote: "Длинное транспортное средство, которое едет по рельсам.",
-  ukNote: "Довгий транспорт, що їде рейками."
+  ukNote: "Довгий транспорт, що їде рейками.",
   examples: [
     {
       L2: "Der Zug hat zehn Minuten Verspätung.",
@@ -10835,7 +10835,7 @@ window.decks.de_nouns = [
   uk: "корабель",
   level: "A2",
   topics: ["transport", "travel"],  ruNote: "Большое плавательное средство на море или реке.",
-  ukNote: "Великий плавальний засіб на морі чи річці."
+  ukNote: "Великий плавальний засіб на морі чи річці.",
   examples: [
     {
       L2: "Wir machen eine Reise mit dem Schiff.",
@@ -10852,7 +10852,7 @@ window.decks.de_nouns = [
   uk: "літак",
   level: "A1",
   topics: ["transport", "travel"],  ruNote: "Транспорт, который летит по воздуху.",
-  ukNote: "Транспорт, що летить у повітрі."
+  ukNote: "Транспорт, що летить у повітрі.",
   examples: [
     {
       L2: "Das Flugzeug startet um 9 Uhr.",
@@ -10869,7 +10869,7 @@ window.decks.de_nouns = [
   uk: "рух",
   level: "A2",
   topics: ["transport"],  ruNote: "Все машины, автобусы и т.п. на дорогах.",
-  ukNote: "Усі машини, автобуси тощо на дорогах."
+  ukNote: "Усі машини, автобуси тощо на дорогах.",
   examples: [
     {
       L2: "Der Verkehr ist heute sehr stark.",
@@ -10886,7 +10886,7 @@ window.decks.de_nouns = [
   uk: "світлофор",
   level: "A1",
   topics: ["transport"],  ruNote: "Устройство с красным, жёлтым и зелёным светом на дороге.",
-  ukNote: "Пристрій із червоним, жовтим і зеленим світлом на дорозі."
+  ukNote: "Пристрій із червоним, жовтим і зеленим світлом на дорозі.",
   examples: [
     {
       L2: "Bei roter Ampel musst du stehen bleiben.",
@@ -10903,7 +10903,7 @@ window.decks.de_nouns = [
   uk: "квиток",
   level: "A1",
   topics: ["transport", "travel"],  ruNote: "Документ, который даёт право ехать или входить.",
-  ukNote: "Документ, що дає право їхати або заходити."
+  ukNote: "Документ, що дає право їхати або заходити.",
   examples: [
     {
       L2: "Wo kann ich ein Ticket kaufen?",
@@ -10920,7 +10920,7 @@ window.decks.de_nouns = [
   uk: "карта",
   level: "A1",
   topics: ["travel", "city"],  ruNote: "Схема местности или страны на бумаге или экране.",
-  ukNote: "Схема місцевості чи країни на папері або екрані."
+  ukNote: "Схема місцевості чи країни на папері або екрані.",
   examples: [
     {
       L2: "Ich schaue auf die Karte, um den Weg zu finden.",
@@ -10937,7 +10937,7 @@ window.decks.de_nouns = [
   uk: "план",
   level: "A2",
   topics: ["travel", "general"],  ruNote: "Идея или схема того, что нужно сделать.",
-  ukNote: "Ідея чи схема того, що потрібно зробити."
+  ukNote: "Ідея чи схема того, що потрібно зробити.",
   examples: [
     {
       L2: "Wir machen einen Plan für die Reise.",
@@ -10954,7 +10954,7 @@ window.decks.de_nouns = [
   uk: "напрямок",
   level: "A2",
   topics: ["travel"],  ruNote: "Сторона, в которую мы идём или смотрим.",
-  ukNote: "Сторона, в яку ми йдемо або дивимось."
+  ukNote: "Сторона, в яку ми йдемо або дивимось.",
   examples: [
     {
       L2: "In welche Richtung muss ich gehen?",
@@ -10971,7 +10971,7 @@ window.decks.de_nouns = [
   uk: "відстань",
   level: "B1",
   topics: ["travel"],  ruNote: "Расстояние между двумя местами.",
-  ukNote: "Відстань між двома місцями."
+  ukNote: "Відстань між двома місцями.",
   examples: [
     {
       L2: "Die Entfernung zur Stadt beträgt 20 Kilometer.",
@@ -10988,7 +10988,7 @@ window.decks.de_nouns = [
   uk: "подорож",
   level: "A2",
   topics: ["travel"],  ruNote: "Поездка в другое место на несколько дней или дольше.",
-  ukNote: "Поїздка в інше місце на кілька днів або довше."
+  ukNote: "Поїздка в інше місце на кілька днів або довше.",
   examples: [
     {
       L2: "Die Reise war sehr angenehm.",
@@ -11005,7 +11005,7 @@ window.decks.de_nouns = [
   uk: "відпустка",
   level: "A2",
   topics: ["travel", "work"],  ruNote: "Свободное от работы время для отдыха и поездок.",
-  ukNote: "Час без роботи для відпочинку й подорожей."
+  ukNote: "Час без роботи для відпочинку й подорожей.",
   examples: [
     {
       L2: "Ich mache im Sommer drei Wochen Urlaub.",
@@ -11022,7 +11022,7 @@ window.decks.de_nouns = [
   uk: "житло",
   level: "B1",
   topics: ["travel"],  ruNote: "Место, где человек временно или постоянно живёт.",
-  ukNote: "Місце, де людина тимчасово чи постійно живе."
+  ukNote: "Місце, де людина тимчасово чи постійно живе.",
   examples: [
     {
       L2: "Wir suchen eine günstige Unterkunft.",
@@ -11039,7 +11039,7 @@ window.decks.de_nouns = [
   uk: "готель",
   level: "A1",
   topics: ["travel"],  ruNote: "Большое здание, где можно снять номер.",
-  ukNote: "Велика будівля, де можна зняти номер."
+  ukNote: "Велика будівля, де можна зняти номер.",
   examples: [
     {
       L2: "Das Hotel liegt im Stadtzentrum.",
@@ -11056,7 +11056,7 @@ window.decks.de_nouns = [
   uk: "хостел",
   level: "B1",
   topics: ["travel"],  ruNote: "Простое и недорогое место ночёвки, часто для молодёжи.",
-  ukNote: "Просте й недороге місце ночівлі, часто для молоді."
+  ukNote: "Просте й недороге місце ночівлі, часто для молоді.",
   examples: [
     {
       L2: "In der Jugendherberge teilt man sich ein Zimmer.",
@@ -11073,7 +11073,7 @@ window.decks.de_nouns = [
   uk: "рецепція",
   level: "A2",
   topics: ["travel"],  ruNote: "Место в отеле, где гостей принимают и регистрируют.",
-  ukNote: "Місце в готелі, де приймають і реєструють гостей."
+  ukNote: "Місце в готелі, де приймають і реєструють гостей.",
   examples: [
     {
       L2: "Melde dich bitte an der Rezeption.",
@@ -11090,7 +11090,7 @@ window.decks.de_nouns = [
   uk: "бронювання",
   level: "B1",
   topics: ["travel"],  ruNote: "Процесс заказа билета, номера и т.п.",
-  ukNote: "Процес замовлення квитка, номера тощо."
+  ukNote: "Процес замовлення квитка, номера тощо.",
   examples: [
     {
       L2: "Die Buchung ist bestätigt.",
@@ -11107,7 +11107,7 @@ window.decks.de_nouns = [
   uk: "резервація",
   level: "B1",
   topics: ["travel"],  ruNote: "То, что место или номер сохранён за вами.",
-  ukNote: "Те, що місце чи номер збережено за вами."
+  ukNote: "Те, що місце чи номер збережено за вами.",
   examples: [
     {
       L2: "Haben Sie eine Reservierung auf Ihren Namen?",
@@ -11124,7 +11124,7 @@ window.decks.de_nouns = [
   uk: "посвідчення",
   level: "B1",
   topics: ["travel", "law"],  ruNote: "Официальный документ, который подтверждает личность.",
-  ukNote: "Офіційний документ, що підтверджує особу."
+  ukNote: "Офіційний документ, що підтверджує особу.",
   examples: [
     {
       L2: "Bitte zeigen Sie mir Ihren Ausweis.",
@@ -11141,7 +11141,7 @@ window.decks.de_nouns = [
   uk: "паспорт",
   level: "A2",
   topics: ["travel", "law"],  ruNote: "Документ, с которым можно выезжать за границу.",
-  ukNote: "Документ, з яким можна виїжджати за кордон."
+  ukNote: "Документ, з яким можна виїжджати за кордон.",
   examples: [
     {
       L2: "Vergiss deinen Pass nicht!",
@@ -11158,7 +11158,7 @@ window.decks.de_nouns = [
   uk: "митниця",
   level: "B1",
   topics: ["travel", "law"],  ruNote: "Государственная служба на границе, которая контролирует товары.",
-  ukNote: "Державна служба на кордоні, що контролює товари."
+  ukNote: "Державна служба на кордоні, що контролює товари.",
   examples: [
     {
       L2: "Am Zoll musst du dein Gepäck zeigen.",
@@ -11175,7 +11175,7 @@ window.decks.de_nouns = [
   uk: "кордон",
   level: "A2",
   topics: ["travel", "geography"],  ruNote: "Линия между странами или регионами.",
-  ukNote: "Лінія між країнами або регіонами."
+  ukNote: "Лінія між країнами або регіонами.",
   examples: [
     {
       L2: "Wir fahren über die Grenze nach Österreich.",
@@ -11192,7 +11192,7 @@ window.decks.de_nouns = [
   uk: "віза",
   level: "B1",
   topics: ["travel", "law"],  ruNote: "Разрешение на въезд и пребывание в стране.",
-  ukNote: "Дозвіл на в’їзд і перебування в країні."
+  ukNote: "Дозвіл на в’їзд і перебування в країні.",
   examples: [
     {
       L2: "Für dieses Land brauchst du ein Visum.",
@@ -11209,7 +11209,7 @@ window.decks.de_nouns = [
   uk: "перебування",
   level: "B1",
   topics: ["travel"],  ruNote: "Период, когда человек находится в определённом месте.",
-  ukNote: "Період, коли людина перебуває в певному місці."
+  ukNote: "Період, коли людина перебуває в певному місці.",
   examples: [
     {
       L2: "Der Aufenthalt dauert nur drei Tage.",
@@ -11226,7 +11226,7 @@ window.decks.de_nouns = [
   uk: "школа",
   level: "A1",
   topics: ["education"],  ruNote: "Учреждение, где дети и подростки учатся.",
-  ukNote: "Заклад, де діти та підлітки навчаються."
+  ukNote: "Заклад, де діти та підлітки навчаються.",
   examples: [
     {
       L2: "Die Kinder gehen um acht Uhr in die Schule.",
@@ -11243,7 +11243,7 @@ window.decks.de_nouns = [
   uk: "університет",
   level: "A2",
   topics: ["education"],  ruNote: "Высшее учебное заведение.",
-  ukNote: "Вищий навчальний заклад."
+  ukNote: "Вищий навчальний заклад.",
   examples: [
     {
       L2: "Sie studiert an der Universität Zürich.",
@@ -11260,7 +11260,7 @@ window.decks.de_nouns = [
   uk: "лекція",
   level: "B1",
   topics: ["education"],  ruNote: "Занятие в университете, где профессор читает материал.",
-  ukNote: "Заняття в університеті, де професор читає матеріал."
+  ukNote: "Заняття в університеті, де професор читає матеріал.",
   examples: [
     {
       L2: "Die Vorlesung beginnt um halb zehn.",
@@ -11277,7 +11277,7 @@ window.decks.de_nouns = [
   uk: "предмет",
   level: "A2",
   topics: ["education"],  ruNote: "Конкретная область знаний в школе или вузе.",
-  ukNote: "Конкретна галузь знань у школі чи виші."
+  ukNote: "Конкретна галузь знань у школі чи виші.",
   examples: [
     {
       L2: "Mein Lieblingsfach ist Deutsch.",
@@ -11294,7 +11294,7 @@ window.decks.de_nouns = [
   uk: "домашнє завдання",
   level: "A1",
   topics: ["education"],  ruNote: "Задание, которое нужно сделать дома после урока.",
-  ukNote: "Завдання, яке треба зробити вдома після уроку."
+  ukNote: "Завдання, яке треба зробити вдома після уроку.",
   examples: [
     {
       L2: "Ich habe meine Hausaufgaben noch nicht gemacht.",
@@ -11311,7 +11311,7 @@ window.decks.de_nouns = [
   uk: "іспит",
   level: "A2",
   topics: ["education"],  ruNote: "Официальная проверка знаний.",
-  ukNote: "Офіційна перевірка знань."
+  ukNote: "Офіційна перевірка знань.",
   examples: [
     {
       L2: "Ich lerne viel für die Prüfung.",
@@ -11328,7 +11328,7 @@ window.decks.de_nouns = [
   uk: "оцінка",
   level: "A2",
   topics: ["education"],  ruNote: "Число или буква, которые показывают результат.",
-  ukNote: "Число або літера, що показують результат."
+  ukNote: "Число або літера, що показують результат.",
   examples: [
     {
       L2: "Er hat eine gute Note in Mathe bekommen.",
@@ -11345,7 +11345,7 @@ window.decks.de_nouns = [
   uk: "учень",
   level: "A1",
   topics: ["education"],  ruNote: "Мальчик или молодой человек, который учится в школе.",
-  ukNote: "Хлопець або юнак, який навчається в школі."
+  ukNote: "Хлопець або юнак, який навчається в школі.",
   examples: [
     {
       L2: "Der Schüler stellt eine Frage.",
@@ -11362,7 +11362,7 @@ window.decks.de_nouns = [
   uk: "учениця",
   level: "A1",
   topics: ["education"],  ruNote: "Девочка или молодая женщина, которая учится в школе.",
-  ukNote: "Дівчина або молода жінка, що навчається в школі."
+  ukNote: "Дівчина або молода жінка, що навчається в школі.",
   examples: [
     {
       L2: "Die Schülerin schreibt eine Klassenarbeit.",
@@ -11379,7 +11379,7 @@ window.decks.de_nouns = [
   uk: "вчитель",
   level: "A1",
   topics: ["education", "job"],  ruNote: "Мужчина, который учит учеников.",
-  ukNote: "Чоловік, який навчає учнів."
+  ukNote: "Чоловік, який навчає учнів.",
   examples: [
     {
       L2: "Der Lehrer erklärt die Aufgabe.",
@@ -15793,7 +15793,7 @@ window.decks.de_nouns = [
   uk: "рахунок",
   level: "A2",
   topics: ["finance", "shopping"],  ruNote: "Документ с суммой, которую нужно оплатить.",
-  ukNote: "Документ із сумою, яку потрібно сплатити."
+  ukNote: "Документ із сумою, яку потрібно сплатити.",
   examples: [
     {
       L2: "Können Sie mir bitte die Rechnung bringen?",
@@ -15810,7 +15810,7 @@ window.decks.de_nouns = [
   uk: "квитанція",
   level: "A2",
   topics: ["finance"],  ruNote: "Подтверждение того, что вы что-то оплатили.",
-  ukNote: "Підтвердження того, що ви щось оплатили."
+  ukNote: "Підтвердження того, що ви щось оплатили.",
   examples: [
     {
       L2: "Bewahren Sie die Quittung gut auf.",
@@ -15827,7 +15827,7 @@ window.decks.de_nouns = [
   uk: "переказ",
   level: "B1",
   topics: ["finance"],  ruNote: "Перечисление денег с одного счёта на другой.",
-  ukNote: "Переказ грошей з одного рахунку на інший."
+  ukNote: "Переказ грошей з одного рахунку на інший.",
   examples: [
     {
       L2: "Die Miete zahle ich per Überweisung.",
@@ -15844,7 +15844,7 @@ window.decks.de_nouns = [
   uk: "рахунок",
   level: "A2",
   topics: ["finance"],  ruNote: "Запись в банке, где хранятся ваши деньги.",
-  ukNote: "Запис у банку, де зберігаються ваші гроші."
+  ukNote: "Запис у банку, де зберігаються ваші гроші.",
   examples: [
     {
       L2: "Ich habe ein Konto bei dieser Bank.",
@@ -15861,7 +15861,7 @@ window.decks.de_nouns = [
   uk: "картка",
   level: "A2",
   topics: ["finance", "daily life"],  ruNote: "Пластиковая карта для оплаты и снятия денег.",
-  ukNote: "Пластикова картка для оплати й зняття грошей."
+  ukNote: "Пластикова картка для оплати й зняття грошей.",
   examples: [
     {
       L2: "Möchten Sie bar oder mit Karte zahlen?",
@@ -15878,7 +15878,7 @@ window.decks.de_nouns = [
   uk: "кредит",
   level: "B1",
   topics: ["finance"],  ruNote: "Деньги, которые банк даёт на время под проценты.",
-  ukNote: "Гроші, які банк дає на певний час під відсотки."
+  ukNote: "Гроші, які банк дає на певний час під відсотки.",
   examples: [
     {
       L2: "Sie nehmen einen Kredit für das Haus auf.",
@@ -15895,7 +15895,7 @@ window.decks.de_nouns = [
   uk: "борги",
   level: "B1",
   topics: ["finance"],  ruNote: "Деньги, которые вы должны вернуть другим.",
-  ukNote: "Гроші, які ви повинні повернути іншим."
+  ukNote: "Гроші, які ви повинні повернути іншим.",
   examples: [
     {
       L2: "Er hat viele Schulden bei der Bank.",
@@ -15912,7 +15912,7 @@ window.decks.de_nouns = [
   uk: "внесок",
   level: "B1",
   topics: ["finance"],  ruNote: "Перемещение денег на счёт в банке.",
-  ukNote: "Переміщення грошей на рахунок у банку."
+  ukNote: "Переміщення грошей на рахунок у банку.",
   examples: [
     {
       L2: "Die Einzahlung ist heute auf dem Konto.",
@@ -15929,7 +15929,7 @@ window.decks.de_nouns = [
   uk: "виплата",
   level: "B1",
   topics: ["finance"],  ruNote: "Получение денег со счёта или от организации.",
-  ukNote: "Отримання грошей з рахунку або від установи."
+  ukNote: "Отримання грошей з рахунку або від установи.",
   examples: [
     {
       L2: "Die Auszahlung erfolgt am Monatsende.",
@@ -15946,7 +15946,7 @@ window.decks.de_nouns = [
   uk: "відсоткова ставка",
   level: "B2",
   topics: ["finance"],  ruNote: "Процент, по которому банк начисляет или берёт деньги.",
-  ukNote: "Відсоток, за яким банк нараховує чи бере гроші."
+  ukNote: "Відсоток, за яким банк нараховує чи бере гроші.",
   examples: [
     {
       L2: "Der Zinssatz für diesen Kredit ist niedrig.",
@@ -15963,7 +15963,7 @@ window.decks.de_nouns = [
   uk: "політика",
   level: "B1",
   topics: ["politics"],  ruNote: "Деятельность, связанная с управлением обществом и государством.",
-  ukNote: "Діяльність, пов’язана з управлінням суспільством і державою."
+  ukNote: "Діяльність, пов’язана з управлінням суспільством і державою.",
   examples: [
     {
       L2: "Er interessiert sich sehr für Politik.",
@@ -15980,7 +15980,7 @@ window.decks.de_nouns = [
   uk: "уряд",
   level: "B1",
   topics: ["politics"],  ruNote: "Группа людей, которая руководит государством.",
-  ukNote: "Група людей, що керує державою."
+  ukNote: "Група людей, що керує державою.",
   examples: [
     {
       L2: "Die Regierung plant eine Reform.",
@@ -15997,7 +15997,7 @@ window.decks.de_nouns = [
   uk: "парламент",
   level: "B1",
   topics: ["politics"],  ruNote: "Избранный орган, который принимает законы.",
-  ukNote: "Обраний орган, що ухвалює закони."
+  ukNote: "Обраний орган, що ухвалює закони.",
   examples: [
     {
       L2: "Das Parlament stimmt über das Gesetz ab.",
@@ -16014,7 +16014,7 @@ window.decks.de_nouns = [
   uk: "вибори",
   level: "B1",
   topics: ["politics"],  ruNote: "Процесс, когда люди голосуют за кандидатов; также просто «выбор».",
-  ukNote: "Процес, коли люди голосують за кандидатів; також просто «вибір»."
+  ukNote: "Процес, коли люди голосують за кандидатів; також просто «вибір».",
   examples: [
     {
       L2: "Die nächste Wahl findet im Herbst statt.",
@@ -16031,7 +16031,7 @@ window.decks.de_nouns = [
   uk: "партія",
   level: "B1",
   topics: ["politics"],  ruNote: "Организация с общими политическими целями и программой.",
-  ukNote: "Організація зі спільними політичними цілями й програмою."
+  ukNote: "Організація зі спільними політичними цілями й програмою.",
   examples: [
     {
       L2: "Er ist Mitglied in einer Partei.",
@@ -16048,7 +16048,7 @@ window.decks.de_nouns = [
   uk: "закон",
   level: "B1",
   topics: ["law", "politics"],  ruNote: "Официальное правило, обязательное для всех.",
-  ukNote: "Офіційне правило, обов’язкове для всіх."
+  ukNote: "Офіційне правило, обов’язкове для всіх.",
   examples: [
     {
       L2: "Niemand steht über dem Gesetz.",
@@ -16065,7 +16065,7 @@ window.decks.de_nouns = [
   uk: "постанова",
   level: "B2",
   topics: ["law", "politics"],  ruNote: "Подробное правило, изданное властью на основе закона.",
-  ukNote: "Детальне правило, видане владою на основі закону."
+  ukNote: "Детальне правило, видане владою на основі закону.",
   examples: [
     {
       L2: "Die neue Verordnung gilt ab nächster Woche.",
@@ -16082,7 +16082,7 @@ window.decks.de_nouns = [
   uk: "адміністрація",
   level: "B1",
   topics: ["law", "organization"],  ruNote: "Органы, которые выполняют решения государства или учреждения.",
-  ukNote: "Органи, що виконують рішення держави або установи."
+  ukNote: "Органи, що виконують рішення держави або установи.",
   examples: [
     {
       L2: "Die Verwaltung bearbeitet die Anträge.",
@@ -16099,7 +16099,7 @@ window.decks.de_nouns = [
   uk: "установа",
   level: "B1",
   topics: ["law", "bureaucracy"],  ruNote: "Официальное учреждение с административными задачами.",
-  ukNote: "Офіційна установа з адміністративними завданнями."
+  ukNote: "Офіційна установа з адміністративними завданнями.",
   examples: [
     {
       L2: "Sie müssen sich bei der Behörde melden.",
@@ -16116,7 +16116,7 @@ window.decks.de_nouns = [
   uk: "голосування",
   level: "B1",
   topics: ["politics", "communication"],  ruNote: "Процесс, когда участники отдают свои голоса за вариант.",
-  ukNote: "Процес, коли учасники віддають голоси за варіант."
+  ukNote: "Процес, коли учасники віддають голоси за варіант.",
   examples: [
     {
       L2: "Die Abstimmung war sehr knapp.",
@@ -16133,7 +16133,7 @@ window.decks.de_nouns = [
   uk: "культура",
   level: "A2",
   topics: ["culture"],  ruNote: "Традиции, искусство, ценности и образ жизни людей.",
-  ukNote: "Традиції, мистецтво, цінності та спосіб життя людей."
+  ukNote: "Традиції, мистецтво, цінності та спосіб життя людей.",
   examples: [
     {
       L2: "Die Kultur des Landes ist sehr vielfältig.",
@@ -16150,7 +16150,7 @@ window.decks.de_nouns = [
   uk: "традиція",
   level: "A2",
   topics: ["culture"],  ruNote: "Обычай, который передаётся из поколения в поколение.",
-  ukNote: "Звичай, що передається з покоління в покоління."
+  ukNote: "Звичай, що передається з покоління в покоління.",
   examples: [
     {
       L2: "Das ist eine alte Tradition in unserer Familie.",
@@ -16167,7 +16167,7 @@ window.decks.de_nouns = [
   uk: "звичай",
   level: "B1",
   topics: ["culture"],  ruNote: "Привычный способ поведения в праздники или в быту.",
-  ukNote: "Звичний спосіб поведінки у свята чи в побуті."
+  ukNote: "Звичний спосіб поведінки у свята чи в побуті.",
   examples: [
     {
       L2: "Es ist ein alter Brauch, Geschenke zu machen.",
@@ -16184,7 +16184,7 @@ window.decks.de_nouns = [
   uk: "свято",
   level: "A2",
   topics: ["culture"],  ruNote: "Особый день с праздничной программой и атмосферой.",
-  ukNote: "Особливий день із святковою програмою та атмосферою."
+  ukNote: "Особливий день із святковою програмою та атмосферою.",
   examples: [
     {
       L2: "Wir feiern ein großes Fest.",
@@ -16201,7 +16201,7 @@ window.decks.de_nouns = [
   uk: "святкування",
   level: "A2",
   topics: ["culture"],  ruNote: "Мероприятие по случаю особого события.",
-  ukNote: "Захід з нагоди особливої події."
+  ukNote: "Захід з нагоди особливої події.",
   examples: [
     {
       L2: "Die Feier war sehr gemütlich.",
@@ -16218,7 +16218,7 @@ window.decks.de_nouns = [
   uk: "святковий день",
   level: "A2",
   topics: ["culture"],  ruNote: "Официальный свободный день, часто по религиозному или гос. поводу.",
-  ukNote: "Офіційний вихідний день, часто з релігійного чи держ. приводу."
+  ukNote: "Офіційний вихідний день, часто з релігійного чи держ. приводу.",
   examples: [
     {
       L2: "Am Feiertag haben die Geschäfte geschlossen.",
@@ -16235,7 +16235,7 @@ window.decks.de_nouns = [
   uk: "звичка",
   level: "B1",
   topics: ["psychology", "daily life"],  ruNote: "То, что человек регулярно делает почти автоматически.",
-  ukNote: "Те, що людина регулярно робить майже автоматично."
+  ukNote: "Те, що людина регулярно робить майже автоматично.",
   examples: [
     {
       L2: "Rauchen ist eine schlechte Gewohnheit.",
@@ -16252,7 +16252,7 @@ window.decks.de_nouns = [
   uk: "звичаї",
   level: "B2",
   topics: ["culture"],  ruNote: "Принятые в обществе нормы поведения и морали.",
-  ukNote: "Прийняті в суспільстві норми поведінки й моралі."
+  ukNote: "Прийняті в суспільстві норми поведінки й моралі.",
   examples: [
     {
       L2: "Andere Länder haben oft andere Sitten.",
@@ -16269,7 +16269,7 @@ window.decks.de_nouns = [
   uk: "молодята",
   level: "B1",
   topics: ["culture"],  ruNote: "Пара, которая только что поженилась или женится.",
-  ukNote: "Пара, яка щойно одружилася або одружується."
+  ukNote: "Пара, яка щойно одружилася або одружується.",
   examples: [
     {
       L2: "Das Brautpaar tanzt den ersten Tanz.",
@@ -16286,7 +16286,7 @@ window.decks.de_nouns = [
   uk: "церемонія",
   level: "B2",
   topics: ["culture"],  ruNote: "Официальный, торжественный порядок действий.",
-  ukNote: "Офіційний, урочистий порядок дій."
+  ukNote: "Офіційний, урочистий порядок дій.",
   examples: [
     {
       L2: "Die Zeremonie dauerte eine Stunde.",
@@ -16303,7 +16303,7 @@ window.decks.de_nouns = [
   uk: "комунікація",
   level: "B1",
   topics: ["communication"],  ruNote: "Обмен информацией между людьми.",
-  ukNote: "Обмін інформацією між людьми."
+  ukNote: "Обмін інформацією між людьми.",
   examples: [
     {
       L2: "Gute Kommunikation ist im Team sehr wichtig.",
@@ -16320,7 +16320,7 @@ window.decks.de_nouns = [
   uk: "розмова",
   level: "A2",
   topics: ["communication"],  ruNote: "Ситуация, когда люди обмениваются словами.",
-  ukNote: "Ситуація, коли люди обмінюються словами."
+  ukNote: "Ситуація, коли люди обмінюються словами.",
   examples: [
     {
       L2: "Wir führen ein offenes Gespräch.",
@@ -16337,7 +16337,7 @@ window.decks.de_nouns = [
   uk: "вимова",
   level: "B1",
   topics: ["language", "communication"],  ruNote: "То, как мы произносим звуки и слова; также обсуждение темы.",
-  ukNote: "Те, як ми вимовляємо звуки й слова; також обговорення теми."
+  ukNote: "Те, як ми вимовляємо звуки й слова; також обговорення теми.",
   examples: [
     {
       L2: "Die Aussprache im Deutschen ist für ihn schwer.",
@@ -16354,7 +16354,7 @@ window.decks.de_nouns = [
   uk: "наголос",
   level: "B1",
   topics: ["language"],  ruNote: "Выделение слога или слова голосом.",
-  ukNote: "Виділення складу чи слова голосом."
+  ukNote: "Виділення складу чи слова голосом.",
   examples: [
     {
       L2: "Die Betonung liegt auf der ersten Silbe.",
@@ -16371,7 +16371,7 @@ window.decks.de_nouns = [
   uk: "промова",
   level: "B1",
   topics: ["communication"],  ruNote: "Подготовленный монолог перед публикой.",
-  ukNote: "Підготовлений монолог перед публікою."
+  ukNote: "Підготовлений монолог перед публікою.",
   examples: [
     {
       L2: "Die Rede des Präsidenten war sehr lang.",
@@ -16388,7 +16388,7 @@ window.decks.de_nouns = [
   uk: "доповідь",
   level: "B1",
   topics: ["communication", "science"],  ruNote: "Подробное устное сообщение по теме, часто с презентацией.",
-  ukNote: "Детальне усне повідомлення з теми, часто з презентацією."
+  ukNote: "Детальне усне повідомлення з теми, часто з презентацією.",
   examples: [
     {
       L2: "Sie hält einen Vortrag über Klimawandel.",
@@ -16405,7 +16405,7 @@ window.decks.de_nouns = [
   uk: "конференція",
   level: "B1",
   topics: ["work", "science"],  ruNote: "Большая встреча людей для обсуждения важных тем.",
-  ukNote: "Велика зустріч людей для обговорення важливих тем."
+  ukNote: "Велика зустріч людей для обговорення важливих тем.",
   examples: [
     {
       L2: "Die Konferenz findet einmal im Jahr statt.",
@@ -16422,7 +16422,7 @@ window.decks.de_nouns = [
   uk: "протокол",
   level: "B1",
   topics: ["work"],  ruNote: "Официальная запись того, что обсуждали и решили.",
-  ukNote: "Офіційний запис того, що обговорювали й вирішили."
+  ukNote: "Офіційний запис того, що обговорювали й вирішили.",
   examples: [
     {
       L2: "Wer schreibt heute das Protokoll?",
@@ -16439,7 +16439,7 @@ window.decks.de_nouns = [
   uk: "запрошення",
   level: "A2",
   topics: ["communication"],  ruNote: "Сообщение, в котором просят прийти на мероприятие.",
-  ukNote: "Повідомлення, в якому просять прийти на захід."
+  ukNote: "Повідомлення, в якому просять прийти на захід.",
   examples: [
     {
       L2: "Vielen Dank für die Einladung zur Party.",
@@ -16456,7 +16456,7 @@ window.decks.de_nouns = [
   uk: "згода",
   level: "B1",
   topics: ["communication"],  ruNote: "Официальное подтверждение, что вы участвуете или согласны.",
-  ukNote: "Офіційне підтвердження, що ви берете участь або погоджуєтеся."
+  ukNote: "Офіційне підтвердження, що ви берете участь або погоджуєтеся.",
   examples: [
     {
       L2: "Wir haben schon viele Zusagen bekommen.",
@@ -16473,7 +16473,7 @@ window.decks.de_nouns = [
   uk: "відмова",
   level: "B1",
   topics: ["communication"],  ruNote: "Чёткое «нет» на предложение или запрос.",
-  ukNote: "Чітке «ні» на пропозицію чи запит."
+  ukNote: "Чітке «ні» на пропозицію чи запит.",
   examples: [
     {
       L2: "Sie hat eine höfliche Ablehnung geschickt.",
@@ -16490,7 +16490,7 @@ window.decks.de_nouns = [
   uk: "уточнююче запитання",
   level: "B2",
   topics: ["communication"],  ruNote: "Вопрос, который задают, чтобы прояснить информацию.",
-  ukNote: "Запитання, яке ставлять, щоб уточнити інформацію."
+  ukNote: "Запитання, яке ставлять, щоб уточнити інформацію.",
   examples: [
     {
       L2: "Bei Rückfragen können Sie mich jederzeit anrufen.",
@@ -16507,7 +16507,7 @@ window.decks.de_nouns = [
   uk: "довідка",
   level: "B1",
   topics: ["communication"],  ruNote: "Ответ с нужной информацией по вопросу.",
-  ukNote: "Відповідь із потрібною інформацією на запитання."
+  ukNote: "Відповідь із потрібною інформацією на запитання.",
   examples: [
     {
       L2: "Können Sie mir Auskunft über die Öffnungszeiten geben?",
@@ -16524,7 +16524,7 @@ window.decks.de_nouns = [
   uk: "схвалення",
   level: "B1",
   topics: ["communication"],  ruNote: "Позитивная реакция на предложение или решение.",
-  ukNote: "Позитивна реакція на пропозицію чи рішення."
+  ukNote: "Позитивна реакція на пропозицію чи рішення.",
   examples: [
     {
       L2: "Wir brauchen Ihre Zustimmung zum Vertrag.",
@@ -16541,7 +16541,7 @@ window.decks.de_nouns = [
   uk: "розбіжність у думках",
   level: "B2",
   topics: ["communication"],  ruNote: "Ситуация, когда люди думают по-разному.",
-  ukNote: "Ситуація, коли люди думають по-різному."
+  ukNote: "Ситуація, коли люди думають по-різному.",
   examples: [
     {
       L2: "Es gab eine kleine Meinungsverschiedenheit im Team.",
@@ -16558,7 +16558,7 @@ window.decks.de_nouns = [
   uk: "компроміс",
   level: "B1",
   topics: ["communication"],  ruNote: "Решение, которое частично устраивает обе стороны.",
-  ukNote: "Рішення, яке частково влаштовує обидві сторони."
+  ukNote: "Рішення, яке частково влаштовує обидві сторони.",
   examples: [
     {
       L2: "Am Ende fanden wir einen Kompromiss.",
@@ -16575,7 +16575,7 @@ window.decks.de_nouns = [
   uk: "відповідальність",
   level: "B1",
   topics: ["work", "ethics"],  ruNote: "Обязанность отвечать за свои решения и их последствия.",
-  ukNote: "Обов’язок відповідати за свої рішення та їхні наслідки."
+  ukNote: "Обов’язок відповідати за свої рішення та їхні наслідки.",
   examples: [
     {
       L2: "Er trägt die Verantwortung für das Projekt.",
@@ -16592,7 +16592,7 @@ window.decks.de_nouns = [
   uk: "компетенція",
   level: "B2",
   topics: ["work", "law"],  ruNote: "Область задач, за которые кто-то официально отвечает.",
-  ukNote: "Сфера завдань, за які хтось офіційно відповідає."
+  ukNote: "Сфера завдань, за які хтось офіційно відповідає.",
   examples: [
     {
       L2: "Das liegt nicht in meiner Zuständigkeit.",
@@ -16609,7 +16609,7 @@ window.decks.de_nouns = [
   uk: "довіреність",
   level: "B2",
   topics: ["law"],  ruNote: "Письменное разрешение действовать от чужого имени.",
-  ukNote: "Письмовий дозвіл діяти від чужого імені."
+  ukNote: "Письмовий дозвіл діяти від чужого імені.",
   examples: [
     {
       L2: "Ohne Vollmacht kann er den Vertrag nicht unterschreiben.",
@@ -16626,7 +16626,7 @@ window.decks.de_nouns = [
   uk: "підпис",
   level: "A2",
   topics: ["law"],  ruNote: "Имя, написанное рукой для подтверждения документа.",
-  ukNote: "Ім’я, написане від руки для підтвердження документа."
+  ukNote: "Ім’я, написане від руки для підтвердження документа.",
   examples: [
     {
       L2: "Hier fehlt noch Ihre Unterschrift.",
@@ -16643,7 +16643,7 @@ window.decks.de_nouns = [
   uk: "мета",
   level: "A2",
   topics: ["work", "learning"],  ruNote: "Результат, которого вы хотите достичь.",
-  ukNote: "Результат, якого ви хочете досягти."
+  ukNote: "Результат, якого ви хочете досягти.",
   examples: [
     {
       L2: "Mein Ziel ist es, besser Deutsch zu sprechen.",
@@ -16660,7 +16660,7 @@ window.decks.de_nouns = [
   uk: "призначення",
   level: "B1",
   topics: ["work"],  ruNote: "То, для чего что-то делается или существует.",
-  ukNote: "Те, заради чого щось роблять або щось існує."
+  ukNote: "Те, заради чого щось роблять або щось існує.",
   examples: [
     {
       L2: "Der Zweck der Übung ist klar.",
@@ -16677,7 +16677,7 @@ window.decks.de_nouns = [
   uk: "завдання",
   level: "A2",
   topics: ["work", "learning"],  ruNote: "То, что нужно сделать или решить.",
-  ukNote: "Те, що потрібно зробити або розв’язати."
+  ukNote: "Те, що потрібно зробити або розв’язати.",
   examples: [
     {
       L2: "Ich habe heute viele Aufgaben.",
@@ -16694,7 +16694,7 @@ window.decks.de_nouns = [
   uk: "виклик",
   level: "B2",
   topics: ["work", "psychology"],  ruNote: "Задача, которая требует усилий и развития.",
-  ukNote: "Завдання, яке потребує зусиль і розвитку."
+  ukNote: "Завдання, яке потребує зусиль і розвитку.",
   examples: [
     {
       L2: "Dieses Projekt ist eine große Herausforderung.",
@@ -16711,7 +16711,7 @@ window.decks.de_nouns = [
   uk: "рішення",
   level: "A2",
   topics: ["logic", "work"],  ruNote: "Способ, как устранить проблему или выполнить задачу.",
-  ukNote: "Спосіб, як усунути проблему або виконати завдання."
+  ukNote: "Спосіб, як усунути проблему або виконати завдання.",
   examples: [
     {
       L2: "Wir suchen noch nach einer Lösung.",
@@ -16728,7 +16728,7 @@ window.decks.de_nouns = [
   uk: "індикатор прогресу",
   level: "B1",
   topics: ["it", "ui"],  ruNote: "Графическая полоса, показывающая, сколько уже выполнено.",
-  ukNote: "Графічна смужка, що показує, скільки вже виконано."
+  ukNote: "Графічна смужка, що показує, скільки вже виконано.",
   examples: [
     {
       L2: "Der Fortschrittsbalken zeigt 80 Prozent an.",
@@ -16745,7 +16745,7 @@ window.decks.de_nouns = [
   uk: "строк",
   level: "B1",
   topics: ["work", "law"],  ruNote: "Последний допустимый день или время для чего-то.",
-  ukNote: "Останній допустимий день або час для чогось."
+  ukNote: "Останній допустимий день або час для чогось.",
   examples: [
     {
       L2: "Die Frist endet am Montag.",
@@ -16762,7 +16762,7 @@ window.decks.de_nouns = [
   uk: "зустріч",
   level: "A2",
   topics: ["work", "daily life"],  ruNote: "Точно назначенное время для встречи или дела.",
-  ukNote: "Точно призначений час для зустрічі чи справи."
+  ukNote: "Точно призначений час для зустрічі чи справи.",
   examples: [
     {
       L2: "Ich habe morgen einen Termin beim Arzt.",
@@ -16779,7 +16779,7 @@ window.decks.de_nouns = [
   uk: "розклад",
   level: "B1",
   topics: ["work", "time"],  ruNote: "План, в каком порядке и когда что делается.",
-  ukNote: "План, у якому порядку й коли що робиться."
+  ukNote: "План, у якому порядку й коли що робиться.",
   examples: [
     {
       L2: "Wir müssen den Zeitplan einhalten.",
@@ -16796,7 +16796,7 @@ window.decks.de_nouns = [
   uk: "пріоритет",
   level: "B1",
   topics: ["work", "time"],  ruNote: "Степень важности задачи по сравнению с другими.",
-  ukNote: "Ступінь важливості завдання порівняно з іншими."
+  ukNote: "Ступінь важливості завдання порівняно з іншими.",
   examples: [
     {
       L2: "Diese Aufgabe hat hohe Priorität.",
@@ -16813,7 +16813,7 @@ window.decks.de_nouns = [
   uk: "перевага",
   level: "B1",
   topics: ["general"],  ruNote: "Положительная сторона ситуации или вещи.",
-  ukNote: "Позитивна сторона ситуації або речі."
+  ukNote: "Позитивна сторона ситуації або речі.",
   examples: [
     {
       L2: "Der große Vorteil ist der niedrige Preis.",
@@ -16830,7 +16830,7 @@ window.decks.de_nouns = [
   uk: "недолік",
   level: "B1",
   topics: ["general"],  ruNote: "Отрицательная сторона ситуации или вещи.",
-  ukNote: "Негативна сторона ситуації або речі."
+  ukNote: "Негативна сторона ситуації або речі.",
   examples: [
     {
       L2: "Ein Nachteil ist die lange Fahrzeit.",
@@ -16847,7 +16847,7 @@ window.decks.de_nouns = [
   uk: "підказка",
   level: "B1",
   topics: ["communication", "ui"],  ruNote: "Короткая информация, которая помогает ориентироваться.",
-  ukNote: "Коротка інформація, що допомагає зорієнтуватися."
+  ukNote: "Коротка інформація, що допомагає зорієнтуватися.",
   examples: [
     {
       L2: "Auf der Seite gibt es einen wichtigen Hinweis.",
@@ -16864,7 +16864,7 @@ window.decks.de_nouns = [
   uk: "помилка",
   level: "A2",
   topics: ["general", "it"],  ruNote: "Неправильное действие или неправильный результат.",
-  ukNote: "Неправильна дія або неправильний результат."
+  ukNote: "Неправильна дія або неправильний результат.",
   examples: [
     {
       L2: "Im Text sind einige Fehler.",
@@ -16881,7 +16881,7 @@ window.decks.de_nouns = [
   uk: "виняток",
   level: "B1",
   topics: ["logic"],  ruNote: "Случай, который не подчиняется общему правилу.",
-  ukNote: "Випадок, що не підпорядковується загальному правилу."
+  ukNote: "Випадок, що не підпорядковується загальному правилу.",
   examples: [
     {
       L2: "Das ist eine seltene Ausnahme.",
@@ -16898,7 +16898,7 @@ window.decks.de_nouns = [
   uk: "регулярність",
   level: "B2",
   topics: ["time"],  ruNote: "Свойство происходить через равные промежутки времени.",
-  ukNote: "Властивість відбуватися через рівні проміжки часу."
+  ukNote: "Властивість відбуватися через рівні проміжки часу.",
   examples: [
     {
       L2: "Regelmäßigkeit hilft beim Lernen.",
@@ -16915,7 +16915,7 @@ window.decks.de_nouns = [
   uk: "випадковість",
   level: "B1",
   topics: ["logic"],  ruNote: "Происшествие без плана и намерения.",
-  ukNote: "Подія без плану й наміру."
+  ukNote: "Подія без плану й наміру.",
   examples: [
     {
       L2: "Das war kein Zufall.",
@@ -16932,7 +16932,7 @@ window.decks.de_nouns = [
   uk: "упевненість",
   level: "B2",
   topics: ["psychology"],  ruNote: "Состояние, когда нет сомнений.",
-  ukNote: "Стан, коли немає сумнівів."
+  ukNote: "Стан, коли немає сумнівів.",
   examples: [
     {
       L2: "Sie sprach mit großer Gewissheit.",
@@ -16949,7 +16949,7 @@ window.decks.de_nouns = [
   uk: "сумнів",
   level: "B1",
   topics: ["psychology"],  ruNote: "Неуверенность, верно ли что-то.",
-  ukNote: "Невпевненість, чи щось правильне."
+  ukNote: "Невпевненість, чи щось правильне.",
   examples: [
     {
       L2: "Ich habe Zweifel an dieser Entscheidung.",
@@ -16966,7 +16966,7 @@ window.decks.de_nouns = [
   uk: "рішення",
   level: "A2",
   topics: ["psychology", "work"],  ruNote: "Выбор одного варианта из нескольких.",
-  ukNote: "Вибір одного варіанта з кількох."
+  ukNote: "Вибір одного варіанта з кількох.",
   examples: [
     {
       L2: "Die Entscheidung war nicht leicht.",
@@ -16983,7 +16983,7 @@ window.decks.de_nouns = [
   uk: "передумова",
   level: "B2",
   topics: ["logic"],  ruNote: "То, что нужно иметь или выполнить заранее.",
-  ukNote: "Те, що потрібно мати або виконати заздалегідь."
+  ukNote: "Те, що потрібно мати або виконати заздалегідь.",
   examples: [
     {
       L2: "Sprachkenntnisse sind eine wichtige Voraussetzung.",
@@ -17000,7 +17000,7 @@ window.decks.de_nouns = [
   uk: "умова",
   level: "B1",
   topics: ["logic", "law"],  ruNote: "Фактор, от которого зависит возможность чего-то.",
-  ukNote: "Фактор, від якого залежить можливість чогось."
+  ukNote: "Фактор, від якого залежить можливість чогось.",
   examples: [
     {
       L2: "Die Bedingungen müssen klar sein.",
@@ -17017,7 +17017,7 @@ window.decks.de_nouns = [
   uk: "дія",
   level: "B1",
   topics: ["science"],  ruNote: "То, что происходит как результат какого-то действия.",
-  ukNote: "Те, що відбувається як результат певної дії."
+  ukNote: "Те, що відбувається як результат певної дії.",
   examples: [
     {
       L2: "Das Medikament hat eine starke Wirkung.",
@@ -17034,7 +17034,7 @@ window.decks.de_nouns = [
   uk: "причина",
   level: "B1",
   topics: ["logic"],  ruNote: "То, что вызывает событие или состояние.",
-  ukNote: "Те, що спричиняє подію або стан."
+  ukNote: "Те, що спричиняє подію або стан.",
   examples: [
     {
       L2: "Die genaue Ursache ist noch unbekannt.",
@@ -17051,7 +17051,7 @@ window.decks.de_nouns = [
   uk: "наслідок",
   level: "B1",
   topics: ["logic"],  ruNote: "То, что происходит после причины; также часть серии.",
-  ukNote: "Те, що відбувається після причини; також частина серіалу."
+  ukNote: "Те, що відбувається після причини; також частина серіалу.",
   examples: [
     {
       L2: "Die Folgen dieser Entscheidung sind groß.",
@@ -17068,7 +17068,7 @@ window.decks.de_nouns = [
   uk: "огляд",
   level: "B1",
   topics: ["information"],  ruNote: "Краткое и понятное представление основных пунктов.",
-  ukNote: "Коротке й зрозуміле подання основних пунктів."
+  ukNote: "Коротке й зрозуміле подання основних пунктів.",
   examples: [
     {
       L2: "Die Übersicht zeigt alle wichtigen Daten.",
@@ -17085,7 +17085,7 @@ window.decks.de_nouns = [
   uk: "представлення",
   level: "B1",
   topics: ["information", "it"],  ruNote: "То, как информация показана визуально или текстом.",
-  ukNote: "Те, як інформацію показано візуально або текстом."
+  ukNote: "Те, як інформацію показано візуально або текстом.",
   examples: [
     {
       L2: "Die grafische Darstellung hilft beim Verstehen.",
@@ -17102,7 +17102,7 @@ window.decks.de_nouns = [
   uk: "вибір",
   level: "A2",
   topics: ["general", "ui"],  ruNote: "Группа вариантов и сам процесс выбора.",
-  ukNote: "Група варіантів і сам процес вибору."
+  ukNote: "Група варіантів і сам процес вибору.",
   examples: [
     {
       L2: "Sie haben eine große Auswahl an Gerichten.",
@@ -17119,7 +17119,7 @@ window.decks.de_nouns = [
   uk: "комбінація",
   level: "B1",
   topics: ["logic"],  ruNote: "Соединение нескольких элементов в одно целое.",
-  ukNote: "Поєднання кількох елементів в одне ціле."
+  ukNote: "Поєднання кількох елементів в одне ціле.",
   examples: [
     {
       L2: "Diese Farbkombination gefällt mir.",
@@ -17136,7 +17136,7 @@ window.decks.de_nouns = [
   uk: "віднесення",
   level: "B2",
   topics: ["logic", "it"],  ruNote: "Связь между двумя группами элементов (например, ключ — значение).",
-  ukNote: "Зв’язок між двома групами елементів (наприклад, ключ — значення)."
+  ukNote: "Зв’язок між двома групами елементів (наприклад, ключ — значення).",
   examples: [
     {
       L2: "Die Zuordnung der Daten muss eindeutig sein.",
@@ -17153,7 +17153,7 @@ window.decks.de_nouns = [
   uk: "список улюблених",
   level: "A2",
   topics: ["ui"],  ruNote: "Список элементов, которые пользователь отметил как любимые.",
-  ukNote: "Список елементів, які користувач позначив як улюблені."
+  ukNote: "Список елементів, які користувач позначив як улюблені.",
   examples: [
     {
       L2: "Das Wort wurde zur Lieblingsliste hinzugefügt.",
@@ -17170,7 +17170,7 @@ window.decks.de_nouns = [
   uk: "серце",
   level: "A2",
   topics: ["symbol", "ui"],  ruNote: "В интерфейсе иконка сердца часто означает «нравится» или «в избранное».",
-  ukNote: "В інтерфейсі іконка серця часто означає «подобається» або «в обране»."
+  ukNote: "В інтерфейсі іконка серця часто означає «подобається» або «в обране».",
   examples: [
     {
       L2: "Du kannst das Herz anklicken, um den Eintrag zu merken.",
@@ -17187,7 +17187,7 @@ window.decks.de_nouns = [
   uk: "зірка",
   level: "A2",
   topics: ["symbol", "ui"],  ruNote: "В интерфейсе значок звезды часто ставят как пометку избранного.",
-  ukNote: "В інтерфейсі знак зірки часто ставлять як позначку обраного."
+  ukNote: "В інтерфейсі знак зірки часто ставлять як позначку обраного.",
   examples: [
     {
       L2: "Ein Stern zeigt deine Favoriten an.",
@@ -17204,7 +17204,7 @@ window.decks.de_nouns = [
   uk: "щабель",
   level: "B1",
   topics: ["general"],  ruNote: "Один уровень в лестнице, развитии или шкале.",
-  ukNote: "Один щабель у драбині, розвитку чи шкалі."
+  ukNote: "Один щабель у драбині, розвитку чи шкалі.",
   examples: [
     {
       L2: "Du hast die nächste Stufe erreicht.",
@@ -17221,7 +17221,7 @@ window.decks.de_nouns = [
   uk: "поріг",
   level: "B2",
   topics: ["general"],  ruNote: "Граница, с которой что-то начинается (физически или абстрактно).",
-  ukNote: "Межа, з якої щось починається (фізично чи абстрактно)."
+  ukNote: "Межа, з якої щось починається (фізично чи абстрактно).",
   examples: [
     {
       L2: "Die Schmerzschwelle ist bei jedem anders.",
@@ -17238,7 +17238,7 @@ window.decks.de_nouns = [
   uk: "межа",
   level: "A2",
   topics: ["general"],  ruNote: "Линия, которая отделяет страны, области или возможности.",
-  ukNote: "Лінія, що відділяє країни, області чи можливості."
+  ukNote: "Лінія, що відділяє країни, області чи можливості.",
   examples: [
     {
       L2: "Jede Sprache hat ihre Grenzen.",
@@ -17255,7 +17255,7 @@ window.decks.de_nouns = [
   uk: "стовпчик",
   level: "B1",
   topics: ["it", "tables"],  ruNote: "Вертикальная колонка в таблице.",
-  ukNote: "Вертикальний стовпчик у таблиці."
+  ukNote: "Вертикальний стовпчик у таблиці.",
   examples: [
     {
       L2: "Tragen Sie den Wert in die erste Spalte ein.",
@@ -17272,7 +17272,7 @@ window.decks.de_nouns = [
   uk: "рядок",
   level: "B1",
   topics: ["it", "tables"],  ruNote: "Горизонтальная строка текста или таблицы.",
-  ukNote: "Горизонтальний рядок тексту чи таблиці."
+  ukNote: "Горизонтальний рядок тексту чи таблиці.",
   examples: [
     {
       L2: "Bitte lesen Sie die dritte Zeile.",
@@ -17289,7 +17289,7 @@ window.decks.de_nouns = [
   uk: "запис",
   level: "B1",
   topics: ["it", "data"],  ruNote: "Отдельная запись в списке, таблице или базе данных.",
-  ukNote: "Окремий запис у списку, таблиці чи базі даних."
+  ukNote: "Окремий запис у списку, таблиці чи базі даних.",
   examples: [
     {
       L2: "Jeder Eintrag hat eine eigene ID.",
@@ -17306,7 +17306,7 @@ window.decks.de_nouns = [
   uk: "набір даних",
   level: "B2",
   topics: ["it", "data"],  ruNote: "Структурированный набор связанных полей (например, запись пользователя).",
-  ukNote: "Структурований набір пов’язаних полів (наприклад, запис користувача)."
+  ukNote: "Структурований набір пов’язаних полів (наприклад, запис користувача).",
   examples: [
     {
       L2: "Der Datensatz wurde erfolgreich gespeichert.",
@@ -17323,7 +17323,7 @@ window.decks.de_nouns = [
   uk: "резервне копіювання",
   level: "B1",
   topics: ["it"],  ruNote: "Создание копии данных на случай потери.",
-  ukNote: "Створення копії даних на випадок втрати."
+  ukNote: "Створення копії даних на випадок втрати.",
   examples: [
     {
       L2: "Die Sicherung läuft jede Nacht automatisch.",
@@ -17340,7 +17340,7 @@ window.decks.de_nouns = [
   uk: "відновлення",
   level: "B1",
   topics: ["it"],  ruNote: "Процесс возврата данных из резервной копии.",
-  ukNote: "Процес повернення даних із резервної копії."
+  ukNote: "Процес повернення даних із резервної копії.",
   examples: [
     {
       L2: "Die Wiederherstellung kann etwas Zeit dauern.",
@@ -17357,7 +17357,7 @@ window.decks.de_nouns = [
   uk: "версіонування",
   level: "B2",
   topics: ["it"],  ruNote: "Система, в которой сохраняются разные версии файла или данных.",
-  ukNote: "Система, у якій зберігаються різні версії файла чи даних."
+  ukNote: "Система, у якій зберігаються різні версії файла чи даних.",
   examples: [
     {
       L2: "Die Versionierung hilft, Änderungen nachzuvollziehen.",
@@ -17374,7 +17374,7 @@ window.decks.de_nouns = [
   uk: "сумісність",
   level: "B2",
   topics: ["it"],  ruNote: "Возможность систем или программ работать вместе без проблем.",
-  ukNote: "Можливість систем чи програм працювати разом без проблем."
+  ukNote: "Можливість систем чи програм працювати разом без проблем.",
   examples: [
     {
       L2: "Wir müssen die Kompatibilität mit älteren Versionen prüfen.",
@@ -17391,7 +17391,7 @@ window.decks.de_nouns = [
   uk: "стабільність",
   level: "B2",
   topics: ["it", "general"],  ruNote: "Надёжность работы системы без сбоев.",
-  ukNote: "Надійність роботи системи без збоїв."
+  ukNote: "Надійність роботи системи без збоїв.",
   examples: [
     {
       L2: "Die Stabilität der Anwendung ist sehr wichtig.",
@@ -17408,7 +17408,7 @@ window.decks.de_nouns = [
   uk: "розширення",
   level: "B1",
   topics: ["it"],  ruNote: "Дополнительный модуль, который добавляет функции.",
-  ukNote: "Додатковий модуль, що додає функції."
+  ukNote: "Додатковий модуль, що додає функції.",
   examples: [
     {
       L2: "Mit dieser Erweiterung bekommt das Programm neue Funktionen.",
@@ -17425,7 +17425,7 @@ window.decks.de_nouns = [
   uk: "модуль",
   level: "B1",
   topics: ["it"],  ruNote: "Отдельная часть системы, которая выполняет свою задачу.",
-  ukNote: "Окрема частина системи, що виконує своє завдання."
+  ukNote: "Окрема частина системи, що виконує своє завдання.",
   examples: [
     {
       L2: "Das neue Modul kann leicht eingebaut werden.",
@@ -17442,7 +17442,7 @@ window.decks.de_nouns = [
   uk: "інтерфейс",
   level: "B2",
   topics: ["it"],  ruNote: "Место или договорённость, через которую системы общаются друг с другом.",
-  ukNote: "Місце або домовленість, через яку системи спілкуються між собою."
+  ukNote: "Місце або домовленість, через яку системи спілкуються між собою.",
   examples: [
     {
       L2: "Die Schnittstelle verbindet zwei Module.",
@@ -17459,7 +17459,7 @@ window.decks.de_nouns = [
   uk: "документація",
   level: "B1",
   topics: ["it", "work"],  ruNote: "Собрание текстов, объясняющих, как работает система.",
-  ukNote: "Збірка текстів, що пояснюють, як працює система."
+  ukNote: "Збірка текстів, що пояснюють, як працює система.",
   examples: [
     {
       L2: "Lesen Sie die Dokumentation vor der Installation.",
@@ -17476,7 +17476,7 @@ window.decks.de_nouns = [
   uk: "публікація",
   level: "B2",
   topics: ["it", "media"],  ruNote: "Момент, когда продукт, текст или данные становятся доступны публике.",
-  ukNote: "Момент, коли продукт, текст чи дані стають доступними публіці."
+  ukNote: "Момент, коли продукт, текст чи дані стають доступними публіці.",
   examples: [
     {
       L2: "Die Veröffentlichung der neuen Version ist für morgen geplant.",
@@ -17492,7 +17492,7 @@ window.decks.de_nouns = [
   uk: "населення",
   level: "B1",
   topics: ["society"],  ruNote: "Все люди, которые живут в стране или регионе.",
-  ukNote: "Усі люди, які живуть у країні або регіоні."
+  ukNote: "Усі люди, які живуть у країні або регіоні.",
   examples: [
     {
       L2: "Die Bevölkerung wird immer älter.",
@@ -17509,7 +17509,7 @@ window.decks.de_nouns = [
   uk: "рівноправність",
   level: "B2",
   topics: ["society", "law"],  ruNote: "Ситуация, когда все люди имеют одинаковые права.",
-  ukNote: "Ситуація, коли всі люди мають однакові права."
+  ukNote: "Ситуація, коли всі люди мають однакові права.",
   examples: [
     {
       L2: "Gleichberechtigung von Männern und Frauen ist wichtig.",
@@ -17526,7 +17526,7 @@ window.decks.de_nouns = [
   uk: "зобов'язання",
   level: "B2",
   topics: ["law", "work"],  ruNote: "То, что вы должны сделать по закону или по договору.",
-  ukNote: "Те, що ви повинні зробити за законом або за договором."
+  ukNote: "Те, що ви повинні зробити за законом або за договором.",
   examples: [
     {
       L2: "Er hat die Verpflichtung, pünktlich zu zahlen.",
@@ -17543,7 +17543,7 @@ window.decks.de_nouns = [
   uk: "обмеження / порушення",
   level: "B2",
   topics: ["law", "health"],  ruNote: "Отрицательное влияние на здоровье, права или качество жизни.",
-  ukNote: "Негативний вплив на здоров’я, права чи якість життя."
+  ukNote: "Негативний вплив на здоров’я, права чи якість життя.",
   examples: [
     {
       L2: "Die Lärmbelastung führt zur Beeinträchtigung der Gesundheit.",
@@ -17560,7 +17560,7 @@ window.decks.de_nouns = [
   uk: "обмеження",
   level: "B1",
   topics: ["law", "general"],  ruNote: "Ситуация, когда что-то нельзя делать полностью или свободно.",
-  ukNote: "Ситуація, коли щось не можна робити повністю чи вільно."
+  ukNote: "Ситуація, коли щось не можна робити повністю чи вільно.",
   examples: [
     {
       L2: "Es gibt Einschränkungen beim Reisen.",
@@ -17577,7 +17577,7 @@ window.decks.de_nouns = [
   uk: "толерантність",
   level: "B1",
   topics: ["society"],  ruNote: "Уважительное отношение к людям с другими мнениями или стилем жизни.",
-  ukNote: "Шанобливе ставлення до людей з іншими поглядами чи способом життя."
+  ukNote: "Шанобливе ставлення до людей з іншими поглядами чи способом життя.",
   examples: [
     {
       L2: "Toleranz ist wichtig für das Zusammenleben.",
@@ -17594,7 +17594,7 @@ window.decks.de_nouns = [
   uk: "різноманіття",
   level: "B1",
   topics: ["society"],  ruNote: "Большое количество разных форм, культур или идей.",
-  ukNote: "Велика кількість різних форм, культур чи ідей."
+  ukNote: "Велика кількість різних форм, культур чи ідей.",
   examples: [
     {
       L2: "Die Stadt ist bekannt für ihre kulturelle Vielfalt.",
@@ -17611,7 +17611,7 @@ window.decks.de_nouns = [
   uk: "інтеграція",
   level: "B1",
   topics: ["society"],  ruNote: "Процесс включения людей в общество или группу.",
-  ukNote: "Процес включення людей у суспільство чи групу."
+  ukNote: "Процес включення людей у суспільство чи групу.",
   examples: [
     {
       L2: "Sprachkurse helfen bei der Integration.",
@@ -17628,7 +17628,7 @@ window.decks.de_nouns = [
   uk: "участь",
   level: "B2",
   topics: ["society", "work"],  ruNote: "Активное участие в проекте, решении или мероприятии.",
-  ukNote: "Активна участь у проєкті, рішенні чи заході."
+  ukNote: "Активна участь у проєкті, рішенні чи заході.",
   examples: [
     {
       L2: "Bürgerbeteiligung ist für die Demokratie wichtig.",
@@ -17645,7 +17645,7 @@ window.decks.de_nouns = [
   uk: "обґрунтування",
   level: "B2",
   topics: ["communication"],  ruNote: "Причины, которые вы приводите, чтобы что-то объяснить или защитить.",
-  ukNote: "Причини, які ви наводите, щоб щось пояснити чи захистити."
+  ukNote: "Причини, які ви наводите, щоб щось пояснити чи захистити.",
   examples: [
     {
       L2: "Für die Entscheidung gibt es eine gute Begründung.",
@@ -17662,7 +17662,7 @@ window.decks.de_nouns = [
   uk: "заява про згоду",
   level: "B2",
   topics: ["law"],  ruNote: "Письменное подтверждение, что вы с чем-то согласны.",
-  ukNote: "Письмове підтвердження, що ви з чимось згодні."
+  ukNote: "Письмове підтвердження, що ви з чимось згодні.",
   examples: [
     {
       L2: "Ohne Zustimmungserklärung dürfen wir die Daten nicht nutzen.",
@@ -17679,7 +17679,7 @@ window.decks.de_nouns = [
   uk: "вимога",
   level: "B1",
   topics: ["work", "it"],  ruNote: "То, что обязательно нужно для задачи или должности.",
-  ukNote: "Те, що обов’язково потрібне для завдання чи посади."
+  ukNote: "Те, що обов’язково потрібне для завдання чи посади.",
   examples: [
     {
       L2: "Die Anforderungen an die Stelle sind hoch.",
@@ -17696,7 +17696,7 @@ window.decks.de_nouns = [
   uk: "процедура / процес",
   level: "B2",
   topics: ["law", "work"],  ruNote: "Установленный порядок действий, особенно в официальных делах.",
-  ukNote: "Встановлений порядок дій, особливо в офіційних справах."
+  ukNote: "Встановлений порядок дій, особливо в офіційних справах.",
   examples: [
     {
       L2: "Das Verfahren dauert mehrere Monate.",
@@ -17713,7 +17713,7 @@ window.decks.de_nouns = [
   uk: "установа / заклад",
   level: "B1",
   topics: ["society"],  ruNote: "Организация с определённой задачей, например школа или больница.",
-  ukNote: "Організація з певним завданням, наприклад школа чи лікарня."
+  ukNote: "Організація з певним завданням, наприклад школа чи лікарня.",
   examples: [
     {
       L2: "Die Stadt unterstützt soziale Einrichtungen.",
@@ -17730,7 +17730,7 @@ window.decks.de_nouns = [
   uk: "громада / муніципалітет",
   level: "B1",
   topics: ["politics"],  ruNote: "Местный административный район с собственным советом.",
-  ukNote: "Місцева адміністративна одиниця з власною радою."
+  ukNote: "Місцева адміністративна одиниця з власною радою.",
   examples: [
     {
       L2: "Die Gemeinde plant ein neues Kulturzentrum.",
@@ -17747,7 +17747,7 @@ window.decks.de_nouns = [
   uk: "міська рада",
   level: "B2",
   topics: ["politics"],  ruNote: "Группа избранных представителей, которые решают дела города.",
-  ukNote: "Група обраних представників, які вирішують справи міста."
+  ukNote: "Група обраних представників, які вирішують справи міста.",
   examples: [
     {
       L2: "Der Stadtrat hat den neuen Haushalt beschlossen.",
@@ -17764,7 +17764,7 @@ window.decks.de_nouns = [
   uk: "бюджет",
   level: "B1",
   topics: ["finance", "politics"],  ruNote: "План доходов и расходов государства, города или семьи.",
-  ukNote: "План доходів і видатків держави, міста чи родини."
+  ukNote: "План доходів і видатків держави, міста чи родини.",
   examples: [
     {
       L2: "Der Haushalt für das nächste Jahr ist knapp.",
@@ -17781,7 +17781,7 @@ window.decks.de_nouns = [
   uk: "проведення / здійснення",
   level: "B2",
   topics: ["work"],  ruNote: "Практическое выполнение процесса или сделки.",
-  ukNote: "Практичне виконання процесу чи угоди."
+  ukNote: "Практичне виконання процесу чи угоди.",
   examples: [
     {
       L2: "Die Abwicklung des Projekts läuft nach Plan.",
@@ -17798,7 +17798,7 @@ window.decks.de_nouns = [
   uk: "витрати / зусилля",
   level: "B2",
   topics: ["work", "finance"],  ruNote: "Энергия, время и деньги, которые нужно вложить.",
-  ukNote: "Енергія, час і гроші, які потрібно вкласти."
+  ukNote: "Енергія, час і гроші, які потрібно вкласти.",
   examples: [
     {
       L2: "Der Aufwand für die Umstellung ist hoch.",
@@ -17815,7 +17815,7 @@ window.decks.de_nouns = [
   uk: "дохід / врожай",
   level: "B2",
   topics: ["finance", "economy"],  ruNote: "То, что вы получаете в результате инвестиций или работы (деньги или урожай).",
-  ukNote: "Те, що ви отримуєте в результаті інвестицій чи роботи (гроші або врожай)."
+  ukNote: "Те, що ви отримуєте в результаті інвестицій чи роботи (гроші або врожай).",
   examples: [
     {
       L2: "Der Ertrag war dieses Jahr besonders gut.",
@@ -17832,7 +17832,7 @@ window.decks.de_nouns = [
   uk: "обіг / виручка",
   level: "B2",
   topics: ["economy"],  ruNote: "Общая сумма всех продаж за определённый период.",
-  ukNote: "Загальна сума всіх продажів за певний період."
+  ukNote: "Загальна сума всіх продажів за певний період.",
   examples: [
     {
       L2: "Der Umsatz ist im letzten Quartal gestiegen.",
@@ -17849,7 +17849,7 @@ window.decks.de_nouns = [
   uk: "доставка / вручення",
   level: "B2",
   topics: ["logistics"],  ruNote: "Официальная передача письма, посылки или решения адресату.",
-  ukNote: "Офіційна передача листа, посилки чи рішення адресату."
+  ukNote: "Офіційна передача листа, посилки чи рішення адресату.",
   examples: [
     {
       L2: "Die Zustellung des Pakets verzögert sich.",
@@ -17866,7 +17866,7 @@ window.decks.de_nouns = [
   uk: "оснащення / обладнання",
   level: "B1",
   topics: ["tech", "work"],  ruNote: "Предметы и техника, которые есть в помещении или учреждении.",
-  ukNote: "Предмети й техніка, які є в приміщенні чи установі."
+  ukNote: "Предмети й техніка, які є в приміщенні чи установі.",
   examples: [
     {
       L2: "Die Ausstattung des Büros ist modern.",
@@ -17883,7 +17883,7 @@ window.decks.de_nouns = [
   uk: "сумісність",
   level: "B2",
   topics: ["work", "society"],  ruNote: "То, насколько хорошо разные вещи можно соединить (например, работа и семья).",
-  ukNote: "Те, наскільки добре різні речі можна поєднати (наприклад, роботу й родину)."
+  ukNote: "Те, наскільки добре різні речі можна поєднати (наприклад, роботу й родину).",
   examples: [
     {
       L2: "Die Vereinbarkeit von Beruf und Familie ist ein wichtiges Thema.",
@@ -17900,7 +17900,7 @@ window.decks.de_nouns = [
   uk: "застосунок / застосування",
   level: "B1",
   topics: ["it", "general"],  ruNote: "Компьютерная программа или практическое использование метода.",
-  ukNote: "Комп’ютерний застосунок або практичне використання методу."
+  ukNote: "Комп’ютерний застосунок або практичне використання методу.",
   examples: [
     {
       L2: "Die Anwendung ist einfach zu bedienen.",
@@ -17917,7 +17917,7 @@ window.decks.de_nouns = [
   uk: "комплектація / конфігурація",
   level: "B2",
   topics: ["tech"],  ruNote: "Набор функций и деталей при покупке техники или автомобиля.",
-  ukNote: "Набір функцій і деталей під час купівлі техніки чи авто."
+  ukNote: "Набір функцій і деталей під час купівлі техніки чи авто.",
   examples: [
     {
       L2: "Das Modell ist in verschiedenen Ausstattungen erhältlich.",
@@ -17934,7 +17934,7 @@ window.decks.de_nouns = [
   uk: "безпека даних",
   level: "B2",
   topics: ["it", "security"],  ruNote: "Меры, которые защищают данные от потери и несанкционированного доступа.",
-  ukNote: "Заходи, що захищають дані від втрати та несанкціонованого доступу."
+  ukNote: "Заходи, що захищають дані від втрати та несанкціонованого доступу.",
   examples: [
     {
       L2: "Datensicherheit spielt eine große Rolle in unserem System.",
@@ -17951,7 +17951,7 @@ window.decks.de_nouns = [
   uk: "захист даних",
   level: "B2",
   topics: ["it", "law"],  ruNote: "Правила, которые защищают личные данные людей.",
-  ukNote: "Правила, які захищають особисті дані людей."
+  ukNote: "Правила, які захищають особисті дані людей.",
   examples: [
     {
       L2: "Wir müssen die Datenschutzbestimmungen einhalten.",
@@ -17968,7 +17968,7 @@ window.decks.de_nouns = [
   uk: "програмне забезпечення",
   level: "A2",
   topics: ["it"],  ruNote: "Все программы, которые работают на компьютере или устройстве.",
-  ukNote: "Усі програми, які працюють на комп’ютері чи пристрої."
+  ukNote: "Усі програми, які працюють на комп’ютері чи пристрої.",
   examples: [
     {
       L2: "Die Software wird regelmäßig aktualisiert.",
@@ -17985,7 +17985,7 @@ window.decks.de_nouns = [
   uk: "апаратне забезпечення",
   level: "A2",
   topics: ["it"],  ruNote: "Физические части компьютера или устройства.",
-  ukNote: "Фізичні частини комп’ютера чи пристрою."
+  ukNote: "Фізичні частини комп’ютера чи пристрою.",
   examples: [
     {
       L2: "Die Hardware muss aufgerüstet werden.",
@@ -18002,7 +18002,7 @@ window.decks.de_nouns = [
   uk: "пропускна здатність",
   level: "B2",
   topics: ["it", "network"],  ruNote: "Максимальный объём данных, который можно передать за время.",
-  ukNote: "Максимальний обсяг даних, який можна передати за час."
+  ukNote: "Максимальний обсяг даних, який можна передати за час.",
   examples: [
     {
       L2: "Für Videostreaming braucht man eine hohe Bandbreite.",
@@ -18019,7 +18019,7 @@ window.decks.de_nouns = [
   uk: "шифрування",
   level: "B2",
   topics: ["it", "security"],  ruNote: "Преобразование данных в код, который нельзя просто так прочитать.",
-  ukNote: "Перетворення даних у код, який не можна просто прочитати."
+  ukNote: "Перетворення даних у код, який не можна просто прочитати.",
   examples: [
     {
       L2: "Die E-Mails werden mit starker Verschlüsselung gesendet.",
@@ -18036,7 +18036,7 @@ window.decks.de_nouns = [
   uk: "передача",
   level: "B1",
   topics: ["it", "media"],  ruNote: "Перемещение данных, сигналов или прав от одного к другому.",
-  ukNote: "Переміщення даних, сигналів чи прав від одного до іншого."
+  ukNote: "Переміщення даних, сигналів чи прав від одного до іншого.",
   examples: [
     {
       L2: "Bei der Übertragung ist ein Fehler aufgetreten.",
@@ -18053,7 +18053,7 @@ window.decks.de_nouns = [
   uk: "захворювання",
   level: "B1",
   topics: ["health"],  ruNote: "Общее слово для болезни или нарушения здоровья.",
-  ukNote: "Загальне слово для хвороби чи порушення здоров’я."
+  ukNote: "Загальне слово для хвороби чи порушення здоров’я.",
   examples: [
     {
       L2: "Die Erkrankung verläuft meist harmlos.",
@@ -18070,7 +18070,7 @@ window.decks.de_nouns = [
   uk: "профілактика",
   level: "B2",
   topics: ["health"],  ruNote: "Меры, которые предотвращают болезнь или проблему.",
-  ukNote: "Заходи, які запобігають хворобі чи проблемі."
+  ukNote: "Заходи, які запобігають хворобі чи проблемі.",
   examples: [
     {
       L2: "Prävention ist oft günstiger als Behandlung.",
@@ -18087,7 +18087,7 @@ window.decks.de_nouns = [
   uk: "діагноз",
   level: "B1",
   topics: ["health"],  ruNote: "Заключение врача, какая именно болезнь у пациента.",
-  ukNote: "Висновок лікаря, яка саме хвороба у пацієнта."
+  ukNote: "Висновок лікаря, яка саме хвороба у пацієнта.",
   examples: [
     {
       L2: "Die Diagnose wurde nach mehreren Tests gestellt.",
@@ -18104,7 +18104,7 @@ window.decks.de_nouns = [
   uk: "терапія",
   level: "B1",
   topics: ["health"],  ruNote: "Методы лечения болезни или расстройства.",
-  ukNote: "Методи лікування хвороби чи розладу."
+  ukNote: "Методи лікування хвороби чи розладу.",
   examples: [
     {
       L2: "Die Therapie dauert mehrere Wochen.",
@@ -18121,7 +18121,7 @@ window.decks.de_nouns = [
   uk: "щеплення / вакцинація",
   level: "B1",
   topics: ["health"],  ruNote: "Введение вакцины, чтобы защитить от болезни.",
-  ukNote: "Введення вакцини, щоб захистити від хвороби."
+  ukNote: "Введення вакцини, щоб захистити від хвороби.",
   examples: [
     {
       L2: "Viele Krankheiten lassen sich durch Impfung verhindern.",
@@ -18138,7 +18138,7 @@ window.decks.de_nouns = [
   uk: "одужання",
   level: "B2",
   topics: ["health"],  ruNote: "Процесс, когда человек снова становится здоровым.",
-  ukNote: "Процес, коли людина знову стає здоровою."
+  ukNote: "Процес, коли людина знову стає здоровою.",
   examples: [
     {
       L2: "Wir wünschen dir eine schnelle Genesung.",
@@ -18155,7 +18155,7 @@ window.decks.de_nouns = [
   uk: "навантаження / стрес",
   level: "B2",
   topics: ["work", "health"],  ruNote: "Физическое или психологическое давление на человека.",
-  ukNote: "Фізичний або психологічний тиск на людину."
+  ukNote: "Фізичний або психологічний тиск на людину.",
   examples: [
     {
       L2: "Die berufliche Belastung ist sehr hoch.",
@@ -18172,7 +18172,7 @@ window.decks.de_nouns = [
   uk: "вплив / наслідок",
   level: "B2",
   topics: ["general"],  ruNote: "То, как одно событие влияет на другое.",
-  ukNote: "Те, як одна подія впливає на іншу."
+  ukNote: "Те, як одна подія впливає на іншу.",
   examples: [
     {
       L2: "Der Klimawandel hat weltweite Auswirkungen.",
@@ -18189,7 +18189,7 @@ window.decks.de_nouns = [
   uk: "артеріальний тиск",
   level: "B1",
   topics: ["health"],  ruNote: "Давление крови в сосудах; бывает повышенным или пониженным.",
-  ukNote: "Тиск крові в судинах; буває підвищеним або зниженим."
+  ukNote: "Тиск крові в судинах; буває підвищеним або зниженим.",
   examples: [
     {
       L2: "Der Arzt misst den Blutdruck.",
@@ -18206,7 +18206,7 @@ window.decks.de_nouns = [
   uk: "знання / висновок",
   level: "B2",
   topics: ["science", "psychology"],  ruNote: "Новый важный вывод или понимание чего-то.",
-  ukNote: "Новий важливий висновок чи розуміння чогось."
+  ukNote: "Новий важливий висновок чи розуміння чогось.",
   examples: [
     {
       L2: "Die Studie brachte neue Erkenntnisse.",
@@ -18223,7 +18223,7 @@ window.decks.de_nouns = [
   uk: "дослідження",
   level: "B1",
   topics: ["science"],  ruNote: "Научное исследование с методами и результатами.",
-  ukNote: "Наукове дослідження з методами й результатами."
+  ukNote: "Наукове дослідження з методами й результатами.",
   examples: [
     {
       L2: "Die Studie wurde an 500 Personen durchgeführt.",
@@ -18240,7 +18240,7 @@ window.decks.de_nouns = [
   uk: "зміна клімату",
   level: "B1",
   topics: ["environment"],  ruNote: "Долговременное изменение климата на Земле.",
-  ukNote: "Довготривала зміна клімату на Землі."
+  ukNote: "Довготривала зміна клімату на Землі.",
   examples: [
     {
       L2: "Der Klimawandel ist eine große Herausforderung.",
@@ -18257,7 +18257,7 @@ window.decks.de_nouns = [
   uk: "викид",
   level: "B2",
   topics: ["environment"],  ruNote: "Количество вредных веществ, которые попадают в воздух.",
-  ukNote: "Кількість шкідливих речовин, які потрапляють у повітря."
+  ukNote: "Кількість шкідливих речовин, які потрапляють у повітря.",
   examples: [
     {
       L2: "Der CO₂-Ausstoß soll reduziert werden.",
@@ -18274,7 +18274,7 @@ window.decks.de_nouns = [
   uk: "викид",
   level: "B2",
   topics: ["environment"],  ruNote: "Выделение газов или частиц в окружающую среду.",
-  ukNote: "Виділення газів чи частинок в довкілля."
+  ukNote: "Виділення газів чи частинок в довкілля.",
   examples: [
     {
       L2: "Strengere Regeln sollen die Emissionen senken.",
@@ -18291,7 +18291,7 @@ window.decks.de_nouns = [
   uk: "споживання",
   level: "B1",
   topics: ["environment", "economy"],  ruNote: "То, сколько энергии, воды или ресурсов используется.",
-  ukNote: "Те, скільки енергії, води чи ресурсів використовується."
+  ukNote: "Те, скільки енергії, води чи ресурсів використовується.",
   examples: [
     {
       L2: "Der Stromverbrauch ist zu hoch.",
@@ -18308,7 +18308,7 @@ window.decks.de_nouns = [
   uk: "виробництво",
   level: "B2",
   topics: ["environment", "economy"],  ruNote: "Процесс, когда создаётся энергия или продукция.",
-  ukNote: "Процес, коли створюється енергія чи продукція."
+  ukNote: "Процес, коли створюється енергія чи продукція.",
   examples: [
     {
       L2: "Die Erzeugung von Ökostrom nimmt zu.",
@@ -18325,7 +18325,7 @@ window.decks.de_nouns = [
   uk: "забезпечення",
   level: "B2",
   topics: ["economy", "health"],  ruNote: "Доставка и наличие нужных ресурсов (например, воды, электричества, медицины).",
-  ukNote: "Постачання й наявність потрібних ресурсів (наприклад, води, електрики, медицини)."
+  ukNote: "Постачання й наявність потрібних ресурсів (наприклад, води, електрики, медицини).",
   examples: [
     {
       L2: "Die medizinische Versorgung ist gut.",
@@ -18342,7 +18342,7 @@ window.decks.de_nouns = [
   uk: "економія / скорочення",
   level: "B2",
   topics: ["economy", "environment"],  ruNote: "Уменьшение расходов или использования ресурсов.",
-  ukNote: "Зменшення витрат чи використання ресурсів."
+  ukNote: "Зменшення витрат чи використання ресурсів.",
   examples: [
     {
       L2: "Durch LED-Lampen erzielt man große Einsparungen.",
@@ -18359,7 +18359,7 @@ window.decks.de_nouns = [
   uk: "сортування відходів",
   level: "B1",
   topics: ["environment"],  ruNote: "Отдельный сбор бумаги, стекла, пластика и другого мусора.",
-  ukNote: "Окремий збір паперу, скла, пластику та іншого сміття."
+  ukNote: "Окремий збір паперу, скла, пластику та іншого сміття.",
   examples: [
     {
       L2: "Abfalltrennung ist wichtig für die Umwelt.",
@@ -18376,7 +18376,7 @@ window.decks.de_nouns = [
   uk: "переробка / рециклінг",
   level: "B2",
   topics: ["environment"],  ruNote: "Повторное использование материалов после обработки.",
-  ukNote: "Повторне використання матеріалів після обробки."
+  ukNote: "Повторне використання матеріалів після обробки.",
   examples: [
     {
       L2: "Wiederverwertung spart Rohstoffe.",
@@ -18393,7 +18393,7 @@ window.decks.de_nouns = [
   uk: "сталий розвиток",
   level: "B2",
   topics: ["environment"],  ruNote: "Принцип использовать ресурсы так, чтобы хватило и будущим поколениям.",
-  ukNote: "Принцип використовувати ресурси так, щоб вистачило й майбутнім поколінням."
+  ukNote: "Принцип використовувати ресурси так, щоб вистачило й майбутнім поколінням.",
   examples: [
     {
       L2: "Nachhaltigkeit spielt in vielen Firmen eine Rolle.",
@@ -18410,7 +18410,7 @@ window.decks.de_nouns = [
   uk: "рецесія",
   level: "B2",
   topics: ["economy"],  ruNote: "Период, когда экономика страны сокращается.",
-  ukNote: "Період, коли економіка країни скорочується."
+  ukNote: "Період, коли економіка країни скорочується.",
   examples: [
     {
       L2: "In der Rezession sinkt oft der Konsum.",
@@ -18427,7 +18427,7 @@ window.decks.de_nouns = [
   uk: "добробут",
   level: "B2",
   topics: ["economy"],  ruNote: "Хороший материальный уровень жизни общества или человека.",
-  ukNote: "Добрий матеріальний рівень життя суспільства чи людини."
+  ukNote: "Добрий матеріальний рівень життя суспільства чи людини.",
   examples: [
     {
       L2: "Der Wohlstand ist ungleich verteilt.",
@@ -18444,7 +18444,7 @@ window.decks.de_nouns = [
   uk: "майно / статки",
   level: "B2",
   topics: ["economy"],  ruNote: "Все ценности человека: деньги, имущество, ценные бумаги.",
-  ukNote: "Усі цінності людини: гроші, майно, цінні папери."
+  ukNote: "Усі цінності людини: гроші, майно, цінні папери.",
   examples: [
     {
       L2: "Er hat ein großes Vermögen geerbt.",
@@ -18461,7 +18461,7 @@ window.decks.de_nouns = [
   uk: "облігація",
   level: "B2",
   topics: ["finance"],  ruNote: "Долговая ценная бумага: вы даёте деньги государству или фирме.",
-  ukNote: "Борговий цінний папір: ви даєте гроші державі чи фірмі."
+  ukNote: "Борговий цінний папір: ви даєте гроші державі чи фірмі.",
   examples: [
     {
       L2: "Staatsanleihen gelten als relativ sicher.",
@@ -18478,7 +18478,7 @@ window.decks.de_nouns = [
   uk: "дохідність",
   level: "B2",
   topics: ["finance"],  ruNote: "Процент прибыли, который приносит инвестиция.",
-  ukNote: "Відсоток прибутку, який приносить інвестиція."
+  ukNote: "Відсоток прибутку, який приносить інвестиція.",
   examples: [
     {
       L2: "Die Rendite dieser Anlage ist niedrig.",
@@ -18495,7 +18495,7 @@ window.decks.de_nouns = [
   uk: "резерв / заощадження",
   level: "B2",
   topics: ["finance"],  ruNote: "Деньги, отложенные на будущее или на чрезвычайные ситуации.",
-  ukNote: "Гроші, відкладені на майбутнє чи на непередбачені ситуації."
+  ukNote: "Гроші, відкладені на майбутнє чи на непередбачені ситуації.",
   examples: [
     {
       L2: "Für Reparaturen sollte man Rücklagen bilden.",
@@ -18512,7 +18512,7 @@ window.decks.de_nouns = [
   uk: "позов / скарга",
   level: "B2",
   topics: ["law"],  ruNote: "Официальное обращение в суд против кого-то.",
-  ukNote: "Офіційне звернення до суду проти когось."
+  ukNote: "Офіційне звернення до суду проти когось.",
   examples: [
     {
       L2: "Er hat Klage gegen die Firma eingereicht.",
@@ -18529,7 +18529,7 @@ window.decks.de_nouns = [
   uk: "обов'язковий дозвіл",
   level: "C1",
   topics: ["law", "bureaucracy"],  ruNote: "Ситуация, когда для действия нужно официальное разрешение.",
-  ukNote: "Ситуація, коли для дії потрібен офіційний дозвіл."
+  ukNote: "Ситуація, коли для дії потрібен офіційний дозвіл.",
   examples: [
     {
       L2: "Für den Bau gilt eine Genehmigungspflicht.",
@@ -18546,7 +18546,7 @@ window.decks.de_nouns = [
   uk: "угода",
   level: "B2",
   topics: ["law", "work"],  ruNote: "Официальная или неофициальная договорённость между сторонами.",
-  ukNote: "Офіційна чи неофіційна домовленість між сторонами."
+  ukNote: "Офіційна чи неофіційна домовленість між сторонами.",
   examples: [
     {
       L2: "Die Vereinbarung wurde schriftlich festgehalten.",
@@ -18563,7 +18563,7 @@ window.decks.de_nouns = [
   uk: "підтвердження / доказ",
   level: "B2",
   topics: ["law"],  ruNote: "Документ или факт, который доказывает что-то.",
-  ukNote: "Документ чи факт, який щось доводить."
+  ukNote: "Документ чи факт, який щось доводить.",
   examples: [
     {
       L2: "Sie brauchen einen Nachweis über Ihre Qualifikation.",
@@ -18580,7 +18580,7 @@ window.decks.de_nouns = [
   uk: "доказова база",
   level: "C1",
   topics: ["law"],  ruNote: "Общая картина всех имеющихся доказательств по делу.",
-  ukNote: "Загальна картина всіх наявних доказів у справі."
+  ukNote: "Загальна картина всіх наявних доказів у справі.",
   examples: [
     {
       L2: "Die Beweislage ist eindeutig.",
@@ -18597,7 +18597,7 @@ window.decks.de_nouns = [
   uk: "вирок / рішення суду",
   level: "B2",
   topics: ["law"],  ruNote: "Официальное решение суда по делу.",
-  ukNote: "Офіційне рішення суду у справі."
+  ukNote: "Офіційне рішення суду у справі.",
   examples: [
     {
       L2: "Das Urteil wird nächste Woche verkündet.",
@@ -18614,7 +18614,7 @@ window.decks.de_nouns = [
   uk: "апеляція",
   level: "C1",
   topics: ["law"],  ruNote: "Жалоба на судебное решение в вышестоящий суд.",
-  ukNote: "Скарга на судове рішення до вищої інстанції."
+  ukNote: "Скарга на судове рішення до вищої інстанції.",
   examples: [
     {
       L2: "Die Anwälte legen Berufung gegen das Urteil ein.",
@@ -18631,7 +18631,7 @@ window.decks.de_nouns = [
   uk: "освіта",
   level: "A2",
   topics: ["education"],  ruNote: "Знания и умения, которые человек получает в школе, вузе и сам.",
-  ukNote: "Знання й уміння, які людина отримує в школі, виші й самостійно."
+  ukNote: "Знання й уміння, які людина отримує в школі, виші й самостійно.",
   examples: [
     {
       L2: "Bildung ist ein wichtiges Thema in der Politik.",
@@ -18648,7 +18648,7 @@ window.decks.de_nouns = [
   uk: "підвищення кваліфікації",
   level: "B2",
   topics: ["education", "work"],  ruNote: "Обучение после основной профессии для новых знаний.",
-  ukNote: "Навчання після здобуття професії для нових знань."
+  ukNote: "Навчання після здобуття професії для нових знань.",
   examples: [
     {
       L2: "Viele Firmen unterstützen die Weiterbildung ihrer Mitarbeiter.",
@@ -18665,7 +18665,7 @@ window.decks.de_nouns = [
   uk: "підвищення кваліфікації",
   level: "B2",
   topics: ["education", "work"],  ruNote: "Курсы и семинары для профессионального развития.",
-  ukNote: "Курси та семінари для професійного розвитку."
+  ukNote: "Курси та семінари для професійного розвитку.",
   examples: [
     {
       L2: "Er besucht eine Fortbildung im Bereich IT.",
@@ -18682,7 +18682,7 @@ window.decks.de_nouns = [
   uk: "навчальний план",
   level: "B1",
   topics: ["education"],  ruNote: "Официальный список тем и часов в обучении.",
-  ukNote: "Офіційний список тем і годин у навчанні."
+  ukNote: "Офіційний список тем і годин у навчанні.",
   examples: [
     {
       L2: "Der Lehrplan wurde reformiert.",
@@ -18699,7 +18699,7 @@ window.decks.de_nouns = [
   uk: "вистава / виконання",
   level: "B1",
   topics: ["culture"],  ruNote: "Публичное исполнение спектакля или музыкального произведения.",
-  ukNote: "Публічне виконання вистави чи музичного твору."
+  ukNote: "Публічне виконання вистави чи музичного твору.",
   examples: [
     {
       L2: "Die Aufführung war ausverkauft.",
@@ -18716,7 +18716,7 @@ window.decks.de_nouns = [
   uk: "читання",
   level: "B2",
   topics: ["culture"],  ruNote: "Мероприятие, где автор читает свои тексты.",
-  ukNote: "Захід, де автор читає власні тексти."
+  ukNote: "Захід, де автор читає власні тексти.",
   examples: [
     {
       L2: "Zur Lesung kamen viele Zuhörer.",
@@ -18733,7 +18733,7 @@ window.decks.de_nouns = [
   uk: "вступний іспит",
   level: "B2",
   topics: ["education"],  ruNote: "Экзамен, который нужно сдать, чтобы поступить в школу или вуз.",
-  ukNote: "Іспит, який потрібно скласти, щоб вступити до школи чи вишу."
+  ukNote: "Іспит, який потрібно скласти, щоб вступити до школи чи вишу.",
   examples: [
     {
       L2: "Für die Musikhochschule gibt es eine Aufnahmeprüfung.",
@@ -18750,7 +18750,7 @@ window.decks.de_nouns = [
   uk: "оголошення про вакансію",
   level: "B2",
   topics: ["work"],  ruNote: "Текст, в котором фирма описывает свободное рабочее место.",
-  ukNote: "Текст, у якому фірма описує вільне робоче місце."
+  ukNote: "Текст, у якому фірма описує вільне робоче місце.",
   examples: [
     {
       L2: "In der Stellenausschreibung stehen alle Anforderungen.",
@@ -18767,7 +18767,7 @@ window.decks.de_nouns = [
   uk: "впровадження в роботу / стажування",
   level: "B2",
   topics: ["work"],  ruNote: "Первый период, когда новый сотрудник учится работе.",
-  ukNote: "Перший період, коли новий працівник вчиться роботі."
+  ukNote: "Перший період, коли новий працівник вчиться роботі.",
   examples: [
     {
       L2: "Die Einarbeitung dauert zwei Wochen.",
@@ -18784,7 +18784,7 @@ window.decks.de_nouns = [
   uk: "позмінна робота",
   level: "B2",
   topics: ["work"],  ruNote: "Работа в разные смены: утром, вечером или ночью.",
-  ukNote: "Робота в різні зміни: вранці, ввечері чи вночі."
+  ukNote: "Робота в різні зміни: вранці, ввечері чи вночі.",
   examples: [
     {
       L2: "Schichtarbeit ist körperlich oft sehr belastend.",
@@ -18801,7 +18801,7 @@ window.decks.de_nouns = [
   uk: "заміна / представництво",
   level: "B2",
   topics: ["work"],  ruNote: "Когда один человек временно работает за другого или представляет его интересы.",
-  ukNote: "Коли одна людина тимчасово працює замість іншої або представляє її інтереси."
+  ukNote: "Коли одна людина тимчасово працює замість іншої або представляє її інтереси.",
   examples: [
     {
       L2: "Während des Urlaubs übernimmt eine Kollegin die Vertretung.",
@@ -18818,7 +18818,7 @@ window.decks.de_nouns = [
   uk: "сумісність",
   level: "B2",
   topics: ["work", "society"],  ruNote: "Часто используется в выражении «Vereinbarkeit von Beruf und Familie».",
-  ukNote: "Часто вживається у виразі «Vereinbarkeit von Beruf und Familie»."
+  ukNote: "Часто вживається у виразі «Vereinbarkeit von Beruf und Familie».",
   examples: [
     {
       L2: "Flexible Arbeitszeiten verbessern die Vereinbarkeit mit der Familie.",
@@ -18835,7 +18835,7 @@ window.decks.de_nouns = [
   uk: "керівник / менеджер",
   level: "B2",
   topics: ["work"],  ruNote: "Человек на руководящей позиции в фирме.",
-  ukNote: "Людина на керівній посаді в компанії."
+  ukNote: "Людина на керівній посаді в компанії.",
   examples: [
     {
       L2: "Führungskräfte tragen viel Verantwortung.",
@@ -18852,7 +18852,7 @@ window.decks.de_nouns = [
   uk: "фахівець",
   level: "B2",
   topics: ["work"],  ruNote: "Человек с хорошим профессиональным образованием и опытом.",
-  ukNote: "Людина з хорошою професійною освітою та досвідом."
+  ukNote: "Людина з хорошою професійною освітою та досвідом.",
   examples: [
     {
       L2: "Gute Fachkräfte sind schwer zu finden.",
@@ -18869,7 +18869,7 @@ window.decks.de_nouns = [
   uk: "робоче навантаження",
   level: "B2",
   topics: ["work", "health"],  ruNote: "То, сколько задач и стрессов человек имеет на работе.",
-  ukNote: "Те, скільки завдань і стресу людина має на роботі."
+  ukNote: "Те, скільки завдань і стресу людина має на роботі.",
   examples: [
     {
       L2: "Die Arbeitsbelastung ist in dieser Abteilung besonders hoch.",
@@ -18886,7 +18886,7 @@ window.decks.de_nouns = [
   uk: "зона відповідальності",
   level: "B2",
   topics: ["work", "law"],  ruNote: "Область задач, за которые кто-то отвечает в организации.",
-  ukNote: "Сфера завдань, за які хтось відповідає в організації."
+  ukNote: "Сфера завдань, за які хтось відповідає в організації.",
   examples: [
     {
       L2: "Die Zuständigkeit liegt bei der Personalabteilung.",
@@ -18903,7 +18903,7 @@ window.decks.de_nouns = [
   uk: "готовність",
   level: "B1",
   topics: ["work", "psychology"],  ruNote: "Внутренняя готовность что-то делать или помочь.",
-  ukNote: "Внутрішня готовність щось робити чи допомогти."
+  ukNote: "Внутрішня готовність щось робити чи допомогти.",
   examples: [
     {
       L2: "Vielen Dank für Ihre Bereitschaft zu helfen.",
@@ -18920,7 +18920,7 @@ window.decks.de_nouns = [
   uk: "властивість",
   level: "B1",
   topics: ["general"],  ruNote: "Характерная черта вещи или человека.",
-  ukNote: "Характерна риса речі чи людини."
+  ukNote: "Характерна риса речі чи людини.",
   examples: [
     {
       L2: "Zuverlässigkeit ist eine wichtige Eigenschaft.",
@@ -18937,7 +18937,7 @@ window.decks.de_nouns = [
   uk: "передумова / здатність",
   level: "B2",
   topics: ["work", "education"],  ruNote: "То, что нужно иметь заранее (навыки, условия), чтобы что-то стало возможным.",
-  ukNote: "Те, що потрібно мати заздалегідь (навички, умови), щоб щось стало можливим."
+  ukNote: "Те, що потрібно мати заздалегідь (навички, умови), щоб щось стало можливим.",
   examples: [
     {
       L2: "Teamfähigkeit ist eine wichtige Voraussetzung für diese Stelle.",
@@ -18954,7 +18954,7 @@ window.decks.de_nouns = [
   uk: "оцінка",
   level: "B2",
   topics: ["work", "communication"],  ruNote: "Личное или профессиональное мнение о ситуации.",
-  ukNote: "Особиста чи професійна думка про ситуацію."
+  ukNote: "Особиста чи професійна думка про ситуацію.",
   examples: [
     {
       L2: "Ihre Einschätzung der Lage ist realistisch.",
@@ -18971,7 +18971,7 @@ window.decks.de_nouns = [
   uk: "звичка",
   level: "B1",
   topics: ["psychology"],  ruNote: "Личная привычка, часто с немного негативным оттенком.",
-  ukNote: "Особиста звичка, часто з трохи негативним відтінком."
+  ukNote: "Особиста звичка, часто з трохи негативним відтінком.",
   examples: [
     {
       L2: "Er hat die Angewohnheit, zu spät zu kommen.",
@@ -18988,7 +18988,7 @@ window.decks.de_nouns = [
   uk: "залежність",
   level: "B2",
   topics: ["psychology", "society"],  ruNote: "Состояние, когда человеку трудно без чего-то или кого-то.",
-  ukNote: "Стан, коли людині важко без чогось або когось."
+  ukNote: "Стан, коли людині важко без чогось або когось.",
   examples: [
     {
       L2: "Die Abhängigkeit von Alkohol ist ein ernstes Problem.",
@@ -19005,7 +19005,7 @@ window.decks.de_nouns = [
   uk: "незалежність",
   level: "B2",
   topics: ["society", "psychology"],  ruNote: "Состояние, когда вы можете действовать без чужого контроля.",
-  ukNote: "Стан, коли ви можете діяти без чужого контролю."
+  ukNote: "Стан, коли ви можете діяти без чужого контролю.",
   examples: [
     {
       L2: "Finanzielle Unabhängigkeit gibt Sicherheit.",
@@ -19021,7 +19021,7 @@ window.decks.de_nouns = [
     uk: "безвідповідальність",
     level: "B2",
     topics: ["personality", "society"],    ruNote: "Черта характера или поведение, при котором человек не думает о последствиях своих действий.",
-    ukNote: "Риса характеру або поведінка, коли людина не думає про наслідки своїх дій."
+    ukNote: "Риса характеру або поведінка, коли людина не думає про наслідки своїх дій.",
     examples: [
       {
         L2: "Seine Verantwortungslosigkeit gefährdet das ganze Projekt.",
@@ -19037,7 +19037,7 @@ window.decks.de_nouns = [
     uk: "згода",
     level: "B1",
     topics: ["communication", "law"],    ruNote: "Ситуация, когда кто-то с чем-то согласен или это одобряет.",
-    ukNote: "Ситуація, коли хтось із чимось погоджується або це схвалює."
+    ukNote: "Ситуація, коли хтось із чимось погоджується або це схвалює.",
     examples: [
       {
         L2: "Wir brauchen Ihre Zustimmung, bevor wir fortfahren.",
@@ -19053,7 +19053,7 @@ window.decks.de_nouns = [
     uk: "відмова",
     level: "B1",
     topics: ["communication", "law"],    ruNote: "Ситуация, когда предложение, запрос или идея не принимаются.",
-    ukNote: "Ситуація, коли пропозиція, запит або ідея не приймаються."
+    ukNote: "Ситуація, коли пропозиція, запит або ідея не приймаються.",
     examples: [
       {
         L2: "Die Ablehnung des Antrags kam überraschend.",
@@ -19069,7 +19069,7 @@ window.decks.de_nouns = [
     uk: "платформа",
     level: "B1",
     topics: ["it", "business"],    ruNote: "Техническая или онлайн-основа, на которой работают приложения или услуги.",
-    ukNote: "Технічна або онлайн-основа, на якій працюють застосунки чи сервіси."
+    ukNote: "Технічна або онлайн-основа, на якій працюють застосунки чи сервіси.",
     examples: [
       {
         L2: "Unsere App läuft auf allen gängigen Plattformen.",
@@ -19085,7 +19085,7 @@ window.decks.de_nouns = [
     uk: "операційна система",
     level: "B1",
     topics: ["it"],    ruNote: "Основное программное обеспечение, которое управляет компьютером или телефоном.",
-    ukNote: "Основне програмне забезпечення, що керує комп’ютером чи телефоном."
+    ukNote: "Основне програмне забезпечення, що керує комп’ютером чи телефоном.",
     examples: [
       {
         L2: "Welches Betriebssystem benutzt du auf deinem Laptop?",
@@ -19101,7 +19101,7 @@ window.decks.de_nouns = [
     uk: "програмний інтерфейс",
     level: "B2",
     topics: ["it"],    ruNote: "Технический интерфейс (обычно API), через который программы обмениваются данными.",
-    ukNote: "Технічний інтерфейс (зазвичай API), через який програми обмінюються даними."
+    ukNote: "Технічний інтерфейс (зазвичай API), через який програми обмінюються даними.",
     examples: [
       {
         L2: "Die Anwendungsschnittstelle ist in der Dokumentation beschrieben.",
@@ -19117,7 +19117,7 @@ window.decks.de_nouns = [
     uk: "хмара",
     level: "B1",
     topics: ["it"],    ruNote: "Онлайн-серверы, на которых хранятся данные и приложения.",
-    ukNote: "Онлайн-сервери, на яких зберігаються дані та застосунки."
+    ukNote: "Онлайн-сервери, на яких зберігаються дані та застосунки.",
     examples: [
       {
         L2: "Die Daten werden sicher in der Cloud gespeichert.",
@@ -19133,7 +19133,7 @@ window.decks.de_nouns = [
     uk: "сервер",
     level: "B1",
     topics: ["it"],    ruNote: "Компьютер или система, которая предоставляет услуги другим устройствам в сети.",
-    ukNote: "Комп’ютер або система, що надає послуги іншим пристроям у мережі."
+    ukNote: "Комп’ютер або система, що надає послуги іншим пристроям у мережі.",
     examples: [
       {
         L2: "Der Server ist momentan nicht erreichbar.",
@@ -19149,7 +19149,7 @@ window.decks.de_nouns = [
     uk: "постачальник послуг",
     level: "B2",
     topics: ["business", "it"],    ruNote: "Компания или лицо, которое предлагает определённые услуги (например, интернет, облако).",
-    ukNote: "Компанія або особа, що надає певні послуги (наприклад, інтернет, хмара)."
+    ukNote: "Компанія або особа, що надає певні послуги (наприклад, інтернет, хмара).",
     examples: [
       {
         L2: "Der Dienstanbieter garantiert eine hohe Verfügbarkeit.",
@@ -19165,7 +19165,7 @@ window.decks.de_nouns = [
     uk: "технологія шифрування",
     level: "B2",
     topics: ["it", "security"],    ruNote: "Методы и алгоритмы, с помощью которых данные шифруются.",
-    ukNote: "Методи й алгоритми, за допомогою яких шифрують дані."
+    ukNote: "Методи й алгоритми, за допомогою яких шифрують дані.",
     examples: [
       {
         L2: "Moderne Verschlüsselungstechnik schützt die Kommunikation.",
@@ -19181,7 +19181,7 @@ window.decks.de_nouns = [
     uk: "автентифікація",
     level: "B2",
     topics: ["it", "security"],    ruNote: "Проверка, что пользователь действительно тот, за кого себя выдаёт.",
-    ukNote: "Перевірка, що користувач справді той, за кого себе видає."
+    ukNote: "Перевірка, що користувач справді той, за кого себе видає.",
     examples: [
       {
         L2: "Die Authentifizierung erfolgt mit Benutzername und Passwort.",
@@ -19197,7 +19197,7 @@ window.decks.de_nouns = [
     uk: "авторизація",
     level: "B2",
     topics: ["it", "security"],    ruNote: "Определение, какие действия пользователь имеет право выполнять.",
-    ukNote: "Визначення, які дії користувач має право виконувати."
+    ukNote: "Визначення, які дії користувач має право виконувати.",
     examples: [
       {
         L2: "Nach der Authentifizierung folgt die Autorisierung.",
@@ -19213,7 +19213,7 @@ window.decks.de_nouns = [
     uk: "база даних",
     level: "B1",
     topics: ["it"],    ruNote: "Система, в которой структурировано хранятся большие объёмы данных.",
-    ukNote: "Система, у якій структуровано зберігаються великі обсяги даних."
+    ukNote: "Система, у якій структуровано зберігаються великі обсяги даних.",
     examples: [
       {
         L2: "Die Datenbank enthält alle Kundendaten.",
@@ -19229,7 +19229,7 @@ window.decks.de_nouns = [
     uk: "запит до бази даних",
     level: "B2",
     topics: ["it"],    ruNote: "Команда, с помощью которой из базы данных получают или изменяют данные.",
-    ukNote: "Команда, за допомогою якої з бази даних отримують або змінюють дані."
+    ukNote: "Команда, за допомогою якої з бази даних отримують або змінюють дані.",
     examples: [
       {
         L2: "Die Datenbankabfrage dauert nur wenige Millisekunden.",
@@ -19245,7 +19245,7 @@ window.decks.de_nouns = [
     uk: "відмовостійкість",
     level: "C1",
     topics: ["it", "engineering"],    ruNote: "Способность системы продолжать работу даже при сбоях отдельных компонентов.",
-    ukNote: "Здатність системи продовжувати роботу навіть при збоях окремих компонентів."
+    ukNote: "Здатність системи продовжувати роботу навіть при збоях окремих компонентів.",
     examples: [
       {
         L2: "Redundante Systeme erhöhen die Ausfallsicherheit.",
@@ -19261,7 +19261,7 @@ window.decks.de_nouns = [
     uk: "журналювання",
     level: "B2",
     topics: ["it"],    ruNote: "Автоматическая запись действий и событий в системе.",
-    ukNote: "Автоматичний запис дій і подій у системі."
+    ukNote: "Автоматичний запис дій і подій у системі.",
     examples: [
       {
         L2: "Die Protokollierung hilft bei der Fehlersuche.",
@@ -19277,7 +19277,7 @@ window.decks.de_nouns = [
     uk: "балансування навантаження",
     level: "B2",
     topics: ["it"],    ruNote: "Техника распределения запросов по нескольким серверам.",
-    ukNote: "Техніка розподілу запитів між кількома серверами."
+    ukNote: "Техніка розподілу запитів між кількома серверами.",
     examples: [
       {
         L2: "Ein Load-Balancer sorgt für die Lastverteilung.",
@@ -19293,7 +19293,7 @@ window.decks.de_nouns = [
     uk: "затримка",
     level: "B2",
     topics: ["it"],    ruNote: "Время между запросом и ответом системы или сети.",
-    ukNote: "Час між запитом і відповіддю системи чи мережі."
+    ukNote: "Час між запитом і відповіддю системи чи мережі.",
     examples: [
       {
         L2: "Eine hohe Latenz verschlechtert das Spielerlebnis.",
@@ -19309,7 +19309,7 @@ window.decks.de_nouns = [
     uk: "обмеження пропускної здатності",
     level: "C1",
     topics: ["it"],    ruNote: "Техническое или тарифное ограничение максимальной скорости передачи данных.",
-    ukNote: "Технічне або тарифне обмеження максимальної швидкості передавання даних."
+    ukNote: "Технічне або тарифне обмеження максимальної швидкості передавання даних.",
     examples: [
       {
         L2: "Die Bandbreitebegrenzung kann zu langsamem Streaming führen.",
@@ -19325,7 +19325,7 @@ window.decks.de_nouns = [
     uk: "опис інтерфейсу",
     level: "B2",
     topics: ["it"],    ruNote: "Документ, в котором описано, как работать с программным интерфейсом.",
-    ukNote: "Документ, у якому описано, як працювати з програмним інтерфейсом."
+    ukNote: "Документ, у якому описано, як працювати з програмним інтерфейсом.",
     examples: [
       {
         L2: "Die Schnittstellenbeschreibung ist online verfügbar.",
@@ -19341,7 +19341,7 @@ window.decks.de_nouns = [
     uk: "вихідний код",
     level: "B1",
     topics: ["it"],    ruNote: "Текст программы, написанный программистом на языке программирования.",
-    ukNote: "Текст програми, написаний програмістом мовою програмування."
+    ukNote: "Текст програми, написаний програмістом мовою програмування.",
     examples: [
       {
         L2: "Der Quellcode ist auf GitHub veröffentlicht.",
@@ -19357,7 +19357,7 @@ window.decks.de_nouns = [
     uk: "коміт",
     level: "B2",
     topics: ["it", "dev"],    ruNote: "Зафиксированный набор изменений в системе контроля версий.",
-    ukNote: "Зафіксований набір змін у системі контролю версій."
+    ukNote: "Зафіксований набір змін у системі контролю версій.",
     examples: [
       {
         L2: "Bitte mach einen Commit mit einer klaren Nachricht.",
@@ -19373,7 +19373,7 @@ window.decks.de_nouns = [
     uk: "запит на злиття",
     level: "B2",
     topics: ["it", "dev"],    ruNote: "Запрос включить изменения из одной ветки репозитория в другую.",
-    ukNote: "Запит додати зміни з однієї гілки репозиторію до іншої."
+    ukNote: "Запит додати зміни з однієї гілки репозиторію до іншої.",
     examples: [
       {
         L2: "Der Pull-Request muss noch geprüft werden.",
@@ -19389,7 +19389,7 @@ window.decks.de_nouns = [
     uk: "репозиторій",
     level: "B1",
     topics: ["it", "dev"],    ruNote: "Место (локальное или онлайн), где хранится код проекта.",
-    ukNote: "Місце (локальне або онлайн), де зберігається код проєкту."
+    ukNote: "Місце (локальне або онлайн), де зберігається код проєкту.",
     examples: [
       {
         L2: "Das Projekt liegt in einem öffentlichen Repository.",
@@ -19405,7 +19405,7 @@ window.decks.de_nouns = [
     uk: "пайплайн / конвеєр",
     level: "B2",
     topics: ["it", "devops"],    ruNote: "Автоматическая последовательность шагов, например для тестирования и деплоя.",
-    ukNote: "Автоматична послідовність кроків, наприклад для тестування та деплою."
+    ukNote: "Автоматична послідовність кроків, наприклад для тестування та деплою.",
     examples: [
       {
         L2: "Die Pipeline führt Tests nach jedem Commit aus.",
@@ -19421,7 +19421,7 @@ window.decks.de_nouns = [
     uk: "розгортання / деплой",
     level: "B2",
     topics: ["it", "devops"],    ruNote: "Процесс, когда новая версия приложения переключается в продуктивный режим.",
-    ukNote: "Процес, коли нову версію застосунку вмикають у продакшн."
+    ukNote: "Процес, коли нову версію застосунку вмикають у продакшн.",
     examples: [
       {
         L2: "Die Bereitstellung erfolgt automatisch in der Nacht.",
@@ -19437,7 +19437,7 @@ window.decks.de_nouns = [
     uk: "постачання / доставка",
     level: "B2",
     topics: ["business", "logistics", "it"],    ruNote: "Передача товара или программного продукта клиенту.",
-    ukNote: "Передання товару або програмного продукту клієнтові."
+    ukNote: "Передання товару або програмного продукту клієнтові.",
     examples: [
       {
         L2: "Die Auslieferung der neuen Version startet nächste Woche.",
@@ -19453,7 +19453,7 @@ window.decks.de_nouns = [
     uk: "залежність",
     level: "B2",
     topics: ["it", "dev"],    ruNote: "Внешняя библиотека или модуль, от которого зависит программа.",
-    ukNote: "Зовнішня бібліотека або модуль, від яких залежить програма."
+    ukNote: "Зовнішня бібліотека або модуль, від яких залежить програма.",
     examples: [
       {
         L2: "Wir müssen alle Abhängigkeiten aktualisieren.",
@@ -19469,7 +19469,7 @@ window.decks.de_nouns = [
     uk: "покриття",
     level: "B2",
     topics: ["testing", "stats"],    ruNote: "Степень, в которой код или случаи покрыты тестами или данными.",
-    ukNote: "Ступінь, до якої код чи випадки покриті тестами або даними."
+    ukNote: "Ступінь, до якої код чи випадки покриті тестами або даними.",
     examples: [
       {
         L2: "Die Testabdeckung liegt bei 80 Prozent.",
@@ -19485,7 +19485,7 @@ window.decks.de_nouns = [
     uk: "виняток",
     level: "B2",
     topics: ["it"],    ruNote: "Ошибка во время выполнения программы, которая создаёт исключение.",
-    ukNote: "Помилка під час виконання програми, що створює виняток."
+    ukNote: "Помилка під час виконання програми, що створює виняток.",
     examples: [
       {
         L2: "Der Ausnahmefehler wurde nicht richtig behandelt.",
@@ -19501,7 +19501,7 @@ window.decks.de_nouns = [
     uk: "тракція",
     level: "C1",
     topics: ["business", "startups"],    ruNote: "В деловом контексте: первые измеримые успехи продукта на рынке.",
-    ukNote: "У бізнес-контексті: перші вимірювані успіхи продукту на ринку."
+    ukNote: "У бізнес-контексті: перші вимірювані успіхи продукту на ринку.",
     examples: [
       {
         L2: "Das Startup zeigt bereits deutliche Traktion.",
@@ -19517,7 +19517,7 @@ window.decks.de_nouns = [
     uk: "оцінка",
     level: "B1",
     topics: ["business", "finance"],    ruNote: "Общая оценка стоимости компании, проекта или продукта.",
-    ukNote: "Загальна оцінка вартості компанії, проєкту чи продукту."
+    ukNote: "Загальна оцінка вартості компанії, проєкту чи продукту.",
     examples: [
       {
         L2: "Die Bewertung des Startups ist stark gestiegen.",
@@ -19533,7 +19533,7 @@ window.decks.de_nouns = [
     uk: "раунд фінансування",
     level: "B2",
     topics: ["finance", "startups"],    ruNote: "Этап, на котором стартап привлекает новый капитал от инвесторов.",
-    ukNote: "Етап, на якому стартап залучає новий капітал від інвесторів."
+    ukNote: "Етап, на якому стартап залучає новий капітал від інвесторів.",
     examples: [
       {
         L2: "In der letzten Finanzierungsrunde wurden fünf Millionen Euro eingesammelt.",
@@ -19549,7 +19549,7 @@ window.decks.de_nouns = [
     uk: "інвестор",
     level: "B2",
     topics: ["finance"],    ruNote: "Человек или организация, которая вкладывает деньги в проект или фирму.",
-    ukNote: "Людина або організація, що вкладає гроші в проєкт чи фірму."
+    ukNote: "Людина або організація, що вкладає гроші в проєкт чи фірму.",
     examples: [
       {
         L2: "Die Kapitalgeber erwarten eine hohe Rendite.",
@@ -19565,7 +19565,7 @@ window.decks.de_nouns = [
     uk: "наглядова рада / дорадчий орган",
     level: "C1",
     topics: ["business"],    ruNote: "Группа экспертов, которые советуют руководству компании, но не управляют ею напрямую.",
-    ukNote: "Група експертів, які радять керівництву компанії, але без прямого управління."
+    ukNote: "Група експертів, які радять керівництву компанії, але без прямого управління.",
     examples: [
       {
         L2: "Der Beirat unterstützt das Startup strategisch.",
@@ -19581,7 +19581,7 @@ window.decks.de_nouns = [
     uk: "частка участі",
     level: "B2",
     topics: ["finance", "business"],    ruNote: "Доля в капитале компании, которой владеет инвестор или партнёр.",
-    ukNote: "Частка в капіталі компанії, якою володіє інвестор або партнер."
+    ukNote: "Частка в капіталі компанії, якою володіє інвестор або партнер.",
     examples: [
       {
         L2: "Er hält eine Beteiligung von 20 Prozent an der Firma.",
@@ -19597,7 +19597,7 @@ window.decks.de_nouns = [
     uk: "бізнес-план",
     level: "B2",
     topics: ["business"],    ruNote: "Документ, в котором описаны идея, цели, стратегии и финансы бизнеса.",
-    ukNote: "Документ, у якому описані ідея, цілі, стратегії та фінанси бізнесу."
+    ukNote: "Документ, у якому описані ідея, цілі, стратегії та фінанси бізнесу.",
     examples: [
       {
         L2: "Ein überzeugender Geschäftsplan ist für Investoren wichtig.",
@@ -19613,7 +19613,7 @@ window.decks.de_nouns = [
     uk: "бізнес-модель",
     level: "B2",
     topics: ["business"],    ruNote: "Описание того, как компания зарабатывает деньги.",
-    ukNote: "Опис того, як компанія заробляє гроші."
+    ukNote: "Опис того, як компанія заробляє гроші.",
     examples: [
       {
         L2: "Ihr Geschäftsmodell basiert auf einem Abonnement.",
@@ -19629,7 +19629,7 @@ window.decks.de_nouns = [
     uk: "виведення на ринок",
     level: "B2",
     topics: ["business", "marketing"],    ruNote: "Первый официальный запуск нового продукта или услуги на рынке.",
-    ukNote: "Перший офіційний запуск нового продукту чи послуги на ринок."
+    ukNote: "Перший офіційний запуск нового продукту чи послуги на ринок.",
     examples: [
       {
         L2: "Die Markteinführung ist für Herbst geplant.",
@@ -19645,7 +19645,7 @@ window.decks.de_nouns = [
     uk: "дослідження ринку",
     level: "B2",
     topics: ["business", "marketing"],    ruNote: "Сбор и анализ данных о клиентах, конкурентах и тенденциях.",
-    ukNote: "Збір і аналіз даних про клієнтів, конкурентів і тенденції."
+    ukNote: "Збір і аналіз даних про клієнтів, конкурентів і тенденції.",
     examples: [
       {
         L2: "Vor dem Produktstart wurde intensive Marktforschung betrieben.",
@@ -19661,7 +19661,7 @@ window.decks.de_nouns = [
     uk: "пропозиція",
     level: "A2",
     topics: ["business"],    ruNote: "Конкретное коммерческое предложение товара или услуги по цене.",
-    ukNote: "Конкретна комерційна пропозиція товару чи послуги за певною ціною."
+    ukNote: "Конкретна комерційна пропозиція товару чи послуги за певною ціною.",
     examples: [
       {
         L2: "Wir haben ein schriftliches Angebot erhalten.",
@@ -19677,7 +19677,7 @@ window.decks.de_nouns = [
     uk: "створення доданої вартості",
     level: "C1",
     topics: ["economy", "business"],    ruNote: "Процесс, в котором из ресурсов создаётся продукт с большей ценностью.",
-    ukNote: "Процес, у якому з ресурсів створюють продукт із більшою вартістю."
+    ukNote: "Процес, у якому з ресурсів створюють продукт із більшою вартістю.",
     examples: [
       {
         L2: "Die Wertschöpfungskette umfasst mehrere Produktionsschritte.",
@@ -19693,7 +19693,7 @@ window.decks.de_nouns = [
     uk: "ланцюг постачання",
     level: "B2",
     topics: ["logistics", "business"],    ruNote: "Вся дорога товара от сырья до конечного клиента.",
-    ukNote: "Увесь шлях товару від сировини до кінцевого клієнта."
+    ukNote: "Увесь шлях товару від сировини до кінцевого клієнта.",
     examples: [
       {
         L2: "Die Pandemie hat viele Lieferketten unterbrochen.",
@@ -19709,7 +19709,7 @@ window.decks.de_nouns = [
     uk: "аналіз вузьких місць",
     level: "C1",
     topics: ["business", "it"],    ruNote: "Поиск мест в процессе, которые ограничивают общую производительность.",
-    ukNote: "Пошук місць у процесі, що обмежують загальну продуктивність."
+    ukNote: "Пошук місць у процесі, що обмежують загальну продуктивність.",
     examples: [
       {
         L2: "Mit einer Engpassanalyse lassen sich Prozesse optimieren.",
@@ -19725,7 +19725,7 @@ window.decks.de_nouns = [
     uk: "рівень захворюваності",
     level: "B2",
     topics: ["health", "statistics"],    ruNote: "Число новых случаев заболевания на определённое количество людей.",
-    ukNote: "Кількість нових випадків захворювання на певну кількість людей."
+    ukNote: "Кількість нових випадків захворювання на певну кількість людей.",
     examples: [
       {
         L2: "Die Erkrankungsrate ist in diesem Winter gestiegen.",
@@ -19741,7 +19741,7 @@ window.decks.de_nouns = [
     uk: "рівень смертності",
     level: "B2",
     topics: ["health", "statistics"],    ruNote: "Количество смертей в определённой группе за период.",
-    ukNote: "Кількість смертей у певній групі за певний період."
+    ukNote: "Кількість смертей у певній групі за певний період.",
     examples: [
       {
         L2: "Dank moderner Medizin ist die Sterblichkeitsrate gesunken.",
@@ -19757,7 +19757,7 @@ window.decks.de_nouns = [
     uk: "середня тривалість життя",
     level: "B1",
     topics: ["health", "statistics"],    ruNote: "Среднее количество лет, которое ожидается прожить человеку.",
-    ukNote: "Середня кількість років, які, очікувано, проживе людина."
+    ukNote: "Середня кількість років, які, очікувано, проживе людина.",
     examples: [
       {
         L2: "Die Lebenserwartung ist in vielen Ländern gestiegen.",
@@ -19773,7 +19773,7 @@ window.decks.de_nouns = [
     uk: "побічна дія",
     level: "B1",
     topics: ["health"],    ruNote: "Нежелательный эффект лекарства или терапии помимо основной цели.",
-    ukNote: "Небажаний ефект ліків чи терапії, окрім основної дії."
+    ukNote: "Небажаний ефект ліків чи терапії, окрім основної дії.",
     examples: [
       {
         L2: "Dieses Medikament kann leichte Nebenwirkungen haben.",
@@ -19789,7 +19789,7 @@ window.decks.de_nouns = [
     uk: "переносимість",
     level: "B2",
     topics: ["health"],    ruNote: "То, насколько хорошо человек переносит лекарство или продукт.",
-    ukNote: "Те, наскільки добре людина переносить ліки чи продукт."
+    ukNote: "Те, наскільки добре людина переносить ліки чи продукт.",
     examples: [
       {
         L2: "Die Verträglichkeit des Medikaments ist gut.",
@@ -19805,7 +19805,7 @@ window.decks.de_nouns = [
     uk: "дозування",
     level: "B1",
     topics: ["health"],    ruNote: "Указанное количество лекарства, которое нужно принять.",
-    ukNote: "Вказана кількість ліків, яку потрібно прийняти."
+    ukNote: "Вказана кількість ліків, яку потрібно прийняти.",
     examples: [
       {
         L2: "Bitte halten Sie sich an die empfohlene Dosierung.",
@@ -19821,7 +19821,7 @@ window.decks.de_nouns = [
     uk: "введення",
     level: "B2",
     topics: ["health"],    ruNote: "Процесс, когда пациенту дают лекарство (например, таблетка, инъекция).",
-    ukNote: "Процес, коли пацієнтові дають ліки (наприклад, таблетка, ін’єкція)."
+    ukNote: "Процес, коли пацієнтові дають ліки (наприклад, таблетка, ін’єкція).",
     examples: [
       {
         L2: "Die Verabreichung erfolgt durch das Pflegepersonal.",
@@ -19837,7 +19837,7 @@ window.decks.de_nouns = [
     uk: "передозування",
     level: "B2",
     topics: ["health"],    ruNote: "Слишком большое количество лекарства, которое может быть опасно.",
-    ukNote: "Занадто велика кількість ліків, що може бути небезпечною."
+    ukNote: "Занадто велика кількість ліків, що може бути небезпечною.",
     examples: [
       {
         L2: "Eine Überdosierung kann schwere Folgen haben.",
@@ -19853,7 +19853,7 @@ window.decks.de_nouns = [
     uk: "запалення",
     level: "B1",
     topics: ["health"],    ruNote: "Реакция организма, часто с покраснением, болью и жаром.",
-    ukNote: "Реакція організму, часто з почервонінням, болем і жаром."
+    ukNote: "Реакція організму, часто з почервонінням, болем і жаром.",
     examples: [
       {
         L2: "Die Wunde zeigt Zeichen einer Entzündung.",
@@ -19869,7 +19869,7 @@ window.decks.de_nouns = [
     uk: "зразок крові",
     level: "B1",
     topics: ["health"],    ruNote: "Небольшое количество крови, взятое для анализа.",
-    ukNote: "Невелика кількість крові, взята для аналізу."
+    ukNote: "Невелика кількість крові, взята для аналізу.",
     examples: [
       {
         L2: "Für den Test brauchen wir eine Blutprobe.",
@@ -19885,7 +19885,7 @@ window.decks.de_nouns = [
     uk: "тканина",
     level: "B2",
     topics: ["biology"],    ruNote: "Группа клеток с одинаковой функцией в организме.",
-    ukNote: "Група клітин з однаковою функцією в організмі."
+    ukNote: "Група клітин з однаковою функцією в організмі.",
     examples: [
       {
         L2: "Das Gewebe wurde im Labor untersucht.",
@@ -19901,7 +19901,7 @@ window.decks.de_nouns = [
     uk: "поділ клітин",
     level: "B2",
     topics: ["biology"],    ruNote: "Процесс, при котором из одной клетки возникает две.",
-    ukNote: "Процес, у якому з однієї клітини утворюються дві."
+    ukNote: "Процес, у якому з однієї клітини утворюються дві.",
     examples: [
       {
         L2: "Bei der Zellteilung wird das Erbgut verdoppelt.",
@@ -19917,7 +19917,7 @@ window.decks.de_nouns = [
     uk: "діюча речовина",
     level: "B2",
     topics: ["health", "pharmacy"],    ruNote: "Главный химический компонент лекарства, который вызывает эффект.",
-    ukNote: "Головний хімічний компонент ліків, що спричиняє ефект."
+    ukNote: "Головний хімічний компонент ліків, що спричиняє ефект.",
     examples: [
       {
         L2: "Der Wirkstoff wird im Beipackzettel beschrieben.",
@@ -19933,7 +19933,7 @@ window.decks.de_nouns = [
     uk: "ефективність",
     level: "B2",
     topics: ["health", "science"],    ruNote: "То, насколько хорошо лекарство или метод действительно помогает.",
-    ukNote: "Те, наскільки добре ліки чи метод справді допомагають."
+    ukNote: "Те, наскільки добре ліки чи метод справді допомагають.",
     examples: [
       {
         L2: "Die Wirksamkeit des neuen Medikaments ist belegt.",
@@ -19949,7 +19949,7 @@ window.decks.de_nouns = [
     uk: "доказовість",
     level: "C1",
     topics: ["science", "medicine"],    ruNote: "Научные данные, которые подтверждают эффективность метода.",
-    ukNote: "Наукові дані, що підтверджують ефективність методу."
+    ukNote: "Наукові дані, що підтверджують ефективність методу.",
     examples: [
       {
         L2: "In der evidenzbasierten Medizin spielt Evidenz eine zentrale Rolle.",
@@ -19965,7 +19965,7 @@ window.decks.de_nouns = [
     uk: "клінічна настанова",
     level: "C1",
     topics: ["medicine"],    ruNote: "Официальная рекомендация, как лечить определённые заболевания.",
-    ukNote: "Офіційна рекомендація, як лікувати певні захворювання."
+    ukNote: "Офіційна рекомендація, як лікувати певні захворювання.",
     examples: [
       {
         L2: "Ärzte orientieren sich an aktuellen Leitlinien.",
@@ -19981,7 +19981,7 @@ window.decks.de_nouns = [
     uk: "розширення повноважень",
     level: "C1",
     topics: ["law", "politics"],    ruNote: "Когда орган или должность официально получает больше задач и прав.",
-    ukNote: "Коли орган чи посада офіційно отримують більше завдань і прав."
+    ukNote: "Коли орган чи посада офіційно отримують більше завдань і прав.",
     examples: [
       {
         L2: "Die Reform brachte eine Zuständigkeitserweiterung der Behörde.",
@@ -19997,7 +19997,7 @@ window.decks.de_nouns = [
     uk: "загальний регламент захисту даних",
     level: "C1",
     topics: ["law", "it"],    ruNote: "Европейский закон ЕС, который регулирует защиту персональных данных.",
-    ukNote: "Європейський регламент ЄС, що регулює захист персональних даних."
+    ukNote: "Європейський регламент ЄС, що регулює захист персональних даних.",
     examples: [
       {
         L2: "Unternehmen müssen die Datenschutzgrundverordnung einhalten.",
@@ -20013,7 +20013,7 @@ window.decks.de_nouns = [
     uk: "заява згоди",
     level: "B2",
     topics: ["law", "data"],    ruNote: "Документ, в котором человек официально согласен с обработкой данных или процедурой.",
-    ukNote: "Документ, у якому людина офіційно погоджується на обробку даних чи процедуру."
+    ukNote: "Документ, у якому людина офіційно погоджується на обробку даних чи процедуру.",
     examples: [
       {
         L2: "Ohne Einwilligungserklärung dürfen wir die Daten nicht nutzen.",
@@ -20029,7 +20029,7 @@ window.decks.de_nouns = [
     uk: "заперечення / оскарження",
     level: "B2",
     topics: ["law"],    ruNote: "Официальное или устное несогласие с решением или мнением.",
-    ukNote: "Офіційна чи усна незгода з рішенням або думкою."
+    ukNote: "Офіційна чи усна незгода з рішенням або думкою.",
     examples: [
       {
         L2: "Sie legte Widerspruch gegen den Bescheid ein.",
@@ -20045,7 +20045,7 @@ window.decks.de_nouns = [
     uk: "заперечення",
     level: "B2",
     topics: ["law"],    ruNote: "Юридическая форма протеста против официального решения.",
-    ukNote: "Юридична форма протесту проти офіційного рішення."
+    ukNote: "Юридична форма протесту проти офіційного рішення.",
     examples: [
       {
         L2: "Der Einspruch muss innerhalb von zwei Wochen erfolgen.",
@@ -20061,7 +20061,7 @@ window.decks.de_nouns = [
     uk: "повноваження на вручення",
     level: "C1",
     topics: ["law"],    ruNote: "Письменная доверенность, что кто-то может получать документы за другого.",
-    ukNote: "Письмова довіреність, що хтось може отримувати документи замість іншої особи."
+    ukNote: "Письмова довіреність, що хтось може отримувати документи замість іншої особи.",
     examples: [
       {
         L2: "Mit der Zustellungsvollmacht kann der Anwalt alle Briefe entgegennehmen.",
@@ -20077,7 +20077,7 @@ window.decks.de_nouns = [
     uk: "строк давності",
     level: "C1",
     topics: ["law"],    ruNote: "Юридический принцип: после определённого срока нельзя больше предъявить иск.",
-    ukNote: "Юридичний принцип: після певного строку не можна більше подати позов."
+    ukNote: "Юридичний принцип: після певного строку не можна більше подати позов.",
     examples: [
       {
         L2: "Der Anspruch ist wegen Verjährung nicht mehr durchsetzbar.",
@@ -20093,7 +20093,7 @@ window.decks.de_nouns = [
     uk: "судова практика",
     level: "C1",
     topics: ["law"],    ruNote: "Совокупность решений судов, которые влияют на применение законов.",
-    ukNote: "Сукупність рішень судів, що впливають на застосування законів."
+    ukNote: "Сукупність рішень судів, що впливають на застосування законів.",
     examples: [
       {
         L2: "Die aktuelle Rechtsprechung ist in diesem Punkt eindeutig.",
@@ -20109,7 +20109,7 @@ window.decks.de_nouns = [
     uk: "розподіл повноважень",
     level: "C1",
     topics: ["politics", "law"],    ruNote: "Определение, какой орган за что отвечает (например, федерация и регионы).",
-    ukNote: "Визначення, який орган за що відповідає (наприклад, федерація та регіони)."
+    ukNote: "Визначення, який орган за що відповідає (наприклад, федерація та регіони).",
     examples: [
       {
         L2: "Die Zuständigkeitsteilung ist im Grundgesetz geregelt.",
@@ -20125,7 +20125,7 @@ window.decks.de_nouns = [
     uk: "фотовольтаїка",
     level: "B2",
     topics: ["energy", "environment"],    ruNote: "Технология производства электроэнергии из солнечного света.",
-    ukNote: "Технологія виробництва електроенергії з сонячного світла."
+    ukNote: "Технологія виробництва електроенергії з сонячного світла.",
     examples: [
       {
         L2: "Photovoltaik-Anlagen sind auf vielen Dächern zu sehen.",
@@ -20141,7 +20141,7 @@ window.decks.de_nouns = [
     uk: "вітрова установка",
     level: "B2",
     topics: ["energy", "environment"],    ruNote: "Турбина, которая вырабатывает электроэнергию из ветра.",
-    ukNote: "Турбіна, що виробляє електроенергію з вітру."
+    ukNote: "Турбіна, що виробляє електроенергію з вітру.",
     examples: [
       {
         L2: "Neue Windkraftanlagen sollen gebaut werden.",
@@ -20157,7 +20157,7 @@ window.decks.de_nouns = [
     uk: "електромережа",
     level: "B1",
     topics: ["energy"],    ruNote: "Система линий и станций, по которой подаётся электричество.",
-    ukNote: "Система ліній і станцій, якою подається електроенергія."
+    ukNote: "Система ліній і станцій, якою подається електроенергія.",
     examples: [
       {
         L2: "Die Einspeisung erfolgt direkt ins Stromnetz.",
@@ -20173,7 +20173,7 @@ window.decks.de_nouns = [
     uk: "подання в мережу",
     level: "B2",
     topics: ["energy"],    ruNote: "Передача произведённой энергии (например, солнечной) в общую сеть.",
-    ukNote: "Передання виробленої енергії (наприклад, сонячної) до спільної мережі."
+    ukNote: "Передання виробленої енергії (наприклад, сонячної) до спільної мережі.",
     examples: [
       {
         L2: "Für die Einspeisung bekommt man eine Vergütung.",
@@ -20189,7 +20189,7 @@ window.decks.de_nouns = [
     uk: "накопичувач / сховище",
     level: "B1",
     topics: ["it", "energy"],    ruNote: "Устройство или система для хранения энергии или данных.",
-    ukNote: "Пристрій або система для зберігання енергії чи даних."
+    ukNote: "Пристрій або система для зберігання енергії чи даних.",
     examples: [
       {
         L2: "Ein Batteriespeicher kann den Eigenverbrauch erhöhen.",
@@ -20205,7 +20205,7 @@ window.decks.de_nouns = [
     uk: "зарядна станція",
     level: "B1",
     topics: ["energy", "traffic"],    ruNote: "Место, где можно заряжать электромобили или другие устройства.",
-    ukNote: "Місце, де можна заряджати електромобілі чи інші пристрої."
+    ukNote: "Місце, де можна заряджати електромобілі чи інші пристрої.",
     examples: [
       {
         L2: "In der Stadt gibt es immer mehr Ladestationen.",
@@ -20221,7 +20221,7 @@ window.decks.de_nouns = [
     uk: "потужність заряджання",
     level: "B2",
     topics: ["energy"],    ruNote: "Количество энергии в киловаттах, которое передаётся при зарядке.",
-    ukNote: "Кількість енергії в кіловатах, що передається під час заряджання."
+    ukNote: "Кількість енергії в кіловатах, що передається під час заряджання.",
     examples: [
       {
         L2: "Die hohe Ladeleistung verkürzt die Wartezeit.",
@@ -20237,7 +20237,7 @@ window.decks.de_nouns = [
     uk: "тепловий насос",
     level: "B2",
     topics: ["energy", "housing"],    ruNote: "Устройство, которое использует окружающее тепло для отопления или охлаждения.",
-    ukNote: "Пристрій, який використовує довкіллове тепло для опалення чи охолодження."
+    ukNote: "Пристрій, який використовує довкіллове тепло для опалення чи охолодження.",
     examples: [
       {
         L2: "Viele Neubauten werden mit Wärmepumpen ausgestattet.",
@@ -20253,7 +20253,7 @@ window.decks.de_nouns = [
     uk: "утеплення / ізоляція",
     level: "B2",
     topics: ["housing", "energy"],    ruNote: "Меры по защите здания от потерь тепла или шума.",
-    ukNote: "Заходи для захисту будівлі від втрат тепла чи шуму."
+    ukNote: "Заходи для захисту будівлі від втрат тепла чи шуму.",
     examples: [
       {
         L2: "Eine gute Dämmung spart Heizkosten.",
@@ -20269,7 +20269,7 @@ window.decks.de_nouns = [
     uk: "енергетичний сертифікат будівлі",
     level: "C1",
     topics: ["energy", "housing"],    ruNote: "Документ, который показывает энергоэффективность здания.",
-    ukNote: "Документ, що показує енергоефективність будівлі."
+    ukNote: "Документ, що показує енергоефективність будівлі.",
     examples: [
       {
         L2: "Beim Verkauf ist ein Gebäudeausweis Pflicht.",
@@ -20285,7 +20285,7 @@ window.decks.de_nouns = [
     uk: "фахова література",
     level: "B2",
     topics: ["education", "science"],    ruNote: "Книги и статьи, написанные для специалистов в определённой области.",
-    ukNote: "Книжки й статті, написані для фахівців у певній галузі."
+    ukNote: "Книжки й статті, написані для фахівців у певній галузі.",
     examples: [
       {
         L2: "Er recherchiert in der aktuellen Fachliteratur.",
@@ -20301,7 +20301,7 @@ window.decks.de_nouns = [
     uk: "список джерел",
     level: "B2",
     topics: ["education", "science"],    ruNote: "Список книг, статей и сайтов, на которые ссылается работа.",
-    ukNote: "Список книжок, статей і сайтів, на які посилається робота."
+    ukNote: "Список книжок, статей і сайтів, на які посилається робота.",
     examples: [
       {
         L2: "Am Ende der Arbeit steht ein Quellenverzeichnis.",
@@ -20317,7 +20317,7 @@ window.decks.de_nouns = [
     uk: "цитата",
     level: "B1",
     topics: ["education", "communication"],    ruNote: "Точное воспроизведение чужих слов в кавычках.",
-    ukNote: "Точне відтворення чужих слів у лапках."
+    ukNote: "Точне відтворення чужих слів у лапках.",
     examples: [
       {
         L2: "Das Zitat muss mit der Quelle gekennzeichnet werden.",
@@ -20333,7 +20333,7 @@ window.decks.de_nouns = [
     uk: "теза",
     level: "B2",
     topics: ["education", "science"],    ruNote: "Чёткое утверждение, которое нужно обосновать или доказать.",
-    ukNote: "Чітке твердження, яке потрібно обґрунтувати або довести."
+    ukNote: "Чітке твердження, яке потрібно обґрунтувати або довести.",
     examples: [
       {
         L2: "Die zentrale These der Arbeit lautet...",
@@ -20349,7 +20349,7 @@ window.decks.de_nouns = [
     uk: "обґрунтування",
     level: "B2",
     topics: ["education", "logic"],    ruNote: "Причины и аргументы, которые поддерживают тезис или решение.",
-    ukNote: "Причини й аргументи, що підтримують тезу або рішення."
+    ukNote: "Причини й аргументи, що підтримують тезу або рішення.",
     examples: [
       {
         L2: "Die Begründung ist klar und nachvollziehbar.",
@@ -20365,7 +20365,7 @@ window.decks.de_nouns = [
     uk: "висновок / результати",
     level: "B2",
     topics: ["medicine", "science"],    ruNote: "Результат медицинского обследования или анализа.",
-    ukNote: "Результат медичного обстеження чи аналізу."
+    ukNote: "Результат медичного обстеження чи аналізу.",
     examples: [
       {
         L2: "Der Befund liegt noch nicht vor.",
@@ -20381,7 +20381,7 @@ window.decks.de_nouns = [
     uk: "вибірка",
     level: "B2",
     topics: ["statistics"],    ruNote: "Небольшая группа из общей совокупности для статистического анализа.",
-    ukNote: "Невелика група з усієї сукупності для статистичного аналізу."
+    ukNote: "Невелика група з усієї сукупності для статистичного аналізу.",
     examples: [
       {
         L2: "Die Stichprobe umfasst 1000 Personen.",
@@ -20397,7 +20397,7 @@ window.decks.de_nouns = [
     uk: "дисперсія",
     level: "C1",
     topics: ["statistics"],    ruNote: "Статистическая мера, показывающая, насколько значения разбросаны вокруг среднего.",
-    ukNote: "Статистична міра, що показує розкид значень навколо середнього."
+    ukNote: "Статистична міра, що показує розкид значень навколо середнього.",
     examples: [
       {
         L2: "Eine hohe Varianz bedeutet große Unterschiede in den Daten.",
@@ -20413,7 +20413,7 @@ window.decks.de_nouns = [
     uk: "середнє значення",
     level: "B1",
     topics: ["statistics"],    ruNote: "Число, полученное делением суммы всех значений на их количество.",
-    ukNote: "Число, отримане діленням суми всіх значень на їх кількість."
+    ukNote: "Число, отримане діленням суми всіх значень на їх кількість.",
     examples: [
       {
         L2: "Der Mittelwert liegt bei 10 Punkten.",
@@ -20429,7 +20429,7 @@ window.decks.de_nouns = [
     uk: "кореляція",
     level: "B2",
     topics: ["statistics"],    ruNote: "Статистическая взаимосвязь между двумя величинами.",
-    ukNote: "Статистичний взаємозв’язок між двома величинами."
+    ukNote: "Статистичний взаємозв’язок між двома величинами.",
     examples: [
       {
         L2: "Es gibt eine starke Korrelation zwischen Alter und Einkommen.",
@@ -20445,7 +20445,7 @@ window.decks.de_nouns = [
     uk: "розуміння / позиція",
     level: "B2",
     topics: ["communication", "opinion"],    ruNote: "То, как кто-то понимает ситуацию или тему.",
-    ukNote: "Те, як хтось розуміє ситуацію чи тему."
+    ukNote: "Те, як хтось розуміє ситуацію чи тему.",
     examples: [
       {
         L2: "Wir sind unterschiedlicher Auffassung.",
@@ -20461,7 +20461,7 @@ window.decks.de_nouns = [
     uk: "дискусія / конфлікт",
     level: "B2",
     topics: ["communication", "conflict"],    ruNote: "Интенсивное обсуждение, которое может быть мирным или конфликтным.",
-    ukNote: "Інтенсивне обговорення, що може бути мирним або конфліктним."
+    ukNote: "Інтенсивне обговорення, що може бути мирним або конфліктним.",
     examples: [
       {
         L2: "Es kam zu einer heftigen Auseinandersetzung.",
@@ -20477,7 +20477,7 @@ window.decks.de_nouns = [
     uk: "вплив",
     level: "B2",
     topics: ["communication", "psychology"],    ruNote: "Когда кто-то изменяет мнение или поведение другого.",
-    ukNote: "Коли хтось змінює думку чи поведінку іншого."
+    ukNote: "Коли хтось змінює думку чи поведінку іншого.",
     examples: [
       {
         L2: "Die Beeinflussung durch Medien ist groß.",
@@ -20493,7 +20493,7 @@ window.decks.de_nouns = [
     uk: "обурення",
     level: "B2",
     topics: ["emotion", "society"],    ruNote: "Сильное чувство злости и несправедливости.",
-    ukNote: "Сильне відчуття злості та несправедливості."
+    ukNote: "Сильне відчуття злості та несправедливості.",
     examples: [
       {
         L2: "Die Entscheidung löste große Empörung aus.",
@@ -20509,7 +20509,7 @@ window.decks.de_nouns = [
     uk: "суспільна підтримка",
     level: "B2",
     topics: ["politics", "society"],    ruNote: "Степень, в которой общество поддерживает идею или политику.",
-    ukNote: "Ступінь, до якої суспільство підтримує ідею чи політику."
+    ukNote: "Ступінь, до якої суспільство підтримує ідею чи політику.",
     examples: [
       {
         L2: "Die Reform findet breite Zustimmung.",
@@ -20525,7 +20525,7 @@ window.decks.de_nouns = [
     uk: "суспільне відторгнення",
     level: "B2",
     topics: ["politics", "society"],    ruNote: "Когда большинство людей против предложения или меры.",
-    ukNote: "Коли більшість людей виступають проти пропозиції чи заходу."
+    ukNote: "Коли більшість людей виступають проти пропозиції чи заходу.",
     examples: [
       {
         L2: "Die geplante Maßnahme stößt auf breite Ablehnung.",
@@ -20541,7 +20541,7 @@ window.decks.de_nouns = [
     uk: "поляризація",
     level: "C1",
     topics: ["society", "politics"],    ruNote: "Процесс, когда мнения в обществе всё больше разделяются на крайние.",
-    ukNote: "Процес, коли думки в суспільстві дедалі більше розходяться до протилежностей."
+    ukNote: "Процес, коли думки в суспільстві дедалі більше розходяться до протилежностей.",
     examples: [
       {
         L2: "Die Debatte führt zur Polarisierung der Gesellschaft.",
@@ -20557,7 +20557,7 @@ window.decks.de_nouns = [
     uk: "висвітлення",
     level: "B2",
     topics: ["media"],    ruNote: "То, как СМИ рассказывают о событиях.",
-    ukNote: "Те, як медіа подають інформацію про події."
+    ukNote: "Те, як медіа подають інформацію про події.",
     examples: [
       {
         L2: "Die Berichterstattung war einseitig.",
@@ -20573,7 +20573,7 @@ window.decks.de_nouns = [
     uk: "дезінформація",
     level: "B2",
     topics: ["media"],    ruNote: "Неверная или специально искажённая информация.",
-    ukNote: "Неправильна або навмисно спотворена інформація."
+    ukNote: "Неправильна або навмисно спотворена інформація.",
     examples: [
       {
         L2: "Falschinformationen verbreiten sich schnell im Internet.",
@@ -20589,7 +20589,7 @@ window.decks.de_nouns = [
     uk: "джерело",
     level: "A2",
     topics: ["media", "education"],    ruNote: "Место или человек, откуда берётся информация.",
-    ukNote: "Місце або людина, звідки беруть інформацію."
+    ukNote: "Місце або людина, звідки беруть інформацію.",
     examples: [
       {
         L2: "Bitte gib die Quelle deiner Zahlen an.",
@@ -20605,7 +20605,7 @@ window.decks.de_nouns = [
     uk: "тарифна угода",
     level: "B2",
     topics: ["work", "law"],    ruNote: "Соглашение между работодателями и профсоюзами о зарплатах и условиях труда.",
-    ukNote: "Угода між роботодавцями та профспілками про зарплати й умови праці."
+    ukNote: "Угода між роботодавцями та профспілками про зарплати й умови праці.",
     examples: [
       {
         L2: "Der Tarifvertrag regelt Löhne und Arbeitszeiten.",
@@ -20621,7 +20621,7 @@ window.decks.de_nouns = [
     uk: "динаміка зарплат",
     level: "B2",
     topics: ["work", "economy"],    ruNote: "Изменение уровня заработной платы со временем.",
-    ukNote: "Зміна рівня заробітної плати з часом."
+    ukNote: "Зміна рівня заробітної плати з часом.",
     examples: [
       {
         L2: "Die Lohnentwicklung bleibt hinter der Inflation zurück.",
@@ -20637,7 +20637,7 @@ window.decks.de_nouns = [
     uk: "регулювання робочого часу",
     level: "B2",
     topics: ["work"],    ruNote: "Правила, которые определяют длительность и распределение рабочего времени.",
-    ukNote: "Правила, що визначають тривалість і розподіл робочого часу."
+    ukNote: "Правила, що визначають тривалість і розподіл робочого часу.",
     examples: [
       {
         L2: "Die neue Arbeitszeitregelung ermöglicht Gleitzeit.",
@@ -20653,7 +20653,7 @@ window.decks.de_nouns = [
     uk: "винагорода",
     level: "B2",
     topics: ["work"],    ruNote: "Деньги или льготы, которые работник получает за свою работу.",
-    ukNote: "Гроші чи пільги, які працівник отримує за свою працю."
+    ukNote: "Гроші чи пільги, які працівник отримує за свою працю.",
     examples: [
       {
         L2: "Die Vergütung ist im Vertrag festgelegt.",
@@ -20669,7 +20669,7 @@ window.decks.de_nouns = [
     uk: "понаднормова година",
     level: "B1",
     topics: ["work"],    ruNote: "Рабочее время, которое превышает договорённый рабочий день.",
-    ukNote: "Робочий час, що перевищує домовлений робочий день."
+    ukNote: "Робочий час, що перевищує домовлений робочий день.",
     examples: [
       {
         L2: "Überstunden müssen extra bezahlt werden.",
@@ -20685,7 +20685,7 @@ window.decks.de_nouns = [
     uk: "надбавка",
     level: "B2",
     topics: ["work", "finance"],    ruNote: "Дополнительная выплата к обычной зарплате (например, за ночную смену).",
-    ukNote: "Додаткова виплата до звичайної зарплати (наприклад, за нічну зміну)."
+    ukNote: "Додаткова виплата до звичайної зарплати (наприклад, за нічну зміну).",
     examples: [
       {
         L2: "Für Nachtarbeit gibt es eine Zulage.",
@@ -20701,7 +20701,7 @@ window.decks.de_nouns = [
     uk: "вихідна допомога",
     level: "B2",
     topics: ["work", "law"],    ruNote: "Единовременная выплата при увольнении, часто по соглашению сторон.",
-    ukNote: "Одноразова виплата при звільненні, часто за угодою сторін."
+    ukNote: "Одноразова виплата при звільненні, часто за угодою сторін.",
     examples: [
       {
         L2: "Nach der Kündigung erhielt sie eine Abfindung.",
@@ -20717,7 +20717,7 @@ window.decks.de_nouns = [
     uk: "відшкодування",
     level: "B2",
     topics: ["finance"],    ruNote: "Возврат уже уплаченных денег, обычно за расходы.",
-    ukNote: "Повернення вже сплачених грошей, зазвичай за витрати."
+    ukNote: "Повернення вже сплачених грошей, зазвичай за витрати.",
     examples: [
       {
         L2: "Die Reisekosten werden vollständig erstattet.",
@@ -20733,7 +20733,7 @@ window.decks.de_nouns = [
     uk: "порядок заміщення",
     level: "B2",
     topics: ["work"],    ruNote: "Официальное описание, кто заменяет кого при отсутствии.",
-    ukNote: "Офіційний опис, хто кого замінює у разі відсутності."
+    ukNote: "Офіційний опис, хто кого замінює у разі відсутності.",
     examples: [
       {
         L2: "Die Vertretungsregelung ist im Intranet veröffentlicht.",
@@ -20749,7 +20749,7 @@ window.decks.de_nouns = [
     uk: "угода на підприємстві",
     level: "C1",
     topics: ["work", "law"],    ruNote: "Договорённость между руководством и представителями работников по внутренним правилам.",
-    ukNote: "Домовленість між керівництвом і представниками працівників щодо внутрішніх правил."
+    ukNote: "Домовленість між керівництвом і представниками працівників щодо внутрішніх правил.",
     examples: [
       {
         L2: "Die Betriebsvereinbarung regelt Homeoffice-Tage.",
@@ -20765,7 +20765,7 @@ window.decks.de_nouns = [
     uk: "охорона праці",
     level: "B2",
     topics: ["work", "law"],    ruNote: "Все меры и законы, которые защищают здоровье работников на рабочем месте.",
-    ukNote: "Усі заходи та закони, що захищають здоров’я працівників на робочому місці."
+    ukNote: "Усі заходи та закони, що захищають здоров’я працівників на робочому місці.",
     examples: [
       {
         L2: "Der Arbeitsschutz schreibt Schutzkleidung vor.",
@@ -20781,7 +20781,7 @@ window.decks.de_nouns = [
     uk: "оцінка ризиків",
     level: "C1",
     topics: ["work", "safety", "law"],    ruNote: "Систематический анализ рисков для здоровья и безопасности на рабочем месте.",
-    ukNote: "Систематичний аналіз ризиків для здоров’я та безпеки на робочому місці."
+    ukNote: "Систематичний аналіз ризиків для здоров’я та безпеки на робочому місці.",
     examples: [
       {
         L2: "Der Arbeitgeber ist zur Gefährdungsbeurteilung verpflichtet.",
@@ -20797,7 +20797,7 @@ window.decks.de_nouns = [
     uk: "сприйняття",
     level: "B2",
     topics: ["psychology", "communication"],    ruNote: "То, как человек чувствует и интерпретирует то, что его окружает.",
-    ukNote: "Те, як людина відчуває й інтерпретує те, що її оточує."
+    ukNote: "Те, як людина відчуває й інтерпретує те, що її оточує.",
     examples: [
       {
         L2: "Die Wahrnehmung eines Problems kann sehr unterschiedlich sein.",
@@ -20813,7 +20813,7 @@ window.decks.de_nouns = [
     uk: "оцінювання / судження",
     level: "B2",
     topics: ["work", "evaluation"],    ruNote: "Мнение или оценка чего-либо или кого-либо после анализа.",
-    ukNote: "Думка або оцінка чогось чи когось після аналізу."
+    ukNote: "Думка або оцінка чогось чи когось після аналізу.",
     examples: [
       {
         L2: "Die Beurteilung der Leistung erfolgt einmal im Jahr.",
@@ -20829,7 +20829,7 @@ window.decks.de_nouns = [
     uk: "тлумачення / інтерпретація",
     level: "C1",
     topics: ["law", "communication"],    ruNote: "Понимание смысла текста, закона или высказывания.",
-    ukNote: "Розуміння змісту тексту, закону чи висловлювання."
+    ukNote: "Розуміння змісту тексту, закону чи висловлювання.",
     examples: [
       {
         L2: "Die Auslegung des Gesetzes ist umstritten.",
@@ -20845,7 +20845,7 @@ window.decks.de_nouns = [
     uk: "схильність",
     level: "B2",
     topics: ["personality", "psychology"],    ruNote: "Внутреннее стремление к какому-то поведению или интересу.",
-    ukNote: "Внутрішнє прагнення до певної поведінки чи інтересу."
+    ukNote: "Внутрішнє прагнення до певної поведінки чи інтересу.",
     examples: [
       {
         L2: "Er hat eine Neigung zur Perfektion.",
@@ -20861,7 +20861,7 @@ window.decks.de_nouns = [
     uk: "стійкість / сталість",
     level: "B2",
     topics: ["personality", "physics"],    ruNote: "Качество оставаться неизменным или стойким в течение долгого времени.",
-    ukNote: "Якість залишатися незмінним або стійким упродовж тривалого часу."
+    ukNote: "Якість залишатися незмінним або стійким упродовж тривалого часу.",
     examples: [
       {
         L2: "Beständigkeit ist für langfristige Projekte wichtig.",
@@ -20877,7 +20877,7 @@ window.decks.de_nouns = [
     uk: "витривалість / навантажувальна здатність",
     level: "B2",
     topics: ["work", "health"],    ruNote: "Способность выдерживать физические или психические нагрузки.",
-    ukNote: "Здатність витримувати фізичні або психічні навантаження."
+    ukNote: "Здатність витримувати фізичні або психічні навантаження.",
     examples: [
       {
         L2: "In diesem Beruf ist hohe Belastbarkeit erforderlich.",
@@ -20893,7 +20893,7 @@ window.decks.de_nouns = [
     uk: "відповідність / збіг",
     level: "B2",
     topics: ["logic", "law"],    ruNote: "Ситуация, когда две вещи или мнения хорошо совпадают.",
-    ukNote: "Ситуація, коли дві речі чи думки добре збігаються."
+    ukNote: "Ситуація, коли дві речі чи думки добре збігаються.",
     examples: [
       {
         L2: "Es besteht Übereinstimmung über die nächsten Schritte.",
@@ -20909,7 +20909,7 @@ window.decks.de_nouns = [
     uk: "невідповідність / розбіжність",
     level: "B2",
     topics: ["conflict", "law"],    ruNote: "Маленький конфликт или несоответствие в данных или мнениях.",
-    ukNote: "Невеликий конфлікт або невідповідність у даних чи поглядах."
+    ukNote: "Невеликий конфлікт або невідповідність у даних чи поглядах.",
     examples: [
       {
         L2: "Die Unstimmigkeiten im Vertrag müssen geklärt werden.",
@@ -20925,7 +20925,7 @@ window.decks.de_nouns = [
     uk: "орієнтовне значення",
     level: "B2",
     topics: ["math", "planning"],    ruNote: "Не точное, а примерное значение для ориентира.",
-    ukNote: "Не точне, а приблизне значення для орієнтиру."
+    ukNote: "Не точне, а приблизне значення для орієнтиру.",
     examples: [
       {
         L2: "Der Richtwert für die Kosten liegt bei 500 Euro.",
@@ -20941,7 +20941,7 @@ window.decks.de_nouns = [
     uk: "складський залишок",
     level: "B2",
     topics: ["logistics", "business"],    ruNote: "Количество товара, которое в данный момент находится на складе.",
-    ukNote: "Кількість товару, що на даний момент є на складі."
+    ukNote: "Кількість товару, що на даний момент є на складі.",
     examples: [
       {
         L2: "Der Lagerbestand muss regelmäßig überprüft werden.",
@@ -20957,7 +20957,7 @@ window.decks.de_nouns = [
     uk: "дефіцит постачання",
     level: "B2",
     topics: ["logistics", "economy"],    ruNote: "Ситуация, когда товары не могут быть поставлены в достаточном количестве.",
-    ukNote: "Ситуація, коли неможливо поставити товари в достатній кількості."
+    ukNote: "Ситуація, коли неможливо поставити товари в достатній кількості.",
     examples: [
       {
         L2: "Wegen Lieferengpässen verzögert sich die Produktion.",
@@ -20973,7 +20973,7 @@ window.decks.de_nouns = [
     uk: "додаткове замовлення",
     level: "B1",
     topics: ["logistics", "shopping"],    ruNote: "Дополнительный заказ товара, когда старый запас почти исчерпан.",
-    ukNote: "Додаткове замовлення товару, коли старий запас майже вичерпано."
+    ukNote: "Додаткове замовлення товару, коли старий запас майже вичерпано.",
     examples: [
       {
         L2: "Wir machen heute eine Nachbestellung beim Lieferanten.",
@@ -20989,7 +20989,7 @@ window.decks.de_nouns = [
     uk: "повернення",
     level: "B1",
     topics: ["shopping", "logistics"],    ruNote: "Отправка товара обратно продавцу.",
-    ukNote: "Надсилання товару назад продавцеві."
+    ukNote: "Надсилання товару назад продавцеві.",
     examples: [
       {
         L2: "Die Rücksendung ist innerhalb von 14 Tagen möglich.",
@@ -21005,7 +21005,7 @@ window.decks.de_nouns = [
     uk: "наявність",
     level: "B1",
     topics: ["shopping", "it"],    ruNote: "То, можно ли в данный момент получить или использовать что-то.",
-    ukNote: "Те, чи можна зараз отримати або використати щось."
+    ukNote: "Те, чи можна зараз отримати або використати щось.",
     examples: [
       {
         L2: "Die Verfügbarkeit des Produkts ist begrenzt.",
@@ -21021,7 +21021,7 @@ window.decks.de_nouns = [
     uk: "відстеження відправлення",
     level: "B1",
     topics: ["logistics"],    ruNote: "Онлайн-сервис, с помощью которого можно смотреть статус посылки.",
-    ukNote: "Онлайн-сервіс, за допомогою якого можна дивитися статус посилки."
+    ukNote: "Онлайн-сервіс, за допомогою якого можна дивитися статус посилки.",
     examples: [
       {
         L2: "Per Sendungsverfolgung sehen Sie, wo das Paket ist.",
@@ -21037,7 +21037,7 @@ window.decks.de_nouns = [
     uk: "номер відправлення",
     level: "A2",
     topics: ["logistics"],    ruNote: "Уникальный номер для отслеживания посылки.",
-    ukNote: "Унікальний номер для відстеження відправлення."
+    ukNote: "Унікальний номер для відстеження відправлення.",
     examples: [
       {
         L2: "Bitte geben Sie die Sendungsnummer ein.",
@@ -21053,7 +21053,7 @@ window.decks.de_nouns = [
     uk: "адреса доставки",
     level: "A2",
     topics: ["logistics", "forms"],    ruNote: "Адрес, по которому должен быть доставлен товар.",
-    ukNote: "Адреса, за якою потрібно доставити товар."
+    ukNote: "Адреса, за якою потрібно доставити товар.",
     examples: [
       {
         L2: "Bitte prüfen Sie die Lieferadresse noch einmal.",
@@ -21069,7 +21069,7 @@ window.decks.de_nouns = [
     uk: "дозвіл на проживання",
     level: "B2",
     topics: ["law", "migration"],    ruNote: "Официальный документ, дающий право жить в стране.",
-    ukNote: "Офіційний документ, що дає право жити в країні."
+    ukNote: "Офіційний документ, що дає право жити в країні.",
     examples: [
       {
         L2: "Sein Aufenthaltstitel wurde verlängert.",
@@ -21085,7 +21085,7 @@ window.decks.de_nouns = [
     uk: "довідка про реєстрацію",
     level: "B2",
     topics: ["administration"],    ruNote: "Документ, подтверждающий регистрацию по адресу проживания.",
-    ukNote: "Документ, що підтверджує реєстрацію за місцем проживання."
+    ukNote: "Документ, що підтверджує реєстрацію за місцем проживання.",
     examples: [
       {
         L2: "Für die Anmeldung brauchen Sie eine Meldebescheinigung.",
@@ -21101,7 +21101,7 @@ window.decks.de_nouns = [
     uk: "дозвіл на перебування",
     level: "B2",
     topics: ["law", "migration"],    ruNote: "Ограниченное по времени право находиться в стране.",
-    ukNote: "Обмежене в часі право перебувати в країні."
+    ukNote: "Обмежене в часі право перебувати в країні.",
     examples: [
       {
         L2: "Die Aufenthaltserlaubnis gilt zunächst für zwei Jahre.",
@@ -21117,7 +21117,7 @@ window.decks.de_nouns = [
     uk: "дозвіл на роботу",
     level: "B2",
     topics: ["work", "migration"],    ruNote: "Официальное право работать в стране или регионе.",
-    ukNote: "Офіційне право працювати в країні або регіоні."
+    ukNote: "Офіційне право працювати в країні або регіоні.",
     examples: [
       {
         L2: "Ohne Arbeitserlaubnis dürfen Sie hier nicht arbeiten.",
@@ -21133,7 +21133,7 @@ window.decks.de_nouns = [
     uk: "громадянство",
     level: "B1",
     topics: ["law", "personal"],    ruNote: "Юридическая принадлежность человека к какому-то государству.",
-    ukNote: "Юридична належність людини до певної держави."
+    ukNote: "Юридична належність людини до певної держави.",
     examples: [
       {
         L2: "Er besitzt die deutsche Staatsangehörigkeit.",
@@ -21149,7 +21149,7 @@ window.decks.de_nouns = [
     uk: "натуралізація",
     level: "C1",
     topics: ["law", "migration"],    ruNote: "Процесс, в результате которого иностранец получает гражданство.",
-    ukNote: "Процес, у результаті якого іноземець отримує громадянство."
+    ukNote: "Процес, у результаті якого іноземець отримує громадянство.",
     examples: [
       {
         L2: "Die Einbürgerung setzt gute Sprachkenntnisse voraus.",
@@ -21165,7 +21165,7 @@ window.decks.de_nouns = [
     uk: "місце проживання",
     level: "B1",
     topics: ["administration"],    ruNote: "Место, где человек живёт и официально зарегистрирован.",
-    ukNote: "Місце, де людина живе й офіційно зареєстрована."
+    ukNote: "Місце, де людина живе й офіційно зареєстрована.",
     examples: [
       {
         L2: "Der Wohnsitz muss beim Amt gemeldet werden.",
@@ -21181,7 +21181,7 @@ window.decks.de_nouns = [
     uk: "небезпека / ризик",
     level: "B2",
     topics: ["safety", "law"],    ruNote: "Ситуация, в которой может произойти вред или повреждение.",
-    ukNote: "Ситуація, за якої може статися шкода чи ушкодження."
+    ukNote: "Ситуація, за якої може статися шкода чи ушкодження.",
     examples: [
       {
         L2: "Es besteht keine akute Gefährdung für die Bewohner.",
@@ -21197,7 +21197,7 @@ window.decks.de_nouns = [
     uk: "відповідальність",
     level: "B2",
     topics: ["law", "business"],    ruNote: "Юридическое обязательство нести последствия за ущерб или нарушение.",
-    ukNote: "Юридичний обов’язок нести наслідки за шкоду чи порушення."
+    ukNote: "Юридичний обов’язок нести наслідки за шкоду чи порушення.",
     examples: [
       {
         L2: "Der Hersteller übernimmt keine Haftung für Folgeschäden.",
@@ -21213,7 +21213,7 @@ window.decks.de_nouns = [
     uk: "експертний висновок",
     level: "B2",
     topics: ["law", "medicine"],    ruNote: "Письменное мнение эксперта по какому-то вопросу.",
-    ukNote: "Письмовий висновок експерта щодо певного питання."
+    ukNote: "Письмовий висновок експерта щодо певного питання.",
     examples: [
       {
         L2: "Das Gericht bestellte ein unabhängiges Gutachten.",
@@ -21229,7 +21229,7 @@ window.decks.de_nouns = [
     uk: "умова / зобов'язання",
     level: "B2",
     topics: ["law", "administration"],    ruNote: "Официальное условие, которое нужно выполнить, чтобы что-то было разрешено.",
-    ukNote: "Офіційна умова, яку потрібно виконати, щоб щось було дозволено."
+    ukNote: "Офіційна умова, яку потрібно виконати, щоб щось було дозволено.",
     examples: [
       {
         L2: "Die Genehmigung wurde mit Auflagen erteilt.",
@@ -21245,7 +21245,7 @@ window.decks.de_nouns = [
     uk: "підтвердження зустрічі",
     level: "B1",
     topics: ["work", "communication"],    ruNote: "Сообщение, что назначенный термин подтверждён.",
-    ukNote: "Повідомлення про підтвердження призначеної зустрічі."
+    ukNote: "Повідомлення про підтвердження призначеної зустрічі.",
     examples: [
       {
         L2: "Sie erhalten noch eine schriftliche Terminzusage.",
@@ -21261,7 +21261,7 @@ window.decks.de_nouns = [
     uk: "перенесення зустрічі",
     level: "B1",
     topics: ["work", "communication"],    ruNote: "Изменение даты или времени согласованного термина.",
-    ukNote: "Зміна дати або часу узгодженої зустрічі."
+    ukNote: "Зміна дати або часу узгодженої зустрічі.",
     examples: [
       {
         L2: "Wegen Krankheit gibt es eine Terminverschiebung.",
@@ -21277,7 +21277,7 @@ window.decks.de_nouns = [
     uk: "доступність",
     level: "B1",
     topics: ["communication", "work"],    ruNote: "То, насколько легко с кем-то можно связаться.",
-    ukNote: "Те, наскільки легко з кимось можна зв’язатися."
+    ukNote: "Те, наскільки легко з кимось можна зв’язатися.",
     examples: [
       {
         L2: "Unsere Erreichbarkeit ist von 9 bis 17 Uhr gewährleistet.",
@@ -21293,7 +21293,7 @@ window.decks.de_nouns = [
     uk: "позика",
     level: "B2",
     topics: ["finance"],    ruNote: "Сумма денег, которая даётся взаймы и должна быть возвращена с процентами.",
-    ukNote: "Сума грошей, яку дають у борг і треба повернути з відсотками."
+    ukNote: "Сума грошей, яку дають у борг і треба повернути з відсотками.",
     examples: [
       {
         L2: "Sie haben ein Darlehen bei der Bank aufgenommen.",
@@ -21309,7 +21309,7 @@ window.decks.de_nouns = [
     uk: "відсотки",
     level: "B1",
     topics: ["finance"],    ruNote: "Дополнительная сумма денег за использование чужих денег.",
-    ukNote: "Додаткова сума грошей за користування чужими грошима."
+    ukNote: "Додаткова сума грошей за користування чужими грошима.",
     examples: [
       {
         L2: "Auf das Darlehen fallen jährlich Zinsen an.",
@@ -21325,7 +21325,7 @@ window.decks.de_nouns = [
     uk: "податкова декларація",
     level: "B2",
     topics: ["finance", "law"],    ruNote: "Форма, в которой указываются доходы и расходы для расчёта налогов.",
-    ukNote: "Форма, у якій зазначають доходи та витрати для розрахунку податків."
+    ukNote: "Форма, у якій зазначають доходи та витрати для розрахунку податків.",
     examples: [
       {
         L2: "Die Steuererklärung muss bis Ende Juli abgegeben werden.",
@@ -21341,7 +21341,7 @@ window.decks.de_nouns = [
     uk: "збір / податок",
     level: "B2",
     topics: ["finance", "law"],    ruNote: "Обязательный платёж, который нужно внести государству или организации.",
-    ukNote: "Обов’язковий платіж, який потрібно сплатити державі чи організації."
+    ukNote: "Обов’язковий платіж, який потрібно сплатити державі чи організації.",
     examples: [
       {
         L2: "Für jede Abgabe gibt es eine gesetzliche Grundlage.",
@@ -21357,7 +21357,7 @@ window.decks.de_nouns = [
     uk: "страхування",
     level: "B1",
     topics: ["finance", "health"],    ruNote: "Договор, при котором страховая компания покрывает определённые риски.",
-    ukNote: "Договір, за яким страхова компанія покриває певні ризики."
+    ukNote: "Договір, за яким страхова компанія покриває певні ризики.",
     examples: [
       {
         L2: "Eine Haftpflichtversicherung ist sehr sinnvoll.",
@@ -21373,7 +21373,7 @@ window.decks.de_nouns = [
     uk: "пенсійне забезпечення",
     level: "B2",
     topics: ["finance", "social"],    ruNote: "Финансовые меры, чтобы иметь деньги на пенсии.",
-    ukNote: "Фінансові заходи, щоб мати кошти на пенсії."
+    ukNote: "Фінансові заходи, щоб мати кошти на пенсії.",
     examples: [
       {
         L2: "Viele machen sich Sorgen um ihre Altersvorsorge.",
@@ -21389,7 +21389,7 @@ window.decks.de_nouns = [
     uk: "внесок / стаття",
     level: "B1",
     topics: ["finance", "media"],    ruNote: "Либо платеж в кассу/страховку, либо текст/высказывание в СМИ.",
-    ukNote: "Або платіж у касу/страхування, або текст/висловлювання в медіа."
+    ukNote: "Або платіж у касу/страхування, або текст/висловлювання в медіа.",
     examples: [
       {
         L2: "Für die Mitgliedschaft ist ein monatlicher Beitrag fällig.",
@@ -21405,7 +21405,7 @@ window.decks.de_nouns = [
     uk: "бюджет / господарство",
     level: "B1",
     topics: ["family", "finance"],    ruNote: "Может означать семью и её расходы или общий бюджет государства/организации.",
-    ukNote: "Може означати сім’ю та її витрати або загальний бюджет держави/організації."
+    ukNote: "Може означати сім’ю та її витрати або загальний бюджет держави/організації.",
     examples: [
       {
         L2: "Wir müssen unseren Haushalt besser planen.",
@@ -21421,7 +21421,7 @@ window.decks.de_nouns = [
     uk: "ситуація із забезпеченням",
     level: "C1",
     topics: ["economy", "crisis"],    ruNote: "Общая ситуация с доступностью важных товаров и услуг.",
-    ukNote: "Загальна ситуація з доступністю важливих товарів і послуг."
+    ukNote: "Загальна ситуація з доступністю важливих товарів і послуг.",
     examples: [
       {
         L2: "Die Versorgungslage hat sich deutlich verbessert.",
@@ -21437,7 +21437,7 @@ window.decks.de_nouns = [
     uk: "зростання",
     level: "B1",
     topics: ["economy", "biology"],    ruNote: "Процесс увеличения размера, количества или силы.",
-    ukNote: "Процес збільшення розміру, кількості чи сили."
+    ukNote: "Процес збільшення розміру, кількості чи сили.",
     examples: [
       {
         L2: "Das wirtschaftliche Wachstum ist schwächer geworden.",
@@ -21453,7 +21453,7 @@ window.decks.de_nouns = [
     uk: "розвиток",
     level: "B1",
     topics: ["general", "economy"],    ruNote: "Изменения с течением времени, часто в направлении улучшения.",
-    ukNote: "Зміни з часом, часто у напрямку покращення."
+    ukNote: "Зміни з часом, часто у напрямку покращення.",
     examples: [
       {
         L2: "Die Entwicklung des Projekts ist positiv.",
@@ -21469,7 +21469,7 @@ window.decks.de_nouns = [
     uk: "коливання",
     level: "B2",
     topics: ["economy", "physics"],    ruNote: "Неустойчивое изменение значения вверх и вниз.",
-    ukNote: "Нестале змінення значення вгору й вниз."
+    ukNote: "Нестале змінення значення вгору й вниз.",
     examples: [
       {
         L2: "Es gibt starke Schwankungen im Stromverbrauch.",
@@ -21485,7 +21485,7 @@ window.decks.de_nouns = [
     uk: "профілактика / запобігання",
     level: "B2",
     topics: ["health", "finance"],    ruNote: "Меры, которые принимаются заранее, чтобы избежать проблем.",
-    ukNote: "Заходи, які роблять заздалегідь, щоб уникнути проблем."
+    ukNote: "Заходи, які роблять заздалегідь, щоб уникнути проблем.",
     examples: [
       {
         L2: "Regelmäßige Vorsorge ist wichtig für die Gesundheit.",
@@ -21501,7 +21501,7 @@ window.decks.de_nouns = [
     uk: "метод лікування",
     level: "B2",
     topics: ["health"],    ruNote: "Конкретный способ лечения заболевания.",
-    ukNote: "Конкретний спосіб лікування захворювання."
+    ukNote: "Конкретний спосіб лікування захворювання.",
     examples: [
       {
         L2: "Es gibt mehrere Behandlungsmethoden für diese Krankheit.",
@@ -21517,7 +21517,7 @@ window.decks.de_nouns = [
     uk: "ліки",
     level: "B1",
     topics: ["health"],    ruNote: "Средство, которое помогает лечить болезни.",
-    ukNote: "Засіб, що допомагає лікувати хвороби."
+    ukNote: "Засіб, що допомагає лікувати хвороби.",
     examples: [
       {
         L2: "Die richtige Arznei ist entscheidend für die Heilung.",
@@ -21533,7 +21533,7 @@ window.decks.de_nouns = [
     uk: "зцілення / одужання",
     level: "B1",
     topics: ["health"],    ruNote: "Процесс, при котором болезнь проходит.",
-    ukNote: "Процес, під час якого хвороба минає."
+    ukNote: "Процес, під час якого хвороба минає.",
     examples: [
       {
         L2: "Die Heilung kann einige Wochen dauern.",
@@ -21549,7 +21549,7 @@ window.decks.de_nouns = [
     uk: "вид терапії",
     level: "B2",
     topics: ["health"],    ruNote: "Конкретный тип лечения, например, разговорная, медикаментозная терапия.",
-    ukNote: "Конкретний тип лікування, наприклад розмовна чи медикаментозна терапія."
+    ukNote: "Конкретний тип лікування, наприклад розмовна чи медикаментозна терапія.",
     examples: [
       {
         L2: "Welche Therapieform ist für Sie geeignet?",
@@ -21565,7 +21565,7 @@ window.decks.de_nouns = [
     uk: "медперсонал",
     level: "B1",
     topics: ["health", "work"],    ruNote: "Человек, который профессионально ухаживает за пациентами.",
-    ukNote: "Людина, що професійно доглядає за пацієнтами."
+    ukNote: "Людина, що професійно доглядає за пацієнтами.",
     examples: [
       {
         L2: "Die Pflegekräfte arbeiten im Schichtdienst.",
@@ -21581,7 +21581,7 @@ window.decks.de_nouns = [
     uk: "пацієнт",
     level: "A2",
     topics: ["health"],    ruNote: "Человек, который получает медицинскую помощь.",
-    ukNote: "Людина, яка отримує медичну допомогу."
+    ukNote: "Людина, яка отримує медичну допомогу.",
     examples: [
       {
         L2: "Der Patient wartet im Wartezimmer.",
@@ -21597,7 +21597,7 @@ window.decks.de_nouns = [
     uk: "операція",
     level: "A2",
     topics: ["health"],    ruNote: "Хирургическая процедура, проводимая врачом.",
-    ukNote: "Хірургічна процедура, яку виконує лікар."
+    ukNote: "Хірургічна процедура, яку виконує лікар.",
     examples: [
       {
         L2: "Die Operation verlief ohne Komplikationen.",
@@ -21613,7 +21613,7 @@ window.decks.de_nouns = [
     uk: "відпочинок / відновлення",
     level: "B1",
     topics: ["health", "free-time"],    ruNote: "Время, когда человек восстанавливает силы.",
-    ukNote: "Час, коли людина відновлює сили."
+    ukNote: "Час, коли людина відновлює сили.",
     examples: [
       {
         L2: "Nach der Operation braucht er viel Erholung.",
@@ -21629,7 +21629,7 @@ window.decks.de_nouns = [
     uk: "положення / норма",
     level: "C1",
     topics: ["law"],    ruNote: "Конкретный пункт в законе или договоре.",
-    ukNote: "Конкретне положення в законі чи договорі."
+    ukNote: "Конкретне положення в законі чи договорі.",
     examples: [
       {
         L2: "Diese Bestimmung gilt für alle Mitarbeiter.",
@@ -21645,7 +21645,7 @@ window.decks.de_nouns = [
     uk: "регулювання / правило",
     level: "B2",
     topics: ["law", "work"],    ruNote: "Общее слово для установленных правил или механизмов управления.",
-    ukNote: "Загальне слово для встановлених правил або механізмів керування."
+    ukNote: "Загальне слово для встановлених правил або механізмів керування.",
     examples: [
       {
         L2: "Es gibt eine klare Regelung zur Arbeitszeit.",
@@ -21661,7 +21661,7 @@ window.decks.de_nouns = [
     uk: "порушення",
     level: "B2",
     topics: ["law", "work"],    ruNote: "Действие против закона или правила.",
-    ukNote: "Дія всупереч закону чи правилу."
+    ukNote: "Дія всупереч закону чи правилу.",
     examples: [
       {
         L2: "Ein Verstoß gegen die Sicherheitsregeln ist ernst.",
@@ -21677,7 +21677,7 @@ window.decks.de_nouns = [
     uk: "нагляд",
     level: "B2",
     topics: ["safety", "it"],    ruNote: "Постоянное наблюдение, чтобы всё проходило правильно и безопасно.",
-    ukNote: "Постійний нагляд, щоб усе відбувалося правильно й безпечно."
+    ukNote: "Постійний нагляд, щоб усе відбувалося правильно й безпечно.",
     examples: [
       {
         L2: "Die Überwachung der Anlage erfolgt automatisch.",
@@ -21693,7 +21693,7 @@ window.decks.de_nouns = [
     uk: "розпорядження",
     level: "B2",
     topics: ["law", "work"],    ruNote: "Официальное указание, что нужно сделать.",
-    ukNote: "Офіційна вказівка, що потрібно зробити."
+    ukNote: "Офіційна вказівка, що потрібно зробити.",
     examples: [
       {
         L2: "Die Behörde erließ eine Anordnung zur Schließung.",
@@ -21709,7 +21709,7 @@ window.decks.de_nouns = [
     uk: "робочий час",
     level: "A2",
     topics: ["work"],    ruNote: "Часы, в которые человек работает по договору.",
-    ukNote: "Години, в які людина працює за договором."
+    ukNote: "Години, в які людина працює за договором.",
     examples: [
       {
         L2: "Die Arbeitszeit beträgt 40 Stunden pro Woche.",
@@ -21725,7 +21725,7 @@ window.decks.de_nouns = [
     uk: "робоче місце",
     level: "A2",
     topics: ["work"],    ruNote: "Конкретное место или должность, где человек работает.",
-    ukNote: "Конкретне місце або посада, де людина працює."
+    ukNote: "Конкретне місце або посада, де людина працює.",
     examples: [
       {
         L2: "Sein Arbeitsplatz ist im dritten Stock.",
@@ -21741,7 +21741,7 @@ window.decks.de_nouns = [
     uk: "працівник",
     level: "A2",
     topics: ["work"],    ruNote: "Человек, который работает по найму у работодателя.",
-    ukNote: "Людина, яка працює за наймом у роботодавця."
+    ukNote: "Людина, яка працює за наймом у роботодавця.",
     examples: [
       {
         L2: "Der Arbeitnehmer hat Anspruch auf Urlaub.",
@@ -21757,7 +21757,7 @@ window.decks.de_nouns = [
     uk: "роботодавець",
     level: "A2",
     topics: ["work"],    ruNote: "Лицо или организация, которая нанимает работников.",
-    ukNote: "Особа чи організація, яка наймає працівників."
+    ukNote: "Особа чи організація, яка наймає працівників.",
     examples: [
       {
         L2: "Der Arbeitgeber muss den Arbeitsschutz beachten.",
@@ -21773,7 +21773,7 @@ window.decks.de_nouns = [
     uk: "нарада",
     level: "B1",
     topics: ["work"],    ruNote: "Встреча, на которой обсуждают рабочие темы.",
-    ukNote: "Зустріч, на якій обговорюють робочі питання."
+    ukNote: "Зустріч, на якій обговорюють робочі питання.",
     examples: [
       {
         L2: "Die Besprechung findet morgen um zehn Uhr statt.",
@@ -21789,7 +21789,7 @@ window.decks.de_nouns = [
     uk: "зустріч / мітинг",
     level: "B1",
     topics: ["work"],    ruNote: "Англицизм для деловой встречи или командного созвона.",
-    ukNote: "Англіцизм для ділової зустрічі чи командного дзвінка."
+    ukNote: "Англіцизм для ділової зустрічі чи командного дзвінка.",
     examples: [
       {
         L2: "Wir haben gleich ein Online-Meeting.",
@@ -21805,7 +21805,7 @@ window.decks.de_nouns = [
     uk: "презентація",
     level: "B1",
     topics: ["work", "education"],    ruNote: "Показ и объяснение информации перед аудиторией.",
-    ukNote: "Показ і пояснення інформації перед аудиторією."
+    ukNote: "Показ і пояснення інформації перед аудиторією.",
     examples: [
       {
         L2: "Die Präsentation dauert etwa zwanzig Minuten.",
@@ -21821,7 +21821,7 @@ window.decks.de_nouns = [
     uk: "планування",
     level: "B1",
     topics: ["work", "project"],    ruNote: "Подготовка шагов и ресурсов для достижения цели.",
-    ukNote: "Підготовка кроків і ресурсів для досягнення мети."
+    ukNote: "Підготовка кроків і ресурсів для досягнення мети.",
     examples: [
       {
         L2: "Gute Planung spart später viel Zeit.",
@@ -21837,7 +21837,7 @@ window.decks.de_nouns = [
     uk: "заняття / навчання",
     level: "A2",
     topics: ["education"],    ruNote: "Организованный процесс обучения в школе или курсе.",
-    ukNote: "Організований процес навчання в школі або на курсі."
+    ukNote: "Організований процес навчання в школі або на курсі.",
     examples: [
       {
         L2: "Der Unterricht beginnt um acht Uhr.",
@@ -21853,7 +21853,7 @@ window.decks.de_nouns = [
     uk: "компетенція",
     level: "B2",
     topics: ["work", "education"],    ruNote: "Либо умение что-то делать, либо официальная область ответственности.",
-    ukNote: "Або вміння щось робити, або офіційна зона відповідальності."
+    ukNote: "Або вміння щось робити, або офіційна зона відповідальності.",
     examples: [
       {
         L2: "Interkulturelle Kompetenz wird immer wichtiger.",
@@ -21869,7 +21869,7 @@ window.decks.de_nouns = [
     uk: "участь",
     level: "A2",
     topics: ["events"],    ruNote: "Факт, что кто-то присутствует и участвует в чём-то.",
-    ukNote: "Факт, що хтось присутній і бере участь у чомусь."
+    ukNote: "Факт, що хтось присутній і бере участь у чомусь.",
     examples: [
       {
         L2: "Die Teilnahme am Kurs ist kostenlos.",
@@ -21885,7 +21885,7 @@ window.decks.de_nouns = [
     uk: "захід",
     level: "A2",
     topics: ["events"],    ruNote: "Организованное событие, например концерт, лекция, фестиваль.",
-    ukNote: "Організований захід, наприклад концерт, лекція, фестиваль."
+    ukNote: "Організований захід, наприклад концерт, лекція, фестиваль.",
     examples: [
       {
         L2: "Die Veranstaltung findet im Stadtzentrum statt.",
@@ -21901,7 +21901,7 @@ window.decks.de_nouns = [
     uk: "транспортний засіб",
     level: "A2",
     topics: ["traffic"],    ruNote: "Общее слово для машин, которые ездят по дороге.",
-    ukNote: "Загальне слово для засобів, що рухаються дорогою."
+    ukNote: "Загальне слово для засобів, що рухаються дорогою.",
     examples: [
       {
         L2: "Auf der Straße stehen viele Fahrzeuge im Stau.",
@@ -21917,7 +21917,7 @@ window.decks.de_nouns = [
     uk: "мережа",
     level: "B1",
     topics: ["it", "social"],    ruNote: "Либо техническая компьютерная сеть, либо группа контактов.",
-    ukNote: "Або технічна комп’ютерна мережа, або коло контактів."
+    ukNote: "Або технічна комп’ютерна мережа, або коло контактів.",
     examples: [
       {
         L2: "Ein gutes Netzwerk hilft bei der Jobsuche.",
@@ -21933,7 +21933,7 @@ window.decks.de_nouns = [
     uk: "сигнал",
     level: "A2",
     topics: ["tech", "communication"],    ruNote: "Знак или технический импульс, который передаёт информацию.",
-    ukNote: "Знак або технічний імпульс, що передає інформацію."
+    ukNote: "Знак або технічний імпульс, що передає інформацію.",
     examples: [
       {
         L2: "Wir haben im Tunnel kein Signal.",
@@ -21949,7 +21949,7 @@ window.decks.de_nouns = [
     uk: "керування",
     level: "B1",
     topics: ["tech"],    ruNote: "Часть системы, которая управляет её работой.",
-    ukNote: "Частина системи, що керує її роботою."
+    ukNote: "Частина системи, що керує її роботою.",
     examples: [
       {
         L2: "Die Steuerung der Maschine ist automatisiert.",
@@ -21965,7 +21965,7 @@ window.decks.de_nouns = [
     uk: "напруга",
     level: "B1",
     topics: ["physics", "emotion"],    ruNote: "Может означать электрическое напряжение или нервозное ожидание.",
-    ukNote: "Може означати електричну напругу або нервове очікування."
+    ukNote: "Може означати електричну напругу або нервове очікування.",
     examples: [
       {
         L2: "Die elektrische Spannung darf nicht zu hoch sein.",
@@ -21981,7 +21981,7 @@ window.decks.de_nouns = [
     uk: "батарея",
     level: "A2",
     topics: ["tech"],    ruNote: "Устройство, которое хранит электрическую энергию.",
-    ukNote: "Пристрій, що зберігає електричну енергію."
+    ukNote: "Пристрій, що зберігає електричну енергію.",
     examples: [
       {
         L2: "Die Batterie vom Handy ist fast leer.",
@@ -21997,7 +21997,7 @@ window.decks.de_nouns = [
     uk: "думка",
     level: "A2",
     topics: ["communication"],    ruNote: "То, что человек думает по какому-то вопросу.",
-    ukNote: "Те, що людина думає з певного питання."
+    ukNote: "Те, що людина думає з певного питання.",
     examples: [
       {
         L2: "Ich würde gern deine Meinung dazu hören.",
@@ -22013,7 +22013,7 @@ window.decks.de_nouns = [
     uk: "зміна",
     level: "A2",
     topics: ["general"],    ruNote: "То, что становится другим, чем было раньше.",
-    ukNote: "Те, що стає іншим, ніж було раніше."
+    ukNote: "Те, що стає іншим, ніж було раніше.",
     examples: [
       {
         L2: "In den letzten Jahren gab es viele Veränderungen.",
@@ -22029,7 +22029,7 @@ window.decks.de_nouns = [
     uk: "нагода / можливість",
     level: "B1",
     topics: ["general"],    ruNote: "Благоприятный момент, чтобы что-то сделать.",
-    ukNote: "Сприятливий момент, щоб щось зробити."
+    ukNote: "Сприятливий момент, щоб щось зробити.",
     examples: [
       {
         L2: "Nutze die Gelegenheit und frag nach.",
